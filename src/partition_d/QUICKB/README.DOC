@@ -1,0 +1,854 @@
+			  "README.DOC" File
+
+	     Release Notes for Microsoft(R) BASIC Compiler
+       Version 6.0 for MS(R) OS/2 and MS-DOS(R) Operating Systems
+
+	  (C) Copyright Microsoft Corporation, 1987, 1988
+
+The information in this document is more up to date than the information in the
+printed manuals. Where information in the two conflicts, you should assume
+that this document is correct.
+
+Microsoft improves its languages documentation when documents are reprinted, so
+some of the information in this on-line file may already be included in your
+manuals.
+
+
+This document has eight parts:
+
+     PART	CONTENTS
+
+	1	Changes and additions to the BASIC Compiler Version 6.0
+		User's Guide
+
+	2	Changes and additions to the Learning and Using Microsoft
+		QuickBASIC manual
+
+	3	Changes and additions to the BASIC Language Reference manual
+
+	4	Using your mouse with QuickBASIC
+
+	5	Supplementary information on mixed-language programming
+
+	6	Using Btrieve with QuickBASIC
+
+	7	Using QuickBASIC with 3.5-inch floppy disks
+
+	8	Patch for DOS 3.20 for systems that have both a hard disk
+		drive and a math coprocessor, and run programs that use
+		floating-point math
+
+
+==================< CodeView and Utilities Information >=======================
+
+The on-line documentation for the Microsoft CodeView(R) debugger and utilities
+is in a separate disk file named UTILITY.DOC. You should read that information
+before using CodeView or any of the utilities supplied with this product. The
+file UTILITY.DOC is found on the disk labeled "Microsoft CodeView for MS OS/2."
+
+=======< Part 1: Changes for BASIC Compiler Version 6.0 User's Guide >=========
+
+Page	Change
+----	------
+3	Renaming Bound Executable Files under DOS 2.1
+
+	If you use DOS 2.1, do not rename any of the bound executable files
+	that are supplied with BASIC Compiler Version 6.0. A "bound executable
+	file" is one that runs in either OS/2 protected mode or DOS and OS/2
+	real mode. Below is a list of all the bound executable files included
+	in this release:
+
+	    BC.EXE			LIB.EXE
+	    BUILDRTM.EXE		LINK.EXE
+	    CVPACK.EXE			MAKE.EXE
+	    ECH.EXE			MEGREP.EXE
+	    EXEHDR.EXE			RM.EXE
+	    EXP.EXE			SETUP.EXE
+	    ILINK.EXE			UNDEL.EXE
+	    IMPLIB.EXE
+
+3	Running Bound Executable Files from Default Drive under DOS 2.1
+
+	If you use DOS 2.1, note that all bound executable files (see above)
+	must be run from the default disk drive. For instance, if the default
+	drive is A, the following command does not work:
+
+	    B:SETUP
+
+	Before running a bound executable file under DOS 2.1, you should move
+	to the directory that contains that file.
+
+3	Location of Dynamic-Link-Library (.DLL) Files
+
+	When you run a BASIC program in OS/2 protected mode, the system
+	will need to find one or more dynamic-link-library (.DLL) file.
+	If a dynamic-link library cannot be found at run time, the system
+	does not run your program and displays the following error message:
+
+	      SYS1804: The system cannot find the file <filename>.
+
+	You are responsible to ensure that the system can find dynamic-link
+	libraries at run time. This is normally done with a CONFIG.SYS entry.
+	When searching for a dynamic-link library, OS/2 looks first in the
+	directory or directories specified in the LIBPATH option of the
+	CONFIG.SYS file that was present at boot time. Note that LIBPATH is
+	not an environment variable and cannot be set as you would set an
+	environment variable such as PATH. LIBPATH can only be specified in
+	the CONFIG.SYS file (thus, if you change the LIBPATH option in
+	CONFIG.SYS, the change does not take effect until you reboot the
+	system or start a new protected-mode session). If OS/2 cannot find a
+	dynamic-link library via LIBPATH, it searches the root directory of
+	the boot device (normally, a disk drive).
+
+	See your Microsoft Operating System/2 Beginning User's Guide for more
+	information about the use of LIBPATH in the CONFIG.SYS file.
+
+7	In-Line Instructions (/FPi Option)
+
+	There are now two versions of the emulator library: EMR.LIB for
+	DOS and real mode, and EMP.LIB for OS/2 protected mode. This is
+	important only if you are building your own libraries instead of
+	using the default combined libraries.
+
+9	Linking BASIC Programs
+
+	You should not use the /NOI (NOIGNORECASE) option when linking a
+	protected-mode extended run-time module, or a protected-mode program
+	compiled without the /O option.
+
+10	Linking Special Object Files
+
+	Special-purpose object files can also be used to reduce the size of
+	an extended run-time module created with the BUILDRTM utility. (This
+	technique applies only to DOS and OS/2 real mode, not OS/2 protected
+	mode.) To do this, list the desired special-purpose object files in
+	the #OBJECTS portion of the export-list file for BUILDRTM (see Section
+	3.3.2 of the Microsoft BASIC Compiler User's Guide).
+
+	Table 3.1 should list the special-purpose object file NOEVENT.OBJ,
+	which can be used to reduce the executable-file size of a program that
+	does not require event-handling support. Event-handling statements
+	include the ON <event> statements, such as ON KEY or ON TIMER, and all
+	<event> ON | OFF | STOP statements, such as TIMER ON or KEY OFF. The
+	SLEEP statement also falls in this category because it monitors keyboard
+	events. Note that linking NOEVENT.OBJ does not affect error trapping
+	with ON ERROR.
+
+	Table 3.1 should state that the file NOVGA.OBJ is appropriate for
+	programs that do not use screen modes 10 or 11.
+
+12	Overriding the Default Library
+
+	In place of the method mentioned in the Microsoft BASIC Compiler
+	User's Guide, there is a simpler way to link 87.LIB that does not
+	involve modifying a combined library. Invoke LINK with the /NOE
+	(NOEXTENDDICTIONARY) option and place 87.LIB in the object field of
+	the link command. For example, this command links 87.LIB with a
+	real-mode program:
+
+	   link sample.obj 87.LIB,,,/NOE;
+
+	This command causes LINK to use 87.LIB in place of EMR.LIB in the
+	combined library. The same command can be used for protected-mode
+	programs, since LINK automatically selects the correct combined library,
+	based on information that the compiler places in the object file.
+
+	Note: This method also replaces the use of NOEM.LIB, which was supplied
+	with QuickBASIC 4.0.
+
+12	Modifying a Combined Library
+
+	The library 87.LIB can replace both EMR.LIB (PIEMR.OBJ and EMOEM.OBJ)
+	in BCOM60ER.LIB and EMP.LIB (PIEMP.OBJ and EMOEM.OBJ) in BCOM60EP.LIB.
+
+13	Contents of Combined Libraries
+
+	Four additional libraries are used to build combined libraries.
+	The following table shows which component libraries are used to
+	build each combined library:
+
+	Combined Library  Component Libraries
+	----------------  -------------------
+	BCOM60AP.LIB	  BC60.LIB, BCOM60P.LIB, BC60AP.LIB, BLIBFA.LIB
+			  DOSCALLS.LIB
+
+	BCOM60AR.LIB	  BC60.LIB, BCOM60R.LIB, BC60AR.LIB, BLIBFA.LIB
+
+	BCOM60EP.LIB	  BC60.LIB, BCOM60P.LIB, BC60EP.LIB, BLIBFP.LIB
+			  EMP.LIB, DOSCALLS.LIB
+
+	BCOM60ER.LIB	  BC60.LIB, BCOM60R.LIB, BC60ER.LIB, BLIBFP.LIB
+			  EMR.LIB
+
+15	Creating an Export List for BUILDRTM.
+
+	When creating an extended run-time module with the BUILDRTM
+	utility, you may wish to add routines contained in an existing
+	library (.LIB) file. To make this possible, the export-list
+	file used by BUILDRTM accepts a #LIBRARIES directive. Like the
+	#OBJECTS and #EXPORTS directives, the #LIBRARIES directive is
+	followed by a list of names. The list indicates which library files
+	you wish BUILDRTM to search when creating an extended run-time
+	module. For instance, if you wish to embed a C-language module that
+	uses the printf statement, you could list the name of the C library
+	that supports printf in the #LIBRARIES section of the export-list
+	file.
+
+	The export-list file can contain directives in any order and
+	any combination. It makes no difference which directive appears first,
+	and you may use the same directive more than once in the same file.
+
+16	Invoking the BUILDRTM Utility
+
+	The BUILDRTM utility accepts another option (/FPi87) that allows
+	the use of 87.LIB in an extended run-time module. This option is
+	appropriate only if it is certain that the run-time module will be
+	used on a machine that has a math coprocessor. Every module that
+	you place in an extended run-time module built with the /FPi87
+	option should be compiled with the /FPi option.
+
+	BUILDRTM searches the path defined by the LIB environment variable
+	when it looks for the library files that it needs.
+
+19	Programming Considerations for Extended Run-Time Modules
+
+	For mixed-language programs that use CHAIN, you should make sure that
+	any code built into an extended run-time module does not contain
+	references to DGROUP. See Part 5 of this file for more details.
+
+21	Calling OS/2 Functions
+
+	The include file DOSCALLS.BI has been replaced with a set of four
+	equivalent include files. This change brings BASIC into conformity,
+	as far as practical, with other Microsoft languages. It also offers
+	practical advantages in that you can include only the files that your
+	program needs for the OS/2 calls that it makes, rather than one
+	monolithic file that supports all OS/2 function calls. The new include
+	files are organized functionally, as shown in the following table:
+
+	Include-File Name	    Functions Supported
+	-----------------	    -------------------
+	BSEDOSPC.BI		    Process control, semaphores, signals,
+				    pipes and queues, error handling and
+				    messages, session manager
+
+	BSEDOSFL.BI		    Device support, file management
+
+	BSESUBMO.BI		    Mouse support
+
+	BSEDOSPE.BI		    National language support, resource
+				    management, module management, date/time
+				    and timer support, memory management,
+				    information segments
+
+	These include files provide support only for OS/2 functions that are
+	appropriate for BASIC. Many of the omitted functions involve multi-
+	thread capabilities, while others duplicate existing BASIC support,
+	such as keyboard and screen I/O.
+
+	Because the BASIC 6.0 include files provide a standard interface to
+	OS/2 functions, you should avoid changing their contents unnecessarily.
+
+	The process of calling OS/2 functions requires certain data types
+	that are not intrinsic to BASIC. The files listed above use standard
+	methods for simulating those types. Below is a description of how
+	various data types are simulated in the OS/2 include files for BASIC.
+
+	Unsigned Values
+	---------------
+	The concept of an unsigned value is not intrinsic to BASIC. The
+	signed version of the given type is used, instead.
+
+	Pointers in User-Defined Types
+	------------------------------
+	In cases where OS/2 requires a pointer as a field of a user-defined
+	type, these files use the type ADDRESS, which is defined at the
+	beginning of the include file BSEDOSPC.BI. You can fill in the fields
+	of this type with VARSEG and SADD in the case of a variable-length
+	string, or VARSEG and VARPTR in the case of other data objects.
+
+	Far Character Pointers in Function Parameters
+	---------------------------------------------
+	The far character pointer (far char *) is simulated with two
+	parameters: a segment and an offset. Note that both of these values
+	are integers. Thus, if the original declaration would have been
+	DOSXYZ( far char * ), it is declared in this form:
+
+	    DOSXYZ( BYVAL S1s AS INTEGER, BYVAL S1o AS INTEGER )
+
+	You would call this function with a statement in the following
+	form, where FixedLen is a fixed-length string:
+
+	    DOSXYZ( VARSEG(FixedLen), VARPTR(FixedLen) )
+
+	You can call the function with a statement in the following form if
+	Varlen is a variable-length string:
+
+	    DOSXYZ( VARSEG(VarLen), SADD(VarLen) )
+
+	Pointer to a Function in a Function Parameter
+	---------------------------------------------
+	The pointer to a function is simulated with two parameters, just as
+	in the case of a far character pointer. The first integer represents
+	the segment and the second represents the offset (see above). BASIC
+	itself has no means of finding the location of a function; however, if
+	you find that location with an other-language procedure, the address
+	can be used in an OS/2 function call from BASIC.
+
+	Character in a Function Parameter
+	---------------------------------
+	A character in a function parameter is simulated with an integer. This
+	method is safe because parameters are always passed as words. Thus, a
+	character is extended to an integer before being passed in other
+	languages.
+
+21	Replace the example program in Section 4.1 with the following program:
+
+	' Include the file BSEDOSPC.BI
+	REM $INCLUDE: 'bsedospc.bi'
+	' Invoke the DOSBEEP function
+	x = DOSBEEP(100, 200)
+
+31	Example for ON UEVENT
+
+	The following discussion supplements the example given in the
+	Microsoft BASIC Compiler User's Guide.
+
+	For the sake of simplicity, assume that your system contains a data
+	acquisition device that generates an interrupt when data arrives.
+	The main portion of your application is written in BASIC. The BASIC
+	module contains an event-trapping subroutine that responds to a user-
+	defined event (in this case, the arrival of data from the acquisition
+	device). The program also contains the following three assembly-
+	language procedures:
+
+	1. An interrupt handler that responds to the interrupt generated
+	   by the acquisition device.
+
+	2. A routine that installs the interrupt handler in the chain of
+	   interrupts.
+
+	3. A routine that removes the interrupt handler from the chain of
+	   interrupts.
+
+	When the BASIC program begins, it calls the assembly-language routine
+	that installs the interrupt handler. Then it executes an ON UEVENT
+	statement to identify the BASIC subroutine that will be executed when
+	a user-defined event occurs. The final step in setting up the user-
+	defined event trap is to execute a UEVENT ON statement. Once this is
+	done, the BASIC program enters its main execution loop.
+
+	When data arrives, the acquisition device generates an interrupt. The
+	interrupt handler, in turn, calls the BASIC entry point SetUEvent,
+	thus causing a user-defined event.
+
+	The user-defined event causes the BASIC program to branch to the
+	BASIC subroutine identified by the previous ON UEVENT statement.
+	At this point, the event-trapping subroutine performs whatever
+	processing is desired.
+
+	Just before the application terminates, it calls the assembly-
+	language routine that removes the interrupt handler from the chain
+	of interrupts.
+
+	Note that SetUEvent, the BASIC entry point that causes a user-
+	defined event, is callable not only from assembly language, but
+	from any other Microsoft language, including BASIC. When a program is
+	linked, references to SetUEvent are resolved in the same way as
+	references to any other BASIC statements.
+
+32	The OPEN PIPE: Statement
+
+	The optional mode parameter for the OPEN PIPE: statement may also be
+	specified as RANDOM. Opening a pipe in RANDOM mode has the same
+	effect as when you specify no mode at all: in either case, the pipe
+	allows both input and output.
+
+	You can use the functions EOF, LOC, and LOF with a pipe that is opened
+	in RANDOM or INPUT mode. In such cases, these functions return the
+	following information:
+
+	Function	Information Returned
+	--------	--------------------
+	EOF		Indicates whether the piped process has terminated
+			or returned an EOF character.
+
+	LOC and LOF	Returns 1 if characters are available in the input
+			buffer assigned to the piped process. Returns 0 if
+			no characters are available from the piped process.
+			Note: Due to a feature of OS/2, LOC and LOF may return
+			0 even if characters are available.
+
+21	Detached BASIC Programs
+
+	In OS/2 protected mode, it is possible to run a BASIC 6.0 program
+	in detached mode (using the DETACH command). However, a detached
+	program cannot perform any console input/output while it is
+	detached. Any attempt to perform console I/O (including an attempt
+	at key trapping) causes BASIC error 68 (Device unavailable). If a
+	detached program causes an error, the error message appears in an
+	OS/2 pop-up display.
+
+	See your Microsoft Operating System/2 Reference for more information
+	about DETACH.
+
+39	The references to DOSCALLS.BI should instead refer to the BASIC
+	include files for OS/2: BSEDOSPC.BI, BSEDOSFL.BI, BSESUBMO.BI, and
+	BSEDOSPE.BI. See "Calling OS/2 Functions" above.
+
+======< Part 2: Changes for Learning and Using Microsoft QuickBASIC >========
+
+----------------------< Using FIXSHIFT.COM Utility >-------------------------
+	Some keyboards have an extra set of DIRECTION (i.e. arrow) keys, in
+	addition to those on the numeric keypad. A bug in the ROM BIOS of
+	some machines with these keyboards can interfere with the QuickBASIC
+	editor. Disk 5 includes a program, FIXSHIFT.COM, that fixes this bug.
+	If you have such a keyboard, run this program by typing FIXSHIFT. If
+	your machine does not have the bug, FIXSHIFT displays a message telling
+	you so. Otherwise FIXSHIFT prompts you for the appropriate actions.
+	FIXSHIFT takes about 450 bytes of memory. Except for the BIOS bug, it
+	has no effect on other programs you run.
+
+--------------------< Hercules(R) Graphics Support >-------------------------
+	QuickBASIC Version 4.0 supports Hercules (R) display adapters.
+	See the entry for the SCREEN statement in Part 3, below.
+
+---------------------------< Page Changes >----------------------------------
+Page	Correction
+----	----------
+xxii	If you install an IBM (R) Personal System/2 (TM) Video Graphics
+	Array display adapter (VGA) in a non-PS/2 machine, the VGA adapter
+	should be the only adapter in the system, and you should not use
+	monochrome modes (SCREEN 10) if you have a color monitor. Similarly,
+	you should not use color modes (SCREEN 1, 2, 7, 8, 9, 11, 12, 13) if
+	you have a monochrome monitor.
+
+10	Installing QuickBASIC: Floppy-Disk Setup
+
+	To use QuickBASIC with a two-floppy system under DOS 2.1, you
+	must put a copy of COMMAND.COM on disk 2 and disk 3.
+
+11	Suggestions for using QuickBASIC with a single-floppy system:
+
+		Disk 1
+		======
+		QB.EXE
+		Your program source file
+		(Optional: operating-system files)
+		(Optional: QB.QLB)
+
+		Disk 2
+		======
+		BC.EXE
+		LINK.EXE
+		LIB.EXE
+		BRUN60ER.EXE
+		BRUN60ER.LIB
+
+		Disk 3
+		======
+		BCOM60ER.LIB
+
+	If you are using DOS 2.1 with a single-floppy system, you must also
+	put a copy of COMMAND.COM on all three disks.
+
+	When you make executable files and Quick libraries from within the
+	environment, you have to swap the disks in and out of your disk
+	drive to make the proper programs and libraries available. When
+	specific files cannot be found on the currently inserted disk,
+	you will see the prompt "Cannot find file <filename>." Before you
+	switch disks, type B: and press ENTER. (You can do this because,
+	even though you do not have a physical drive B, DOS recognizes a
+	logical drive B.) Insert the appropriate disk when prompted. Note
+	that when the linker prompts for a path, you must also include the
+	name of the file for which it is searching.
+
+12	See Part 4 of this file for additional information on installing
+	and using a mouse with QuickBASIC.
+
+219	The following is a new option for LINK.EXE:
+
+	/NOE[XTDICTIONARY]
+
+	If the linker suspects that a public symbol has been redefined, it
+	prompts you to link again with the /NOE option. When you do so, it
+	searches the individual object files, rather than "dictionaries" it
+	has created, to resolve conflicts. For example, when linking a
+	program with 87.LIB or NOCOM.OBJ, you must use the /NOE option.
+
+
+266	PTR86 is no longer supported. Use VARSEG and VARPTR instead.
+	Also, when used with a communications device, LOF now returns the
+	amount of space remaining (in bytes) in the output buffer. In
+	previous versions this was returned in the input buffer. Also, note
+	that a variable and SUB procedure could have the same name in
+	previous versions. In Version 4.0, this causes a "Duplicate
+	definition" error message.
+
+=========< Part 3: Changes for BASIC Language Reference >======================
+
+Page	Correction
+----	----------
+165	The DRAW statement does not support the V macro command in BASIC
+	Compiler Version 6.0 or QuickBASIC Version 4.0.
+
+288	The ON...GOTO statement accepts a maximum of 60 line labels or line
+	numbers. In such cases, use the SELECT CASE statement instead.
+
+373	The SCREEN statement now includes mode 3 for Hercules display
+	adapters. The following is a brief summary of screen mode 3.
+	See your Hercules documentation for details.
+
+		- QuickBASIC supports Hercules Graphics Card, Graphics
+		  Card Plus, InColor Card, and 100% compatibles.
+
+		- Only monochrome (two-color) text and graphics are
+		  supported on the Hercules display adapters.
+
+		- The statement SCREEN 0 produces Hercules text mode, and
+		  SCREEN 3 produces Hercules graphics mode.
+
+		- You must load the Hercules driver (QBHERC.COM) before running
+		  your program. Type QBHERC to install the driver (or put the
+		  command QBHERC in your AUTOEXEC.BAT file). If the driver is
+		  not installed, the statement SCREEN 3 causes the BASIC error
+		  message "Illegal function call" (ERR code 7).
+
+		- If you have both a Hercules monochrome card and a color video
+		  card, you should invoke QBHERC.COM with the /H (/HALF)
+		  option. The /H option causes the driver to use one instead
+		  of two graphics pages. This prevents the two video cards
+		  from attempting to use the same memory. You do not have to
+		  use the /H option if you have only a Hercules card.
+
+		- Hercules text mode produces a screen with 80 columns and 25
+		  rows, and a 9 x 14 character matrix. The two lowest scan
+		  lines of the twenty-fifth screen row are not visible.
+
+		- The screen resolution is 720 x 348 pixels, monochrome.
+
+		- Two screen pages are supported.
+
+		- Neither Hercules mode supports the PALETTE statement.
+
+		- To use a mouse, you must follow special instructions for
+		  Hercules cards in the Microsoft Mouse Programmer's Reference
+		  Guide. (This must be ordered separately; it is not supplied
+		  with QuickBASIC or the Microsoft Mouse.)
+
+477		- The error message "Advanced feature unavailable" may appear
+		  under DOS 2.1 if you try to use a feature, such as file
+		  locking, that is only supported in later versions of DOS.
+
+484		- The error message "Duplicate definition" also appears if you
+		  have a SUB or FUNCTION procedure with the same name as a
+		  variable. In previous versions, this did not cause an error.
+		  should be numbered 2044
+
+=============< Part 4: Using Your Mouse with QuickBASIC >===================
+
+--------------< New Mouse Driver for Use with QuickBASIC >------------------
+
+	QuickBASIC Version 4.0 can be used with any mouse that is 100%
+	compatible with the Microsoft Mouse. However, you must use a
+	Microsoft Mouse driver Version 6.00 or later. Earlier versions may
+	cause unpredictable behavior when used with QuickBASIC. MOUSE.COM,
+	Version 6.11 is supplied with QuickBASIC Version 4.0.
+
+	Especially if you are writing programs that use the mouse, you
+	should use the supplied version of the mouse driver when working in
+	QuickBASIC. Previous versions have included MOUSE.SYS, which is
+	installed by including the line DEVICE=MOUSE.SYS in your CONFIG.SYS
+	file. This version of QuickBASIC includes MOUSE.COM, which is not
+	installed via CONFIG.SYS. To install MOUSE.COM, just type MOUSE at
+	the DOS prompt. To include MOUSE.COM automatically when your machine
+	boots, make sure MOUSE.COM is in your search path, then put the line
+
+		MOUSE
+
+	in your AUTOEXEC.BAT file. To free up memory, you can remove the
+	mouse driver at any time by typing MOUSE OFF at the DOS prompt.
+	This will restore between 9K and 10.5K of memory with Version 6.11.
+
+--------< Using Mouse Function Calls from QuickBASIC Programs >------------
+
+	If you are programming for the Microsoft Mouse, you should obtain
+	the Microsoft Mouse Programmer's Reference Guide and the library
+	MOUSE.LIB that comes with it. (These are not included in QuickBASIC
+	or Mouse package and must be ordered separately). Most of the
+	information in the Mouse Programmer's Reference Guide applies
+	directly to QuickBASIC Version 4.0. However, the following additional
+	restrictions must be observed:
+
+	Certain Mouse function calls (Functions 9 & 16) require you to set
+	up an integer array and pass the address of the array to the mouse
+	driver. For previous versions, the only restriction on this array
+	was that it had to be $STATIC (the default array type). In QuickBASIC
+	Version 4.0, however, the array also must be in a COMMON block if you
+	will be making the Mouse function call from within the QuickBASIC
+	environment.  In addition, it is recommended that the support code
+	for the Mouse call be in a Quick library or linked into the
+	executable file when making Mouse function calls from QuickBASIC.
+
+	To produce a Quick library for using Mouse function calls from
+	within the QuickBASIC environment, use the following command line
+	(produces MOUSE.QLB):
+
+		LINK MOUSE.LIB/QU,MOUSE.QLB,,BQLB40.LIB/NOE;
+
+	An example from PIANO.BAS (included with the Microsoft Mouse
+	Programmer's Reference) for using Mouse function call 9:
+
+		DEFINT A-Z
+		DECLARE SUB MOUSE (M1, M2, M3, M4)
+		DIM Cursor(15, 1)
+		COMMON Cursor() 'Ensures array data is in DGROUP
+		.
+		.  (set up Cursor() for mouse cursor shape desired)
+		.
+		M1 = 9: M2 = 6: M3 = 0
+		CALL MOUSE(M1, M2, M3, VARPTR(Cursor(0, 0)))
+
+	In addition to the above, note that Mouse function calls 21-23
+	require dynamically allocated storage out of the home data segment.
+	The recommended way to do this is to allocate space in a dynamic
+	string variable based on the return value from function call 21,
+	using the STRING$ or SPACE$ function. Then use VARPTR on this string
+	variable just prior to calling Mouse function call 22 or 23.
+
+=====< Part 5: Supplementary Information on Mixed-Language Programming >=======
+
+--------< Linking from within QuickC or with QCL >--------------------------
+
+	Microsoft QuickC and the QCL command both set the /NOI linker
+	by default. Therefore, you should not link from within QuickC, or
+	with QCL, when your program contains modules written in a case-
+	insensitive language such as BASIC. Use LINK to link your program
+	from the command line.
+
+--------< Pascal and Fortran Modules in QuickBASIC Programs >---------------
+
+	Modules compiled with Microsoft Pascal or Fortran can be linked with
+	BASIC programs, as described in the Microsoft Mixed-Language
+	Programming Guide. They can also be incorporated in Quick libraries.
+	However, QuickBASIC programs containing code compiled with Microsoft
+	Pascal must allocate at least 2K near-heap space for Pascal. This can
+	be done by using the DIM statement to allocate a static array of 2K or
+	greater in the NMALLOC named common block, for example, as follows:
+
+	DIM name%(2048)
+	COMMON SHARED /NMALLOC/ name%()
+
+	The Pascal run-time assumes it always has at least 2K of near-heap
+	space available. If the Pascal code cannot allocate the required
+	space, QuickBASIC may crash. This applies to Pascal code in Quick
+	libraries as well as Pascal code linked into executable files. The
+	situation is similar for Fortran I/O, which also requires near
+	buffer space, and which can be provided by the same means as the
+	Pascal near malloc space.
+
+--------< STATIC Array Allocation >---------------------------------------
+
+	If you are writing assembly-language modules for use in QuickBASIC
+	programs, see Section 2.3.3, "Variable Storage Allocation," in the
+	BASIC Language Reference. Assembly-language code should not assume
+	data is in a particular segment. To avoid problems, pass data using
+	the SEG or CALLS keywords, or use FAR pointers. Alternatively, you
+	can declare all arrays dynamic (still using far pointers) since
+	dynamic arrays are handled identically by BC and within QuickBASIC.
+
+--------< Quick Libraries with Leading Zeros in the First Code Segment >--
+
+	A Quick library containing leading zeros in the first CODE segment
+	is invalid, causing the message "Error in loading file <name> -
+	Invalid format" when you try to load it in QuickBASIC. For example,
+	this can occur if an assembly-language routine puts data that is
+	initialized to zero in the first CODE segment, and it is subsequently
+	listed first on the LINK command line when you make a Quick library.
+	If you have this problem, do either of the following:
+	(1) link with a BASIC module first on the LINK command line, or
+	(2) make sure that, in whatever module comes first on the LINK
+	command line, the first code segment starts with a non-zero byte.
+
+--------< References to DGROUP in Extended Run-time Modules >-------------
+
+	For mixed-language programs that use the CHAIN command, you should
+	make sure that any code built into an extended run-time module does not
+	contain any references to DGROUP. (The CHAIN command causes DGROUP to
+	move, but does not update references to DGROUP.) This rule applies
+	only to mixed-language programs; because BASIC routines never refer
+	to DGROUP, you can ignore this caution for programs written entirely
+	in BASIC.
+
+	To avoid this problem, you can use the value of SS, since BASIC always
+	assumes that SS coincides with DGROUP.
+
+=========================< Part 6: Using Btrieve >=============================
+
+-------------------< Using Btrieve in OS/2 Protected Mode >--------------------
+
+	In OS/2 protected mode, a BASIC program that uses Btrieve must do a
+	Btrieve reset call (function 28) before executing the CHAIN statement.
+	The program must also reopen all Btrieve files when the destination of
+	the CHAIN starts to run.
+
+--------------------< Using Btrieve with QuickBASIC >--------------------------
+
+	If you use Btrieve with QuickBASIC, you must make a small change to
+	your programs for QuickBASIC Version 4.0. Currently your programs
+	contain a statement that obtains the address of the field buffer for
+	an open file. For example:
+
+	    OPEN "NUL" AS #1
+	    FIELD #1, 20 AS CITY$, 10 AS STATE$
+	    FCB.ADDR% = VARPTR(#1)  'This statement obtains the address
+
+	In QuickBASIC Version 4.0, you should change the indicated statement
+	to return the address of the first variable in your field buffer minus
+	a constant, as follows:
+
+	    OPEN "NUL" AS #1
+	    FIELD #1, 20 AS CITY$, 10 AS STATE$
+	    FCB.ADDR% = SADD(CITY$) - 188 ' CITY$ is the first field
+					  ' buffer variable
+
+	The following example shows how to obtain the same address for a
+	user-defined type:
+
+	    TYPE ADDRESS
+		CITY AS STRING * 20
+		STATE AS STRING * 10
+	    END TYPE
+
+	    DIM ADD1 AS ADDRESS
+
+	    FCB.ADDR% = VARPTR(ADD1) - 188
+	    ' or, you can use FCB.ADDR% = VARPTR(ADD1.CITY) - 188
+
+	Your programs should function correctly with Btrieve with this change.
+
+===========< Part 7: Using QuickBASIC with 3.5-inch Floppy Disks >=============
+
+--------------< If You Have Two 3.5-inch Floppy-Disk Drives >------------------
+
+    If you have two 3.5-inch floppy-disk drives, copy the files from the
+    distribution disks to three other disks as follows:
+
+	Disk 1: All files from distribution disk 1, plus all BRUN60 and BQLB
+	files from distribution disk 2
+
+	Disk 2: BCOM60.LIB, BC.EXE, LINK.EXE, and LIB.EXE
+
+	Disk 3: BASIC source files, Quick libraries, and QB.QLB
+
+    Most of the time you can use disks 1 and 3, with disk 1 in drive A and disk
+    3 in drive B. When you make a Quick library or an executable file to run
+    from DOS, you will see the following prompt:
+
+	Cannot find file <filename>
+
+    When this prompt appears, insert disk 2 in drive A and press ENTER. If the
+    program requires a Quick library, make sure that both the Quick library and
+    the corresponding stand-alone (.LIB) library are on the disk in drive B.
+
+--------------< If You Have One 3.5-inch Floppy-Disk Drive >-------------------
+
+    If you have only a single 3.5-inch floppy-disk drive, prepare disks 1, 2,
+    and 3 as described in the preceding section. However, you should follow a
+    different procedure when you see the prompt
+
+	Cannot find file <filename>
+
+    When this prompt appears on a single-floppy system, you should type B: and
+    press ENTER before you insert the proper disk. (Even though you do not have
+    a physical drive named B:, the system recognizes a logical drive of that
+    name.) Insert the appropriate disk as prompted. Note that when the linker
+    prompts you for a path, you must also include the name of the file for
+    which it is searching.
+
+----------------------< If You Are Using DOS 2.1 >-----------------------------
+
+If you are using DOS 2.1, you should put a copy of COMMAND.COM on every disk
+that contains an executable file (a file with the .EXE extension). This rule
+applies no matter how many floppy-disk drives are in your system.
+
+=====================< Part 8: DOS 3.20 Patch >================================
+
+This information is important only if your system has ALL of the following
+characteristics:
+
+    1.	Uses MS-DOS version 3.20
+    2.	Boots from a hard disk drive
+    3.	Has a math coprocessor (for instance, an 8087 chip)
+    4.	Runs programs that use floating-point math
+
+For systems that satisfy all of the preceding conditions, you may be able to
+eliminate floating-point math problems by installing a small patch in DOS. If
+you are not sure whether you need the patch, perform the following steps:
+
+    1.	Copy the program PATCH87.EXE (included in this release) to the root
+	directory of your hard-disk drive.
+
+    2.	Reboot your system from the hard disk, and DO NOT PERFORM ANY FLOPPY-
+	DISK OPERATIONS after rebooting. It is very important that you avoid
+	floppy-disk I/O after rebooting, since that will affect the reliability
+	of the diagnostic test that you are about to perform.
+
+    3.	If necessary, use the CD command to move to the root directory of your
+	hard-disk drive.
+
+    4.	Run the PATCH87.EXE program by entering this command at the DOS prompt:
+
+	    PATCH87
+
+    5.	The program performs a diagnostic test on your system to determine
+	whether it needs the DOS patch, and if the patch is needed,
+	whether the patch can be installed successfully. If the program tells
+	you that you need to install the DOS patch, and that it can be done,
+	follow the procedure described in the next section.
+
+    NOTE: The floating-point problem has been eliminated in versions of
+    MS-DOS higher than 3.20. This includes MS-DOS versions 3.21 and 3.30.
+
+If you performed the preceding test and determined that you should install the
+DOS patch on your system, perform the following steps:
+
+    1.	Format a blank floppy disk. (Do NOT use the /s formatting option to
+	transfer system files to the disk.)
+
+    2.	Use the SYS command to copy IO.SYS and MSDOS.SYS from the root
+	directory of your hard disk to the new floppy disk. For instance, if
+	you boot from drive C:, you would enter the following commands:
+
+	    C:
+	    SYS A:
+
+    3.	Use the COPY command to copy COMMAND.COM and SYS.COM to the same
+	floppy disk.
+
+    4.	Use the COPY command to copy the program PATCH87.EXE (included in this
+	release) to the same floppy disk.
+
+    5.	Change the current drive and directory to the floppy disk, by entering
+	the following command:
+
+	    A:
+
+    7.	Install the DOS patch by entering the following command:
+
+	    PATCH87 /F
+
+	WARNING: If you experience any disk errors during steps 2 through 7,
+	do NOT proceed with step 8. Reboot from your hard disk and repeat the
+	entire process.
+
+    8.	If you have not experienced any errors, use the SYS command to transfer
+	the files IO.SYS and MSDOS.SYS from the floppy disk back to your hard
+	disk. For instance, if the boot directory of your system is the root
+	directory of drive C:, you would enter the following command at the DOS
+	prompt:
+
+	    A:
+	    SYS C:
+
+    9.	The DOS patch has been installed. Reboot the system.

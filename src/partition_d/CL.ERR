@@ -1,0 +1,52 @@
+				/* Meldungen schwerer Fehler */
+
+1001	"'%s' nicht ausfÅhrbar"
+1002	"Zu viele geîffnete Dateien, Umleitung von '%s' nicht mîglich"
+1000	"UNBEKANNTER SCHWERER FEHLER IN BEFEHLSZEILE\n\t\tMicrosofts Technischen Kundendienst benachrichtigen"
+
+				/* Fehlermeldungen */
+
+2001	"Zu viele mit -D vordefinierte Symbole"
+2002	"Vorher definierte Modellangabe wurde Åberschrieben"
+2003	"Name der Quelldatei fehlt"
+2007	"Falsche %s-Angabe, '%s' wÅrde durch '%s' Åberschrieben werden"
+2008	"Zu viele %s-Angaben, '%s'"
+2009	"Unbekannte Option '%c' in '%s'"
+2010	"Unbekannte Gleitkomma-Option"
+2011	"Nur ein Gleitkomma-Modell zulÑssig"
+2012	"Zu viele Linkerangaben in der Befehlszeile"
+2013	"UnvollstÑndige Modellangabe"
+/* 2014	"-ND nicht zulÑssig mit -Ad" */
+2015	"Assemblerdateien werden nicht verarbeitet"
+2016	"-Gw und -ND %s sind inkompatibel"
+2017	"-Gw und -Au-Angaben sind inkompatibel"
+2018	"cmd-Datei des Linkers kann nicht geîffnet werden"
+2019	"Die Quelldatei '%s' kann nicht Åberschrieben werden"
+2020	"Option -Gc erfordert Aktivierung der erweiterten SchlÅsselwîrter (-Ze)"
+2021	"UnzulÑssiges numerisches Argument '%s'"
+2022	"Hilfe-Datei '%s' kann nicht geîffnet werden"
+2023	"UnzulÑssige Modellangabe - nur Small-Modell"
+2024	"-Gm und -ND %s sind inkompatibel"
+2025	"Argument fehlt"
+2000	"UNBEKANNTER FEHLER IN BEFEHLSZEILE\n\t\tMicrosofts Technischen Kundendienst benachrichtigen"
+
+				/* Warnungen */
+
+4001	"Auflistung hat Vorrang vor Assembler-Ausgabe"
+4002	"Unbekannte Angabe '%s' ignoriert"
+4003	"Auswahl von 80186/286 zur Codeerzeugung hat Vorrang vor 8086"
+4004	"Zeitoptimierung kommt vor Speicheroptimierung zur Anwendung"
+4005	"'%s' nicht ausfÅhrbar;\nBitte neuen Dateinamen (vollen Pfad) oder Strg-C zum Abbrechen eingeben: ""
+4006	"Nur eine der Optionen -P/-E/-EP erlaubt, -P ausgewÑhlt"
+4007	"-C ignoriert (-P, -E oder -EP mu· ebenfalls angegeben werden))"
+4008	"Kein Standardmodell -- Bibliotheken des Large-Modells verwendet"
+4009	"Schwellenwert nur fÅr Far/Huge-Daten, ignoriert"
+4010	"-Gp nicht implementiert, ignoriert"
+4011	"Preprozessor-Lauf setzt sich Åber Quellauflistung hinweg"
+4012	"Funktionsdeklarationen setzen sich Åber Quellauflistung hinweg"
+4013	"Kombinierte Auflistung hat Vorrang vor Objektauflistung"
+4014	"UnzulÑssiger Wert %d fÅr '%s'. Standard %d wird verwendet"
+4015	"Unterschiedliche Standardmodelle - %s-Modell verwendet"
+4017	"UnvertrÑgliche StapelprÅfoptionen - StapelprÅfung ausgeschaltet"
+4019	"Zeichenkette zu lang. Auf %d Zeichnen gekÅrzt"
+4000	"UNBEKANNTE WARNUNG VOR FEHLER IN BEFEHLSZEILE\n\t\tMicrosofts Technischen Kundendienst benachrichtigen"

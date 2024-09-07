@@ -1,0 +1,548 @@
+NETZWERK.TXT
+
+Diese Datei enthÑlt Informationen darÅber, wie Sie Ihr Netzwerk mit
+MS-DOS 6.22 kompatibel machen. Wenn Sie bereits MS-DOS 5 verwenden,
+sind keine énderungen notwendig, um das Netzwerk mit MS-DOS 6.22
+kompatibel zu machen.
+
+Sollte Setup auf diese Datei verweisen, lesen Sie unten in Abschnitt 1 nach. 
+Wenn Sie zusÑtzliche Informationen Åber Ihre Netzwerksoftware suchen, lesen 
+Sie im entsprechenden Abschnitt nach.
+
+1.  Setup-Verweis auf NETZWERK.TXT
+2.  3+Share
+3.  Arcnet-Systeme
+4.  Artisoft LANtastic
+5.  AT&T StarGroup (Nicht-LAN Manager)
+6.  Banyan VINES
+7.  DEC Pathworks und PCSA
+8.  IBM PC LAN
+9.  IBM DOS LAN Requester Version 1.30 oder frÅher
+10. Microsoft LAN Manager und 100 % kompatible Netzwerke
+11. Microsoft MS-Net und 100 % kompatible Netzwerke
+12. Net/One PC
+13. Novell-Netzwerke
+14. PC-NFS
+15. TCS 10Net oder DCA 10Net
+ 
+1. Setup-Verweis auf NETZWERK.TXT
+==================================
+Wenn Setup die Meldung "Sie haben angegeben, da· Ihr Computer mit einem
+Netzwerk verbunden ist" anzeigt, lÑuft auf Ihrem Computer eventuell eine 
+frÅhere Version der Netzwerksoftware, die nicht mit MS-DOS 6.22 kompatibel
+ist. 
+Weitere Informationen hierzu finden Sie in dem Abschnitt dieser Datei, der 
+Ihre Netzwerksoftware behandelt. Wenn Sie keine Anweisungen finden, wie Sie 
+Ihr Netzwerk mit MS-DOS 6.22 kompatibel machen kînnen, mÅssen Sie bei Ihrem 
+HÑndler ein Update der Netzwerksoftware erwerben, die aktualisierten 
+Netzwerkdateien installieren und dann Setup fÅr MS-DOS 6.22 erneut ausfÅhren.
+
+Wenn Setup die Meldung "Sie haben angegeben, da· Ihr Computer mit einem 
+Netzwerk verbunden ist" auch nach dem Aktualisieren Ihrer Netzwerksoftware 
+anzeigt, wÑhlen Sie die Option "Fortsetzen". Ihr Netzwerk sollte trotzdem 
+mit MS-DOS 6.22 zusammenarbeiten.
+
+2. 3+Share
+==========
+Handelt es sich bei Ihrer Netzwerksoftware um 3+Share, Version 1.6 oder
+frÅhrer und wenn Sie vor kurzer Zeit ein Update auf MS-DOS 5 gemacht
+haben, kann Ihre aktuelle Version des 3+Share-Redirectors mit MS-DOS 6.22
+zusammenarbeiten. Nach der Installation von MS-DOS 6.22 geben Sie folgendes
+an der Eingabeaufforderung ein, und starten Sie Ihren Computer erneut:
+
+SETVER MSREDIR.EXE 5.0
+
+FÅr den Fall, da· der Redirector nicht in Ihrer MS-DOS 5-Version enthalten 
+war, setzen Sie sich bitte mit dem Microsoft Software Service in Verbindung, 
+um eine Zusatzdiskette zu erhalten.
+
+Nachdem Sie den Redirector erhalten haben, befolgen Sie die Anweisungen
+in der Datei NET.TXT auf der Zusatzdiskette.
+
+3. Arcnet-Systeme
+=================
+Wenn Ihr Netzwerk Arcnet-Hardware verwendet, mÅssen Sie eventuell das 
+Microsoft Diagnose-Progarmm (MSD) mit der Option /I ausfÅhren. Sie mÅssen 
+mit der Option /I arbeiten, Sie dÅrfen die Option "Netzwerke" in MSD 
+nicht verwenden.
+
+4. Artisoft LANtastic
+=====================
+Bevor Sie Setup unter einer beliebigen Artisoft LANtastic-Version ausfÅhren, 
+schalten Sie den LANtastic-Server ab. Der Redirector braucht nicht 
+abgeschaltet zu werden.
+
+Artisoft LANtastic, Versionen 3.02 und hîher, sind mit MS-DOS 6.22 kompatibel.
+
+Wenn Sie eine frÅhere LANtastic-Version als 2.5 verwenden, mÅssen Sie bei 
+Ihrem HÑndler ein Update erweben.
+
+Wenn Sie LANtastic, Versionen 2.5 bis einschlie·lich 3.01, verwenden, 
+fÅhren Sie folgende Schritte aus.
+
+So aktualisieren Sie LANtastic, Version 2.5 bis Version 3.01
+
+1. Schalten Sie den LANtastic-Server ab. Der Redirector kann eingeschaltet 
+   bleiben.
+
+2. Richten Sie MS-DOS 6.22 auf Ihrem Computer ein. Weitere Informationen 
+   Åber die Installation von MS-DOS 6.22 finden Sie in Kapitel "Erste Schritte" 
+   im MS-DOS-Benutzerhandbuch.
+
+   MS-DOS zeigt beim Neustarten Ihres Netzwerks eventuell die Meldung 
+   "Falsche DOS-Version" an. Ignorieren Sie sie.
+
+3. Geben Sie an der Eingabeaufforderung folgenden Befehl ein:
+
+   SETVER SERVER.EXE 4.00
+
+4. Starten Sie Ihren Computer neu.
+
+Wenn Sie EMM386 verwenden, mÅssen Sie gegebenenfalls den von Ihrer Netzwerk-
+karte verwendeten Speicherbereich ausschlie·en. Verwenden Sie dazu den 
+Befehl DEVICE mit der Option X fÅr EMM386.EXE in Ihrer Datei CONFIG.SYS. 
+Wenn Sie fÅr den LANtastic 2Mbps-Adapter die Werkvoreinstellung verwenden, 
+nehmen Sie in den DEVICE-Befehl fÅr EMM386.EXE die Option X=D800-DFFF auf.
+Ohne Ausschlu· dieses Speicherbereichs kînnen Probleme mit Programmen 
+auftreten, die Expansionsspeicher verwenden.
+
+ANMERKUNG Das Programm Microsoft Defrag ist nicht mit der LANtastic-
+Netzwerksoftware kompatibel, wenn der Serverdienst geladen ist. Wenn nur 
+der Redirector geladen ist, ist das Programm mit der LANtastic-Netzwerk-
+software kompatibel.
+
+
+5. AT&T StarGroup (Nicht-LAN Manager)
+=====================================
+Handelt es sich bei Ihrer Netzwerksoftware um AT&T StarGroup, mÅssen Sie 
+Setup erneut ausfÅhren, und die Option "Fortsetzen" wÑhlen, wenn Setup 
+die Meldung "Sie haben angegeben, da· Ihr Computer mit einem Netzwerk 
+verbunden ist" anzeigt. Folgen Sie nun den Bildschirmanweisungen. Wenn 
+Ihre Netzwerksoftware nach dem Setup nicht startet, fÅhren Sie folgende 
+Schritte aus:
+
+1. Geben Sie folgende Befehle an der Eingabeaufforderung ein:
+
+   SETVER SETUP.EXE 4.00
+   SETVER ATTSTART.EXE 4.00
+
+2. Starten Sie Ihren Computer neu.
+
+3. Entfernen Sie mit Hilfe Ihrer StarGroup-Installationsdisketten
+   die vorhandene Netzwerksoftware von Ihrem Computer.
+
+4. Installieren Sie StarGroup neu. Wenn Sie bei der StarGroup-Installation 
+   gefragt werden, welche MS-DOS-Version Sie verwenden, wÑhlen Sie die 
+   MS-DOS-Version 4.0.
+
+6. Banyan VINES
+===============
+Die Banyan VINES-Versionen 4.1 und spÑter sind mit MS-DOS 6.22 kompatibel. 
+Sie kînnen Banyan VINES Version 4.0x mit MS-DOS 6.22 verwenden, wenn sich 
+die Datei REDIRALL.EXE oder REDIR4.EXE im BANYAN-Verzeichnis Ihrer 
+Festplatte befindet.
+
+Befindet sich keine dieser Dateien auf Ihrer Festplatte, und besitzen Sie 
+die VINES-Installationsdisketten mit einer dieser Dateien, kopieren Sie die 
+Datei in das Verzeichnis Ihrer Festplatte, das die Netzwerkdateien enthÑlt.
+
+Befinden sich die Dateien weder auf Ihrer Festplatte noch auf den VINES-
+Installationsdisketten, nehmen Sie Verbindung mit Ihrem Banyan VINES-
+NetzwerkhÑndler auf.
+
+Wenn Sie eine VINES-Version vor 4.0 besitzen, fragen Sie Ihren Netzwerk-
+hÑndler nach einem Update.
+
+ANMERKUNG: In einigen FÑllen ist Banyan VINES inkompatibel mit MemMaker.
+Wenn Ihre Netzwerksoftware beispielsweise mehrere Komponenten in unter-
+schiedliche UMB-Bereiche lÑdt, arbeitet MemMaker eventuell aufIhrem 
+Computer nicht korrekt.
+
+7. DEC PATHWORKS und PCSA
+=========================
+Wenn Sie DEC PATHWORKS for DOS, Version 4.1, verwenden, fÅhren Sie 
+folgende Schritte aus:
+
+1.   Wenn Sie von MS-DOS Version 3.3 oder frÅher aufrÅsten, mÅssen Sie 
+     Ihre Redirector-Datei, REDIR.EXE, aktualisieren. Kopieren Sie sich 
+     REDIR.400 von den PATHWORKS-Disketten, oder Sie kînnen REDIR.400
+     vom Systemadministrator erhalten. Benennen Sie die Datei in REDIR.EXE 
+     um, und speichern Sie sie in Ihrem DECNET-Verzeichnis.
+
+2.   Installieren Sie MS-DOS 6.22 auf Ihrem Computer. Weitere Informationen 
+     Åber die Installation von MS-DOS 6.22 finden Sie unter "Erste Schritte" 
+     im MS-DOS-Benutzerhandbuch.
+
+Die Version 4.0 von PATHWORKS for DOS ist mit MS-DOS 6.22 kompatibel. Sie 
+mÅssen jedoch folgende Schritte ausfÅhren, um dies zu erreichen.
+
+So rÅsten Sie PATHWORKS Version 4.0 auf
+
+1.   Wenn Sie von MS-DOS, Version 3.3 oder frÅher, aufrÅsten, mÅssen Sie 
+     Ihre Redirector-Datei, REDIR.EXE, aktualisieren. Kopieren Sie sich 
+     REDIR.400 von den PATHWORKS-Disketten, oder Sie kînnen REDIR.400 vom 
+     Systemadministrator erhalten. Benennen Sie die Datei in REDIR.EXE um, 
+     und speichern Sie sie in Ihrem DECNET-Verzeichnis. 
+
+2.   Installieren Sie MS-DOS 6.22 auf Ihrem Computer. Weitere Informationen 
+     Åber die Installation von MS-DOS 6.22 finden Sie unter "Erste Schritte" 
+     im MS-DOS-Benutzerhandbuch.
+
+3.   Starten Sie Ihren Computer neu, fÅhren Sie jedoch STARTNET.BAT, das 
+     Ihr Netzwerk startet, noch nicht aus.
+
+4.   Geben Sie folgende Zeilen an der Eingabeaufforderung hintereinander 
+     ein:
+
+     SETVER USE.EXE 4.00
+
+     SETVER MEMMAN.EXE 4.00
+
+     SETVER LAD.EXE 4.00
+
+     SETVER SHOW.EXE 4.00
+
+     SETVER NETSETUP.EXE 4.00
+
+5.   Starten Sie Ihren Computer neu, und fÅhren Sie STARTNET.BAT aus.
+
+ANMERKUNG: Wenn Sie von PATHWORKS 4.0 auf PATHWORKS 4.1 umsteigen, mÅssen 
+Sie die in diesem Verfahren eingegebenen SETVER-Befehle deaktivieren. Geben 
+Sie dazu nach der Installation von PATHWORKS 4.1 dieselben Befehle ein, 
+ersetzen jedoch das 4.00 in jedem Befehl durch /D.
+
+Wenn Sie eine Ñltere PATHWORKS- oder PCSA-Version als 4.0 verwenden, 
+fragen Sie Ihren HÑndler nach einem Update. Wenn Sie die PATHWORKS- oder 
+PCSA-Version 3.x verwenden, kînnen Sie MS-DOS 6.22 vorÅbergehend starten, 
+indem Sie das folgende Verfahren ausfÅhren.
+
+ANMERKUNG: Die MS-DOS-Programmumschaltung funktioniert nur in Verbindung 
+mit PATHWORKS for DOS, Version 4.1 oder hîher.
+
+ANMERKUNG: Sie erhalten UnterstÅtzung fÅr den MS-DOS Task Swapper, wenn 
+Sie die PATHWORKS for DOS-Versionen 4.1 oder hîher verwenden.
+
+So aktualisieren Sie die PATHWORKS- oder PCSA-Version 3.x vorÅbergehend
+
+1.   Wenn Sie von den MS-DOS-Version 3.3 oder frÅher aufrÅsten, mÅssen 
+     Sie Ihre Redirector-Datei REDIR.EXE aktualisieren. Kopieren Sie 
+     sich REDIR.400 von den PATHWORKS-Disketten, oder Sie kînnen 
+     REDIR.400 vom Systemadministrator erhalten. Benennen Sie die Datei 
+     in REDIR.EXE um, und speichern Sie sie in Ihrem DECNET-Verzeichnis.
+
+2.   Installieren Sie MS-DOS 6.22 auf Ihrem Computer. Weitere Informationen
+     Åber die Installation von MS-DOS 6.22 finden Sie unter "Erste Schritte" 
+     im MS-DOS Benutzerhandbuch. MS-DOS gibt nun eventuell beim Neustarten 
+     Ihres Netzwerks mehrmals die Meldung "Falsche DOS-Version" aus. 
+     Ignorieren Sie diese.
+
+3.   Geben Sie alle folgenden Befehle an der Eingabeaufforderung ein:
+
+     SETVER USE.EXE 4.00
+     SETVER EMSLOAD.EXE 4.00
+     SETVER SCH.EXE 4.00
+     SETVER NETSETUP.EXE 4.00
+     SETVER NCP.EXE 4.00
+     SETVER DNNETHAT.EXE 4.00
+     SETVER LAD.EXE 4.00
+     SETVER DLL.EXE 4.00
+     SETVER MEMMAN.EXE 4.00
+     SETVER DNNETHLD.EXE 4.00
+     SETVER SHOW.EXE 4.00
+
+4.   Starten Sie Ihren Computer neu.
+
+8. IBM PC LAN
+=============
+Wenn Sie IBM PC LAN 1.34 verwenden und Probleme mit Anwendungen haben, die 
+mit Satz- oder Dateisperrung arbeiten, benîtigen Sie eventuell eine 
+aktualisierte Datei REDIR50.EXE, die in ICO 3039 enthalten ist. Wenden Sie 
+sich an den IBM-Support.
+
+IBM PC LAN Programm, Version 1.33 oder frÅher
+
+Um MS-DOS 6.22 in Verbindung mit IBM PC LAN Programm (PCLP) zu verwenden, mu· 
+eine der folgenden Voraussetzungen erfÅllt sein:
+
+o  IBM PCLP-Version 1.34 installiert.
+
+o  IBM PCLP-Version 1.3x, die mit Hilfe der entsprechenden IBM Corrective 
+   Service-Diskette auf Version 1.34 aufgerÅstet wurde. Wenden Sie sich an 
+   den IBM-Produktsupport, um die erforderliche Software zu erhalten.
+
+Wenn Sie eine frÅhere PCLP-Version als 1.30 ausfÅhren, wenden Sie sich 
+wegen der erforderlichen Software und den Installationsanweisungen an IBM.
+
+So aktualisieren Sie IBM PCLP-Versionen 1.30 bis 1.34
+
+1.  Beginnen Sie mit Schritt 3, wenn Sie von Version 1.34 aufrÅsten. 
+    Anderenfalls installieren Sie die benîtigte IBM PCLP-Software, indem 
+    Sie die Anweisungen befolgen, die mit den von IBM gelieferten 
+    Corrective Service-Disketten geliefert wurden.
+
+2.  Starten Sie Ihren Computer neu, und prÅfen Sie, ob das Netzwerk startet.
+
+    Wenn das Netzwerk nicht startet, beenden Sie dieses Verfahren, und 
+    fragen Sie IBM um Rat.
+
+3.  Installieren Sie MS-DOS 6.22 auf Ihrem Computer. Weitere Informationen
+    Åber die Installation von MS-DOS 6.22 finden Sie in Kapitel "Erste
+    Schritte" im MS-DOS Benutzerhandbuch.
+
+    Wenn Setup Ihren Computer neu startet, erscheint auf Ihrem Bildschirm 
+    folgende Meldung:
+
+    PC LAN-Programm 1.3 starten (J/N)?
+
+4.  Geben Sie N ein, und drÅcken Sie die EINGABETASTE.
+
+5.  Geben Sie folgendes an der Eingabeaufforderung ein:
+
+    SETVER NET.COM /D
+
+6.  Starten Sie Ihren Computer neu.
+
+    Auf Ihrem Bildschirm erscheint folgende Meldung:
+
+    PC LAN-Programm 1.3 starten (J/N)?
+
+7.  Geben Sie J ein, und drÅcken Sie die EINGABETASTE.
+
+    ANMERKUNG: Wenn nach dem Einrichten von MS-DOS in Ihrer Datei CONFIG.SYS 
+    ein Befehl zum Laden der Datei IFSFUNC.EXE steht, deaktivieren Sie ihn, 
+    indem Sie REM und ein Leerzeichen vor den Befehl schreiben. Speichern 
+    Sie die Datei anschlie·end, und starten Sie Ihren Computer neu.
+
+    HINWEIS: Das Programm Microsoft Defrag kann auf einem PCLP-Server 
+    nicht ausgefÅhrt werden.
+
+9. IBM DOS LAN Requester Version 1.30 oder frÅher
+=================================================
+Um MS-DOS 6.22 in Verbindung mit IBM DOS LAN Requester zu verwenden, mu· eine 
+der folgenden Voraussetzungen erfÅllt sein:
+
+o  DOS LAN Requester-Dateien, die in der OS/2 LAN Server-Version 1.30.1 
+   enthalten sind.
+
+o  DOS LAN Requester-Dateien, die zur OS/2 LAN Server-Version 1.30 
+   gehîren, und auf denen die IBM Corrective Service-Diskette (CSD) 
+   5015 angewendet wurde. Wenden Sie sich an den IBM-Produktsupport, 
+   um die erforderliche Software zu erhalten.
+
+Wenn Sie eine frÅhere DOS LAN Requester-Version als 1.30 ausfÅhren, wenden 
+Sie sich wegen der erforderlichen Software und den Installationsanweisungen 
+an IBM.
+
+So aktualisieren Sie die IBM DOS LAN Requester-Version 1.30
+
+1.  Aktualisieren Sie Ihre DOS LAN Requester-Software auf die 
+    Version 1.30.1, indem Sie die Anweisungen befolgen, die mit der 
+    IBM Corrective Service-Diskette 5015 geliefert wurden.
+
+2.  Starten Sie Ihren Computer neu, und prÅfen Sie, ob das Netzwerk startet.
+
+    Wenn das Netzwerk nicht startet, beenden Sie dieses Verfahren, und 
+    fragen Sie IBM um Rat.
+
+3.  Installieren Sie MS-DOS 6.22 auf Ihrem Computer. Weitere Informationen
+    Åber die Installation von MS-DOS 6.22 finden Sie in Kapitel "Erste 
+    Schritte" im MS-DOS-Benutzerhandbuch.
+
+    Wenn Setup Ihren Computer neu startet, erscheint auf Ihrem Bildschirm 
+    folgende Meldung:
+
+    DOS LAN Requester starten (J/N)?
+
+4.  Geben Sie N ein, und drÅcken Sie die EINGABETASTE.
+
+5.  Geben Sie an der Eingabeaufforderung folgendes ein:
+
+    SETVER NET.COM /D
+
+6.  Starten Sie Ihren Computer neu.
+
+    Auf Ihrem Bildschirm erscheint folgende Meldung:
+
+    DOS LAN Requester starten (J/N)?
+
+7.  Geben Sie J ein, und drÅcken Sie die EINGABETASTE.
+
+    ANMERKUNG: Wenn nach dem Einrichten von MS-DOS in Ihrer Datei CONFIG.SYS 
+    ein Befehl zum Laden der Datei IFSFUNC.EXE steht, deaktivieren Sie ihn, 
+    indem Sie REM und ein Leerzeichen vor den Befehl schreiben. Speichern 
+    Sie die Datei anschlie·end, und starten Sie Ihren Computer neu.
+
+10. Microsoft LAN Manager und 100 % kompatible Netzwerke
+========================================================
+Wenn Sie eine beliebige Version des Microsoft LAN Managers oder eines 
+100 % kompatiblen Netzwerks ausfÅhren, und Setup Sie auf diese Datei 
+verwiesen hat, setzen Sie sich mit dem Microsoft Software Service in 
+Verbindung, um eine Zusatzdiskette zu erhalten.
+
+11. Microsoft MS-Net und 100 % kompatible Netzwerke
+===================================================
+Wenn Sie eine beliebige Version von Microsoft MS-Net oder eines
+100 % kompatiblen Netzwerks ausfÅhren, und Setup Sie auf diese Datei 
+verwiesen hat, setzen Sie sich mit dem Microsoft Software Service in 
+Verbindung, um eine Zusatzdiskette zu erhalten.
+
+12. Net/One PC
+==============
+Wenn Ungermann-Bass Net/One PC unter MS-DOS 6.22 nicht geladen werden kann,
+fÅhrt einer der folgenden Schritte zum Erfolg:
+
+*   Fragen Sie Ihren HÑndler nach einer aktuellen LOADNIU.EXE-Datei.
+*   FÅgen Sie in der Datei MSNET.INI zwischen den Zeilen LOADNIU und 
+    XNSBIOS den Befehl UBPAUSE ein.
+*   Wenn Sie das Netzwerk aus einer Stapelverarbeitungsdatei (z.B.
+    AUTOEXEC.BAT) heraus starten, fÅgen Sie zwischen den Zeilen LOADNIU
+    und XNSBIOS den Befehl PAUSE ein.
+    
+13. Novell-Netzwerke
+====================
+Zum Zeitpunkt der Verîffentlichung dieser Datei ist die aktuelle Arbeits-
+station-Shell-Version 3.32 PTF. Zur Verwendung mit MS-DOS 6.22 sollten Sie 
+Version 3.32 PTF oder hîher erwerben.
+
+Wenn Sie eine frÅhere NetWare-Version als 2.1 besitzen oder Ihre
+Netzwerksoftware eine der folgenden Dateien verwendet, wenden Sie sich 
+an Ihren NetzwerkhÑndler:
+
+NET3.COM
+NET4.COM
+XMSNET3.EXE
+XMSNET4.EXE
+EMSNET3.EXE
+EMSNET4.EXE
+
+Wenn Sie MS-DOS 6.22 auf Ihrer Remote-Boot-Arbeitsstation nicht laden kînnen, 
+fragen Sie Novell nach der Datei RPLFIX.COM.
+
+Wenn Sie LOGIN.EXE, MAP.EXE und SESSION.EXE aus der MS-DOS-Shell ausfÅhren 
+(oder wÑhrend die MS-DOS-Shell ausgefÅhrt wird), wird an den vorhandenen 
+Pfad kein Suchpfad angehÑngt. Verwenden Sie diese Programme vor dem Starten 
+der MS-DOS-Shell.
+
+Wenn Sie nach dem Starten von MS-DOS 6.22 die Variable COMSPEC mit Hilfe des 
+Novell-Programms login setzen und die Datei COMMAND.COM nicht erneut laden 
+kînnen, Ñndern Sie die SHELL-Befehlszeile in Ihrer Datei CONFIG.SYS. 
+Stellen Sie sicher, da· der Pfad fÅr COMMAND.COM auf das Stammverzeichnis 
+zeigt, und entfernen Sie den Parameter C:\DOS\, der auf den Pfad folgt 
+(falls vorhanden).
+
+Wenn Ihre SHELL-Befehlszeile beispielsweise so aussieht:
+
+    SHELL=C:\DOS\COMMAND.COM  C:\DOS\  /P  /E:512
+
+éndern Sie sie folgenderma·en ab:
+
+    SHELL=C:\COMMAND.COM  /P  /E:512
+
+Oder fragen Sie Ihren Novell-HÑndler nach einem neuen login-Programm.
+
+Wenn Sie in einem Novell-Netzwerk Probleme mit Microsoft Undelete haben, 
+verwenden Sie den Befehl MAP ROOT in Verbindung mit der Schutzmethode 
+"LîschÅberwachung". (Wenn Sie Novell Netware Version 2.15c oder frÅher 
+besitzen, erwerben Sie bei Ihrem Netzwerk-HÑndler die neueste MAP.EXE-
+Datei.) Dazu verwenden Sie folgende MAP ROOT-Syntax (wird normalerweise 
+im Login-Script des Servers angegeben):
+
+MAP ROOT F:=COUNT/SYS:USERS/RAINERR
+
+wobei F: der Netzwerk-Laufwerkbuchstabe, COUNT der Name eines Dateiservers, 
+SYS der DatentrÑgername, USERS ein Unterverzeichnis des DatentrÑgers und 
+RAINERR das Stammverzeichnis eines Netzwerkbenutzers ist. Auf dem Computer 
+von RAINERR enthÑlt dann die AUTOEXEC.BAT-Datei folgenden Befehl:
+
+UNDELETE /SF
+
+wobei /S die Schutzmethode LîschÅberwachung bezeichnet, und F das
+zu schÅtzende Netzwerk-Laufwerk angibt. In der Datei AUTOEXEC.BAT mu·
+fÅr jedes zu schÅtzende Laufwerk /S[Laufwerk] angegeben werden.
+
+ANMERKUNG: Wenn Sie Dateien in einem Netzwerk sichern und es sich bei
+Ihrer Netzwerksoftware um NetWare 286 handelt, bewegt sich die
+Fortschrittanzeige in Microsoft Backup fÅr MS-DOS oder Windows zunÑchst
+sehr langsam. Dies hÑngt mit der Art und Weise zusammen, wie NetWare 286
+Dateien im Netzwerk speichert.
+
+MS-DOS-Setup- und freigegebene Windows-Konfiguration
+----------------------------------------------------
+Wenn Sie ein Suchlaufwerk (Search Drive) zum Zugriff auf Ihre 
+Windows-Initialisierungsdateien (PROGMAN.INI SYSTEM.INI UND WINFILE.INI)
+auf einem Netzwerkverzeichnis verwenden und Sie die Windows-Programme,
+die mit MS-DOS 6.22 geliefert wurden, installieren mîchten, fÅhren Sie
+folgendes Verfahren aus, bevor Sie Setup ausfÅhren.
+
+ANMERKUNG: Die in diesem Abschnitt enthaltenen Informationen sind
+fÅr das Standard-Installationsprogramm sowie die Installation mit der
+Option E gÅltig.
+
+*   öberschreiben Sie das Suchlaufwerk vorÅbergehend, indem Sie den
+    MAP-Befehl an der Eingabeaufforderung eingeben. Ist beispielsweise
+    der Netzwerkbuchstabe fÅr das Windows-Verzeichnis W:, und der Pfad
+    ist \USER\RAINERR, dann geben Sie MAP DEL W: an der Eingabe-
+    aufforderung ein, um den Suchpfad vorÅbergehend zu lîschen. Geben
+    Sie danach MAP W:=SYS:USER\RAINERR an der Eingabeaufforderung ein,
+    und fÅhren Sie Setup dann erneut aus. Wenn Setup beendet ist und Ihr
+    Computer neugestartet ist, sollte Ihr System wieder die normale
+    Standard-Konfiguration aufweisen.
+
+14. PC-NFS
+==========
+Wenn Sie mit SETVER MS-DOS eine andere Programmversion vorspiegeln, 
+meldet PC-NFS 3.x eventuell eine falsche Programmversion. Wenn bei 
+Ihnen dieses Problem auftritt, fragen Sie Ihren HÑndler nach der 
+aktuellen Netzwerksoftware.
+
+Wenn Sie PC-NFS 3.0 in Verbindung mit der MS-DOS-Shell verwenden, zeigt 
+die MS-DOS-Shell eventuell mehr Laufwerke an, als gerade aktiv sind. Sie 
+kînnen dies verhindern, wenn Sie mit der PC-NFS-Option /D arbeiten, um 
+die Anzahl der verwendeten Laufwerke anzugeben. Weitere Informationen 
+finden Sie in Ihrer PC-NFS-Dokumentation.
+
+Wenn Sie unter PC-NFS 3.01 den Befehl COPY oder XCOPY nicht verwenden 
+kînnen, fragen Sie Ihren HÑndler nach der aktuellen Version des 
+GerÑtetreibers PCNFS.SYS.
+
+Wenn Sie PC-NFS-Netzwerksoftware verwenden, fÅhren Sie vor dem
+Starten von MemMaker folgendes Verfahren aus:
+
+1.  ôffnen Sie die Datei MEMMAKER.INF mit einem beliebigen Editor. Diese 
+    Datei befindet sich in dem Verzeichnis, das Ihre MS-DOS-Dateien enthÑlt.
+
+2.  FÅgen Sie der Datei folgende Zeile hinzu:
+
+    *NET
+
+3.  Speichern Sie die Datei, und fÅhren Sie MemMaker aus.
+
+15. TCS 10Net oder DCA 10Net
+============================
+DCA 10Net Plus, Versionen 4.20 (20) und hîher, sowie DCA 10Net, 
+Versionen 3.3 (41) und hîher, sind mit MS-DOS 6.22 kompatibel. Wenn
+Sie eine frÅhere Version besitzen, fragen Sie Ihren HÑndler nach
+der aktuellen Version.
+
+Wenn Sie eine kompatible Version der 10Net-Netzwerksoftware ausfÅhren, 
+deaktivieren Sie die Netzwerksoftware, und fÅhren Sie anschlie·end den 
+MS-DOS 6.22 Setup aus. Nach der Installation von MS-DOS 6.22 aktivieren Sie 
+Ihre Netzwerksoftware wieder erneut.
+
+ANMERKUNG: Das Programm Microsoft Defrag ist nicht mit der 10Net-
+Netzwerk-Software kompatibel, wenn der Serverdienst geladen ist. Wenn 
+nur der Redirector geladen ist, ist das Programm mit der 10Net-Netzwerk-
+software kompatibel.
+
+HINWEIS: Sie kînnen DoubleSpace zum Komprimieren eines Laufwerks auf
+einem 10Net-Server nicht verwenden, da alle lokalen Laufwerke als
+Netzlaufwerke angesehen werden. Um ein Laufwerk zu komprimieren,
+deaktivieren Sie den Serverdienst, indem Sie in Ihrer Datei AUTOEXEC.BAT 
+vor dem Serverbefehl REM und ein Leerzeichen eingeben und den Computer 
+neu starten. FÅhren Sie nun DoubleSpace aus. Nachdem Sie DoubleSpace 
+ausgefÅhrt haben, kînnen Sie den REM-Befehl aus Ihrer Datei AUTOEXEC.BAT 
+entfernen.
+
+Nach dem Komprimieren eines Laufwerks auf einem Server arbeiten einige 
+DoubleSpace-Befehle, wie beispielsweise LIST, CHKDSK, MOUNT und UNMOUNT, 
+erst richtig, wenn Sie den Serverdienst stoppen.

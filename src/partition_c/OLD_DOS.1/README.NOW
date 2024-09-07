@@ -1,0 +1,11 @@
+                           WARNUNG
+
+Alle Dateien in diesem Verzeichnis werden vom MS-DOS 6.22-Programm 
+UNINSTALL benîtigt. Wenn Sie Dateien aus diesem Verzeichnis        
+lîschen, kann Ihre frÅhere DOS-Version nicht vollstÑndig wiederher-
+gestellt werden.
+
+Wenn Sie sicher sind, da· Sie die ursprÅngliche DOS-Version nicht    
+wiederherstellen wollen, kînnen Sie MS-DOS anweisen, diese Dateien   
+und das Verzeichnis OLD_DOS.x zu lîschen. Geben Sie dazu an der      
+MS-DOS-Eingabeaufforderung den Befehl DELOLDOS ein.                  

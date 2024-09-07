@@ -1,0 +1,14 @@
+p	Pauschal
+s	Stck
+k	Kilogramm
+t	Tonnen
+h	Stunden
+m	Meter
+l	Laufende Meter
+sm	Steigende Meter
+q
+q	Quadratmeter
+m2	     "
+c	CBM
+m3	CBM
+li	Liter

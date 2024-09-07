@@ -1,0 +1,82 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033\deftab708{\fonttbl{\f0\fswiss\fcharset0 Arial;}{\f1\fnil\fcharset0 Times New Roman;}{\f2\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\ri50\tx1701\lang1031\f0\fs16 Controller:\tab AM ISDN-Controller FRITZ!Card PCI\par
+\pard\tx1701 Betriebssystem:\tab Windows 98/Windows Me\par
+Version:\tab 03.10.02\par
+Build:\tab 02.06.20\par
+Protokoll:\tab DSS1\par
+\par
+\pard\tx567\tx1134\tx2268\b\fs32 Hinweise zur Installation des AVM ISDN-Controllers FRITZ!Card PCI in Microsoft Windows 98 / Windows Me und DSS1\par
+\pard\fi-1134\li1134\tx1134\i\fs20 Hinweis:\tab Falls Sie den AVM ISDN-Controller FRITZ!Card PCI bereits in Windows 98/Me installiert haben, gen\'fcgt der Aufruf des Installationsprogramms von der CD oder Diskette.\par
+Hinweis:\tab Wenn Sie eine komplette Neuinstallation durchf\'fchren, folgen Sie bitte der nachstehenden Beschreibung.\par
+\pard\tx567\tx1134\tx2268\b0\i0 Der \b AVM ISDN-Controller FRITZ!Card PCI\b0  ist ein Ger\'e4t f\'fcr Rechner mit PCI-Bus. Die \b FRITZ!Card PCI \b0 kann in Systemen mit PCI-Bus ab der PCI-Spezifikation 2.0 eingesetzt werden.\par
+F\'fcr den Einsatz in Microsoft Windows 98 werden speziell entwickelte Treiber f\'fcr das "Win32 Driver Model" (WDM) mitgeliefert. Der echte 32-Bit-Ger\'e4tetreiber bietet volle Unterst\'fctzung f\'fcr alle ISDN-Leistungsmerkmale in Microsoft Windows.\par
+\pard\fi-1134\li1134\tx1134\b\i Hinweis:\tab Der mitgelieferte COMMON-ISDN-API (CAPI) 2.0-Treiber unterst\'fctzt 32-Bit- und 16-Bit-Windows-Anwendungen, CAPI 1.1, DOS und VxD-Anwendungen (CAPI Port etc.).\par
+\pard\tx567\tx1134\tx2268\b0\i0 Vergewissern Sie sich, welches Protokoll an Ihrem ISDN-Anschluss von Ihrem ISDN-Anbieter bereitgestellt wird. M\'f6glich sind Anschl\'fcsse mit DSS1- oder 1TR6-Protokoll. (Anschl\'fcsse, die nach Dezember 1993 installiert wurden, sind im allgemeinen DSS1-Anschl\'fcsse.)\par
+Dieses Installationsprogramm ist ausschlie\'dflich f\'fcr DSS1-Anschl\'fcsse (Euro-ISDN) ausgelegt.\par
+\par
+\pard\fi-360\li360\lang1033\b\fs28 1.\tab\lang1031 Installation des AVM ISDN-Controller FRITZ!Card PCI in Windows 98\par
+\pard\tx567\tx1134\tx2268\b0\fs20 Der\b  AVM ISDN-Controller FRITZ!Card PCI \b0 wird mit Hilfe einer ausf\'fchrlichen Installationsroutine auf Ihrem Rechner installiert. Die Installation erfolgt in drei wesentlichen Schritten:\par
+\pard\fi-284\li284\b 1.\tab\b0 Einbau des AVM ISDN-Controllers FRITZ!Card PCI\par
+\b 2.\tab\b0 Installation einer neuen Hardwarekomponente mit Hilfe der automatischen Hardware-Erkennung von Windows 98\par
+\b 3.\tab\b0 Installation der Treibersoftware f\'fcr den AVM ISDN-Controller FRITZ!Card PCI\par
+\pard Gehen Sie zum Anschluss des \b AVM ISDN-Controllers FRITZ!Card PCI \b0 folgenderma\'dfen vor:\par
+\pard\fi-284\li284\tx284\b\fs22 1. Einbau des AVM ISDN-Controllers FRITZ!Card PCI\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li360\b0\fs20 Windows 98 unterst\'fctzt die Installation von PCI-Ger\'e4ten mit Plug & Play. Voraussetzung ist, dass Sie die \b FRITZ!Card PCI \b0 bereits in Ihren Rechner eingebaut haben. Zum Einbau der Hardware ziehen Sie bitte das Handbuch zu Rate.\par
+\pard\fi-284\li284\tx284\b\fs22 2.\tab Installation einer neuen Hardwarekomponente und Installation der Treibersoftware f\'fcr den AVM ISDN-Controller FRITZ!Card PCI\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent284{\pntxtb\'B7}}\fi-284\li284\b0\fs20 Nachdem Sie den \b AVM ISDN-Controller FRITZ!Card PCI \b0 eingebaut haben, folgt im n\'e4chsten Schritt die Installation der Treibersoftware f\'fcr den Controller. Schalten Sie Ihren Rechner sowie weitere angeschlossene Einheiten ein.\par
+{\pntext\f2\'B7\tab}Halten Sie die CD, die mit der \b FRITZ!Card PCI \b0 ausgeliefert worden ist, bzw. eine Diskette mit der Treibersoftware f\'fcr den \b AVM ISDN-Controller FRITZ!Card PCI\b0  mit der Installation f\'fcr Windows 98 bereit, oder legen Sie sie in das entsprechende Laufwerk.\par
+{\pntext\f2\'B7\tab}Windows erkennt die neue Hardware automatisch. Es erscheint das Dialogfenster des Hardware-Assistenten "Dieser Assistent sucht nach neuen Treibern f\'fcr: PCI Network Controller". Klicken Sie auf \b Weiter\b0 .\par
+{\pntext\f2\'B7\tab}Die n\'e4chste Meldung des Hardware-Assistenten lautet "Wie m\'f6chten Sie vorgehen?". W\'e4hlen Sie die Option "Nach dem besten Treiber f\'fcr das Ger\'e4t suchen (empfohlen)." und klicken Sie auf \b Weiter\b0 .\par
+{\pntext\f2\'B7\tab}Im n\'e4chsten Dialog werden Sie gefragt, wo Windows nach Treibern suchen soll. W\'e4hlen Sie \rdblquote CD-ROM-Laufwerk\rdblquote  und klicken Sie auf \b Weiter\b0 .\b\par
+\b0{\pntext\f2\'B7\tab}Im n\'e4chsten Dialog meldet Windows, dass die Position des Treibers wie folgt festgestellt wurde: "<CD\fs18 >\fs20 :\\fpcisetup.inf". Klicken Sie auf \b Weiter\b0 .\tab\par
+{\pntext\f2\'B7\tab}Windows kopiert nun die Installationsdateien auf ihre Festplatte.\par
+{\pntext\f2\'B7\tab}Die n\'e4chste Meldung des Hardware-Assistenten lautet "Die Software f\'fcr das neue Ger\'e4t wurde installiert". Klicken Sie auf \b Fertig stellen\b0 .\par
+\pard\fi-284\li284\tx284\b\fs22 3.\tab Installation der Treiber-Software f\'fcr den AVM ISDN-Controller FRITZ!Card PCI\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent284{\pntxtb\'B7}}\fi-284\li284\b0\fs20 Das Begr\'fc\'dfungsfenster des Installationsprogramms f\'fcr den \b AVM ISDN-Controller FRITZ!Card PCI\b0  startet automatisch. Sie k\'f6nnen in jedem Dialogfenster mit Hilfe der Taste \b F1\b0  zus\'e4tzliche Informationen zum jeweiligen Dialog anfordern. \'dcber die Schaltfl\'e4che \b Zur\'fcck\b0  k\'f6nnen Sie jederzeit in das vorherige Fenster gelangen. Klicken Sie auf \b Weiter\b0 .\par
+{\pntext\f2\'B7\tab}Geben Sie nun den Ordner an, in den die Treibersoftware f\'fcr den \b AVM ISDN-Controller FRITZ!Card PCI \b0 installiert werden soll Standard ist C:\\IDriver. Sind Ihre Angaben komplett, klicken Sie auf die Schaltfl\'e4che \b Weiter\b0 .\par
+{\pntext\f2\'B7\tab}Im nun folgenden Dialog wird das zu installierende Anschlussprotokoll angezeigt. \par
+{\pntext\f2\'B7\tab}Setzen Sie durch klicken auf \b Weiter\b0  fort.\par
+\pard\fi-1134\li1134\tx1134\b\i Hinweis:\tab Sollte bereits Treibersoftware f\'fcr ein anderes Anschlussprotokoll (D-Kanal-Protokoll) installiert sein, werden Sie darauf hingewiesen, dass Sie im Begriff sind, das Anschlussprotokoll zu \'e4ndern. Sie k\'f6nnen an dieser Stelle ohne jede \'c4nderung am System abbrechen. Best\'e4tigen Sie durch klicken auf \rdblquote Ja\rdblquote , wird die Treibersoftware f\'fcr DSS1 (Euro-ISDN) installiert. \par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent284{\pntxtb\'B7}}\fi-284\li284\b0\i0 Die Installationsroutine kopiert nun alle Dateien in den angegebenen Ordner. Anschlie\'dfend erhalten Sie zur Kontrolle eine Zusammenfassung der von Ihnen gew\'e4hlten Einstellungen. Klicken Sie zum Beenden des Installationsprogramms auf \b Weiter\b0 .\par
+\pard\tx567\tx1134\tx2268 In der Programmgruppe "AVM" befinden sich nach Abschluss der Installation folgende Dateien \par
+\b FRITZ!Card PCI Readme\b0  \tab (dieses Dokument)\par
+\b FRITZ!Card PCI Setup \tab\tab\b0 (Programm zum \'c4ndern der Konfiguration)\b\par
+FRITZ!Card PCI Test \tab\tab\b0 (Programm zum Testen der Hardware)\b\par
+AVM Internet Home Page\b0  \tab (Internet-Link zu www.avm.de)\par
+Die Installation des \b AVM ISDN-Controllers FRITZ!Card PCI \b0 f\'fcr Windows 98 ist damit beendet.\par
+Der \b AVM ISDN-Controller FRITZ!Card PCI\b0  wird bei jedem Rechnerstart automatisch geladen. Beim Verlassen von Windows 98 wird der \b AVM ISDN-Controller FRITZ!Card PCI \b0 automatisch deaktiviert.\par
+Mit dem Programm "FRITZ!Card PCI Setup"\b  \b0 aus der Programmgruppe "AVM" k\'f6nnen Sie die Einstellung f\'fcr die automatische Datenkompression bei X.75-Verbindungen ohne Neuinstallation der Treibersoftware nachtr\'e4glich \'e4ndern.\par
+Starten Sie das Programm "FRITZ!Card PCI Setup". In den folgenden Dialogen k\'f6nnen Sie nun Ihre \'c4nderungen vornehmen. Vergessen Sie nicht, Ihren \b AVM ISDN-Controller FRITZ!Card PCI \b0 durch einen Neustart des Rechners neu zu initialisieren, um die \'c4nderungen wirksam werden zu lassen.\par
+\par
+\pard\fi-360\li360\lang1033\b\fs28 2. \lang1031 Deinstallation\par
+\pard\tx567\tx1134\tx2268\b0\fs20 Wenn Sie die Treibersoftware f\'fcr Ihren \b AVM ISDN-Controller FRITZ!Card PCI\b0  aus dem System entfernen m\'f6chten, gehen Sie bitte wie folgt vor: \par
+\pard\fi-284\li284\b 1. \b0 Doppelklicken Sie in der Systemsteuerung auf das Symbol \b Software\b0 .\par
+\b 2. \b0 Auf der Registerkarte "Installieren/Deinstallieren" w\'e4hlen Sie den Eintrag "AVM ISDN-Controller FRITZ!Card PCI" und klicken Sie anschlie\'dfend auf\b  Hinzuf\'fcgen/Entfernen...\b0 .\par
+\b 3. \b0 Die Deinstallationsroutine wird nun gestartet. Best\'e4tigen Sie, dass Sie deinstallieren wollen und klicken Sie auf \b Weiter\b0 .\par
+\pard\li284 Um die Treiber zu deaktivieren, muss nach Abschluss der Deinstallationsroutine Windows 98 neu gestartet werden.\par
+\pard\tx567\tx1134\tx2268 Alternativ k\'f6nnen Sie den ISDN-Controller durch L\'f6schen im Ger\'e4te-Manager entfernen.\par
+\par
+\pard\fi-360\li360\lang1033\b\fs28 3. \lang1031 Besondere Leistungsmerkmale der FRITZ!Card PCI\par
+\pard\tx567\tx1134\tx2268\b0\fs20 Die mitgelieferte CAPI 2.0 unterst\'fctzt Windows-Anwendungen als auch (gleichzeitig) Anwendungen in DOS-Boxen. Dar\'fcber hinaus k\'f6nnen Sie mit diesem CAPI-Treiber auch Anwendungen nutzen, die auf CAPI 1.1 basieren.\par
+\cf1 Die Treibersoftware f\'fcr die passiven ISDN-Controller von AVM entspricht der ISDN-Driver-Model-Architecture (IDM-Architecture). Sie stellt eine Einbindung der CAPI 2.0-Spezifikation f\'fcr die AVM ISDN-Controller dar. \par
+Die passiven ISDN-Controller von AVM unterst\'fctzen mit der aktuellen Treibersoftware alle Dienste im ISDN. Es werden die folgenden B-Kanal-Protokolle angeboten: X.75, HDLC transparent, transparent, X.25, ISO 8208 (X.25 DTE-DTE), X.31 case a/b, T.70, T.90, Fax G3/4, V.110, V.120 und V.32bis. \par
+\pard\fi-360\li360\cf0\b\fs24 CAPI SoftCompression X75/V42bis\par
+\pard\tx567\tx1134\tx2268\b0\fs20 F\'fcr Datenverbindungen mit X.75 steht als zus\'e4tzliches Leistungsmerkmal Datenkompression w\'e4hrend der \'dcbertragung zur Verf\'fcgung. Als Kompressionsverfahren kommt, in Konformit\'e4t zur CAPI 2.0-Spezifikation, V.42bis zum Einsatz (CAPI SoftCompression X75/V42bis).\par
+In der Voreinstellung der Treibersoftware ist die automatische Datenkompression deaktiviert. Damit k\'f6nnen nur Anwendungen, die direkt die Datenkompression aktivieren, diese auch nutzen. Sie k\'f6nnen die Datenkompression \'fcber das Pogramm \b FRITZ!Card PCI Setup\b0  dauerhaft aktivieren.\par
+Haben Sie die Datenkompression aktiviert, handeln die Gegenstellen w\'e4hrend des Verbindungsaufbaus den Einsatz der Datenkompression aus. Verf\'fcgt eine Gegenstelle nicht \'fcber Datenkompression, werden die Daten ohne Kompression \'fcbertragen. Dieser Vorgang ist f\'fcr den Anwender transparent.\par
+\pard\fi-360\li360\b\fs24 CAPI SoftFax G3 und CAPI SoftModem V32bis\par
+\pard\tx567\tx1134\tx2268\b0\fs20 Zus\'e4tzlich zu den digitalen Leistungsmerkmalen k\'f6nnen mit der \b FRITZ!Card PCI\b0  analoge Dienste wie Fax Gruppe 3 (CAPI SoftFax G3) und Modem (CAPI SoftModem V32.bis) genutzt werden. \par
+Die \b FRITZ!Card PCI \b0 kann mit dieser Treibersoftware als Plattform f\'fcr beliebige Fax-Software in Windows genutzt werden. Die ISDN-Controller unterst\'fctzen das Versenden und Empfangen von Faxen mit bis zu 14.400 Baud, dabei stehen beide B-Kan\'e4le f\'fcr die Fax-Kommunikation zur Verf\'fcgung. Der Controller verh\'e4lt sich wie ein Fax-Ger\'e4t der Gruppe 3.\par
+Der Controller bietet zus\'e4tzlich das SoftModem V32bis an. Auf Basis dieser Modem-Emulation kann mit Kommunikations-Anwendungen von einem ISDN-Anschluss die Verbindung zu analogen Gegenstellen aufgebaut werden, die \'fcber ein Modem an das Telefonnetz angeschlossen sind. Die Modem-Emulation erlaubt Daten\'fcbertragung nach dem V.32bis-Verfahren. Das bedeutet, dass Datenverbindungen zu analogen Modems mit bis zu 14.400 Baud betrieben werden k\'f6nnen.\par
+\par
+\pard\fi-360\li360\b\fs28 4. Neue Informationen und Treibersoftware f\'fcr den AVM ISDN-Controller FRITZ!Card PCI\par
+\pard\tx567\tx1134\tx2268\cf1\b0\fs20 Ab der Version 3.10.00 sind die Treiber mit dem neuen Leistungsmerkmal Rufnummernfilter nach CAPI 2.0 ausgestattet. Dieses Leistungsmerkmal verhindert nach entsprechender Konfiguration die Anwahl ausgew\'e4hlter Rufnummern. Damit ist es m\'f6glich, zum Beispiel die Anwahl von mit 0190 beginnenden Rufnummern zu verhindern. Ein geeignetes Programm zur Konfiguration des Rufnummernfilters ist ISDNWatch Filter, ein Bestandteil des Software-Paketes FRITZ! ab Version 3.03.\par
+\cf0\par
+Die neueste Treibersoftware f\'fcr Ihre \b FRITZ!Card PCI \b0 erhalten Sie im Internet unter \b http://www.avm.de\b0 . Ebenso finden Sie dort die neuesten Informationen zu AVM und allenAVM-Produkten. Alternativ k\'f6nnen Sie die neueste Treibersoftware auch mit FRITZ!data oder Connect32 vom AVM Data Call Center laden. Die Rufnummer lautet ++49-30-39 98 43 00.\par
+\par
+\pard\fi-360\li360\lang1033\b\fs28 5.\tab\lang1031 Informationen zur Schnittstelle COMMON-ISDN-API\par
+\pard\tx567\tx1134\tx2268\b0\fs20 Informationen zur Schnittstelle COMMON-ISDN-API finden Sie im Internet unter \b http://www.capi.org\b0 .\par
+\pard\f1\par
+}
+ 

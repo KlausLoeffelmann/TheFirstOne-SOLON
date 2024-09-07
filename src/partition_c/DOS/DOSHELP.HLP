@@ -1,0 +1,116 @@
+@ Copyright (C) 1990-1994 Microsoft Corp. Alle Rechte vorbehalten.
+@ Dies ist die allgemeine Datei fr MS-DOS-Hilfe.
+@ Sie enth„lt eine kurze Beschreibung jedes Befehls, der durch den MS-DOS-
+@ Befehl FASTHELP untersttzt wird. HELP zeigt den Text in dieser Datei an,
+@ wenn es ohne Parameter aufgerufen wird. Wird FASTHELP mit einem Befehls-
+@ namen als Parameter aufgerufen, wird es versuchen, diesen Befehl mit /?
+@ als Parameter auszufhren.
+@
+@ Zeilen mit @ am Anfang sind Kommentare und werden von FASTHELP ignoriert.
+@ Diese Datei kann modifiziert werden, um neue Befehl hinzuzufgen. Falls
+@ der Befehl 'FASTHELP Befehlsname' verwendet werden k”nnen soll, mssen neue
+@ Befehle den Parameter /? untersttzen. Neue Befehle sollten in der ersten
+@ Zeile beginnen. Zus„tzlich ben”tigten Zeilen fr die Befehlsbeschreibung
+@ sollte Leerstellen vorangehen. Befehle mssen in alphabetischer Reihenfolge
+@ hinzugefgt werden.
+APPEND   Erm”glicht Programmen das ™ffnen von Datendateien in den angegebenen
+	 Verzeichnissen, als ob sie im aktuellen Verzeichnis w„ren.
+ATTRIB   Zeigt Dateiattribute an oder „ndert sie.
+BACKUP   Sichert Datei(en) von einem Datentr„ger auf einen anderen.
+BREAK    Schaltet (zus„tzliche) šberwachung fr STRG+C ein (ON) oder aus (OFF).
+CD       Wechselt das aktuelle Verzeichnis oder zeigt dessen Namen an.
+CHCP     Wechselt die aktuelle Codeseite oder zeigt deren Nummer an.
+CHDIR    Wechselt das aktuelle Verzeichnis oder zeigt dessen Namen an.
+CHKDSK   šberprft einen Datentr„ger und zeigt einen Statusbericht an.
+CHOICE   Bittet den Benutzer, eine Auswahl zu treffen.
+CLS      L”scht den Bildschirminhalt.
+COMMAND  Startet eine neue Instanz des MS-DOS-Befehlsinterpreters.
+COMP     Vergleicht den Inhalt zweier Dateien oder zweier S„tze von Dateien.
+COPY     Kopiert eine oder mehrere Dateien an eine andere Position.
+CTTY     Wechselt das Ein-/Ausgabeger„t fr die Steuerung Ihres Systems.
+DATE     Wechselt das eingestellte Datum oder zeigt es an.
+DEBUG    Startet Debug, ein Werkzeug zum Testen und Editieren von Programmen.
+DEFRAG   Reorganisiert die Dateien, um den Datentr„ger zu optimieren. 
+DEL      L”scht eine oder mehrere Dateien.
+DELOLDOS L”scht das OLD_DOS.1 Verzeichnis und dessen Dateien.
+DELTREE  L”scht alle Dateien eines Verzeichnisses und deren Unterverzeichnisse.
+DIR      Listet die Dateien und Unterverzeichnisse eines Verzeichnisses auf.
+DISKCOMP Vergleicht den Inhalt zweier Disketten.
+DISKCOPY Kopiert den Inhalt einer Diskette auf eine andere Diskette.
+DOSHELP  Zeigt die Zusammenfassung der Hilfe fr MS-DOS-Befehle an.
+DOSKEY   Editiert Befehlseingaben, ruft Befehle zurck und erstellt Makros.
+DOSSHELL Startet die MS-DOS-Shell.
+DRVSPACE Einrichten oder Konfigurieren eines komprimierten Laufwerks.
+ECHO     Zeigt Meldungen an oder schaltet die Befehlsanzeige ein/aus (ON/OFF).
+EDIT     Startet den MS-DOS-Editor.
+EMM386   Aktiviert oder deaktiviert EMM386-Expansionsspeicher-Untersttzung.
+ERASE    L”scht eine oder mehrere Dateien.
+EXIT     Beendet den Befehlsinterpreter COMMAND.COM.
+EXPAND   Expandiert eine oder mehrere komprimierte Dateien.
+FASTHELP Kurze Zusammenfassung der Hilfe von MS-DOS-Befehlen.
+FASTOPEN Verkrzt die zum ™ffnen h„ufig verwendeter Dateien und
+	 Verzeichnisse ben”tigte Zeit.
+FC       Vergleicht zwei Dateien oder zwei S„tze von Dateien.
+FDISK    Konfiguriert eine Festplatte fr die Verwendung unter MS-DOS.
+FIND     Sucht in einer oder mehreren Dateien nach einer Zeichenfolge.
+FOR      Fhrt einen Befehl fr jede einzelne Datei eines
+	 Satzes von Dateien aus.
+FORMAT   Formatiert einen Datentr„ger fr die Verwendung unter MS-DOS.
+GRAPHICS L„dt ein Programm zum Druck von grafischen Bildschirminhalten.
+HELP     Zeigt die vollst„ndige und interaktive Hilfe fr MS-DOS-Befehle an.
+INTERLNK Verbindet zwei Computer ber den parallelen oder seriellen 
+	 Anschluá.
+INTERSVR Startet den Interlnk-Server.
+KEYB     Stellt die Tastaturbelegung fr ein bestimmtes Land ein.
+LABEL    Erstellt, „ndert oder l”scht die Bezeichnung eines Datentr„gers.
+LH       L„dt ein Programm in den hohen Speicherbereich (Upper Memory Area).
+LOADFIX  L„dt ein Programm ber den ersten 64 KB Speicher und fhrt es aus.
+LOADHIGH L„dt ein Programm in den hohen Speicherbereich (Upper Memory Area).
+MD       Erstellt ein Verzeichnis.
+MEM      Zeigt die Gr”áe des belegten und noch freien Arbeitsspeichers an.
+MEMMAKER Startet das Programm MemMaker, das Ihren Computer-Speicher 
+	 optimiert.
+MKDIR    Erstellt ein Verzeichnis.
+MODE     Konfiguriert Ger„te im System.
+MORE     Zeigt Daten seitenweise auf dem Bildschirm an.
+MOVE     Verschiebt eine oder mehrere Dateien. Es k”nnen auch Dateien und
+	 Verzeichnisse umbenannt werden.
+MSAV     Durchsucht Ihren Computer nach bekannten Viren.
+MSBACKUP Dateien werden von einem Datentr„ger zu einem anderen gesichert oder
+	 wiederhergestellt.
+MSD      Stellt Ihnen technische Informationen ber Ihren Computer zur 
+	 Verfgung.
+NLSFUNC  L„dt landesspezifische Informationen.
+PATH     Legt den Suchpfad fr ausfhrbare Dateien fest oder zeigt diesen an.
+PAUSE    H„lt die Ausfhrung einer Stapelverarbeitungsdatei an.
+POWER    Schaltet den Power-Manager ein und aus.
+PRINT    Druckt Textdateien w„hrend der Verwendung anderer MS-DOS-Befehle.
+PROMPT   Modifiziert die MS-DOS-Eingabeaufforderung.
+QBASIC   Startet die QBasic-Programmierumgebung.
+RD       Entfernt (l”scht) ein Verzeichnis.
+REN      Benennt eine oder mehrere Dateien um.
+RENAME   Benennt eine oder mehrere Dateien um.
+REPLACE  Ersetzt Dateien.
+RESTORE  Stellt mit BACKUP gesicherte Daten wieder her.
+RMDIR    Entfernt (l”scht) ein Verzeichnis.
+SCANDISK Durchsucht ein Laufwerk nach Fehlern und korrigiert sie.
+SET      Setzt oder entfernt MS-DOS-Umgebungsvariablen oder zeigt sie an.
+SETVER   Setzt die Versionsnummer, die MS-DOS an ein Programm meldet.
+SHARE    Installiert gemeinsamen Dateizugriff und Dateisperrung.
+SORT     Gibt Eingabe sortiert auf Bildschirm, Datei oder anderes Ger„t aus.
+SUBST    Weist einem Pfad eine Laufwerkbezeichnung zu.
+SYS      Kopiert MS-DOS-Systemdateien und -Befehlsinterpreter auf einen
+	 Datentr„ger.
+TIME     Stellt die Systemzeit ein oder zeigt sie an.
+TREE     Zeigt die Verzeichnisstruktur eines Laufwerks oder Pfads grafisch an.
+TYPE     Zeigt den Inhalt einer Textdatei an.
+UNDELETE Stellt gel”schte Dateien wieder her, die vorher mit dem Befehl DEL 
+	 gel”scht wurden.
+UNFORMAT Stellt einen Datentr„ger wieder her, der durch einen FORMAT-Befehl
+	 gel”scht oder durch einen RECOVER-Befehl umstrukturiert wurde.
+VER      Zeigt die Nummer der verwendeten MS-DOS-Version an.
+VERIFY   Legt fest, ob MS-DOS  berwachen soll, daá Dateien korrekt auf
+	 Datentr„ger geschrieben werden.
+VOL      Zeigt die Bezeichnung und Seriennummer eines Datentr„gers an.
+VSAFE    šberwacht Ihren Speicher und Datentr„ger nach Viren.
+XCOPY    Kopiert Dateien und Verzeichnisstrukturen.

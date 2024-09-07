@@ -1,0 +1,11 @@
+rem DEVICE=C:\VMADD\VMADD386.SYS
+DEVICE=C:\DOS\SETVER.EXE
+DEVICE=C:\DOS\HIMEM.SYS
+DOS=HIGH
+FILES=30
+SHELL=C:\DOS\COMMAND.COM C:\DOS\  /p
+REM **********************************************
+REM ****  DOS Virtual Machine Additions      *****
+REM **********************************************
+DEVICE=C:\VMADD\CDROM.SYS /D:IDECD001 /L:E
+LASTDRIVE=Z

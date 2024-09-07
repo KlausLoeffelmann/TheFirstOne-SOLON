@@ -1,0 +1,2 @@
+PATH=D:\QUICKB;D:\QUICKB
+set LIB=D:\LIB

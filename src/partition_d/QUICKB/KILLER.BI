@@ -1,0 +1,10 @@
+DECLARE SUB DelPosition ()
+DECLARE SUB DelTitel ()
+DECLARE SUB LosDel ()
+DECLARE SUB SaveMatchCode (projekt$)
+DECLARE SUB LoadMatchCode (projekt$)
+DECLARE SUB LoadProjInf (projekt$)
+DECLARE SUB Sum4Del ()
+DECLARE SUB ProjDel ()
+DECLARE SUB HauptMenue ()
+

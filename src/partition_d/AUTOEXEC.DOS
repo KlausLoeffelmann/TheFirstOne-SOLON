@@ -1,0 +1,11 @@
+ver
+echo off
+path=system;c:\text\word5.0;
+keybgr
+timer/s.com
+gmouse
+prompt $p$g
+path=d:;%PATH%
+set lib=D:\lib;%lib%
+set include=D:\include;%include%
+set tmp=%tmp%

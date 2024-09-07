@@ -1,0 +1,181 @@
+
+			    "SETUP.DOC" File
+
+		Setup Notes for Microsoft(R) BASIC Compiler
+	 Version 6.0 for MS(R) OS/2 and MS-DOS(R) Operating Systems
+
+	     Copyright (C) Microsoft Corporation, 1987,1988
+
+THIS FILE CONTAINS IMPORTANT INFORMATION ABOUT INSTALLING MICROSOFT BASIC
+COMPILER VERSION 6.0. PLEASE READ THE ENTIRE FILE BEFORE YOU ATTEMPT TO
+INSTALL THIS PRODUCT.
+
+
+BASIC Compiler Version 6.0 Setup Utility
+------------------------------------------------------------
+
+The setup program (SETUP.EXE) installs BASIC Compiler Version 6.0 files on
+your system from the backup copies of your BASIC 6.0 distribution disks. It
+also builds combined libraries. This file provides additional information
+about using the SETUP program.
+
+Default Directories
+-------------------
+
+When installing BASIC 6.0 on your hard disk drive, SETUP can use five
+different directories, as described in the following list. (SETUP suggests
+default names for these directories, but you may use different names if you
+like.)
+
+1. The "bound executable" directory contains programs that can run under both
+   DOS and OS/2. These include the compiler, linker, and various utilities.
+
+2. The "real-mode and DOS executable" directory contains utilities and run-
+   time modules that run only under DOS (OS/2 real mode).
+
+3. The "protected binary" directory contains utilities and run-time modules
+   that run only under OS/2 protected mode.
+
+4. The "library" directory contains BASIC 6.0 library files and Quick
+   libraries for QuickBASIC Version 4.0.
+
+5. The "work" directory contains BASIC example programs and other files such
+   as special-purpose object files and initialization files.
+
+When you run SETUP, it creates each of the preceding directories if they do
+not already exist. If a given directory already exists, SETUP copies the
+appropriate files into that directory (and may overwrite existing files with
+the same names as the files being copied).
+
+The following files are not copied to your hard disk by the SETUP program
+because they are needed only in special cases. See the file README.DOC for an
+explanation of the two COM files.
+
+    PACKING.LST
+    QBHERC.COM
+    FIXSHIFT.COM
+
+
+Starting the SETUP Program
+------------------------------------------------------------
+
+To use the SETUP program, insert the disk labeled "Program Disk" and issue
+the following command:
+
+    SETUP
+
+(In addition to installing the BASIC Compiler Version 6.0, SETUP can create
+new combined libraries. This is done by running SETUP with the /L option as
+described in "Building Libraries" later in this document.)
+
+The SETUP program is largely self prompting: using onscreen prompts, it
+guides you through the entire process of installing BASIC Version 6.0.
+In this process, SETUP asks several questions about the files that it will
+copy to your hard disk and the directories where it will copy those files.
+
+Each question has a default value that appears inside a pair of square
+brackets ([]). If the default value is satisfactory, you can choose it simply
+by pressing ENTER. If you want some other value, you can type that value at
+the cursor. As you type, SETUP checks each character to make sure it is legal
+for that particular value. If you type an illegal character, SETUP creates a
+warning beep and allows you to type another character. SETUP also checks
+the entire response after you finish entering it. If the response is not
+valid, SETUP displays an error message at the bottom of the screen and
+invites you to try again.
+
+After you answer all of the questions, SETUP asks whether you wish to change
+any of your choices. If you answer Yes by typing Y, then SETUP allows you to
+enter new responses. To simplify this process, SETUP uses your previous
+answers as the default response for each item. This allows you to move quickly
+through the questions to the response that you want to change.
+
+After you indicate that all of your responses are correct, SETUP proceeds to
+copy files from the BASIC Version 6.0 floppy disks to your hard disk. It
+asks you to insert each disk when needed, and press a key when you are ready.
+For each file that it copies, SETUP displays the name of the file and the
+directory where it is being copied.
+
+Component Libraries
+------------------------------------------------------------
+
+After it copies all the needed files from the BASIC 6.0 floppy disks to your
+hard-disk drive, SETUP builds one or more combined libraries. A combined
+library is a file that contains one or more component libraries, depending on
+your choices for target operating environment and floating-point method. It
+is much faster to link a single combined library than to separately link the
+component libraries that it contains.
+
+After SETUP finishes building combined libraries, it normally deletes the
+component libraries used to make each combined library. You will not usually
+need the component libraries after the combined library exists, and they
+occupy a significant amount of disk space.
+
+Environment Variables
+------------------------------------------------------------
+
+Like other Microsoft language compilers, BASIC Compiler Version 6.0 can use
+environment variables to locate various files while it works. To help you
+correctly set these variables, SETUP creates two files containing appropriate
+commands. These files are placed in the directory that you designate as the
+"work directory" (see above). Two files are created: one for DOS (OS/2 real
+mode) and the other for OS/2 protected mode. The DOS file is named
+NEW-PATH.BAT, and the OS/2 protected-mode file is named NEW-PATH.CMD. Each
+of these can be run as a batch file. However, it will be more convenient for
+you to copy the commands from the file to the appropriate startup file for
+the operating environment. The next two paragraphs explain how this is done
+for each file.
+
+NEW.PATH.BAT: This file is for use in DOS (OS/2 real mode). If you copy the
+file's commands into the AUTOEXEC.BAT file in the root directory of your hard
+drive, then the environment variables will be set automatically when you boot
+under DOS or start a real-mode session in OS/2.
+
+NEW-PATH.CMD: This file is for use in OS/2 protected mode. It can be run as a
+normal batch file. However, it is more convenient to run it automatically when
+you initiate a protected-mode session. This is done by placing the file's
+commands in the file that is automatically executed by the /K command in the
+PROTSHELL line of your CONFIG.SYS file. See the Microsoft Operating System/2
+Beginning User's Guide for more information about CONFIG.SYS.
+
+System Configuration
+-----------------------------------------------------------
+
+SETUP also creates a file named NEW-CONF.SYS, which contains commands that
+provide enough buffers and files to run the BASIC Compiler Version 6.0. You
+should copy this file's commands into your existing CONFIG.SYS file.
+
+Deleting SETUP1.BAT and SETUP1.CMD
+------------------------------------------------------------
+
+The last task that SETUP performs is to create the default BASIC run-time
+modules. This is done by creating a batch file named SETUP1.BAT for DOS and
+OS/2 real mode or SETUP1.CMD for OS/2 protected mode. Once SETUP is done
+working, this batch file serves no purpose and can be deleted.
+
+Building Libraries
+------------------------------------------------------------
+
+Building combined libraries is a normal part of the installation process.
+After installing the BASIC Compiler 6.0, however, you may decide that you
+need an additional combined library. While it is possible to build another
+combined library by hand, using the LIB utility and referring to the BASIC
+6.0 documentation, it is more convenient to build the library with SETUP. To
+use SETUP in this way, insert the disk named "Program Disk" and enter the
+following command:
+
+	SETUP /L
+
+If you invoke SETUP with the /L option, it allows you to create combined
+libraries without repeating other steps in the installation process. When
+used in this way, SETUP asks the same library-related questions that it asks
+when you install BASIC 6.0. However, it allows you to specify a different
+source for the component libraries that make up the combined library.
+
+Thus, if you chose to retain the component libraries when you originally
+installed BASIC 6.0, you can specify the directory where those files reside
+as the source directory for building the new combined library. If SETUP is
+not able to find a given component library, it prompts you to specify a new
+place where that component can be found. If the component is no longer on
+your hard disk drive, you can specify a floppy disk drive. Note, however, that
+once you specify a floppy-disk drive as the source, you must read all the
+remaining component libraries from a floppy disk.

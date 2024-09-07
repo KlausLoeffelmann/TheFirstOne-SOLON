@@ -1,0 +1,444 @@
+                         Datei "INFO.TXT"
+             Freigabe-Hinweise fÅr MICROSOFT(R) QuickBASIC
+	     Version 4.0b fÅr IBM(R) Personal Computer
+                          und Kompatible
+
+	   (C) Copyright Microsoft Corporation, 1987, 1988
+
+DIESE DATEI ENTHéLT WICHTIGE INFORMATIONEN, DIE VERSION 4.0B VON MICROSOFT
+(R) QuickBASIC BETREFFEN. LESEN SIE BITTE DIE GESAMTE DATEI, BEVOR SIE
+QuickBASIC EINSETZEN.
+
+Diese Datei besteht aus sieben Teilen:
+
+     TEIL       INHALT
+
+
+        1       Informationen Åber ZusÑtze und énderungen des Handbuches
+                "Lernen und Anwenden von Microsoft QuickBASIC".
+
+        2       Informationen Åber ZusÑtze und énderungen des Handbuches
+                "BASIC-Befehlsverzeichnis"
+
+        3       Informationen Åber ZusÑtze und énderungen des Handbuches
+                "Programmieren in BASIC: AusgewÑhlte Themen"
+
+        4       Ihre Maus mit QuickBASIC einsetzen
+
+        5       QuickBASIC mit 3,5-Zoll-Disketten einsetzen
+
+        6       ErgÑnzende Informationen zur mehrsprachigen Programmierung
+
+        7       Btrieve mit QuickBASIC einsetzen
+
+=< Teil 1: énderungen in Lernen und Anwenden von Microsoft QuickBASIC  >=
+
+Seite   Berichtigung
+----    ------------
+
+---     In dem MenÅ "Suchen" wurde die Kurztastenkombination in dem Befehl
+        "Markierter Text" von "Strg+//" zu "Strg+F3" geÑndert. 
+
+---     Einige Tastaturen besitzen zusÑtzlich zu demjenigen auf dem
+        Zehnerblock einen weiteren Satz an RICHTUNGS- (d.h. Pfeil-)Tasten.
+        Ein Fehler im ROM BIOS einiger Maschinen mit solchen Tastaturen
+        kann sich auf den QuickBASIC-Editor auswirken. Diskette 3 
+        (Diskette2, wenn Sie mit 3,5-Zoll-Disketten arbeiten) enthÑlt ein
+        Programm, FIXSHIFT.COM, das diesen Fehler behebt. Wenn Sie eine
+        solche Tastatur besitzen, starten Sie dieses Programm mit der
+        Eingabe FIXSHIFT.
+        Wenn Ihre Maschine diesen Fehler nicht hat, gibt FIXSHIFT eine
+        entsprechende Meldung aus. Andernfalls fordert FIXSHIFT Sie zur
+        DurchfÅhrung bestimmter Aktionen auf. FIXSHIFT belegt ungefÑhr
+        450 Bytes im Hauptspeicher. Mit Ausnahme des BIOS-Fehlers wirkt
+        es sich aufandere Programme, mit denen Sie arbeiten, nicht aus.
+
+---	QuickBASIC Version 4.0b unterstÅtzt Hercules (R) Bildschirm-
+        Adapter. Lesen Sie weiter unten in Teil 2 die AusfÅhrungen zu der
+        Anweisung SCREEN.
+
+xii     Wenn Sie einen Video Graphics Array Bildschirm-Adapter (VGA) fÅr
+        das IBM (R) Personal System/2 (TM) in eine Nicht-PS/2-Maschine in-
+        stallieren, sollte der VGA-Adapter der einzige Adapter des Systems
+        sein, und Sie sollten keine Mono-Modi (SCREEN 10) verwenden, wenn
+        Sie einen Farbmonitor besitzen. Entsprechend sollten Sie keine
+        Farbmodi (SCREEN 1, 2, 7, 8, 9, 11, 12, 13) verwenden, wenn Sie
+        einen monochromen Monitor angeschlossen haben.
+
+1.6     VorschlÑge zum Einsatz von QuickBASIC bei einem System mit nur
+        einem Diskettenlaufwerk:
+
+                Diskette 1
+                ==========
+                QB.EXE
+                Ihre Programm-Quelldatei
+                (Optional: Dateien des Betriebssystems)
+                (Optional: QB.QLB)
+
+                Diskette 2
+                ==========
+                BC.EXE
+                LINK.EXE
+                LIB.EXE
+		BRUN41.EXE
+		BRUN41.LIB
+
+                Diskette 3
+                ==========
+		BCOM41.EXE
+
+        Wenn Sie ausfÅhrbare Dateien sowie Quick-Bibliotheken aus der
+        Umgebung heraus anlegen, mÅssen Sie die Disketten laufend
+        wechseln, um die richtigen Programme und Bibliotheken zur 
+        VerfÅgung zu stellen. Sollten auf der aktuell eingelegten Dis-
+        kette bestimmte Dateien nicht vorgefunden werden, erhalten Sie
+        die Eingabeaufforderung "Datei nicht gefunden <Dateiname>." 
+        Bevor Sie Disketten wechseln, geben Sie B: ein und betÑtigen die
+        EINGABETASTE. (Obwohl Sie kein physikalisches Laufwerk B 
+        besitzen, kînnen Sie dies tun, da DOS ein logisches Laufwerk B
+        erkennt.) Legen Sie nach der Aufforderung die entsprechende
+        Diskette ein. Wenn der Linker Sie zur Eingabe eines Pfades
+        auffordert, dÅrfen Sie nicht vergessen, auch den Namen der
+        Datei, nach der der Linker sucht, einzufÅgen.
+
+1.7     Weitere Informationen zur Installation und Verwendung Ihrer Maus
+        mit QuickBASIC finden Sie im Teil 4 dieser Datei.
+
+--      FÅr LINK.EXE gibt es eine neue Option
+
+        Option:  /NOE[XTDICTIONARY]
+
+        Falls der Linker annimmt, da· ein globales Symbol neu definiert
+        wurde, fordert er Sie dazu auf, mit der Option /NOE erneut zu bin-
+        den. Wenn Sie dies durchfÅhren, durchsucht der Linker anstelle der
+        "WîrterbÅcher", die er angelegt hat, die einzelnen Objektdateien,
+        um Konflikte aufzulîsen. Wenn Sie zum Beispiel ein Programm mit
+        NOEM.OBJ oder NOCOM.OBJ binden, mÅssen Sie die Option /NOE be-
+        nutzen.
+
+--      Bei NOEM.OBJ handelt es sich um eine mitgelieferte Objektdatei.
+        Diese ermîglicht es selbstÑndig ausfÅhrbaren Dateien, die mit der
+        Option /O kompiliert sind, wesentlich kleiner zu sein, wenn sie
+        auf einer mit einem mathematischen Koprozessor (8087 oder 80287)
+        ausgerÅsteten Maschine ausgefÅhrt werden. Beachten Sie aber, da·
+        mit NOEM.OBJ gebundene Programme nicht auf Maschinen laufen, die
+        keinen mathematischen Koprozessor besitzen. Wenn alle Ihre
+        selbstÑndig ausfÅhrbaren Dateien immer auf Maschinen mit Kopro-
+        zessoren ausgefÅhrt werden, kînnen Sie die folgende Methode dazu
+        einsetzen, die Bibliothek, die Routinen zur Gleitkomma-Emulation
+	enthÑlt (BCOM41.LIB), zu wechseln, um kleinere ausfÅhrbare Dateien
+        zu erzeugen:
+
+		LIB BCOM41.LIB -QB4EM.OBJ+NOEM.OBJ;
+
+        Dieser Befehl ersetzt in der selbstÑndigen Laufzeit-Bibliothek die
+        mathematische Emulator-UnterstÅtzung durch die spezielle Unter-
+        stÅtzung des Koprozessors.
+
+        Alternativ dazu kînnen Sie von Fall zu Fall NOEM.OBJ ausdrÅcklich
+        von der Befehlszeile aus binden. Um zum Beispiel PROG.EXE mit
+        NOEM.OBJ anzulegen, kompilieren Sie PROG.BAS mit der Option /O
+        (entweder aus QuickBASIC heraus oder von der Befehlszeile aus) und
+        binden anschlie·end wie folgt:
+
+                LINK PROG.OBJ+NOEM.OBJ/NOE;
+
+---     PTR86 wird nicht lÑnger unterstÅtzt. Verwenden Sie stattdessen
+        VARSEG und VARPTR.
+        Wird LOF mit einem GerÑt zur DatenÅbertragung eingesetzt, gibt es
+        nun den  verbleibenden Speicherbetrag (in Bytes) im Ausgabepuffer
+        zurÅck. In frÅheren Versionen wurde dieser Wert im Eingabepuffer
+        angegeben. Beachten Sie auch, da· in frÅheren Versionen eine
+        Variable und eine SUB-Prozedur denselben Namen haben durften. 
+	In Version 4.0b verursacht dies den Fehler "Doppelte Definition".
+
+===< Teil 2: énderungen im BASIC-Befehlsverzeichnis >===================
+
+Seite   Berichtigung
+-----   ------------
+49      In einer CONST-Anweisung ist keine VerknÅpfung von Zeichenketten
+        erlaubt.
+
+282     Die Anweisung SCREEN umfa·t nun den Modus 3 fÅr Hercules-
+        Bildschirm-Adapter. Es folgt eine kurze Zusammenfassung des Bild-
+        schirmmodus 3. Einzelheiten finden Sie in der Dokumentation Ihrer
+        Hercules-Karte.
+
+                - QuickBASIC unterstÅtzt die Hercules-Grafikkarte, 
+                  -Grafikkarte Plus, -InColor-Karte sowie 100% kompatible
+
+                - Sie mÅssen einen monochromen Monitor verwenden
+
+                - Hercules-Textmodus ist SCREEN 0; Hercules-Grafikmodus
+                  ist SCREEN 3.
+
+                - Bevor Sie Ihr Programm starten, mÅssen Sie den Hercules-
+                  Treiber (QBHERC.COM) laden. Falls der Treiber nicht ge-
+                  laden ist, hat die Anweisung SCREEN 3 die Fehlermeldung
+                  "UnzulÑssiger Funktionsaufruf" zur Folge. Geben Sie
+                  QBHERC ein, um den Treiber zu laden.
+
+                - Die Textdimensionen sind 80x25 (9x14 Zeichenfeld); die
+                  beiden untersten Rasterzeilen der 25sten Zeile sind 
+                  nicht sichtbar.
+
+                - Die Auflîsung betrÑgt 720x348 Bildpunkte, monochrom.
+
+                - Es werden 2 Bildschirmseiten unterstÅtzt.
+
+                - Die Anweisung PALETTE wird nicht unterstÅtzt.
+
+                - Um die Maus einzusetzen, mÅssen Sie den entsprechenden
+                  Anweisungen fÅr Hercules-Karten aus dem Programmierer-
+                  Handbuch der Microsoft-Mouse folgen. (Dieses Buch mu·
+                  ein zeln bestellt werden; es wird weder mit dem 
+                  QuickBASIC - noch mit dem Maus-Paket geliefert.)
+
+D.13    Die Fehlermeldung "Erweiterte Eigenschaft nicht verfÅgbar" kann
+        erscheinen, wenn Sie bei dem Einsatz von DOS-Version 2.1 ver-
+        suchen, eine Eigenschaft zu benutzen, die nur von spÑteren
+        Versionen unterstÅtzt wird (d. h. Dateisperrung).
+
+D.11    Die Fehlermeldung "Doppelte Definition" tritt auch dann auf, wenn
+        eine  SUB- oder FUNCTION-Prozedur und eine Variable desselben
+        Namens vorliegen. In frÅheren Versionen wurde dadurch kein Fehler
+        verursacht.
+
+D.42    Meldung L2024 ("Name : Symbol bereits definiert, verwenden Sie
+        /NOE")  sollte mit L2044 numeriert sein.
+
+---------< Neue oder geÑnderte Fehlermeldungen >-----------------------
+
+L1063   "Kein Speicherplatz fÅr CodeView-Informationen"
+        Diese Meldung ist neu und im Handbuch nicht enthalten.
+
+U4153   "<Zahl>: Seitengrî·e zu klein; ignoriert"
+        Dieser Fehler liefert nun die Meldung:
+        "<Zahl>: Seitengrî·e unzulÑssig; ignoriert"
+
+
+==< Teil 3: énderungen in Programmieren in BASIC: AusgewÑhlte Themen >===
+
+122             In Kapitel 3.5.2 in der Spalte "Angegebene Information"
+                sollte  die Beschreibung fÅr die Funktion LOF lauten:
+                "Der Betrag des im Ausgabepuffer verbleibenden Platzes 
+                (in Bytes)". (Beachten Sie, da· dies eine énderung des
+                Verhaltens von LOF gegenÅber frÅheren QuickBASIC-Versionen
+                darstellt).
+
+===< Teil 4: Eine Maus mit QuickBASIC einsetzen >=========================
+
+--------< Neue Maustreiber zur Verwendung mit QuickBASIC >---------------
+
+	QuickBASIC Version 4.0b kann mit jeder Maus eingesetzt werden, die
+        100% kompatibel zu der Microsoft-Mouse ist. Sie mÅssen jedoch
+        einen Microsoft-Maustreiber Version 6.00 oder grî·er verwenden.
+        FrÅhere Versionen kînnen bei der Verwendung mit QuickBASIC ein 
+	unvorhersehbares Verhalten verursachen. Mit QuickBASIC Version
+	4.0b wird MOUSE.COM Version 6.11 geliefert.
+
+        Besonders dann, wenn Sie Programme schreiben, die die Maus ein-
+        setzen, sollten Sie die mitgelieferte Version des Maustreibers
+        einsetzen, wenn Sie mit QuickBASIC arbeiten. FrÅhere Versionen
+        umfa·ten MOUSE.SYS, der installiert wird, indem die Zeile
+        DEVICE=MOUSE.SYS in Ihre CONFIG.SYS-Datei eingefÅgt wird. Diese
+        QuickBASIC-Version enthÑlt MOUSE.COM, der nicht mit CONFIG.SYS
+        installiert wird. Um MOUSE.COM zu installieren, geben Sie einfach
+        MOUSE hinter der DOS-Anfrage ein. Um MOUSE.COM automatisch beim
+        Start Ihrer Maschine einzubinden, mÅssen Sie sicherstellen, da·
+        MOUSE.COM sich in Ihrem Suchpfad befindet, und danach die Zeile
+
+                MOUSE
+
+        in Ihre AUTOEXEC.BAT-Datei schreiben. Um Speicherplatz wieder 
+        freizugeben, kînnen Sie den Maustreiber jederzeit entfernen,
+        indem Sie hinter der DOS-Anfrage MOUSE OFF eingeben. Dies gibt 
+        bei Version 6.11 zwischen 9K und 10,5K des Speichers frei.
+
+------< Maus-Funktionsaufrufe mit QuickBASIC-Programmen einsetzen >------
+
+        Wenn Sie fÅr die Microsoft-Mouse programmieren, sollten Sie sich 
+        das Programmierer-Handbuch fÅr die Microsoft-Mouse sowie die damit
+        gelieferte Bibliothek MOUSE.LIB besorgen. (Diese Unterlagen sind
+        weder Bestandteil des QuickBASIC- noch des Maus-Paketes und mÅssen
+        gesondert bestellt werden). Die meisten Informationen des Maus-
+        Programmierer-Handbuches beziehen sich direkt auf QuickBASIC
+        Version 4. DarÅberhinaus mÅssen die folgenden zusÑtzlichen Ein-
+        schrÑnkungen beachtet werden:
+
+        Bestimmte Maus-Funktionsaufrufe (die Funktionen 9 & 16) zwingen
+        Sie dazu, ein Datenfeld fÅr Ganzzahlen einzurichten und die
+        Adresse des Datenfeldes an den Maustreiber zu Åbergeben. In
+        frÅheren Versionen war die einzige EinschrÑnkung dieses Datenfel-
+        des, da· es $STATIC (der Standardtyp fÅr Datenfelder) sein mu·te.
+	In QuickBASIC Version 4.0b mu· sich das Datenfeld jedoch auch in
+        einem COMMON-Block befinden, wenn Sie den Maus-Funktionsaufruf
+        aus der QuickBASIC-Umgebung durchfÅhren. ZusÑtzlich wird 
+        empfohlen, da· der UnterstÅtzungscode fÅr den Maus-Aufruf sich in
+        einer Quick-Bibliothek befindet oder in  die ausfÅhrbare Datei
+        eingebunden ist, wenn Maus-Funktionsaufrufe aus QuickBASIC heraus
+        durchgefÅhrt werden.
+
+        Verwenden Sie die folgende Befehlszeile (es entsteht MOUSE.QLB),
+        um eine Quick-Bibliothek fÅr den Einsatz von Maus-Funktionsauf-
+        rufen aus der QuickBASIC-Umgebung heraus anzulegen:
+
+                LINK MOUSE.LIB/QU,MOUSE.QLB,,BQLB40.LIB/NOE;
+
+        Ein Beispiel aus PIANO.BAS (Bestandteil des Programmierer-Handbu-
+        ches zur Microsoft-Mouse) zu dem Einsatz des Maus-Funktions-
+        aufrufs 9:
+                DEFINT A-Z
+                DECLARE SUB MOUSE (M1, M2, M3, M4)
+                DIM Cursor(15, 1)
+                COMMON Cursor()        ' Felddaten auf alle FÑlle in 
+                                       ' DGROUP
+                .
+                .  (Cursor() auf die gewÅnschte Maus-Cursorform einrichten)
+                .
+                M1 = 9: M2 = 6: M3 = 0
+                CALL MOUSE(M1, M2, M3, VARPTR(Cursor(0, 0)))
+
+        DarÅberhinaus mÅssen Sie beachten, da· die Maus-Funktionsaufrufe
+        21-23 dynamisch zugewiesenen Speicherplatz au·erhalb des lokalen
+        Datensegmentes erfordern. Zu diesem Zweck wird folgendes 
+        empfohlen: 
+        Weisen Sie, ausgehend von dem RÅckgabewert des Funktionsaufrufs
+        21, unter Zuhilfenahme der Funktion STRING$ oder SPACE$, Speicher-
+        platz in einer dynamischen Zeichenkettenvariablen zu, und wenden
+        Sie direkt vor dem Aufruf der Maus-Funktion 22 oder 23 VARPTR auf
+        diese Zeichenkettenvariable an.
+
+===< Teil 5: QuickBASIC mit 3,5-Zoll-Disketten einsetzen >=============
+
+    Wenn Sie zwei 3,5-Zoll-Diskettenlaufwerke besitzen:
+
+        Kopieren Sie die Dateien der Originaldisketten wie folgt auf drei
+        andere Disketten:
+
+                Diskette 1: alle Dateien von Originaldiskette 1 sowie alle
+                            BRUN40- und BQLB-Dateien, die sich auf Origi-
+                            naldiskette 2 befinden
+
+		Diskette 2: BCOM41.LIB, BC.EXE, LINK.EXE, LIB.EXE
+
+                Diskette 3: BASIC-Quelldateien, Quick-Bibliotheken und
+                            QB.QLB
+
+        Im allgemeinen wird es ausreichen, wenn Sie nur mit Diskette 1
+        und 3 arbeiten, mit Diskette 1 in Laufwerk A und Diskette 3 in
+        Laufwerk B. Wenn Sie eine Quick-Bibliothek oder eine ausfÅhrbare
+        Datei anlegen, die von DOS aus gestartet werden soll, werden Sie
+        folgende Eingabeaufforderung erhalten:
+
+                Datei nicht gefunden <Dateiname>
+
+        Legen Sie Diskette 2 in Laufwerk A ein, und betÑtigen Sie die
+        EINGABETASTE. Falls das Programm eine Quick-Bibliothek erfordert,
+        mÅssen Sie sicherstellen, da· sich sowohl die Quick-Bibliothek als
+        auch die dazugehîrige selbstÑndige (.LIB) Bibliothek auf der
+        Diskette in Laufwerk B befinden.
+
+    Falls Sie nur ein einziges 3,5-Zoll-Diskettenlaufwerk besitzen:
+
+        Bereiten Sie die Disketten 1, 2 und 3 genauso wie fÅr ein System
+        mit zwei Laufwerken vor. Wenn Sie die Eingabeaufforderung "Datei
+        nicht gefunden <Dateiname>" sehen, geben Sie jedoch B: ein und 
+        betÑtigen vor dem Einlegen der richtigen Diskette die EINGABETASTE.
+        (Obwohl Sie kein physikalisches Laufwerk B besitzen, kînnen Sie
+        dies tun, da DOS ein logisches Laufwerk B erkennt.) Legen Sie nach
+        der Aufforderung die entsprechende Diskette ein. Wenn der Linker
+        Sie zur Eingabe eines Pfades auffordert, dÅrfen Sie nicht ver-
+        gessen, auch den Namen der Datei, nach der der Linker sucht, ein-
+        zufÅgen.
+
+==< Teil 6: ErgÑnzende Informationen zur mehrsprachigen Programmierung >===
+
+--------< Aus QuickC heraus oder mit QCL binden >--------------------------
+
+        Sowohl Microsoft QuickC als auch der Befehl QCL setzen den Linker
+        standardmÑ·ig auf /NOI. Daher sollten Sie nicht aus QuickC heraus
+        oder mit QCL binden, wenn Ihr Programm Module enthÑlt, die in 
+        einer Sprache geschrieben sind, die Gro·-/Kleinschreibung nicht
+        beachtet, wie zum Beispiel BASIC. Verwenden Sie LINK, um Ihre
+        Programme von der Befehlszeile aus zu binden.
+
+--------< Pascal- und Fortran-Module in QuickBASIC-Programmen >------------
+
+        Module, die mit Microsoft Pascal oder Fortran kompiliert sind,
+        kînnen mit BASIC-Programmen gebunden werden, wie in dem Microsoft
+        Mixed-Language Programming Guide beschrieben. Module kînnen auch
+        in Quick-Bibliotheken eingebunden werden. QuickBASIC-Programme,
+        die mit Microsoft Pascal kompilierten Code enthalten, mÅssen
+        jedoch fÅr Pascal mindestens 2K Near-Heap Speicherplatz zuweisen.
+        Dies kann erreicht werden, indem eine DIM-Anweisung dazu einge-
+        setzt wird, ein statisches Datenfeld von 2K oder grî·er in dem
+        NMALLOC benannten Common-Block zuzuweisen, zum Beispiel wie folgt:
+
+                DIM Name%(2048)
+                COMMON SHARED /NMALLOC/ Name%()
+
+        Die Pascal-Laufzeit geht davon aus, da· immer mindestens 2K
+        Near-Heap Speicherplatz zur VerfÅgung stehen. Falls der Pascal-
+        Code nicht den erforderlichen Speicherplatz zuweisen kann, kann
+        QuickBASIC abstÅrzen. Dies gilt sowohl fÅr Pascal-Code in Quick-
+        Bibliotheken als auch fÅr Pascal-Code, der in ausfÅhrbare Dateien
+        gebunden ist. Die Situation ist Ñhnlich fÅr Fortran-E/A, die auch
+        kurzen (near) Pufferspeicherplatz erfordert, der auf dieselbe 
+        Weise zur VerfÅgung gestellt werden kann, wie der Near Malloc
+        Speicherplatz fÅr Pascal.
+
+--------< STATIC-Datenfeldzuweisung >------------------------------------
+
+        Wenn Sie Assembler-Module schreiben, die in QuickBASIC-Programmen
+        eingesetzt werden sollen, finden Sie weitere Information im BASIC-
+        Befehlsverzeichnis in Abschnitt 2.3.3, "Speicherzuweisung fÅr
+        Variablen". Assembler-Code sollte Daten nicht in einem bestimmten
+        Segment erwarten. Um dieses Problem zu vermeiden, sollten Sie
+        Daten mit den SchlÅsselworten SEG oder CALLS Åbergeben oder FAR-
+        Zeiger verwenden. Alternativ dazu kînnen Sie alle Datenfelder 
+        dynamisch deklarieren (immer noch lange Zeiger verwendend), da 
+        dynamische Datenfelder von BC und innerhalb von QuickBASIC iden-
+        tisch verwaltet werden.
+
+-----< Quick-Bibliotheken mit FÅhrenden Nullen im Ersten Code-Segment >--
+
+        Eine Quick-Bibliothek, die fÅhrende Nullen in dem ersten CODE-
+        Segment enthÑlt, ist unzulÑssig und verursacht die Fehlermeldung
+        "Fehler beim Laden der Datei <Name> - ungÅltiges Format", wenn Sie
+        versuchen, die Bibliothek in QuickBASIC zu laden. Dies kann zum
+        Beispiel auftreten, wenn eine Assemblerroutine Daten, die zu Null
+        initialisiert sind, in das erste CODE-Segment schreibt und nach-
+        folgend, wenn Sie eine Quick-Bibliothek anlegen, zuerst auf der
+        LINK-Befehlszeile aufgefÅhrt wird. Falls Sie dieses Problem haben,
+        sollten Sie einen der folgenden Punkte ausfÅhren:
+        (1) Binden Sie so, da· auf der LINK-Befehlszeile zuerst ein BASIC-
+            Modul steht, oder
+        (2) stellen Sie sicher, da·, egal welches Modul zuerst auf der
+            LINK-Befehlszeile steht, das erste Segment mit einem Byte
+            ungleich Null beginnt.
+
+===< Teil 7: Btrieve mit QuickBASIC einsetzen >=========================
+
+        Wenn Sie Btrieve mit QuickBASIC einsetzen, mÅssen Sie Ihre Pro-
+	gramme fÅr QuickBASIC Version 4.0b leicht abÑndern. Aktuell ent-
+        halten Ihre Programme eine Anweisung, die die Adresse des Feld-
+        puffers einer geîffneten Datei enthÑlt. Zum Beispiel:
+
+        OPEN "NUL" AS #1
+        FIELD #1, 20 AS STADT$, 10 AS STAAT$
+        FCB.ADDR% = VARPTR(#1)                  'Diese Anweisung liest
+                                                'die Adresse
+
+	In QuickBASIC Version 4.0b sollten Sie die markierte Anweisung so
+        Ñndern, da· diese die Adresse der ersten Variablen Ihres Feld-
+        puffers minus einer Konstanten angibt, wie im folgenden Beispiel
+        gezeigt:
+
+        OPEN "NUL" AS #1
+        FIELD #1, 20 AS STADT$, 10 AS STAAT$
+        FCB.ADDR% = SADD(STADT$) - 188       'STADT$ ist die erste
+                                             ' Variabledes Feldpuffers
+
+        Ihr Programm sollte nach dieser énderung korrekt mit Btrieve
+        funktionieren.

@@ -1,0 +1,196 @@
+;* *************************************************************************
+; FRITZ!Card PCI
+;***************************************************************************
+[version]
+signature="$Windows 95$"
+Class=AVMISDN
+provider=%V_AVM_Berlin%
+ClassGuid={DF57C131-1EBC-11d1-A476-0000929650D5}
+DriverVer="06/20/2002","3.10.02.2002"
+
+[ClassInstall]
+AddReg=Class98, Class32
+CopyFiles=InstallSys
+
+[ClassInstall32]
+;AddReg=Class50, Class32
+;CopyFiles=InstallSys,InstallInf
+
+[Class98]
+HKR,,Icon,,"0"
+HKR,,Installer,,"AVMCLASS.DLL,ClassInstall"
+HKLM,System\CurrentControlSet\control\SessionManager\Known16DLLs,avmclass.dll,,"avmclass.dll"
+HKR,,OSVersion,,"98"
+
+[Class50]
+HKR,,Icon,,"-5"
+
+[Class32]
+HKR,,,,%Kennung%
+HKR,,Class,,AVMISDN
+HKR,,Language,,"deutsch"
+HKR,,Trap,,"F1"
+HKR,,Driver,,"fpcibase.sys"
+HKR,,TmpPath,,%30%\%OurTmpPath%
+HKR,,INSTALL,," "
+
+[Manufacturer]
+%V_AVM_Berlin%=AVM
+
+[AVM]
+%FRITZpci.DeviceDesc%= FRITZpci.Install, PCI\VEN_1244&DEV_0A00
+%FRITZpci2.DeviceDesc%= FRITZpci2.Install, PCI\VEN_1244&DEV_0E00
+
+[FRITZpci.Install.NT]
+
+[FRITZpci.Install]
+LogConfig=FRITZpci.LogConfigStd
+AddReg=FRITZpci.reg.VxD, FRITZpci.reg.CommonAPI, FRITZpci.reg.Change, FRITZpci.VxDMapper
+DeviceID=FPCIBASE
+CopyFiles=SysWinFiles, AllFiles, SysWinDrvFiles98
+DelFiles=FRITZpci.Del.FileSys
+
+[FRITZpci2.Install.NT]
+
+[FRITZpci2.Install]
+LogConfig=FRITZpci.LogConfigStd
+AddReg=FRITZpci.reg.VxD, FRITZpci2.reg.CommonAPI, FRITZpci.reg.Change, FRITZpci.VxDMapper
+DeviceID=FPCIBASE
+CopyFiles=SysWinFiles, AllFiles, SysWinDrvFiles98
+DelFiles=FRITZpci.Del.FileSys
+
+[FRITZpci.LogConfigStd]
+ConfigPriority=DESIRED
+
+[FRITZpci.reg.VxD]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,fpcibase.sys
+
+[FRITZpci.VxDMapper]
+HKLM,%VxdMapService%,ImagePath,,"\SystemRoot\System32\Drivers\capimap.sys"
+HKLM,%VxdMapService%,Start,0x00010001,1
+HKLM,%VxdMapService%,Type,0x00010001,1
+HKLM,%VxdMapService%,ErrorControl,0x00010001,1
+
+[FRITZpci.reg.Change]
+HKLM,%Reg_AVM_Run%,AVM,,%30%\%OurTmpPath%"\setup.exe"
+HKLM,System\CurrentControlSet\Services\Class\avmisdn,RunSetup,,%30%\%OurTmpPath%\setup.exe
+HKLM,System\CurrentControlSet\Services\Class\avmisdn,TmpPath,,%30%\%OurTmpPath%
+
+[FRITZpci.reg.CommonAPI]
+;Eintragen der Standard Dinge
+
+HKR,,,,%FRITZpci.DeviceDesc%
+HKR,,SetupProtocol,,"DSS1"
+HKR,,Complete,1,01
+HKR,,CardType,,"FRITZpci"
+
+HKR,Base-Module,Name,,""
+HKR,Base-Module\Values,PROTOCOL,,"\x00"
+HKR,Base-Module\Values,AutoCompress,,"\x00"
+
+[FRITZpci2.reg.CommonAPI]
+;Eintragen der Standard Dinge
+
+HKR,,,,%FRITZpci2.DeviceDesc%
+HKR,,SetupProtocol,,"DSS1"
+HKR,,Complete,1,01
+HKR,,CardType,,"FRITZpci"
+
+HKR,Base-Module,Name,,""
+HKR,Base-Module\Values,PROTOCOL,,"\x00"
+HKR,Base-Module\Values,AutoCompress,,"\x00"
+
+[FRITZpci.Del.FileSys]
+vcapid.vxd
+cssa1ds1.vxd
+capi20.dll
+capi2032.dll
+
+[FRITZpci.FileSys]
+;file-name,source-name,temp-name,flag
+;COPYFLG_NO_OVERWRIT
+capi.dll,,,0x00000010
+capi20.dll,,,0x00000010
+capi2032.dll,,,0x00000010
+
+[FRITZpci.FileSys32Drv]
+fpcibase.sys,,,0x00000010
+capimap.sys,,,0x00000010
+
+[SysWinFiles]
+capi.dll, capi.dl_
+capi20.dll, capi20.dl_
+capi2032.dll, capi2032.dl_
+
+[SysWinDrvFiles]
+fpcibase.sys, fpcibase.sy_
+
+[SysWinDrvFiles98]
+fpcibase.sys, fpcibase.sy_
+capimap.sys, capimap.sy_
+
+[AllFiles]
+capimap.sy_
+fpcibase.sy_
+;fpcibase.tr_
+capi.dl_
+capi20.dl_
+capi2032.dl_
+clear.de_
+avmcfg.dll
+avmhard.dll
+fpcitest.ex_
+readme.doc
+setup.exe
+setup.ini
+fpciset.inf
+avm.ur_
+avmstr.bin
+avmclass.dl_
+
+[InstallSys]
+avmclass.dll, avmclass.dl_
+
+[DestinationDirs]
+SysWinFiles= 11
+AllFiles   = 30,%OurTmpPath%
+FRITZpci.FileSys = 11
+FRITZpci.FileSys32Drv = 10,System32\drivers
+SysWinDrvFiles = 12 ; Win\System32\Drivers
+SysWinDrvFiles98 = 10,System32\drivers
+InstallSys = 11
+InstallInf = 17
+
+[SourceDisksNames]
+1="AVM ISDN-Controller FRITZ!Card PCI Installation Windows 98/Me","",0
+
+[SourceDisksFiles]
+SysWinFiles = 1
+AllFiles    = 1
+SysWinDrvFiles=1
+SysWinDrvFiles98 = 1
+InstallSys  = 1
+InstallInf  = 1
+
+;****************************************************************************
+; Localizable Strings
+;****************************************************************************
+[strings]
+; Manufacturer
+V_AVM_Berlin="AVM GmbH"
+
+; Device
+FRITZpci.DeviceDesc="AVM ISDN-Controller FRITZ!Card PCI (Win98/Me)"
+FRITZpci2.DeviceDesc="FRITZ!Card PCI Rev.A (Win98/Me)"
+
+; Kennung
+Kennung="AVM ISDN-Controller"
+
+; TmpPath
+FRITZpci.TmpPath=" "
+OurTmpPath="AVM_Tmp"
+Reg_AVM_Uninstall="SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\AVM"
+Reg_AVM_Run="SOFTWARE\Microsoft\Windows\CurrentVersion\Run"
+VxdMapService="System\CurrentControlSet\Services\capimap"
+

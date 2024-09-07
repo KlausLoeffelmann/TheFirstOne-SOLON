@@ -1,0 +1,18 @@
+00000100
+00000100
+ 2 
+ 0 
+1999
+ 0 
+1999
+Dies ist der Baumaánahmentext
+Dies ist der Titel
+Dies ist de Name
+Das hier sit die Straáe
+Dies ist das z.Hd.
+Dies ist der Ort
+Hier steht die Telefonnr.
+00000010
+00000100
+ 1 
+

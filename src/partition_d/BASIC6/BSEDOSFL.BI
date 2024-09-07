@@ -1,0 +1,269 @@
+'-----------------------------------------------------------------------------
+'
+'Module Name: BSEDOSFL.BI
+'
+'  OS/2 Base Include File - File Management
+'
+'  The File Management calls have been broken down into the following
+'  catagories:
+'
+'       Device Support
+'       File Management
+'
+' Copyright (c) 1987,1988 Microsoft Corporation
+'-----------------------------------------------------------------------------
+
+TYPE FILEFINDBUF
+	fdateCreation  AS INTEGER
+	ftimeCreation  AS INTEGER
+	fdateLastAccess AS INTEGER
+	ftimeLastAccess AS INTEGER
+	fdateLastWrite AS INTEGER
+	ftimeLastWrite AS INTEGER
+	cbFile	       AS LONG
+	cbFileAlloc    AS LONG
+	attrFile       AS INTEGER
+	cchName        AS STRING * 1
+	achName        AS STRING * 13
+END TYPE
+
+TYPE FILESTATUS
+	fdateCreation  AS INTEGER
+	ftimeCreation  AS INTEGER
+	fdateLastAccess AS INTEGER
+	ftimeLastAccess AS INTEGER
+	fdateLastWrite AS INTEGER
+	ftimeLastWrite AS INTEGER
+	cbFile	       AS LONG
+	cbFileAlloc    AS LONG
+	attrFile       AS INTEGER
+END TYPE
+
+'
+' Device Support
+'
+
+DECLARE FUNCTION DosDevConfig%( _
+        BYVAL P1s AS INTEGER,_ 
+        BYVAL P1o AS INTEGER,_
+        BYVAL P2 AS INTEGER,_
+        BYVAL P3 AS INTEGER)
+
+DECLARE FUNCTION DosDevIOCtl%( _
+        BYVAL P1s AS INTEGER,_ 
+        BYVAL P1o AS INTEGER,_
+        BYVAL P2s AS INTEGER,_ 
+        BYVAL P2o AS INTEGER,_
+        BYVAL P3 AS INTEGER,_
+        BYVAL P4 AS INTEGER,_
+        BYVAL P5 AS INTEGER)
+
+DECLARE FUNCTION DosSystemService%( _
+        BYVAL P1 AS INTEGER,_
+        BYVAL P2s AS INTEGER,_ 
+        BYVAL P2o AS INTEGER,_
+        BYVAL P3s AS INTEGER,_ 
+        BYVAL P3o AS INTEGER)
+
+DECLARE FUNCTION DosPhysicalDisk%( _
+	BYVAL P1 AS INTEGER,_
+	BYVAL P2s AS INTEGER,_ 
+	BYVAL P2o AS INTEGER,_
+	BYVAL P3 AS INTEGER,_
+	BYVAL P4s AS INTEGER,_ 
+	BYVAL P4o AS INTEGER,_
+	BYVAL P5 AS INTEGER)
+
+'
+' File Management
+'
+
+DECLARE FUNCTION DosOpen%( _
+	BYVAL P1s AS INTEGER,_ 
+	BYVAL P1o AS INTEGER,_
+	SEG   P2 AS INTEGER,_
+	SEG   P3 AS INTEGER,_
+	BYVAL P4 AS LONG,_
+	BYVAL P5 AS INTEGER,_
+	BYVAL P6 AS INTEGER,_
+	BYVAL P7 AS INTEGER,_
+	BYVAL P8 AS LONG)
+
+DECLARE FUNCTION DosClose%( _
+	BYVAL P1 AS INTEGER)
+
+DECLARE FUNCTION DosRead%( _
+	BYVAL P1 AS INTEGER,_
+	BYVAL P2s AS INTEGER,_ 
+	BYVAL P2o AS INTEGER,_
+	BYVAL P3 AS INTEGER,_
+	SEG   P4 AS INTEGER)
+
+DECLARE FUNCTION DosWrite%( _
+	BYVAL P1 AS INTEGER,_
+	BYVAL P2s AS INTEGER,_ 
+	BYVAL P2o AS INTEGER,_
+	BYVAL P3 AS INTEGER,_
+	SEG   P4 AS INTEGER)
+
+DECLARE FUNCTION DosDelete%( _
+	BYVAL P1s AS INTEGER,_ 
+	BYVAL P1o AS INTEGER,_
+	BYVAL P2 AS LONG)
+
+DECLARE FUNCTION DosDupHandle%( _
+	BYVAL P1 AS INTEGER,_
+	SEG   P2 AS INTEGER)
+
+DECLARE FUNCTION DosQFHandState%( _
+	BYVAL P1 AS INTEGER,_
+	SEG   P2 AS INTEGER)
+
+DECLARE FUNCTION DosSetFHandState%( _
+	BYVAL P1 AS INTEGER,_
+	BYVAL P2 AS INTEGER)
+
+DECLARE FUNCTION DosQHandType%( _
+	BYVAL P1 AS INTEGER,_
+	SEG   P2 AS INTEGER,_
+	SEG   P3 AS INTEGER)
+
+DECLARE FUNCTION DosReadAsync%( _
+        BYVAL P1 AS INTEGER,_
+        SEG   P2 AS LONG,_
+        SEG   P3 AS INTEGER,_
+        BYVAL P4s AS INTEGER,_ 
+        BYVAL P4o AS INTEGER,_
+        BYVAL P5 AS INTEGER,_
+        SEG   P6 AS INTEGER)
+
+DECLARE FUNCTION DosWriteAsync%( _
+        BYVAL P1 AS INTEGER,_
+        SEG   P2 AS LONG,_
+        SEG   P3 AS INTEGER,_
+        BYVAL P4s AS INTEGER,_ 
+        BYVAL P4o AS INTEGER,_
+        BYVAL P5 AS INTEGER,_
+        SEG   P6 AS INTEGER)
+
+DECLARE FUNCTION DosFindFirst%( _
+        BYVAL P1s AS INTEGER,_ 
+        BYVAL P1o AS INTEGER,_
+        SEG   P2 AS INTEGER,_
+        BYVAL P3 AS INTEGER,_
+	SEG   P4 AS FILEFINDBUF,_
+        BYVAL P5 AS INTEGER,_
+        SEG   P6 AS INTEGER,_
+        BYVAL P7 AS LONG)
+
+DECLARE FUNCTION DosFindNext%( _
+        BYVAL P1 AS INTEGER,_
+	SEG   P2 AS FILEFINDBUF,_
+        BYVAL P3 AS INTEGER,_
+        SEG   P4 AS INTEGER)
+
+DECLARE FUNCTION DosFindClose%( _
+        BYVAL P1 AS INTEGER)
+
+DECLARE FUNCTION DosNewSize%( _
+        BYVAL P1 AS INTEGER,_
+        BYVAL P2 AS LONG)
+
+DECLARE FUNCTION DosBufReset%( _
+        BYVAL P1 AS INTEGER)
+
+DECLARE FUNCTION DosChgFilePtr%( _
+        BYVAL P1 AS INTEGER,_
+        BYVAL P2 AS LONG,_
+        BYVAL P3 AS INTEGER,_
+        SEG   P4 AS LONG)
+
+DECLARE FUNCTION DosFileLocks%( _
+        BYVAL P1 AS INTEGER,_
+	BYVAL P2s AS INTEGER,_
+	BYVAL P2o AS INTEGER,_
+	BYVAL P3s AS INTEGER,_
+	BYVAL P3o AS INTEGER)
+
+DECLARE FUNCTION DosMove%( _
+        BYVAL P1s AS INTEGER,_ 
+        BYVAL P1o AS INTEGER,_
+        BYVAL P2s AS INTEGER,_ 
+        BYVAL P2o AS INTEGER,_
+        BYVAL P3 AS LONG)
+
+DECLARE FUNCTION DosMkdir%( _
+        BYVAL P1s AS INTEGER,_ 
+        BYVAL P1o AS INTEGER,_
+        BYVAL P2 AS LONG)
+
+DECLARE FUNCTION DosRmdir%( _
+        BYVAL P1s AS INTEGER,_ 
+        BYVAL P1o AS INTEGER,_
+        BYVAL P2 AS LONG)
+
+DECLARE FUNCTION DosSelectDisk%( _
+        BYVAL P1 AS INTEGER)
+
+DECLARE FUNCTION DosQCurDisk%( _
+        SEG   P1 AS INTEGER,_
+        SEG   P2 AS LONG)
+
+DECLARE FUNCTION DosChdir%( _
+        BYVAL P1s AS INTEGER,_ 
+        BYVAL P1o AS INTEGER,_
+        BYVAL P2 AS LONG)
+
+DECLARE FUNCTION DosQCurDir%( _
+        BYVAL P1 AS INTEGER,_
+        BYVAL P2s AS INTEGER,_ 
+        BYVAL P2o AS INTEGER,_
+        SEG   P3 AS INTEGER)
+
+DECLARE FUNCTION DosQFSInfo%( _
+        BYVAL P1 AS INTEGER,_
+        BYVAL P2 AS INTEGER,_
+        BYVAL P3s AS INTEGER,_ 
+        BYVAL P3o AS INTEGER,_
+        BYVAL P4 AS INTEGER)
+
+DECLARE FUNCTION DosSetFSInfo%( _
+        BYVAL P1 AS INTEGER,_
+        BYVAL P2 AS INTEGER,_
+        BYVAL P3s AS INTEGER,_ 
+        BYVAL P3o AS INTEGER,_
+        BYVAL P4 AS INTEGER)
+
+DECLARE FUNCTION DosQVerify%( _
+        SEG   P1 AS INTEGER)
+
+DECLARE FUNCTION DosSetMaxFH%( _
+        BYVAL P1 AS INTEGER)
+
+DECLARE FUNCTION DosSetVerify%( _
+        BYVAL P1 AS INTEGER)
+
+DECLARE FUNCTION DosQFileInfo%( _
+        BYVAL P1 AS INTEGER,_
+        BYVAL P2 AS INTEGER,_
+	SEG   P3 AS FILESTATUS,_
+        BYVAL P4 AS INTEGER)
+
+DECLARE FUNCTION DosSetFileInfo%( _
+        BYVAL P1 AS INTEGER,_
+        BYVAL P2 AS INTEGER,_
+        BYVAL P3s AS INTEGER,_ 
+        BYVAL P3o AS INTEGER,_
+        BYVAL P4 AS INTEGER)
+
+DECLARE FUNCTION DosQFileMode%( _
+        BYVAL P1s AS INTEGER,_ 
+        BYVAL P1o AS INTEGER,_
+        SEG   P2 AS INTEGER,_
+        BYVAL P3 AS LONG)
+
+DECLARE FUNCTION DosSetFileMode%( _
+        BYVAL P1s AS INTEGER,_ 
+        BYVAL P1o AS INTEGER,_
+        BYVAL P2 AS INTEGER,_
+        BYVAL P3 AS LONG)

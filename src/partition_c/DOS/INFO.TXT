@@ -1,0 +1,2214 @@
+INFO.TXT
+
+ANMERKUNGEN ZU MS-DOS 6.22
+==========================
+
+Diese Datei enthÑlt wichtige Informationen, die weder im Microsoft
+MS-DOS Benutzerhandbuch noch in der MS-DOS-Hilfe stehen.
+
+Die Datei ist in folgende Hauptabschnitte gegliedert:
+
+1. Setup
+2. MemMaker, EMM386 und Speicherverwaltung
+3. Windows
+4. HardwarekompatibilitÑt mit MS-DOS 6.22
+5. Microsoft Anti-Virus, Backup und Defragmentierer
+6. Programme anderer Hersteller
+7. DriveSpace
+
+Wenn das Thema, Åber das Sie Informationen benîtigen, in dieser Datei
+nicht enthalten ist, finden Sie es eventuell in einer der folgenden mit
+MS-DOS gelieferten Textdateien:
+
+* OS2.TXT beschreibt, wie Sie Daten auf Ihrem Computer lîschen und
+  sichern, wenn Sie OS/2 durch MS-DOS 6.22 ersetzen.
+
+* NETZWERK.TXT beschreibt, wie Sie Ihre Netzwerksoftware auf MS-DOS 6.22
+  aktualisieren.
+
+* INFO2.TXT beschreibt die Verbesserungen, die MS-DOS 6.22 bezÅglich der
+  UnterstÅtzung internationaler Tastaturen und Codeseiten (ZeichensÑtze)
+  bietet.
+
+Weitere Informationen Åber neue Merkmale erhalten Sie,
+wenn Sie an der Eingabeaufforderung HELP WHATSNEW eingeben.
+
+In dieser Datei sind die folgenden Themen erlÑutert:
+
+1. Setup
+   1.1  SpeedStor.
+   1.2  Inkompatible Festplatte oder inkompatibler GerÑtetreiber.
+   1.3  AT&T-6300-Computer.
+   1.4  Toshiba-Computer mit RAM-Laufwerk.
+   1.5  Tandy mit ROM-DOS.
+   1.6  Setup zeigt die Meldung "Ihr Computer verwendet ein
+	inkompatibles Komprimierungsprogramm" an.
+   1.7  Sie haben Dateien aus dem Verzeichnis gelîscht, die Setup
+	benîtigt, um die optionalen Windows-Programme zu installieren.
+   1.8  AusfÅhren von Setup, wenn Ihr Computer Windows NT verwendet.
+   1.9  Setup stellt fest, da· Ihr Computer eine Nicht-MS-DOS-Partition 
+	oder Nicht-MS-DOS-Dateien enthÑlt und Windows NT verwendet.
+   1.10 Setup zeigt den Bildschirm "Ihr Computer verwendet einen
+	Kennwortschutz" an.
+   1.11 Setup zeigt die Meldung: "Ihr Computer verwendet ein inkompatibles
+	Dienstprogramm fÅr den Lîschschutz" an.
+   1.12 Setup stellt fest, da· auf Ihrem Computer DR-DOS installiert ist.
+   1.13 Installieren von MS-DOS auf einem anderen Laufwerk als C:.
+   1.14 Umgehen der Uninstall-Diskette und Verwenden der Setup-
+	Standardoptionen.
+   1.15 Installieren von MS-DOS 6.22 auf einem Computer mit einem
+	CorelSCSI UNI_ASP.SYS-Treiber.
+   1.16 Installieren von MS-DOS 6.22 auf einer mit DrivePro
+	oder EZ-Drive eingerichteten Festplatte.
+   1.17 SETUP zeigt die Meldung "Nicht genÅgend Festplattenspeicher" an,
+        und auf Ihrem System lÑuft PC-DOS 6.1.
+   1.18 Setup kann eine Datei nicht aktualisieren.
+   1.19 Aktualisieren, wenn PC-DOS 6.1 installiert ist.
+   1.20 énderungen bezÅglich der UnterstÅtzung internationaler Tastaturen
+	  und ZeichensÑtze
+2. MemMaker, EMM386 und Speicherverwaltung
+   2.1  Der Expansionsspeicher-Treiber von Intel (EMM.SYS).
+   2.2  AusfÅhren von MemMaker auf einem Computer unter PC-NFS.
+   2.3  Sie haben einen Super-VGA-Bildschirm und mîchten Speicher sparen.
+   2.4  Verwenden von MemMaker mit IBM LAN.
+   2.5  MemMaker und Adaptec SCSI-GerÑte.
+   2.6  Verwenden von MemMaker auf einem Computer mit PC Tools oder PC-DOS 
+	RAMBoost.
+   2.7  EMM386 findet in einer Anwendung einen Fehler.
+   2.8  MemMaker macht standardmÑ·ig keine Durchsuche des hohen Speicher-
+	bereichs mehr.
+3. Windows
+   3.1  Ihr Computer verwendet eine permanente Auslagerungsdatei fÅr 
+	Windows 3.0.
+   3.2  Verwenden von komprimierten Disketten mit dem Datei-Manager von 
+	Windows.
+4. HardwarekompatibilitÑt mit MS-DOS 6.22
+   4.1  Compaq-Treiber EXTDISK.SYS.
+   4.2  Hardcard.
+   4.3  Toshiba.
+5. Microsoft Anti-Virus, Backup und Defragmentierer
+   5.1  Microsoft Anti-Virus.
+   5.2  AusfÅhren von Microsoft Backup fÅr MS-DOS unter Windows.
+   5.3  Backup fÅr Windows unterbricht die AusfÅhrung am Ende des
+	KompatibilitÑtstests.
+   5.4  AusfÅhren von Microsoft Backup auf einem TI4000- oder
+	Gateway NOMAD-Computer.
+   5.5  Einsetzen von MS-DOS 6.22 Backup, um MS-DOS 6.0- oder 6.2-
+        Sicherungen wiederherzustellen
+   5.6  Microsoft Defragmentierer.
+6. Programme anderer Hersteller
+   6.1  4DOS und NDOS.
+   6.2  Installationsprogramme fÅr Above Board 286 und
+	Above Board Plus.
+   6.3  CodeView.
+   6.4  Colorado Tape Backup.
+   6.5  Fastback Plus.
+   6.6  Norton Desktop fÅr Windows 2.0.
+   6.7  Norton Utilities.
+   6.8  PC Tools.
+   6.9  QEMM Stealth DoubleSpace-Funktion.
+   6.10 Johnson Computer Systems PC-Vault und PC-Vault Plus.
+   6.11 AddStor DoubleTools.
+7. DriveSpace
+   7.1  Konvertieren von DoubleSpace-Laufwerken in das DriveSpace-Format
+   7.2  Konvertieren Ihrer XtraDrive-DatentrÑger-Komprimierungssoftware
+	in das DriveSpace-Format.
+   7.3  Konvertieren der Stacker-Software, Version 3.1, in das
+	DriveSpace-Format.
+   7.4  Konvertieren anderer DatentrÑger-Komprimierungssoftware in
+	das DriveSpace-Format.
+   7.5  DriveSpace-Setup meldet, da· Ihr Computer ein
+	inkompatibles Festplatten-Cache-Programm ausfÅhrt.
+   7.6  Ihr komprimiertes Laufwerk hat nicht genÅgend Speicherplatz.
+   7.7  Ihr nichtkomprimiertes (Host-)Laufwerk hat nicht genÅgend
+	Speicherplatz.
+   7.8  DriveSpace hat nicht alle Dateien komprimiert, da auf dem Laufwerk
+	nicht genÅgend Speicherplatz vorhanden war.
+   7.9  Windows zeigt die Meldung "Permanente Auslagerungsdatei
+	beschÑdigt" an.
+   7.10 EXTDISK.SYS zeigt eine Warnung zu Laufwerkbezeichnungen an.
+   7.11 Sie benîtigen einen speziellen GerÑtetreiber, um Ihr Startlaufwerk
+	verwenden zu kînnen.
+   7.12 Defragmentieren nichtkomprimierter Laufwerke nach dem éndern
+	von Dateiattributen.
+   7.13 Dateien, die DriveSpace nicht komprimieren kann.
+   7.14 Microsoft Defragmentierer hat wÑhrend einer Laufwerkkomprimierung
+	nicht genÅgend Arbeitsspeicher.
+   7.15 DriveSpace und PC-Vault.
+   7.16 Maximale Grî·e eines komprimierten Laufwerks.
+   7.17 DriveSpace kann ein Laufwerk nicht aktivieren, da dieses Laufwerk 
+	Probleme verursacht.
+   7.18 Nach der Installation von DriveSpace kînnen Sie nicht mehr
+	auf Ihre Hardcard zugreifen.
+   7.19 Sie erhalten eine DoubleGuard-Warnmeldung.
+   7.20 Ein komprimiertes Laufwerk ist momentan zu fragmentiert,
+	um aktiviert werden zu kînnen.
+   7.21 Es wird die Meldung "Ihr Computer wird mit einer inkompatiblen
+	DBLSPACE.BIN-Version ausgefÅhrt" angezeigt.
+   7.22 Verwenden des Befehls DRVSPACE nach der Umgehung von DRVSPACE.BIN.
+   7.23 Entfernen des Schreibschutzes von einer komprimierten Diskette.
+   7.24 Automatisches Laden und Norton Disk Cache.
+   7.25 Die Undelete-Dienstprogramme und DriveSpace.
+   7.26 Erstellen einer Not-Startdiskette fÅr DriveSpace-Systeme
+   7.27 Wenn ScanDisk eine DoubleSpace-DatentrÑgerdatei weder prÅfen noch 
+	reparieren kann.
+   7.28 DoubleSpace und die Datei DRVSPACE.MR1.
+   7.29 Verwenden nicht konvertierter DoubleSpace-Laufwerke mit DriveSpace
+   7.30 Ein teilweise konvertiertes Laufwerk kann nicht geladen werden
+
+
+1. SETUP
+========
+
+1.1 SpeedStor.
+--------------
+Wenn Sie von Setup auf diesen Abschnitt verwiesen wurden, und Ihr Computer 
+besitzt eine OS/2-Partition, die durch das Dienstprogramm FDISKPM in 
+OS/2 2.1 erstellt wurde, geben Sie an der Eingabeaufforderung SETUP/U ein, 
+um das Setup fÅr MS-DOS auszufÅhren. Wenn Sie von Setup auf diesen Abschnitt 
+verwiesen wurden, und weder eine OS/2 noch eine SpeedStor-Partition auf Ihrem 
+Computer vorhanden ist, lesen Sie bitte den Abschnitt "Setup zeigt die 
+Meldung 'Nichtkompatible Festplatte oder GerÑtetreiber' an" in Kapitel  
+"Diagnose und Lîsen von Problemen" im MS-DOS Benutzerhandbuch.
+
+Wenn auf Ihrem Computer eine SpeedStor-Partition vorhanden ist, verweist
+Setup Sie wahrscheinlich aus einem der folgenden GrÅnde auf diesen Abschnitt:
+
+* Setup konnte in Ihrer Datei CONFIG.SYS keinen Befehl fÅr den GerÑte-
+  treiber finden, der Ihre SpeedStor-Partition unterstÅtzt. Ist dies der
+  Fall, fÅgen Sie Ihrer CONFIG.SYS-Datei die entsprechende Befehlszeile
+  hinzu. Starten Sie Ihren Computer neu, und fÅhren Sie Setup aus.
+  Weitere Informationen Åber die Befehlszeile finden Sie in Ihrer
+  SpeedStor-Dokumentation.
+
+* Falls Ihre Datei CONFIG.SYS die Zeile DEVICE=HARDRIVE.SYS enthÑlt,
+  fÅhren Sie folgende Schritte aus:
+
+  1. Verwenden Sie den Befehl EXPAND, um die Datei SSTOR.SYS auf
+     Ihre Festplatte zu expandieren und zu kopieren. Stellen Sie
+     sicher, da· diese Datei in denselben Pfad wie die Datei
+     HARDRIVE.SYS kopiert wird.
+
+     Aus der Datei PACKING.LST auf der Setup-Diskette 1 geht her-
+     vor, auf welcher Setup-Diskette die Datei SSTOR.SYS gespei-
+     chert ist. Dort finden Sie auch Anweisungen, wie Sie die
+     Datei expandieren und auf Ihre Festplatte kopieren.
+
+  2. Ersetzen Sie den Befehl DEVICE=HARDRIVE.SYS durch den Befehl
+     DEVICE=SSTOR.SYS. Wenn beispielsweise der Befehl zum Laden der
+     Datei HARDRIVE.SYS "DEVICE=C:\SSTOR\HARDRIVE.SYS" lautete,
+     ersetzen Sie ihn durch den Befehl DEVICE=C:\SSTOR\SSTOR.SYS.
+
+  3. Starten Sie Ihren Computer neu.
+
+  4. Stellen Sie sicher, da· Sie Zugriff auf Ihre Festplatte haben.
+
+  5. FÅhren Sie Setup aus.
+
+1.2  Inkompatible Festplatte oder inkompatibler GerÑtetreiber.
+--------------------------------------------------------------
+Wenn Setup Sie auf diesen Abschnitt verweist und kein anderer Abschnitt
+dieser Datei auf Ihr System zutrifft, befindet sich auf Ihrer
+Festplatte eine Partition, die mit MS-DOS 6.22 nicht kompatibel ist.
+Sie mÅssen diese Partition von Ihrer Festplatte lîschen. Informationen
+hierzu finden Sie in Kapitel "Diagnose und Lîsen von Problemen" im
+MS-DOS Benutzerhandbuch.
+
+1.3 AT&T 6300Computer.
+----------------------
+Wenn Sie Åber einen AT&T 6300-Computer verfÅgen, dessen ROM-BIOS in der
+Version 1.21 oder frÅher vorliegt, sollten Sie bei Ihrem HÑndler ein
+aktualisiertes ROM-BIOS anfordern. Die Versionsnummer des ROM-BIOS
+wird angezeigt, wenn Sie Ihren Computer starten.
+
+1.4 Toshiba-Computer mit einem RAM-Laufwerk.
+--------------------------------------------
+Diese Hinweise gelten fÅr die Toshiba-Modelle T1200, T1600,
+T1200XE und T1000LE.
+
+Zur Verwendung der RAM-Festplatte fÅhren Sie vor der Installation
+von MS-DOS 6.22 folgende Schritte aus:
+
+1. Sichern Sie die Daten Ihrer RAM-Festplatte.
+
+2. Lîschen Sie den virtuellen Speicherplatz mit Hilfe des Toshiba
+   Setup-Programms, indem Sie ihm 0 KB (Null Kilobyte) zuordnen. Alle
+   Daten auf dem virtuellen Speicherplatz werden gelîscht.
+
+3. Starten Sie Ihren Computer neu.
+
+4. FÅhren Sie MS-DOS-Setup aus.
+
+5. Installieren Sie den virtuellen Speicherplatz erneut mit Hilfe des
+   Toshiba-Setup-Programms.
+
+6. FÅhren Sie FDISK aus, wechseln Sie zu Laufwerk 2, und erstellen Sie
+   eine primÑre DOS-Partition. Beenden Sie FDISK.
+
+7. Formatieren Sie Laufwerk D: mit Hilfe des Befehls FORMAT.
+
+1.5 Tandy mit ROM-DOS.
+----------------------
+Setzen Sie sich mit dem Hersteller Ihrer Hardware in Verbindung, um 
+Informationen Åber die Aktualisierung eines Tandy-Computers mit ROM-DOS
+auf MS-DOS 6.22 zu erhalten. Dies gilt fÅr die folgenden Modelle:
+1000EX, 1000HX, 1000SL, 1000SL2, 1000TL, 1000TL2, 1000TL3, 1000RL,
+1000RLX, 1000RL-HD, 1000RLX-HD, 1100FD, 2500XL, 2500XL2.
+
+1.6 Setup zeigt die Meldung "Ihr Computer verwendet ein
+    inkompatibles Komprimierungsprogramm" an.
+-------------------------------------------------------
+Wenn Setup meldet, da· Ihr Computer ein inkompatibles
+Komprimierungsprogramm verwendet, mÅssen Sie dieses Programm manuell
+entfernen, bevor Sie MS-DOS 6.22 installieren kînnen. 
+Fragen Sie Ihren FachhÑndler nach einem Update Ihres
+Komprimierungsprogramms. In den meisten FÑllen sind die
+aktuellen Komprimierungsprogramme mit MS-DOS 6.22 kompatibel.
+
+Alternativ kînnen Sie mit der folgenden Methode Ihr gegenwÑrtiges
+Komprimierungsprogramm entfernen:
+
+1. Sichern Sie alle Dateien auf Ihrer komprimierten Festplatte.
+   In Schritt 3 werden Sie angewiesen, Ihr nichtkomprimiertes Laufwerk
+   zu formatieren. Dadurch werden alle Daten auf Ihren komprimierten
+   und nichtkomprimierten Laufwerken gelîscht.
+
+2. Wenn Ihre Setup-Disketten mit Laufwerk A: kompatibel sind, legen Sie
+   die Setup-Diskette 1 ein, und starten Sie Ihren Computer neu. Wenn
+   Setup den ersten Bildschirm anzeigt, beenden Sie das Programm, indem
+   Sie die F3-TASTE zweimal drÅcken.
+
+   Wenn Ihre Setup-Disketten nicht mit Laufwerk A: kompatibel sind,
+   erstellen Sie eine Startdiskette fÅr dieses Laufwerk. Legen Sie dazu die
+   Setup-Diskette 1 in Laufwerk B: und eine leere Diskette in Laufwerk A:
+   ein. Geben Sie danach B:SETUP /F an der Eingabeaufforderung ein.
+
+   Wenn Sie dazu aufgefordert werden, wÑhlen Sie die Option zur Installa-
+   tion von MS-DOS auf einer Diskette in Laufwerk A:. Nachdem Setup
+   abgeschlossen ist, lassen Sie die Diskette in Laufwerk A:, und
+   starten Sie Ihren Computer neu.
+
+3. Geben Sie FORMAT C: /S an der Eingabeaufforderung ein, um Ihr
+   Startlaufwerk neu zu formatieren und die MS-DOS 6.22-Systemdateien
+   darauf zu Åbertragen.
+
+4. Entfernen Sie die Diskette aus Laufwerk A:, und starten Sie Ihren
+   Computer neu.
+
+5. Legen Sie die Setup-Diskette 1 in Laufwerk A: oder B: ein, und geben
+   Sie A:SETUP bzw. B:SETUP an der Eingabeaufforderung ein.
+
+6. Sobald Setup beendet ist, kînnen Sie die von Ihnen gesicherten Dateien 
+   wiederherstellen. Achten darauf, da· Sie keine MS-DOS-Dateien
+   wiederherstellen, die zu frÅheren MS-DOS-Versionen gehîren.
+
+1.7 Sie haben Dateien aus dem Verzeichnis gelîscht, die Setup benîtigt,
+    um die optionalen Windows-Programme zu installieren.
+-----------------------------------------------------------------------
+Falls Sie BUSETUP /E an der Eingabeaufforderung eingegeben haben,
+die Meldung "Setup konnte die benîtigten Dateien im angegebenen
+Verzeichnis nicht finden" angezeigt wird und Sie der Meinung sind,
+da· Sie die Dateien von Ihrer Festplatte gelîscht haben, fÅhren Sie
+folgendes Verfahren durch: Legen Sie die Setup-Diskette 1 in Laufwerk A:
+oder B: ein, und fÅhren Sie Setup aus, indem Sie A:SETUP /E oder 
+B:SETUP /E an der Eingabeaufforderung eingeben.
+
+1.8 AusfÅhren von Setup, wenn Ihr Computer Windows NT verwendet.
+----------------------------------------------------------------
+
+Wenn auf Ihrem Computer Windows NT installiert ist, jedoch nicht MS-DOS,
+fÅhren Sie Verfahren 1 durch. Sind auf Ihrem Computer Windows NT
+und MS-DOS installiert, fÅhren Sie Verfahren 2 durch.
+  
+Verfahren 1
+
+1. FÅhren Sie Setup aus, indem Sie die Setup-Diskette 1 in das Laufwerk A: 
+   einlegen und Ihren Computer neu starten. Nach Beendigung von Setup ist
+   Windows NT deaktiviert.
+
+   Wenn Sie Windows NT wieder aktivieren mîchten und Windows NT in einer 
+   FAT-Partition installiert war, fÅhren Sie die Schritte 2 und 3 dieses
+   Verfahrens durch, so da· Sie beide Betriebssysteme (Windows NT und 
+   MS-DOS) einsetzen kînnen.
+
+   Wenn Windows NT in einer Nicht-FAT-Partition installiert war, lesen
+   Sie den Abschnitt 1.9.
+
+2. Legen Sie die Windows NT-Setup-Diskette in Laufwerk A: bzw. Laufwerk
+   B: ein, und starten Sie Ihren Computer neu.
+
+3. WÑhlen Sie 'Wiederherstellen' im Bildschirm 'Windows NT-Setup',
+   und legen Sie die Windows NT-Notfallsdiskette ein (die Sie bei der 
+   Installation von Windows NT erstellt haben), um die Systemdateien von 
+   Windows NT wiederherzustellen.
+
+Verfahren 2
+
+1. WÑhlen Sie beim Starten Ihres Computers MS-DOS als Betriebssystem.
+
+2. FÅhren Sie Setup aus, indem Sie die Setup-Diskette 1 in Laufwerk A: oder 
+   B: einlegen und A:SETUP oder B:SETUP an der Eingabeaufforderung ein-
+   geben.
+
+1.9 Setup stellt fest, da· Ihr Computer eine Nicht-MS-DOS-Partition oder
+    Nicht-MS-DOS-Dateien enthÑlt und Windows NT verwendet.
+------------------------------------------------------------------------
+Das verwendete Verfahren hÑngt davon ab, ob Sie die Partition und deren
+Dateien beibehalten wollen oder nicht. Lesen Sie den Abschnitt, der
+die gewÅnschte Konfiguration beschreibt.
+
+Sie mîchten weder die Partition noch deren Dateien beibehalten.
+---------------------------------------------------------------
+Wenn Sie weder die Partition noch deren Dateien beibehalten mîchten,
+wÑhlen Sie die Option zum Lîschen der Partition oder Dateien, sobald
+Sie Setup dazu auffordert. Falls Ihnen Setup diese Option nicht anbietet,
+entfernen Sie die Partition nach Beendigung von Setup manuell. Anweisungen
+zum manuellen Entfernen einer Nicht-MS-DOS-Partition finden Sie in Kapitel
+"Diagnose und Lîsen von Problemen" im Microsoft MS-DOS Benutzerhand-
+buch unter "Verwenden von Fdisk zum Konfigurieren Ihrer Festplatte".
+
+Sie mîchten die Partition lîschen, jedoch deren Dateien sichern.
+----------------------------------------------------------------
+Wenn Sie die Datendateien noch benîtigen, die Partition jedoch lîschen
+mîchten, sichern Sie die Dateien, fÅhren Sie Setup erneut aus, und
+wÑhlen Sie die Option zum Lîschen der Partition oder Dateien, sobald Sie
+Setup dazu auffordert. Falls Ihnen Setup diese Option nicht anbietet,
+lîschen Sie die Partition nach Beendigung von Setup manuell. Anweisungen
+zum manuellen Lîschen einer Nicht-MS-DOS-Partition finden Sie in Kapitel
+"Diagnose und Lîsen von Problemen" im Microsoft MS-DOS Benutzerhand-
+buch unter "Verwenden von Fdisk zum Konfigurieren Ihrer Festplatte".
+
+Sie mîchten die Partition und deren Dateien beibehalten.
+--------------------------------------------------------
+FÅhren Sie das folgende Verfahren durch.
+
+ANMERKUNG  Wenn die Nicht-MS-DOS-Partition Ihre ganze Festplatte belegt,
+	   mÅssen Sie Ihre Festplatte neu konfigurieren. Sie kînnen 
+	   dies Setup Åberlassen (siehe oben), oder Sie kînnen sie selbst 
+	   manuell neu konfigurieren. Anweisungen zur manuellen Neukon-
+	   figuration finden Sie in Ihrer Windows NT-Dokumentation.
+
+So installieren Sie MS-DOS 6.22 und behalten Ihre Partition oder Dateien
+bei:
+
+1. FÅhren Sie MS-DOS-Setup erneut aus.
+
+2. Wenn Sie dazu aufgefordert werden, wÑhlen Sie die Option zum Fort-
+   setzen von Setup, ohne die Partition oder Dateien zu entfernen.
+
+3. Wenn Setup beendet ist, legen Sie die Windows NT-Setup-Diskette
+   in Laufwerk A: bzw. Laufwerk B: ein und starten Ihren Computer
+   neu.
+
+4. WÑhlen Sie 'Wiederherstellen' im Bildschirm 'Windows NT-Setup',
+   und legen Sie die Windows NT-Notfallsdiskette ein (die Sie bei der 
+   Installation von Windows NT erstellt haben), um die Systemdateien von 
+   Windows NT wiederherzustellen.
+
+
+1.10 Setup zeigt den Bildschirm "Ihr Computer verwendet einen Kennwort-
+     schutz" an.
+-----------------------------------------------------------------------
+Siehe Abschnitt 1.12.
+
+1.11 Setup zeigt die Meldung: "Ihr Computer verwendet ein inkompa-
+     tibles Dienstprogramm fÅr den Lîschschutz" an.
+------------------------------------------------------------------
+Siehe Abschnitt 1.12.
+
+1.12 Setup stellt fest, da· auf Ihrem Computer DR-DOS installiert ist.
+----------------------------------------------------------------------
+Wenn auf Ihrem Computer DR-DOS installiert ist, sollten Sie folgende
+Vorsichtsma·nahmen treffen, bevor Sie Setup neu starten:
+
+o Wenn Sie Sicherheitsfunktionen, wie beispielsweise Kennwortschutz,
+  verwenden, mÅssen Sie diese deaktivieren. Weitere Informationen
+  finden Sie in Kapitel "Diagnose und Lîsen von Problemen" im Microsoft
+  MS-DOS Benutzerhandbuch unter "Setup zeigt die Meldung 'Ihr Computer 
+  verwendet einen Kennwortschutz' an".
+
+o Wenn Sie Dateien oder Verzeichnisse mit einem Kennwort geschÅtzt
+  haben, entfernen Sie den Kennwortschutz. Dies gilt besonders dann,
+  wenn Sie die Dateien CONFIG.SYS oder AUTOEXEC.BAT oder Ihr
+  DR-DOS-Verzeichnis geschÅtzt haben.
+
+o Wenn auf Ihrem Computer DELWATCH installiert ist, fÅhren Sie das
+  Verfahren "Setup zeigt die Meldung 'Ihr Computer verwendet ein 
+  inkompatibles Dienstprogramm fÅr den Lîschschutz' an" in Kapitel 
+  "Diagnose und Lîsen von Problemen" im Microsoft MS-DOS Benutzerhandbuch 
+  aus.
+
+o Wenn in Ihrer CONFIG.SYS- oder AUTOEXEC.BAT-Datei bedingte Befehle,
+  wie beispielsweise die Befehle "?" oder GOTO, verwendet werden,
+  mÅssen Sie diese lîschen und die Reihenfolge der Befehle in Ihren
+  Startdateien entsprechend korrigieren.
+
+o Wenn in Ihrer Datei CONFIG.SYS der Befehl CHAIN verwendet wird,
+  mÅssen Sie ihn lîschen und die Reihenfolge der Befehle in dieser
+  Datei entsprechend korrigieren.
+
+o Wenn Ihr Computer DatentrÑgerkomprimierung verwendet, Laufwerk C:
+  jedoch nicht komprimiert ist, fÅhren Sie Setup so aus, wie es im
+  Microsoft MS-DOS Benutzerhandbuch im Kapitel "Erste Schritte" beschrie-
+  ben ist. Wenn Setup die Meldung "Ihre Datei CONFIG.SYS enthÑlt
+  Befehle, die keine gÅltigen MS-DOS-Befehle sind" anzeigt, wÑhlen Sie
+  die Option "Originaldateien Ñndern".
+
+  Wenn Laufwerk C: komprimiert ist, fÅhren Sie folgende Schritte aus:
+
+  1. Ermitteln Sie, welches Laufwerk das ursprÅnglich unkomprimierte
+     Laufwerk ist. Weitere Informationen finden Sie in Ihrer DR-DOS-
+     Dokumentation.
+
+  2. Erstellen Sie Sicherungskopien der Dateien CONFIG.SYS und
+     AUTOEXEC.BAT auf Ihrem komprimierten Laufwerk und von
+     DCONFIG.SYS auf Ihrem nichtkomprimierten Laufwerk.
+
+  3. Kombinieren Sie die zwei Konfigurationsdateien. Wenn bei-
+     spielsweise Laufwerk D: Ihr nichtkomprimiertes Laufwerk ist,
+     geben Sie folgendes an der Eingabeaufforderung ein:
+
+       COPY D:\DCONFIG.SYS+C:\CONFIG.SYS D:\CONFIG.SYS
+
+  4. Kopieren Sie die kombinierte CONFIG.SYS-Datei auf Laufwerk C:.
+     Wenn beispielsweise Laufwerk D: Ihr nichtkomprimiertes Laufwerk
+     ist, geben Sie folgendes an der Eingabeaufforderung ein:
+
+       COPY D:\CONFIG.SYS C:\CONFIG.SYS
+
+  5. Kopieren Sie Ihre AUTOEXEC.BAT-Datei auf Ihr nichtkomprimiertes
+     Laufwerk. Wenn beispielsweise Laufwerk D: Ihr nichtkomprimiertes
+     Laufwerk ist, geben Sie folgendes an der Eingabeaufforderung ein:
+
+       COPY C:\AUTOEXEC.BAT D:\AUTOEXEC.BAT
+
+  6. FÅhren Sie das MS-DOS 6.22-Setup aus.
+
+  7. Wenn Setup die Meldung "Ihre Datei CONFIG.SYS enthÑlt Befehle,
+     die keine gÅltigen MS-DOS-Befehle sind" anzeigt, wÑhlen Sie
+     die Option "Originaldateien Ñndern".
+
+     Wenn Setup die Meldung "Momentan verwenden Sie das 
+     Betriebssystem DR-DOS" anzeigt, wÑhlen Sie "Fortsetzen".
+
+  8. Wenn Setup beendet ist, zeigt MS-DOS fÅr jeden Befehl
+     Ihrer AUTOEXEC.BAT- und CONFIG.SYS-Datei, der kein
+     zulÑssiger MS-DOS-Befehl ist, die Meldung "Unbekannter Befehl"
+     an. Lîschen Sie diese Befehle aus Ihren AUTOEXEC.BAT- und
+     CONFIG.SYS-Dateien.
+
+  9. FÅgen Sie am Anfang Ihrer Datei CONFIG.SYS den Befehl
+     DEVICE=HIMEM.SYS hinzu, und starten Sie Ihren Computer neu.
+
+1.13 Installieren von MS-DOS auf einem anderen Laufwerk als C:.
+---------------------------------------------------------------
+Wie im folgenden Verfahren beschrieben wird, kînnen Sie MS-DOS auf einem
+anderen Laufwerk als C: installieren, indem Sie die Systemdateien mit Hilfe
+der Option /M auf Ihr Startlaufwerk kopieren, und danach die Option /Q
+verwenden, um Ihre MS-DOS-Dateien auf ein anderes Laufwerk zu kopieren.
+
+ANMERKUNG  Dieses Verfahren ist nur fÅr fortgeschrittene Benutzer gedacht.
+	   Verwendet Ihr Computer Software zur DatentrÑgerkomprimierung, 
+	   Ñndern Sie das folgende Verfahren entsprechend um.
+
+ANMERKUNG  Wenn Ihr Computer eine Plattenpartitionssoftware, wie z.B.
+	   Disk Manager, SpeedStor, Priam oder Everex verwendet, dÅrfen Sie 
+	   das folgende Verfahren erst durchfÅhren, wenn Sie die Schritte 1 
+	   bis 3 im Abschnitt "Manuelles Installieren von MS-DOS" in Kapitel 
+	   "Diagnose und Lîsen von Problemen" im Microsoft MS-DOS Benutzer-
+	   handbuch ausgefÅhrt haben. Wenn Ihre Software zum Aktivieren des 
+	   Laufwerks, auf dem Sie MS-DOS installieren mîchten, einen Treiber 
+	   verwendet, erstellen Sie eine Startdiskette mit diesem Treiber in 
+	   einer Datei CONFIG.SYS oder AUTOEXEC.BAT. Nachdem Sie diese 
+	   Schritte ausgefÅhrt haben, gehen Sie zu Schritt 3 des folgenden 
+	   Verfahrens Åber.
+
+1. FÅhren Sie Setup aus, indem Sie die Setup-Diskette 1 in Laufwerk A:
+   oder B: einlegen und A:SETUP /M oder B:SETUP /M an der Eingabeauf-
+   forderung eingeben.
+
+ANMERKUNG  Ihre CONFIG.SYS- und AUTOEXEC.BAT-Dateien wurden als CONFIG.NEW
+	   und AUTOEXEC.NEW gespeichert.
+
+2. FÅhren Sie Setup aus, indem Sie die Setup-Diskette 1 in Laufwerk A:
+   oder B: einlegen und A:SETUP /Q oder B:SETUP /Q an der Eingabeaufforderung
+   eingeben. Folgen Sie den Anweisungen auf dem Bildschirm.
+
+3. Wenn Setup den Bildschirm "Systemeinstellungen" anzeigt, wÑhlen Sie
+   die Option "MS-DOS-Pfad". Geben Sie das Laufwerk und Verzeichnis ein, in
+   dem MS-DOS installiert werden soll, und drÅcken Sie die EINGABETASTE.
+   Setzen Sie Setup fort.
+
+4. Nachdem Setup beendet ist, îffnen Sie die Dateien CONFIG.NEW und
+   AUTOEXEC.NEW, und prÅfen Sie, ob deren Befehle den richtigen Pfad an-
+   geben. Speichern Sie die Dateien wieder als CONFIG.SYS und AUTOEXEC.BAT.
+   Starten Sie dann Ihren Computer neu.
+
+1.14 Umgehen der Uninstall-Diskette und Verwenden der Setup-
+     Standardoptionen.
+------------------------------------------------------------
+Um Setup daran zu hindern, eine Uninstall-Diskette zu erstellen,
+fÅhren Sie das Programm mit der Option /G aus.
+
+Um die Uninstall-Diskette zu umgehen und die Setup-Standardoptionen zu
+verwenden, anstatt sie selbst auszuwÑhlen, fÅhren Sie Setup mit den beiden
+Optionen /H und /G aus.
+
+VORSICHT  Hauptzweck der Uninstall-Diskette ist es, Ihre Dateien bei der
+	  AusfÅhrung von und im Anschlu· an Setup zu schÅtzen. Wenn Setup 
+	  bei seiner AusfÅhrung keine Uninstall-Diskette erstellt, kînnen 
+	  Sie Ihre alte DOS-Version nicht mehr herstellen. Sollte Setup 
+	  au·erdem bewirken, da· auf Ihre Festplatte nicht mehr zugegriffen 
+	  werden kann, kînnen Sie sie mit Hilfe der Uninstall-Diskette nicht 
+	  wieder zugÑnglich machen.
+
+ANMERKUNG  FÅr den Fall, da· Sie MS-DOS in einer frÅheren Version als 5.0 
+           einsetzen und entweder die Option /G oder die Optionen /H und /G
+           zusammen verwenden mîchten, dÅrfen Sie Setup erst ausfÅhren,
+           nachdem Sie Ihre Netzwerksoftware entsprechend der Anweisungen
+           aktualisiert haben, die in der Datei NETZWERK.TXT stehen.
+
+1.15 Installieren von MS-DOS 6.22 auf einem Computer mit einem
+     CorelSCSI UNI_ASP.SYS-Treiber.
+--------------------------------------------------------------
+Wenn Setup anhÑlt, wÑhrend Sie versuchen, MS-DOS 6.22 zu installieren, und
+Ihr System fÅr ein optisches Laufwerk den GerÑtetreiber CorelSCSI UNI_ASP.SYS
+verwendet, mÅssen Sie den DEVICE-Befehl, der den Corel-Treiber UNI_ASP.SYS
+lÑdt, aus Ihrer CONFIG.SYS-Datei lîschen. FÅhren Sie dann Setup erneut aus.
+Nachdem Setup beendet ist, installieren Sie den Corel-Treiber UNI_ASP.SYS
+wieder so, wie Sie ihn ursprÅnglich installiert hatten. Haben Sie danach
+immer noch Probleme, wenden Sie sich an die Corel-Kundenbetreuung.
+
+1.16 Installieren von MS-DOS 6.22 auf einer mit DrivePro
+     oder EZ-Drive eingerichteten Festplatte.
+--------------------------------------------------------
+Wenn Ihre Festplatte unter Verwendung von Micro House DrivePro(TM)
+oder EZ-Drive(TM) eingerichtet wurde, mÅssen Sie eines der folgenden
+Verfahren durchfÅhren, bevor Sie MS-DOS 6.22 installieren kînnen.
+
+ o Falls Ihre DrivePro- oder EZ-Drive-Disketten die Datei DOS6INST.EXE
+   enthalten, fÅhren Sie das Programm DOS6INST aus, und folgen Sie den
+   Anweisungen auf dem Bildschirm. (Dieses Programm ist auch im Micro
+   House BBS unter (303) 443-9957 in USA erhÑltlich.)
+
+ o Falls Sie nicht Åber das Programm DOS6INST verfÅgen, fÅhren Sie das
+   Programm MHDRIVE (fÅr DrivePro) oder das Programm
+   EZ-RESET (fÅr EZ-Drive) aus. DrÅcken Sie die EINGABETASTE zur BestÑ-
+   tigung der Standardantworten, bis Sie das Programm auffordert, die
+   MS-DOS-Setup-Diskette 1 einzulegen. Legen Sie die Diskette ein, und
+   drÅcken Sie die EINGABETASTE. WÑhlen Sie im zweiten Bildschirm die 
+   Option "Setup fortsetzen und aktuelle DOS-Version ersetzen". (Beachten
+   Sie, da· dieses Verfahren Ihre aktuellen Dateien CONFIG.SYS und
+   AUTOEXEC.BAT durch die Grundversionen dieser Dateien ersetzt.)
+
+WÅnschen Sie weitere Informationen oder treten Probleme auf, wenden Sie
+sich an den Micro House Technical Support.
+
+1.17 SETUP zeigt die Meldung "Nicht genÅgend Festplattenspeicher" an,
+     und auf Ihrem System lÑuft PC-DOS 6.1.
+---------------------------------------------------------------------
+LÑuft Ihr Computer unter PC-DOS 6.1 mit der PC-DOS-Festplattenkomprimierung,
+wenn Sie MS-DOS-Setup ausfÅhren, zeigt Setup die folgende Meldung an: "Nicht
+genÅgend Festplattenspeicher auf Laufwerk C, um MS-DOS zu installieren".
+
+Die PC-DOS Festplattenkomprimierung ist inkompatibel zu MS-DOS. Sie kînnen
+MS-DOS 6.22 erst installieren, nachdem Sie Ihre PC-DOS Festplattenkompri
+mierung fÅr alle komprimierten Laufwerke rÅckgÑngig gemacht und die PC-DOS
+Festplattenkomprimierung vollstÑndig gelîscht haben. Weitere Informationen
+finden Sie in diesem Abschnitt weiter unten unter "Aktualisieren von PC-DOS
+6.1".
+
+Hinweis: Wenn Sie die PC-DOS Festplattenkomprimierung vollstÑndig entfernt
+         haben und diese Meldung immer noch erscheint, stellen Sie
+         mehr Speicherplatz auf Laufwerk C: zur VerfÅgung.
+
+1.18  Setup kann eine Datei nicht aktualisieren
+-----------------------------------------------
+Wenn Setup eine Ihrer MS-DOS-Dateien nicht aktualisieren kann, zeigt es
+die Meldung "Datei konnte nicht aktualisiert werden" an. Wenn Sie
+Setup fortgesetzt haben, ist Ihre MS-DOS 6.22-Installation nicht
+vollstÑndig, weil die angegebene Datei nicht auf die Version 6.22
+aktualisiert wurde. Wenn Sie die angegebene Datei kennen und Sie
+wissen, da· Sie sie nicht benîtigen (weil es sich beispielsweise um eine
+DoubleSpace-Datei handelt und Sie DoubleSpace nicht einsetzen), kÅmmern Sie
+sich nicht um diese Meldung. Wenn Sie sich nicht sicher sind, aktualisieren
+Sie die Datei mit der folgenden Prozedur. Sie benîtigen Ihre MS-DOS 6.0
+Disketten fÅr diese Prozedur.
+
+1. Wenn Sie DoubleSpace benutzen und die nicht aktualisierte Datei
+   war eine DoubleSpace-Datei, oder Ihr System arbeitet nicht
+   einwandfrei, legen Sie die UNINSTALL-Diskette in Laufwerk A:
+   ein, und geben Sie A:\UNINSTALL ein.
+
+2. Legen Sie die Setup-Diskette 1 von MS-DOS 6.0 (nicht von MS-DOS 6.22) 
+   in Laufwerk A: oder B: ein, und benutzen Sie den MS-DOS-Editor (EDIT), um
+   den Inhalt der Datei PACKING.LST zu lesen. Anhand diese Datei kînnen Sie
+   zu jeder MS-DOS-Datei ermitteln, auf welcher der MS-DOS 6.0-Disketten
+   diese sich befindet.
+
+3. Legen Sie die benîtigte MS-DOS 6.0-Diskette in das Laufwerk A: oder B:
+ein, und benutzen Sie den Befehl EXPAND, um die Datei zu dekomprimieren.
+Befindet sich die Diskette zum Beispiel im Laufwerk A: und Sie mîchten die
+Datei DRVSPACE.BI_ in das Verzeichnis C:\DOS dekomprimieren, mÅssen Sie
+folgenden Befehl eingeben:
+
+	EXPAND A:\DRVSPACE.BI_ C:\DOS\DRVSPACE.BIN
+
+   Weitere Information finden Sie am Anfang der Datei PACKING.LST oder
+   im MS-DOS 6 Benutzerhandbuch.
+
+4. Starten Sie MS-DOS 6.22-Setup erneut.
+   
+1.20 Aktualisieren von PC-DOS 6.1
+---------------------------------
+Falls auf Ihrem Computer PC-DOS 6.1 mit Festplattenkomprimierung
+ausgefÅhrt wird, kînnen Sie MS-DOS 6.22 erst installieren, nachdem
+Sie die die Komprimierungssoftware gelîscht haben. Der Grund ist die
+InkompatibilitÑt der PC-DOS 6.1-Komprimierungssoftware mit MS-DOS 6.21.
+FÅhren Sie die folgenden Schritte aus:
+
+1. Deinstallieren Sie zunÑchst die PC-DOS-Festplattenkomprimierung
+   von allen komprimierten Laufwerken. Informationen darÅber finden
+   Sie in der PC-DOS Dokumentation in der Beschreibung des Befehls
+   SSUNCOMP.
+ 
+2. Nachdem SSUNCOMP das letzte komprimierte Laufwerk dekomprimiert hat,
+   fragt SSUNCOMP danach, ob der Treiber deaktiviert werden soll.
+   Antworten Sie mit "Ja", damit die PC-DOS-Version der Datei DRVSPACE.BIN
+   gelîscht wird.
+
+3. Wechseln Sie in das Verzeichnis, das Ihre PC-DOS-Dateien enthÑlt,
+   und geben Sie folgenden Befehl ein:
+
+	DEL DRVSPACE.*
+
+4. Legen Sie die MS-DOS 6.22 Setup-Diskette 1 in Laufwerk A: oder B: ein,
+   und geben Sie A:SETUP oder B:SETUP ein.
+
+1.20  énderungen bezÅglich der UnterstÅtzung internationaler Tastaturen
+      und ZeichensÑtze
+-----------------------------------------------------------------------
+MS-DOS 6.22 umfa·t neben den neuen Codeseitendateien EGA2.CPI, EGA3.CPI und
+ISO.CPI die neue Tastaturdatei KEYBRD2.SYS, die weitere Tastaturen bereit-
+stellt. DarÅber hinaus bietet MS-DOS in der Datei COUNTRY.SYS neue lÑnder-
+spezifische Einstellungen.
+
+AusfÅhrlichere Informationen darÅber, in welcher Weise die UnterstÅtzung
+internationaler Tatstaturen und Codeseiten (ZeichensÑtze) erweitert wurde,
+finden Sie in der Datei COUNTRY.TXT. Diese Datei finden Sie wiederum in dem
+Verzeichnis, in dem sich Ihre MS-DOS-Dateien befinden.
+
+
+2. MEMMAKER, EMM386 UND SPEICHERVERWALTUNG
+==========================================
+
+2.1 Der Expansionsspeicher-Treiber von Intel (EMM.SYS).
+-------------------------------------------------------
+Wenn Sie fÅr eine Speichererweiterungskarte (Above Board) den Intel-
+Treiber EMM.SYS verwenden, sollten Sie diesen ab der Version 4.0 in einer
+der Revisionen E oder D einsetzen: Revision E bei einem ISA-System und
+Revision D bei einem MCA- oder einem anderen System. Steht Ihnen nur eine
+frÅhere Version zur VerfÅgung, kînnen Sie bei Intel eine kostenlose neue 
+Version anfordern.
+
+2.2 AusfÅhren von MemMaker auf einem Computer unter PC-NFS.
+-----------------------------------------------------------
+Wenn Sie die Netzwerksoftware PC-NFS verwenden, fÅhren Sie vor dem
+Starten von MemMaker folgendes Verfahren durch:
+
+1. ôffnen Sie die Datei MEMMAKER.INF mit einem beliebigen Texteditor.
+   Diese Datei befindet sich in dem Verzeichnis, das Ihre MS-DOS-Dateien
+   enthÑlt.
+
+2. FÅgen Sie die folgende Zeile in die Datei ein:
+
+   *NET
+
+3. Speichern Sie die Datei, und fÅhren Sie dann MemMaker aus.
+
+2.3 Sie haben einen Super-VGA-Bildschirm und mîchten Speicher sparen.
+---------------------------------------------------------------------
+Wenn Sie Microsoft Windows auf einem 80386-Computer mit Erweiterungs-
+speicher und Super-VGA-Bildschirm einsetzen, kînnen Sie zusammen mit
+MemMaker die Datei MONOUMB.368 verwenden, um fÅr Anwendungen mehr konven-
+tionellen Speicher freizugeben.
+
+FÅhren Sie dazu folgende Schritte aus:
+
+1. ôffnen Sie die Datei SYSTEM.INI mit einem beliebigen Texteditor.
+   Gehen Sie zum Abschnitt [386Enh].
+
+2. FÅgen Sie fÅr die Datei MONOUMB.386, die sich in Ihrem MS-DOS-
+   Verzeichnis befindet, eine DEVICE-Befehlszeile ein. Wenn beispielsweise
+   Ihr MS-DOS-Verzeichnis C:\DOS lautet, fÅgen Sie folgende Zeile ein:
+
+     DEVICE=C:\DOS\MONOUMB.386
+
+3. Speichern Sie die Datei, und starten Sie Ihren Computer neu.
+
+4. Nachdem Ihr Computer gestartet ist, fÅhren Sie MemMaker aus, indem Sie an
+   der Eingabeaufforderung den Befehl MEMMAKER eingeben. 
+
+5. WÑhlen Sie "Benutzerdefiniertes Setup". Im Bildschirm "Weitere Optionen"
+   beantworten Sie die Frage "Verwendung des Monochrombereichs (B000-B7FF)
+   fÅr Anwendungen?" mit JA.
+
+   Folgen Sie den Anweisungen auf dem Bildschirm.
+
+2.4 Verwenden von MemMaker mit IBM LAN.
+---------------------------------------
+Bevor Sie MemMaker starten, mÅssen Sie mîglicherweise die Parameter fÅr den
+IBM LAN Support-Treiber DXMC0MOD.SYS anpassen. Sie sollten MemMaker erst
+starten, nachdem Sie Ihre CONFIG.SYS-Datei daraufhin ÅberprÅft haben, da· der
+DEVICE-Befehl, von dem DXMC0MOD.SYS geladen wird, in einer der drei folgenden
+AusfÅhrungen vorliegt:
+
+o Mit den ersten drei Parametern (siehe nÑchstes Beispiel):
+
+  DEVICE=C:\DXMC0MOD.SYS 400000000001,D800,1
+
+o Ohne Parameter (siehe nÑchstes Beispiel):
+
+  DEVICE=C:\DXMC0MOD.SYS
+
+o Mit einigen Parametern sowie genÅgend Kommas, damit die ersten drei
+  Parameter aufgefÅllt sind (siehe nÑchstes Beispiel):
+
+  DEVICE=C:\DXMC0MOD.SYS 400000000001,,
+
+2.5 MemMaker und Adaptec SCSI-GerÑte.
+-------------------------------------
+MemMaker ist mit Adaptec SCSI-GerÑten kompatibel. Wenn Sie jedoch den
+Treiber ASPI4DOS.SYS fÅr Ihr SCSI-GerÑt verwenden, schlie·t MemMaker
+diesen Treiber standardmÑ·ig vom Optimierungsproze· aus. Wenn Sie das
+SCSI-GerÑt nicht als Startlaufwerk verwenden, kînnen Sie den Treiber
+ASPI4DOS.SYS in den Optimierungsproze· einbeziehen. Lîschen Sie dazu den
+Eintrag ^ASPI4DOS aus der Datei MEMMAKER.INF, und starten Sie MemMaker neu.
+
+2.6 Verwenden von MemMaker auf einem Computer mit PC Tools
+    oder PC-DOS RAMBoost.
+----------------------------------------------------------
+Sie kînnen MemMaker oder RAMBoost mit MS-DOS verwenden, jedoch nicht
+beide gleichzeitig. MemMaker verhindert zwar, da· RAMBoost geladen wird,
+lîscht aber nicht dessen DEVICE-Befehl aus Ihrer CONFIG.SYS-Datei.
+
+2.7 EMM386 findet in einer Anwendung einen Fehler.
+----------------------------------------------------
+Wenn EMM386 eine Meldung wie "EMM386 hat in einer Anwendung Fehler
+#12 entdeckt" anzeigt, weist dies darauf hin, da· der Prozessor einen
+Ausnahmefehler an EMM386 berichtet hat. Normalerweise tritt ein Ausnahme-
+fehler auf, wenn eine Anwendung dem Prozessor eine Anweisung unter ungÅl-
+tigen oder unerwarteten Bedingungen gibt. In den meisten FÑllen sind diese
+Fehler mit einem bestimmten Programm verbunden. Ein Fehler jedoch, der
+nicht bei einer bestimmten Anwendung auftritt, wurde mîglicherweise von
+einem GerÑtetreiber oder einem speicherresidenten Programm (TSR-Programm)
+verursacht.
+
+So vermeiden Sie diese Fehler
+
+  o  Versuchen Sie, das betroffene Programm zu ermitteln. Sehen Sie
+     beispielsweise nach, ob der Fehler auftritt, wenn das Programm nicht
+     ausgefÅhrt wird. Vermuten Sie als Fehlerquelle ein speicherresidentes
+     Programm oder einen GerÑtetreiber, versuchen Sie, das entsprechende 
+     beim Starten des Computers zu umgehen.
+
+  o  Deaktivieren Sie EMM386. Wenn eine bestimmte Anwendung den Fehler
+     verursacht, ist es der Anwendung durch die Deaktivierung von EMM386
+     vielleicht mîglich, eine Fehlermeldung zu erzeugen. Es kann aber auch
+     sein, da· sich dabei die Speicherkonfiguration Ñndert, so da· der Fehler
+     nicht mehr auftritt.
+
+  o  éndern Sie die Reihenfolge, in der die GerÑtetreiber und speicher-
+     residenten Programme geladen werden. Dies kann zweckmÑ·ig sein, da
+     einige Fehler nur unter bestimmten Speicherbedingungen auftreten.
+
+  o  Fehler 12 zeigt an, da· ein Stapel falsch verwendet wird. FÅgen
+     Sie in diesem Fall den folgenden Befehl zu Ihrer CONFIG.SYS-Datei
+     hinzu:
+
+     STACKS=18,512
+
+  o  Fehler 13 zeigt an, da· das Programm mîglicherweise den geschÅtzten
+     Modus ohne Mitwirkung von EMM386 zu verwenden versucht. Sie mÅssen
+     eventuell eine VCPI-kompatible Version des Programms verwenden oder
+     dÅrfen EMM386 bei der AusfÅhrung dieser Anwendung nicht laden.
+
+2.8  MemMaker macht standardmÑ·ig keine öperprÅfung des hohen
+     Speicherbereichs mehr.
+-------------------------------------------------------------
+    StandardmÑ·ig durchsucht die MS-DOS 6.22-Version von MemMaker den hohen 
+    Speicherbereich nicht. Stattdessen ist die Option "Hohen Speicherbereich
+    durchsuchen" mit "Nein" belegt, und MemMaker beschrÑnkt die Suche nach
+    verfÅgbaren UMBs auf die Speicheradressen C600 bis EFFF. Die zu MS-DOS 6
+    gehîrende Version von MemMaker hat im Gegensatz hierzu den hohen
+    Speicherbereich standardmÑ·ig durchsucht. Au·erdem hat MemMaker nicht nur
+    den Speicherbereich C600-EFFF, sondern auch die Adressen im Bereich von
+    F000 bis F7FF durchsucht.
+
+    FÅhren Sie MemMaker im benutzerdefinierten Modus aus, um mehr Speicher-
+    platz fÅr auszufÅhrende Programme freizumachen, und Ñndern Sie die
+    Option "Hohen Speicherbereich durchsuchen" auf "Ja". (Dabei ist zu be-
+    achten, da· einige Computer nicht mehr korrekt starten, wenn die UMBs
+    in diesen Speicherbereich gelegt werden.)
+
+ANMERKUNG  Wenn bei der letzten AusfÅhrung von MemMaker die Option "Hohen 
+	   Speicherbereich durchsuchen" auf "Ja" eingestellt war, bleibt
+	   diese Einstellung auch bei der nÑchsten AusfÅhrung von MemMaker
+	   erhalten.
+
+3. WINDOWS
+==========
+
+3.1 Ihr Computer verwendet eine permanente Auslagerungsdatei fÅr
+    Windows 3.0.
+----------------------------------------------------------------
+Wenn Ihr Computer eine permanente Auslagerungsdatei fÅr Windows 3.0 ver-
+wendet, mÅssen Sie das Programm SPATCH.BAT ausfÅhren, damit die Auslage-
+rungsdatei mit MS-DOS 6 kompatibel ist. FÅhren Sie dazu folgende Schritte
+aus:
+
+1. Kopieren Sie die Datei SPATCH.BAT auf Ihre Festplatte. Auf welcher
+   Diskette sich die Datei befindet, geht aus der Datei PACKING.LST auf
+   der Setup-Diskette 1 hervor.
+
+2. Geben Sie an der Eingabeaufforderung folgendes ein:
+
+     SPATCH [Laufwerk]:[Pfad]SWAPFILE.EXE
+
+   Geben Sie fÅr die Parameter 'Laufwerk' und 'Pfad' die Position der
+   Datei SWAPFILE.EXE an.
+
+3. Folgen Sie den Anweisungen auf dem Bildschirm.
+
+   Das Programm Ñndert die Datei SWAPFILE.EXE so, da· sie mit MS-DOS 6
+   verwendet werden kann, und speichert eine Sicherungskopie als
+   SWAPFILE.SAV. Nachdem Sie ÅberprÅft haben, ob die Datei unbeschÑdigt
+   ist, kînnen Sie SWAPFILE.SAV lîschen.
+
+3.2 Verwenden von komprimierten Disketten mit dem Datei-Manager von
+    Windows.
+-------------------------------------------------------------------
+
+   Wenn Sie komprimierte Disketten verwenden und die Option "Automatisches 
+   Laden" aktiviert ist, kann es vorkommen, da· Sie wÑhrend der Arbeit mit 
+   dem Datei-Manager Fehlermeldungen erhalten oder andere Problem auftre-
+   ten. Diese Probleme lassen sich umgehen, wenn Sie die F5-TASTE zweimal
+   drÅcken.
+
+   Wenn Sie z. B. von komprimierten Disketten zu dekomprimierten Disketten
+   wechseln, bleibt die SchaltflÑche mit dem Buchstaben des Host-Laufwerks 
+   fÅr die komprimierte Diskette bestehen, bis Sie die F5-TASTE zweimal 
+   drÅcken.
+
+
+4. HARDWAREKOMPATIBILITéT MIT MS-DOS 6.22
+=========================================
+
+4.1 Compaq-Treiber EXTDISK.SYS.
+-------------------------------
+Ab Version 3.00 ist der Compaq-Treiber EXTDISK.SYS kompatibel mit MS-DOS 6.
+Sollten Sie eine aktualisierte Version benîtigen, fordern Sie diese bei 
+Ihrem HÑndler an.
+
+4.2 Hardcard.
+-------------
+Lesen Sie den Abschnitt 7.18, wenn folgende Situation vorliegt: Ihr Com-
+puter lief, bevor er auf MS-DOS 6.22 aktualisiert wurde, unter MS-DOS 6
+oder MS-DOS 6.2, das Hardcard-Laufwerk des Systems dient als dessen Start-
+laufwerk, und Sie mîchten fÅr dieses Laufwerk DriveSpace einsetzen. Weitere
+Hardcard-Informationen finden Sie nachstehend.
+
+a) Hardcard II
+
+   Wenn Sie die Karten Plus Development Hardcard II oder Hardcard
+   II XL nicht zusammen mit EMM386.EXE einsetzen kînnen, mÅssen Sie die
+   Option Ausschlie·en (X=) angeben, um zu verhindern, da· es zu Konflikten
+   zwischen EMM386 und der BIOS-Adresse der Karte kommt.
+
+   FÅhren Sie MemMaker aus, um EMM386 zu konfigurieren.
+
+b) Hardcard 40 oder Passport
+
+Wenn Sie mit einer Hardcard 40- oder einer Passport-Wechselplatte arbeiten
+und in Ihrer CONFIG.SYS-Datei ein DEVICE-Befehl fÅr PLUSDRV.SYS steht,
+mÅssen Sie diesen DEVICE-Befehl deaktivieren oder lîschen. FÅhren Sie
+danach MS-DOS 6.22-Setup aus. Nach Beendigung von Setup reaktivieren Sie
+den fÅr PLUSDRV.SYS erforderlichen DEVICE-Befehl, oder stellen Sie ihn
+wieder her. Er mu· in der Datei CONFIG.SYS in der letzten Zeile stehen.
+
+c) FÅr den Fall, da· Ihr Computer, bevor er auf MS-DOS 6.22 aktualisiert
+   wurde, unter MS-DOS 6 oder MS-DOS 6.2 lief, da· Sie auf der Hardcard
+   Festplatte DoubleSpace installiert hatten und da· es Ihnen jetzt nicht
+   mîglich ist, auf Ihr neu komprimiertes Laufwerk zuzugreifen, sollten Sie
+   folgendes probieren:
+
+   1) FÅgen Sie in Ihre AUTOEXEC.BAT-Datei den Befehl DRVSPACE /MOUNT
+      ein, um die auf der Hardcard befindliche komprimierte Daten-
+      trÑgerdatei bei jedem Start Ihres Computers zu aktivieren.
+
+   2) Oder sorgen Sie dafÅr, da· aus Ihrer CONFIG.SYS-Datei heraus min-
+      destens ein GerÑtetreiber (z.B. ANSI.SYS) NACH dem Treiber
+      ATDOSXL.SYS, aber VOR dem Treiber DRVSPACE.SYS geladen wird.
+
+4.3 Toshiba.
+------------
+Wenn Sie vor der AusfÅhrung von Setup die MS-DOS 5.0-Version von EMM386
+zusammen mit der Stromsparfunktion verwendet haben, sollten Sie das
+Programm oder den GerÑtetreiber VRESUME verwenden, um Probleme mit der
+Funktion RESUME zu vermeiden. FÅhren Sie dazu das folgende Verfahren durch:
+
+1. Stellen Sie sicher, da· sich die Datei VRESUME.COM bzw. VRESUME.SYS
+   auf Ihrer Festplatte befindet. Wenn Sie das speicherresidente Programm
+   laden mîchten, fÅgen Sie zu Ihrer AUTOEXEC.BAT-Datei einen Befehl fÅr
+   VRESUME.COM hinzu. Um den GerÑtetreiber zu laden, fÅgen Sie zu
+   Ihrer CONFIG.SYS-Datei einen Befehl fÅr die Datei VRESUME.SYS hinzu.
+
+2. Speichern Sie die Datei, und starten Sie Ihren Computer neu.
+
+   ANMERKUNG  Informationen Åber die Verwendung von VRESUME unter
+	      Windows 3.0 finden Sie in der Datei VRESUME.TXT auf Ihren 
+	      Toshiba MS-DOS 5.0-Disketten.
+
+
+5. Microsoft Anti-Virus, Backup und Defragmentierer
+===================================================
+
+5.1 Microsoft Anti-Virus.
+-------------------------
+Vor dem Lîschen einer Programmdatei sollten Sie immer eine Sicherungskopie 
+davon erstellen. Wenn Sie eine Programmdatei lîschen und das Programm 
+beschÑdigt ist, installieren Sie das Programm neu. Wenn Anti-Virus wieder 
+einen Virus anzeigt, trifft diese Anzeige mîglicherweise nicht zu. 
+Erkundigen Sie sich bei Ihrem HÑndler, ob eine aktualisierte Version des 
+Programms erhÑltlich ist.
+
+5.2 AusfÅhren von Microsoft Backup fÅr MS-DOS unter Windows.
+------------------------------------------------------------
+Sie sollten Backup fÅr MS-DOS nicht aus Windows heraus ausfÅhren, sondern
+stattdessen Backup fÅr Windows verwenden (Sicherungen, die mit Backup fÅr
+Windows erstellt wurden, kînnen mit Backup fÅr MS-DOS wiederhergestellt
+werden). Sollten Sie Backup fÅr Windows nicht installiert haben, finden Sie
+die entsprechenden Informationen im MS-DOS Benutzerhandbuch im Kapitel
+"Erste Schritte" unter "Installieren von Anti-Virus, Backup und Undelete
+nach Setup".
+
+5.3 Backup fÅr Windows unterbricht die AusfÅhrung am Ende des
+    KompatibilitÑtstests.
+-------------------------------------------------------------
+Wenn Microsoft Backup fÅr Windows am Ende des KompatibilitÑtstests anhÑlt,
+laden Sie Åber Ihre SYSTEM.INI-Datei mîglicherweise einen inkompatiblen
+Sicherungstreiber eines Fremdherstellers. FÅhren Sie dann die folgenden
+Schritte aus:
+
+ANMERKUNG  Dieses Verfahren deaktiviert den Sicherungstreiber des Fremd-
+	   herstellers.
+
+1. ôffnen Sie Ihre SYSTEM.INI-Datei, und suchen Sie den Abschnitt [386Enh].
+
+2. PrÅfen Sie, ob eine der folgenden Zeilen in diesem Abschnitt steht:
+
+   DEVICE=FASTBACK.386
+   DEVICE=VFD.386
+   DEVICE=CPBVXD.386
+   DEVICE=VIRWT.386
+
+3. Wenn Sie eine dieser Zeilen finden, setzen Sie davor ein Semikolon (;).
+
+4. Speichern Sie die Datei, starten Sie Windows neu, und fÅhren Sie Backup
+   fÅr Windows erneut aus.
+
+5.4 AusfÅhren von Microsoft Backup bei einem TI4000- oder Gateway NOMAD-
+    Computer.
+------------------------------------------------------------------------
+Damit es keinen Konflikt zwischen dem "Turbo"-Modus und Microsoft Backup
+fÅr Windows oder fÅr MS-DOS gibt, mÅssen Sie die Option /L0 zu dem DEVICE
+Befehl Ihrer CONFIG.SYS-Datei hinzufÅgen, der die Datei BATTERY.PRO lÑdt.
+Als weitere Mîglichkeit kînnen Sie an der Eingabeaufforderung den Befehl
+SETPOWER /L0 eingeben, bevor Sie Microsoft Backup starten.
+
+5.5 Einsetzen von MS-DOS 6.22 Backup, um MS-DOS 6.0- oder 6.2-Sicherungen
+    wiederherzustellen
+-------------------------------------------------------------------------
+So wie frÅhere Versionen von MS-DOS Backup unterstÅtzen auch die zu MS-DOS
+6.22 gehîrenden Backup-Programme, da· wÑhrend der Erstellung einer Siche-
+rung mit Datenkomprimierung gearbeitet wird. Allerdings verwenden die zu
+MS-DOS 6.22 gehîrenden Backup-Programme ein anderes Komprimierungsformat
+als die frÅheren Versionen von Backup.
+
+Daher kann MS-DOS 6.22 Backup fÅr Windows (MWBACKUP.EXE) keine kompri-
+mierten Sicherungen wiederherstellen, die mit MS-DOS 6.0 oder 6.2 Backup
+erstellt wurden. Wenn Sie solche Sicherungen wiederherstellen mîchten,
+mÅssen Sie entweder MS-DOS 6.22 Backup fÅr MS-DOS (MSBACKUP.EXE) oder die
+Version von Backup verwenden, mit der die komprimierten Sicherungen
+erstellt wurden. Informationen darÅber, wie Sie eine frÅhere Version von
+Backup wiederherstellen, finden Sie unter der nÑchsten öberschrift.
+
+MS-DOS 6.22 Backup fÅr MS-DOS (MSBACKUP.EXE) kann Sicherungen, die mit
+frÅheren Versionen von Backup komprimiert wurden, nur dann wiederher-
+stellen, wenn eine der folgenden Bedingungen zutrifft:
+
+ * DoubleSpace ist installiert (DBLSPACE.BIN ist in den Arbeitsspeicher
+   geladen). 
+
+ * Die Dateien DBLSPACE.BIN und DRVSPACE.MR1 stehen zur VerfÅgung. Weitere
+   Informationen zu DRVSPACE.MR1 finden Sie im Abschnitt 7.28.
+
+Sowohl MSBACKUP.EXE als auch MWBACKUP.EXE kînnen Sicherungen wiederher-
+stellen, die zwar mit einer der MS-DOS-Versionen 6.0, 6.2 oder 6.21, aber
+ohne Datenkomprimierung erstellt wurden. Wenn Sie die jeweiligen Daten erst
+gesichert haben, nachdem Sie in dem Dialogfeld 'Sicherungsoptionen' das
+KontrollkÑstchen 'Sicherungsdaten komprimieren' aktiviert haben. sollte es
+keine Probleme bereiten, diese Daten mit MS-DOS 6.22 Backup wiederherzu-
+stellen.
+
+Wiederherstellen einer frÅheren Version von Microsoft Backup
+------------------------------------------------------------
+Wenn Sie MS-DOS 6.22 Setup ausfÅhren, werden die zu Backup gehîrenden
+Programme in der Version 6.22 installiert. Nachstehend sind die Schritte
+angegeben, die erforderlich sind, um wieder das Backup fÅr MS-DOS zu in-
+stallieren, das zu einer der MS-DOS-Versionen 6.0 oder 6.2 gehîrt. Welche
+Schritte Sie im einzelnen ausfÅhren mÅssen, hÑngt von der Grî·e Ihrer
+MS-DOS 6.0- oder 6.2-Disketten ab. (FÅr die nachfolgend angegebenen Befehle
+wird angenommen, da· die Setup-Disketten in das Laufwerk A: eingelegt
+werden und da· sich die MS-DOS-Dateien in dem Verzeichnis C:\DOS befinden;
+sollte fÅr die Disketten ein anderes Laufwerk oder fÅr die MS-DOS-Dateien
+ein anderes Verzeichnis verwendet werden, mÅssen Sie die Befehle ent-
+sprechend anpassen.)
+
+Sie haben MS-DOS 6.2-Disketten (entweder 1,2-MB- oder 1,44-MB-Disketten)
+oder MS-DOS 6.0-Disketten (nur 1,2-MB-Disketten):
+
+1. Legen Sie die Setup-Diskette 1 in das Laufwerk A: ein.
+
+2. Geben Sie folgende Befehle ein:
+
+   COPY A:*.OVL C:\DOS
+   EXPAND A:MSBACKUP.EXE C:\DOS
+   EXPAND A:MSBACKUP.HLP C:\DOS
+   EXPAND A:MSBCONFG.HLP C:\DOS
+
+Sie haben MS-DOS 6.0-Disketten (nur 1,44-MB-Disketten):
+
+1. Legen Sie die Setup-Diskette 2 in das Laufwerk A: ein.
+
+2. Geben Sie folgende Befehle ein:
+
+   EXPAND A:MSBACKUP.EXE C:\DOS
+   COPY A:*.OVL C:\DOS
+
+3. Legen Sie die Setup-Diskette 3 in das Laufwerk A: ein.
+
+4. Geben Sie folgende Befehle ein:
+
+   COPY A:*.OVL C:\DOS
+   EXPAND A:MSBACKUP.HLP C:\DOS
+   EXPAND A:MSBCONFG.HLP C:\DOS
+
+   Diese Befehle kopieren die zu Backup gehîrenden Dateien von dem Laufwerk
+   A: in das Verzeichnis C:\DOS. Befindet sich die Setup-Diskette 1 im
+   Laufwerk B:, oder sind die MS-DOS-Dateien in einem anderen Verzeichnis
+   abgelegt, mÅssen Sie die Befehle entsprechend anpassen.
+
+5.6 Microsoft Defragmentierer.
+------------------------------
+Wenn Sie von Microsoft Defragmentierer die Meldung "Nicht genÅgend 
+Speicherplatz" erhalten, ÅberprÅfen Sie mit dem Befehl MEM, wieviel 
+konventioneller Speicher, hoher Speicher und Erweiterungsspeicher (XMS)
+verfÅgbar ist. ZusÑtzlich zum gesamten verfÅgbaren konventionellen
+Speicher kann Defragmentierer bis zu 384 KB Erweiterungsspeicher und 
+12 KB hohen Speicher nutzen.
+
+Um den Speicherplatz zu vergrî·ern, fÅhren Sie die Verfahren durch,die in 
+Kapitel "Diagnose und Lîsen von Problemen" des Microsoft MS-DOS
+Benutzerhandbuchs im Abschnitt "Ein MS-DOS-Programm zeigt die Meldung 
+'Zu wenig Arbeitsspeicher' an" beschrieben sind.
+
+Falls weniger als 384 KB Erweiterungsspeicher verfÅgbar ist, fÅhren Sie die
+Verfahren durch, die in Kapitel "Optimieren Ihres Speichers" des Microsoft
+MS-DOS Benutzerhandbuchs im Abschnitt "Freigeben von Erweiterungsspeicher"
+beschrieben sind.
+
+
+6. PROGRAMME ANDERER HERSTELLER
+===============================
+
+6.1 4DOS und NDOS.
+------------------
+4DOS und NDOS sind mit MS-DOS 6 kompatibel. Wenn Sie jedoch einige der
+neuen Funktionen in MS-DOS 6.22 (wie MemMaker, den LOADHIGH /L-Befehl,
+die DIR-Komprimierungsoptionen und die FÑhigkeit, Startbefehle zu umgehen) 
+verwenden mîchten, wenden Sie sich an JP Software, um 4DOS, Version 4.02 
+oder hîher, oder an Symantec, um Norton Utilities, Version 7.0 oder hîher, 
+zu erhalten.
+
+Wenn Sie mehrere Konfigurationen verwenden, fÅhrt 4DOS oder NDOS Ihre
+Datei AUTOEXEC.BAT nicht automatisch aus. Sie mÅssen erst in der Datei
+CONFIG.SYS in der Zeile SHELL= die Option /P einfÅgen.
+
+Wenn Sie statt der 4DOS- oder NDOS-Hilfe die zu MS-DOS 6.22 gehîrende Hilfe
+einsetzen mîchten, haben Sie zwei Mîglichkeiten: Entweder Sie starten letz-
+tere mit dem Befehl COMMAND /C HELP, oder Sie definieren einen 4DOS- bzw.
+NDOS-Aliasnamen, damit die in Ihrem MS-DOS 6.22-Verzeichnis abgelegte Datei
+HELP.COM ausgefÅhrt wird.
+
+6.2 Installationsprogramme fÅr Above Board 286 und Above Board Plus.
+--------------------------------------------------------------------
+Bevor Sie fÅr solche Speichererweiterungskarten ein Installationsprogramm
+einsetzen, das vor Mai 1989 datiert ist, sollten Sie sich vergewissern, 
+da· kein Programm geladen ist, das Erweiterungsspeicher verwendet (z.B. 
+SMARTDrive oder RAMDrive). Wenn diese Programme aktiviert sind, verlieren 
+Sie mîglicherweise Daten. Nachdem Sie die Above Board installiert haben, 
+kînnen Sie diese Programme wieder verwenden.
+
+6.3 CodeView.
+-------------
+VORSICHT  Der Einsatz der Versionen 3.0 bis 3.13 der CodeView-Datei CV.EXE
+	  kann Datenverluste verursachen, wenn Ihr System mit einem 80386-
+	  Speicher-Manager (wie z. B. EMM386.EXE) und GerÑtetreibern oder 
+	  Programmen arbeitet, die Erweiterungsspeicher verwenden. Um fest-
+	  zustellen, mit welcher Version Sie arbeiten, geben Sie an der 
+	  Eingabeaufforderung CV.EXE ein.
+
+6.4 Colorado Tape Backup.
+-------------------------
+Wenn Sie eine Meldung erhalten, da· Sie zwei Versionen der Datei VFINTD.386
+geladen haben, mÅssen Sie Ihre SYSTEM.INI-Datei Ñndern. FÅhren Sie dazu das 
+folgende Verfahren durch:
+
+1. ôffnen Sie Ihre SYSTEM.INI-Datei, und suchen Sie den Abschnitt [386Enh].
+   Dieser sollte zwei Zeilen enthalten, die den folgenden Ñhneln:
+
+   DEVICE=C:\TAPE\CMSDTAPE.386
+   DEVICE=C:\DOS\VFINTD.386
+
+2. Falls Sie vorhaben, Ihr Colorado Tape Backup-Programm zu verwenden,
+   mÅssen Sie ein Semikolon (;) vor den DEVICE-Befehl der Datei VFINTD.386
+   setzen. Mîchten Sie dagegen Microsoft Backup verwenden, mÅssen Sie ein
+   Semikolon (;) vor den DEVICE-Befehl der Datei CMSDTAPE.386 setzen.
+
+3. Speichern Sie die Datei, und starten Sie Windows neu.
+
+6.5 Fastback Plus.
+------------------
+Wenn Sie eine frÅhere Version von Fifth GenerationSystems Fastback 3.0 
+besitzen, mÅssen Sie den Befehl LOADFIX verwenden, bevor Sie Fastback Plus 
+oder das Fastback Plus-Installationsprogramm ausfÅhren, um sicherzustellen, 
+da· Sie keine Daten verlieren. Geben Sie dazu an der Eingabeaufforderung ein:
+
+  LOADFIX FB.EXE
+
+oder
+
+  LOADFIX FBINSTAL.EXE
+
+6.6 Norton Desktop fÅr Windows 2.0.
+-----------------------------------
+Setup ergÑnzt Norton Desktop fÅr Windows durch ein zweites "Hilfsmittel"-
+MenÅ, das die Befehle BACKUP und ANTIVIRUS (falls Sie diese Windows-
+Programme installiert haben) sowie den Befehl 'Komprimierungsinfos' enthÑlt
+(wenn DoubleSpace oder DriveSpace installiert ist).
+
+Wenn Sie das Laufwerk komprimieren, auf dem sich SmartCan befindet, kînnen
+danach Systemprobleme auftreten. Sie kînnen diese Probleme beheben, indem
+Sie Norton Desktop fÅr Windows neu installieren.
+
+Der folgende Abschnitt enthÑlt weitere Informationen darÅber, wie Norton
+AntiVirus und DoubleSpace oder DriveSpace zusammen eingesetzt werden
+kînnen.
+
+6.7 Norton Utilities.
+---------------------
+Liegen Norton SpeedDisk und Norton DiskDoctor in einer Version bis ein-
+schlie·lich Version 8.0 vor, laufen sie nicht auf DriveSpace-Laufwerken.
+Entsprechend angepa·te Versionen dieser Norton-Dienstprgramme erhalten Sie
+bei Ihrem SoftwarehÑndler.
+
+Die Option "Leerer Platz" von Norton SpeedDisk (bis Version 7.0) ist mit
+DoubleSpace- oder DriveSpace-Laufwerken inkompatibel. Setzen Sie sich mit
+Ihrem Software-hÑndler in Verbindung, um eine aktualisierte Version von
+Norton SpeedDisk zu beziehen.
+
+Sie sollten das Dienstprogramm WipeInfo (vor Version 8.0) nicht auf
+DoubleSpace-Laufwerken einsetzen, da es verlorene Zuordnungseinheiten
+verursachen kann. Falls Sie diese Option bereits verwendet haben, geben
+Sie den Befehl SCANDISKein, um die verlorenen Zuordnungseinheiten wieder-
+zugewinnen.
+
+LÑuft Norton AntiVirus, wenn Sie das Laufwerk komprimieren, auf dem sich
+die Datei NAV_SYS befindet, verbleibt eine Kopie der Datei NAV_SYS auf dem
+Host-Laufwerk. Norton AntiVirus wird dadurch daran gehindert, wÑhrend der
+Komprimierung einen Virus zu melden. Nach Beendigung der Komprimierung,
+kînnen Sie die Kopie der Datei NAV_SYS auf dem Host-Laufwerk lîschen.
+
+Verwenden Sie jedoch eines der Dienstprogramme Norton Cache oder Speedrive,
+sollten Sie das Dienstprogramm erst nach dem DEVICE-Befehl laden, der die
+Datei DRVSPACE.SYS lÑdt. Weitere Informationen finden Sie im Abschnitt 7.24.
+
+6.8 PC Tools.
+-------------
+Zeigt PC Shell nicht alle Dateien oder Verzeichnisse auf Ihrem Laufwerk an, 
+beenden Sie PC Shell umgehend, und fordern Sie bei Central Point Software 
+eine aktualisierte Version an. 
+
+VORSICHT  Versuchen Sie nicht PC Shell auf diesem Laufwerk zu verwenden, 
+	  es kann zu Datenverlust fÅhren. Dies betrifft sowohl komprimierte 
+	  als auch nichtkomprimierte Laufwerke.
+
+Die Option DISKFIX /SCAN in PC Tools kann verlorene Zuordnungseinheiten
+auf DoubleSpace- sowie DriveSpace-Laufwerken verursachen. Vermeiden Sie die
+Verwendung dieser Option. (Falls Sie diese Option bereits verwendet haben,
+kînnen Sie die verlorenen Zuordnungseinheiten mit SCANDISK wieder zurÅck-
+holen.)
+
+Der Befehl COMPRESS von PC Tools, Version 5.5 und 6.0, ist mit
+DoubleSpace und DriveSpace inkompatibel.
+
+6.9  QEMM Stealth DoubleSpace-Funktion.
+---------------------------------------
+Die Stealth DoubleSpace-Funktion der QEMM-Versionen 7.03 und 7.04 und
+MS-DOS 6.22 sind uneingeschrÑnkt kompatibel. Diese Versionen stehen
+allen QEMM 7-Benutzern sowohl Åber Online-Dienste (z.B. CompuServe,
+BIX und QuarterDeck BBS) als auch direkt von QuarterDeck Office Systems
+zur VerfÅgung.
+
+Der zu der Version 7.02 gehîrende Stealth DoubleSpace-Treiber (ST-DBL.SYS)
+ist zwar zu DoubleSpace kompatibel, nicht aber zu DriveSpace, DEFRAG.EXE
+oder dem automatischen Laden komprimierter Disketten. Wenn Sie mit
+QEMM Version 7.02 arbeiten, sollten Sie sich von einem der oben aufge-
+fÅhrten Online-Dienste oder von QuarterDeck Office Systems eine aktua-
+lisierte Version besorgen.
+
+Der zu der Version 7.01 gehîrende Stealth DoubleSpace-Treiber (ST-DBL.SYS)
+ist nicht kompatibel zu  MS-DOS 6.22 (dies gilt sowohl fÅr DriveSpace als
+auch fÅr DoubleSpace). Wenn Sie mit QEMM Version 7.01 arbeiten und Ihr
+Computer nicht startet, sollten Sie den folgenden Abschnitt lesen.
+
+Sie verwenden die Stealth DoubleSpace-Funktion von QEMM 7.01
+------------------------------------------------------------
+Die Stealth DoubleSpace-Funktion von QEMM 7.01 ist nicht kompatibel zu
+MS-DOS 6.22. FÅr den Fall, da· Sie DoubleSpace ausfÅhren und die Stealth
+DoubleSpace-Funktion von QEMM Version 7.01 einsetzen, kann Ihr Computer
+nicht richtig gestartet werden.
+
+Sie kînnen dieses Problem umgehen, indem Sie die F8-TASTE beim Computerstart 
+drÅcken. Geben Sie "J" zu allen Eingabeaufforderungen ein, au·er zu der 
+folgenden:  
+
+    DEVICE=C:\QEMM\ST-DBL.SYS [Y/N]?
+
+Wenn MS-DOS diese Eingabeaufforderung anzeigt geben Sie "N" ein. (Auf Ihrem 
+Computer ist der Pfadname fÅr ST-DBL.SYS mîglicherweise anders.) Starten Sie 
+Ihren Computer, bearbeiten Sie die Datei CONFIG.SYS, und nehmen Sie folgende 
+énderungen vor:
+
+ * Deaktivieren Sie den Befehl DEVICE fÅr ST-DBL.SYS, indem Sie den Befehl 
+   REM verwenden.
+ 
+ * FÅr den Fall, da· Sie DoubleSpace einsetzen, fÅgen Sie einen DEVICE-
+   Befehl fÅr DBLSPACE.SYS hinzu. Zum Beispiel:
+
+   DEVICE=C:\DOS\DBLSPACE.SYS /MOVE
+
+   (Arbeiten Sie mit DriveSpace, mÅssen Sie stattdessen einen DEVICE-Befehl
+    fÅr DRVSPACE hinzufÅgen.)
+
+6.10  Johnson Computer Systems PC-Vault und PC-Vault Plus.
+----------------------------------------------------------
+Wenn Sie die Version 4.6 oder eine frÅhere Version vom PC-Vault- oder 
+PC-Vault Plus-Festplattenschutzsystem verwenden, dÅrfen Sie die Option 
+"Maximum Floppy Boot Protection" nicht aktivieren, wenn Sie DoubleSpace 
+oder DriveSpace einsetzen.
+
+FÅr diese PC-Vault- und PC-Vault Plus-Versionen ist die Option "Maximum 
+Floppy Boot Protection" mit DoubleSpace und DriveSpace nicht kompatibel und
+kînnte zu Datenverlust fÅhren. Wenn Sie mit einer frÅheren Version von 
+PC-Vault- oder PC-Vault Plus als der Version 4.6 arbeiten, sollten Sie von
+Johnson Computer Systems eine aktualisierte Version anfordern.
+
+6.11  AddStor Double Tools. 
+---------------------------
+Die AddStor Double Tools Version 1.0 und Version 1.2 funktionieren nur mit
+DoubleSpace, nicht mit DriveSpace.
+
+AddStor Double Tools Version 1.0 funktioniert solange zusammen mit MS-DOS
+6.22 DoubleSpace, wie Sie nicht die erweiterten DoubleSpace-Treiber von
+AddStor installieren. Wenn Sie Double Tools Version 1.0 installieren,
+dÅrfen Sie das Feld "Erweiterte DoubleSpace-Treiber installieren" nicht
+aktivieren. Andernfalls ersetzt Double Tools die DBLSPACE.BIN-Datei von
+MS-DOS 6.22 durch die Double Tools-Version von DBLSPACE.BIN, die nur zu
+MS-DOS 6.0 kompatibel ist. Beim nÑchsten Computerstart wird dann die
+Meldung "Falsche Version von DBLSPACE.BIN" angezeigt, und keines Ihrer
+komprimierten Laufwerke wird aktiviert.
+
+Wenn Sie Double Tools Version 1.0 oder 1.2 einsetzen und gleichzeitig die
+erweiterten DoubleSpace-Treiber installiert haben, kînnen Sie MS-DOS 6.22
+Setup nicht ausfÅhren. Sie kînnen dieses Problem beheben, indem Sie das zu
+Double Tools gehîrende Programm DTCONFIG.EXE ausfÅhren und die Option
+"Microsoft" (Version 1.0) oder "Standard" (Version 1.2) wÑhlen. Speichern
+Sie diese énderungen, beenden Sie DTCONFIG, und fÅhren Sie MS-DOS 6.22
+Setup erneut aus.
+
+7. DRIVESPACE
+=============
+Zu MS-DOS 6.22 gehîrt die Komprimierungssoftware DriveSpace. DriveSpace ist
+sehr Ñhnlich zu dem Programm DoubleSpace, das zu MS-DOS 6.0 und 6.2 gehîrt.
+Der Hauptunterschied besteht darin, da· DriveSpace komprimierte Daten in
+einem anderen Format speichert als DoubleSpace. 
+
+Anmerkung: Haben Sie vor der Aktualisierung MS-DOS 6.0 oder MS-DOS 6.2 ein-
+           gesetzt, kînnen Sie DoubleSpace nach wie vor mit MS-DOS 6.22
+           verwenden. (Wenn Sie MS-DOS 5 oder eine Ñltere Version
+           aktualisiert haben, befindet sich DoubleSpace nicht auf Ihrem
+           Computer.)
+
+7.1 Konvertieren von DoubleSpace-Laufwerken in das DriveSpace-Format
+--------------------------------------------------------------------
+Wenn Sie momentan DoubleSpace einsetzen, kînnen Sie dies auch unter MS-DOS
+6.22 weiterhin tun. Sie kînnen aber auch Ihr System sowie alle DoubleSpace-
+Laufwerke in das DriveSpace-Format konvertieren.
+
+Anmerkung: FÅr den Fall, da· Sie die U.S.-Version von MS-DOS 6.22 Upgrade
+           erworben haben, kînnen Sie die DoubleSpace-Konvertierung
+           anfordern, indem Sie den beiliegenden Gutschein (Coupon)
+           einsenden; haben Sie MS-DOS 6.22 Step-Up oder eine
+           internationale Version von MS-DOS 6.22 erworben, umfa·t diese
+           bereits die DoubleSpace-Konvertierung.)
+
+So konvertieren Sie Ihren Computer von DoubleSpace in DriveSpace:
+
+1. Sichern Sie die Daten, die sich auf den DoubleSpace-Laufwerken befinden.
+
+2. Geben Sie DRVSPACE an der Eingabeaufforderung ein, und folgen Sie den
+   Anweisungen, die auf Ihrem Bildschirm erscheinen. 
+   
+   DriveSpace wandelt alle eingerichteten DoubleSpace-Laufwerke in das
+   DriveSpace-Format um und konvertiert Ihr System so, da· es nicht mehr
+   mit DoubleSpace, sondern mit DriveSpace arbeitet.
+
+Anmerkung: Die eigentliche Konvertierung kann sehr lange dauern (insbe-
+           sondere dann, wenn Ihre DoubleSpace-Laufwerke viele Daten
+           enthalten). Es ist daher Åberlegenswert, die erforderliche
+           Konvertierung Åber Nacht auszufÅhren.
+
+7.2 Konvertieren Ihrer XtraDrive-DatentrÑger-Komprimierungssoftware
+    in das DriveSpace-Format.
+-------------------------------------------------------------------
+Wenn Ihr Computer XtraDrive-DatentrÑgerkomprimierung verwendet, entfernen
+Sie die Komprimierung mit Hilfe des Uninstall-Programms, und installieren 
+Sie anschlie·end DriveSpace.
+
+7.3 Konvertieren der Stacker-Software, Version 3.1, in das
+    DriveSpace-Format.
+----------------------------------------------------------
+Falls Ihr Laufwerk mit der Stacker-Version 3.1 komprimiert wurde, fÅhren Sie
+das folgende Verfahren durch, um Stacker 3.1 zu entfernen und DriveSpace zu
+installieren. (Wenn Sie Stacker 2.x oder 3.0 ausfÅhren, verwenden Sie das
+in Abschnitt 7.4 beschriebene Verfahren.)
+
+1. Wenden Sie den Stacker-Befehl UNSTACK auf alle Ihre Stacker-Laufwerke
+   an. (Falls Sie Disketten mit Stacker komprimiert haben, kînnen Sie
+   dies jetzt rÅckgÑngig machen oder prÅfen, ob sie mit dem Stacker-
+   Merkmal StackerAnywhere konfiguriert wurden.)
+
+2. Wechseln Sie in das Stammverzeichnis Ihres Start-Festplattenlaufwerks,
+   und geben Sie die folgenden Befehle ein:
+
+     ATTRIB -R -H -S STACKER.INI
+     ATTRIB -R -H -S DRVSPACE.BIN
+     DEL STACKER.INI
+     DEL DRVSPACE.BIN
+   
+3. Starten Sie Ihren Computer neu.
+
+4. FÅhren Sie DriveSpace Setup aus, indem Sie an der Eingabeaufforderung
+   DRVSPACE eingeben.
+
+7.4 Konvertieren anderer DatentrÑger-Komprimierungssoftware in das
+    DoubleSpace-Format.
+------------------------------------------------------------------
+Falls Sie weder die Komprimierungsprogramme Stacker 3.1 noch XtraDrive
+verwenden, fÅhren Sie das folgende Verfahren durch, um Ihre DatentrÑger-
+Komprimierungssoftware in das DriveSpace-Format umzuwandeln.
+
+1. Installieren Sie MS-DOS 6.22, falls noch nicht geschehen.
+
+2. Sichern Sie die Dateien auf Ihrer Festplatte mit Microsoft Backup fÅr
+   MS-DOS. Falls Sie Backup fÅr MS-DOS nicht wÑhrend der AusfÅhrung von
+   Setup installiert haben, lesen Sie die entsprechenden Installationsan-
+   weisungen im Kapitel "Erste Schritte" des Microsoft MS-DOS Benutzer-
+   handbuchs.
+
+3. Wenn Ihre Setup-Disketten mit Laufwerk A: kompatibel sind, legen Sie
+   die Setup-Diskette 1 in Laufwerk A: ein, und starten Sie Ihren Computer
+   neu. Wenn der erste Bildschirm angezeigt wird, drÅcken Sie die F3-TASTE 
+   zweimal, um Setup zu beenden.
+
+   Wenn Ihre Setup-Disketten nicht mit Laufwerk A: kompatibel sind, er-
+   stellen Sie eine Startdiskette fÅr Laufwerk A:, indem Sie die Setup-
+   Diskette 1 in Laufwerk B: und eine leere Diskette in Laufwerk A: ein-
+   legen. Geben Sie an der Eingabeaufforderung B:SETUP /F ein.
+
+   Wenn Sie dazu aufgefordert werden, wÑhlen Sie die Option zur Instal-
+   lation von MS-DOS auf der Diskette in Laufwerk A:. Nach Beendigung
+   von Setup belassen Sie die Startdiskette in Laufwerk A:, und starten
+   Sie Ihren Computer neu.
+
+4. Formatieren Sie mit Hilfe des Befehls FORMAT das Laufwerk, auf dem sich
+   die Datei befindet, die alle komprimierten Dateien enthÑlt. Wenn Sie
+   nicht wissen, wo sich diese Datei befindet, lesen Sie in der Dokumen-
+   tation Ihres Komprimierungsprogramms nach.
+
+   Wenn Sie Laufwerk C: neu formatieren, geben Sie die Option /S an, um
+   Ihre Systemdateien auf dieses Laufwerk zu Åbertragen.
+
+5. Nachdem Sie Laufwerk C: formatiert haben, legen Sie die Setup-Diskette 1
+   in Laufwerk A: oder B: ein, und geben Sie an der Eingabeaufforderung
+   A:SETUP bzw. B:SETUP ein.
+
+   Folgen Sie den Anweisungen auf dem Bildschirm.
+
+6. Nach Beendigung von Setup installieren Sie DriveSpace, indem Sie an
+   der Eingabeaufforderung DRVSPACE eingeben. Folgen Sie den Anweisungen
+   auf dem Bildschirm.
+
+7. Stellen Sie die zuvor gesicherten Dateien mit Backup fÅr MS-DOS wieder
+   her.
+
+   ANMERKUNG  Wenn Sie Microsoft Backup ausfÅhren, mÅssen Sie es erneut
+	      konfigurieren. Au·erdem mÅssen Sie die Katalogdatei aus Ihren 
+	      Sicherungsdisketten wiederauffinden. WÑhlen Sie dazu die 
+	      SchaltflÑche "Katalog" im Dialogfeld 'Wiederherstellen'.
+
+7.5 DoubleSpace Setup meldet, da· Ihr Computer ein inkompatibles
+    Festplatten-Cache-Programm ausfÅhrt.
+----------------------------------------------------------------
+Wenn DoubleSpace Setup meldet, da· Ihr Computer ein inkompatibles Fest-
+platten-Cache-Programm ausfÅhrt, îffnen Sie Ihre CONFIG.SYS- oder
+AUTOEXEC.BAT-Datei und lîschen den Befehl, der dieses Programm lÑdt. Wenn 
+Sie einen Plattencache verwenden mîchten, fÅgen Sie in Ihrer Datei 
+AUTOEXEC.BAT eine Zeile fÅr das MS-DOS 6.22-Programm SMARTDRV hinzu. Ist
+diese Datei beispielsweise in Ihrem MS-DOS-Verzeichnis C:\DOS enthalten,
+fÅgen Sie folgende Zeile hinzu:
+
+C:\DOS\SMARTDRV.EXE
+
+Beenden Sie den Texteditor, und starten Sie Ihren Computer neu. FÅhren
+Sie DriveSpace erneut aus.
+
+7.6 Ihr komprimiertes Laufwerk hat nicht genÅgend Speicherplatz.
+----------------------------------------------------------------
+Wenn Ihr komprimiertes Laufwerk nicht mehr genÅgend freien Speicherplatz
+hat, kînnen Sie mit Hilfe der folgenden Verfahren mehr Speicherplatz zur
+VerfÅgung stellen:
+
+o Vergrî·ern Sie das Laufwerk.
+
+o FÅhren Sie fÅr das Laufwerk die Befehle DRVSPACE /DEFRAG /F und
+  DRVSPACE /DEFRAG aus.
+
+Diese Verfahren werden im folgenden einzeln erlÑutert.
+
+Vergrî·ern eines komprimierten Laufwerks.
+-----------------------------------------
+Sie kînnen ein komprimiertes Laufwerk vergrî·ern, um mehr freien Speicher-
+platz zu erhalten. Ein vergrî·ertes komprimiertes Laufwerk belegt freien
+Speicherplatz auf dem nichtkomprimierten (Host-) Laufwerk.
+
+So vergrî·ern Sie ein komprimiertes Laufwerk
+
+1. Starten Sie das Programm DriveSpace, indem Sie an der Eingabeauf-
+   forderung DRVSPACE eingeben.
+
+2. WÑhlen Sie das komprimierte Laufwerk, das Sie vergrî·ern mîchten,
+   und wÑhlen Sie aus dem MenÅ 'Laufwerk' den Befehl 'Grî·e Ñndern'.
+
+   DoubleSpace zeigt nun das Dialogfeld 'Grî·e Ñndern' an. In der Zeile
+   "Neuer Speicher" wird angezeigt, Åber wieviel freien Speicherplatz die
+   komprimierten und nichtkomprimierten Laufwerke verfÅgen werden, wenn
+   Sie "OK" wÑhlen.
+   
+3. Geben Sie fÅr das unkomprimierte Laufwerk einen kleineren Wert ein.
+   Beachten Sie, wenn Sie diesen Wert Ñndern, da· DriveSpace den Betrag 
+   fÅr "Neuer Speicher" des komprimierten Laufwerks anpa·t. Wenn beide 
+   BetrÑge fÅr "Neuer Speicher" Ihren Anforderungen entsprechen, wÑhlen 
+   Sie "OK".
+
+   DriveSpace vergrî·ert das komprimierte Laufwerk.
+
+AusfÅhren der Befehle DRVSPACE /DEFRAG /F und DRVSPACE /DEFRAG
+fÅr das komprimierte Laufwerk.
+--------------------------------------------------------------
+Gelegentlich kînnen Sie zusÑtzlichen Speicherplatz auf einem komprimierten
+Laufwerk freimachen, indem Sie das Laufwerk umfassender defragmentieren.
+
+ANMERKUNG  Mîglicherweise mîchten Sie das folgende Verfahren Åber Nacht
+	   durchfÅhren, da das Defragmentieren eines gro·en oder sehr 
+	   fragmentierten Laufwerks lange dauert. (Um das ganze Verfahren 
+	   Åber Nacht auszufÅhren, erstellen Sie ein Stapelverarbeitungs-
+	   programm, das die beiden obigen Befehle enthÑlt.)
+
+So geben Sie Speicherplatz frei, wenn Sie das Laufwerk zweimal
+defragmentieren
+
+1. Machen Sie das komprimierte Laufwerk zum aktuellen Laufwerk.
+
+2. Geben Sie an der Eingabeaufforderung DEFRAG [Laufwerk]: /F ein.
+
+   [Laufwerk]: steht hierbei fÅr das komprimierte Laufwerk (beispielsweise
+   DEFRAG C: /F). DEFRAG defragmentiert die Dateizuordnungstabelle (FAT)
+   des Laufwerks vollstÑndig und startet dann DRVSPACE /DEFRAG, um den
+   freien Speicher in der CVF zusammenzufassen (zu konsolidieren).
+
+3. Nach Beendigung von DEFRAG geben Sie an der Eingabeaufforderung
+   DRVSPACE /DEFRAG /F ein.
+
+   DriveSpace konsolidiert den freien Speicherplatz auf dem Laufwerk,
+   um so viel Speicherplatz wie mîglich zur VerfÅgung zu stellen.
+
+7.7 Ihr nicht komprimiertes (Host-)Laufwerk hat nicht genÅgend
+    Speicherplatz.
+--------------------------------------------------------------
+Wenn Ihr nichtkomprimiertes (Host-)Laufwerk nicht mehr genug Speicher-
+platz bietet, kînnen Sie diesen vergrî·ern, indem Sie die auf diesem Lauf-
+werk gespeicherten komprimierten Laufwerke verkleinern. Dadurch wird aller-
+dings der freie Speicherplatz auf dem bzw. den komprimierten Laufwerk(en)
+verringert.
+
+So vergrî·ern Sie das nichtkomprimierte (Host-)Laufwerk:
+
+1. Starten Sie das Programm DriveSpace, indem Sie an der Eingabeauf-
+   forderung DRVSPACE eingeben.
+
+2. WÑhlen Sie das komprimierte Laufwerk, das Sie verkleinern mîchten.
+   WÑhlen Sie danach aus dem MenÅ 'Laufwerk' den Befehl 'Grî·e Ñndern'.
+   (Sie mÅssen ein komprimiertes Laufwerk wÑhlen, das sich auf dem
+   Host-Laufwerk befindet, das nicht genÅgend Speicherplatz hat. Um
+   festzustellen, welche komprimierten Laufwerke auf diesem Laufwerk
+   gespeichert sind, geben Sie an der Eingabeaufforderung DRVSPACE /LIST
+   ein.)
+
+   DriveSpace zeigt das Dialogfeld 'Grî·e Ñndern' an. Die Zeile "Neuen 
+   Speicher" zeigt an, Åber wieviel freien Speicherplatz die komprimier-
+   ten und unkomprimierten Laufwerke verfÅgen werden, wenn Sie "OK" wÑhlen.
+
+3. Geben Sie fÅr "Neuen Speicher" auf dem Host-Laufwerk einen grî·eren
+   Wert an. Beachten Sie, da· DoubleSpace den Betrag von "Neuen Speicher"
+   fÅr das komprimierte Laufwerk anpa·t, wenn Sie diesen Wert Ñndern. 
+   Wenn beide BetrÑge fÅr "Neuen Speicher" Ihren Anforderungen 
+   entsprechen, wÑhlen Sie "OK".
+
+   DriveSpace verkleinert nun die Grî·e des komprimierten Laufwerks.
+   Dadurch wird auf dem entsprechenden Host-Laufwerk mehr Speicher-
+   platz frei.
+
+7.8 DriveSpace hat nicht alle Dateien komprimiert, da auf dem Laufwerk
+    nicht genÅgend Speicherplatz vorhanden war.
+----------------------------------------------------------------------
+Wenn DriveSpace meldet, da· es einige Ihrer Dateien nicht komprimieren
+konnte, da auf dem Laufwerk nicht genÅgend Speicherplatz verfÅgbar war,
+fÅhren Sie das folgende Verfahren durch:
+
+1. Geben Sie an der Eingabeaufforderung DRVSPACE /LIST ein, um zu
+   ermitteln, welches Laufwerk Ihr nichtkomprimiertes (Host-)Laufwerk ist.
+
+2. Sichern Sie die Dateien, die sich auf dem nichtkomprimierten Laufwerk
+   befinden und nicht komprimiert sind, mit Hilfe von Microsoft Backup auf
+   Disketten.
+
+3. Lîschen Sie die Dateien, die sich auf dem nichtkomprimierten Laufwerk
+   befinden und nicht komprimiert sind.
+
+4. Geben Sie an der Eingabeaufforderung DRVSPACE ein.
+
+5. WÑhlen Sie aus dem MenÅ 'Laufwerk' den Befehl 'Grî·e Ñndern'.
+
+6. Verkleinern Sie Ihr nichtkomprimiertes Laufwerk, um dadurch Ihr
+   komprimiertes Laufwerk zu vergrî·ern. WÑhlen Sie 'OK'.
+
+7. WÑhlen Sie aus dem MenÅ 'Laufwerk' den Befehl 'Beenden', und kopieren
+   Sie mit Backup die gesicherten Dateien auf Ihr komprimiertes Laufwerk
+   zurÅck. Wenn der Platz erneut nicht mehr ausreicht, wiederholen Sie
+   die Schritte 5 bis 7, bis das komprimierte Laufwerk gro· genug ist.
+
+7.9 Windows zeigt die Meldung "Permanente Auslagerungsdatei beschÑdigt" an.
+---------------------------------------------------------------------------
+Wenn Sie eine permanente Windows-Auslagerungsdatei verwenden, mu· sich
+diese auf einem nichtkomprimierten Laufwerk befinden. Falls sich Ihre
+permanente Windows-Auslagerungsdatei auf einem komprimierten Laufwerk
+befindet, zeigt Windows beim Starten die Meldung "Permanente Auslagerungs-
+datei beschÑdigt" an.
+
+Wenn Sie DriveSpace installieren, prÅft dessen Setup-Programm, ob eine
+permanente Windows-Auslagerungsdatei vorhanden ist. Findet es eine solche
+Datei, verschiebt es diese auf Ihr nichtkomprimiertes Laufwerk. Wenn Sie
+Windows jedoch installieren, nachdem Sie DriveSpace bereits installiert
+haben, oder wenn Sie die Position Ihrer permanenten Auslagerungsdatei
+Åber die Systemsteuerung Ñndern, kann sich die Datei plîtzlich auf einem 
+komprimierten Laufwerk befinden. (Wenn Sie ein Laufwerk fÅr Ihre permanente 
+Auslagerungsdatei angeben, lÑ·t Windows die Wahl eines komprimierten 
+Laufwerks zu.)
+
+So verschieben Sie Ihre permanente Auslagerungsdatei auf ein nicht-
+komprimiertes Laufwerk
+
+1. Starten Sie Windows.
+
+2. Beantworten Sie im Dialogfeld 'Permanente Auslagerungsdatei beschÑdigt'
+   die Frage "Mîchten Sie diese Auslagerungsdatei lîschen?" mit "J", und
+   drÅcken Sie die EINGABETASTE.
+
+3. ôffnen Sie die Systemsteuerung, und doppelklicken Sie auf das Symbol
+   '386 erweitert'.
+
+4. WÑhlen Sie die SchaltflÑche 'Virtueller Speicher'. Windows teilt in
+   einem Dialogfeld mit, da· eine beschÑdigte Auslagerungsdatei gefunden
+   wurde, und fragt, ob Sie die DateilÑnge auf Null setzen mîchten.
+
+5. WÑhlen Sie die SchaltflÑche 'Ja'. Windows zeigt ein weiteres Dialog-
+   feld 'Virtueller Arbeitsspeicher' an.
+
+6. WÑhlen Sie die SchaltflÑche 'éndern'. Windows zeigt die Einstellungen
+   der Auslagerungsdatei an.
+
+7. WÑhlen Sie aus dem Listenfeld 'Laufwerk' ein Laufwerk, das nicht kom-
+   primiert ist. WÑhlen Sie aus dem Listenfeld 'Typ' den Eintrag
+   'Permanent'.
+
+   Wenn das nichtkomprimierte Laufwerk nicht genÅgend freien Speicher-
+   platz zum Erstellen einer permanenten Auslagerungsdatei enthÑlt, 
+   erstellen Sie auf Ihrem komprimierten oder Ihrem nichtkomprimierten
+   Laufwerk eine temporÑre Auslagerungsdatei. (Informationen Åber die
+   Vergrî·erung des freien Speicherplatzes auf nichtkomprimierten 
+   Laufwerken finden Sie im Abschnitt 7.7.)
+
+   Nachdem Sie alle Einstellungen fÅr die Auslagerungsdatei angegeben
+   haben, wÑhlen Sie zweimal 'OK', und folgen Sie den Anweisungen auf
+   dem Bildschirm.
+
+7.10 EXTDISK.SYS zeigt eine Warnung zu Laufwerkbezeichnungen an.
+----------------------------------------------------------------
+Wenn Sie DriveSpace auf einem Compaq-Computer einsetzen und in Ihrer
+CONFIG.SYS-Datei der GerÑtetreiber EXTDISK.SYS geladen wird, zeigt
+EXTDISK.SYS beim Laden folgende Meldung an:
+
+VORSICHT  EXTDISK.SYS ist nicht der erste GerÑtetreiber, der Laufwerk-
+	  buchstaben zuweist. Die physischen Laufwerkbuchstaben werden nicht
+	  zusammenhÑngend sein.
+
+Der Treiber EXTDISK.SYS arbeitet trotzdem korrekt. Er zeigt diese Meldung
+nur an, da er normalerweise als erster GerÑtetreiber die Laufwerkbezeich-
+nungen zuweist. Da DRVSPACE.BIN jedoch vor der Datei CONFIG.SYS geladen
+wird und einige Laufwerkbezeichnungen zuweist, steht EXTDISK.SYS nicht
+mehr an erster Stelle. (EXTDISK.SYS zeigt diese Meldung unabhÑngig davon
+an, an welcher Stelle der CONFIG.SYS-Datei der GerÑtetreiber DRVSPACE.SYS
+geladen wird.)
+
+7.11 Sie benîtigen einen speziellen GerÑtetreiber, um Ihr Startlaufwerk
+     verwenden zu kînnen.
+-----------------------------------------------------------------------
+Wenn Ihr Start-Festplattenlaufwerk einen GerÑtetreiber in der Datei
+CONFIG.SYS benîtigt, komprimieren Sie dieses Laufwerk nicht. Andern-
+falls startet Ihr Computer nicht korrekt, da DriveSpace nicht auf das
+Startlaufwerk zugreifen kann. (MS-DOS lÑdt nÑmlich die Datei DRVSPACE.BIN,
+d.h. den Teil von MS-DOS, der auf komprimierte Laufwerke zugreift, bevor
+es einen der GerÑtetreiber startet, die in der Datei CONFIG.SYS stehen.)
+
+Wenn Sie DriveSpace auf einem Computer mit einem Startlaufwerk instal-
+lieren mîchten, das einen speziellen GerÑtetreiber benîtigt, komprimieren
+Sie mit DriveSpace Setup ein anderes Laufwerk als Ihr Startlaufwerk, oder
+erstellen Sie mit DriveSpace Setup ein neues komprimiertes Laufwerk, das
+freien Speicherplatz aller vorhandenen Laufwerke nutzt.
+
+7.12 Defragmentieren nichtkomprimierter Laufwerke nach dem éndern
+     von Dateiattributen.
+-----------------------------------------------------------------
+Sie kînnen Ihre komprimierten oder nichtkomprimierten Laufwerke mit dem
+Defragmentierer von MS-DOS oder einem anderen Defragmentierungsprogramm
+problemlos defragmentieren, solange Sie nicht die Attribute Ihrer kom-
+primierten DatentrÑgerdateien (CVF) Ñndern.
+
+VORSICHT  Falls Sie die Attribute einer komprimierten DatentrÑgerdatei
+	  Ñndern und dann dieses nichtkomprimierte Laufwerk defragmentieren,
+	  ohne zuerst die komprimierten Laufwerke zu deaktivieren, kann dies
+	  zu Datenverlusten fÅhren.
+
+Wenn Sie das nichtkomprimierte Laufwerk vollstÑndig defragmentieren
+mîchten, mÅssen Sie zuerst alle auf dem nichtkomprimierten Laufwerk
+vorhandenen komprimierten Laufwerke deaktivieren, alle Attribute dieser
+Laufwerke lîschen und danach DEFRAG oder einen anderen Defragmentierer
+ausfÅhren.
+
+7.13 Dateien, die DriveSpace nicht komprimieren kann.
+-----------------------------------------------------
+Einige Dateien (wie z.B. .ZIP-Dateien) sind bereits komprimiert.
+DriveSpace ist mîglicherweise nicht in der Lage, solche Dateien
+nochmals zu komprimieren.
+
+VerschlÅsselte Datendateien, wie z.B. die .MMF-Datei von Microsoft
+Mail 3.0, sind nicht komprimierbar. Sie werden unkomprimiert gespeichert,
+auch wenn Sie solche Dateien auf einem komprimierten Laufwerk speichern.
+
+Es ist besser, unkomprimierte Dateien auf einem nichtkomprimiertes Lauf-
+werk zu speichern. Auf diese Weise kann die Systemgeschwindigkeit even-
+tuell gesteigert werden.
+
+7.14 Microsoft Defragmentierer hat wÑhrend einer Laufwerkkomprimierung
+     nicht genÅgend Arbeitsspeicher.
+----------------------------------------------------------------------
+Wenn der Defragmentierer wÑhrend einer Laufwerkkomprimierung nicht genÅgend
+Arbeitsspeicher zur VerfÅgung steht, beenden Sie DriveSpace, und fÅhren
+Sie anschlie·end das im Abschnitt 5.4 dieser Datei beschriebene Verfahren
+durch.
+
+Steht dem Defragmentierer danach immer noch nicht genÅgend Arbeitsspeicher
+zur VerfÅgung, sind auf Ihrer Festplatte eventuell so viele Dateien vorhan-
+den, da· sie der Defragmentierer nicht umorganisieren kann. Damit das
+Programm korrekt arbeiten kann, mÅssen Sie mîglicherweise einige Dateien
+lîschen oder aber auf eine Diskette oder ein Netzlaufwerk verschieben.
+
+7.15 DoubleSpace und PC-Vault.
+------------------------------
+Siehe Abschnitt 6.10
+
+7.16 Maximale Grî·e eines komprimierten Laufwerks.
+--------------------------------------------------
+Die maximale Grî·e eines mit DriveSpace komprimierten Laufwerks ist
+512 MB. Wenn Sie beispielsweise eine 600-MB-Festplatte komprimieren, kann
+das sich ergebende DriveSpace-Laufwerk maximal 512 MB gro· sein. Soll auch
+der Rest der Festplatte komprimiert werden, mÅssen Sie DriveSpace nochmals
+ausfÅhren und aus dem MenÅ 'Komprimieren' den Befehl 'Neues Laufwerk er-
+stellen' wÑhlen. Machen Sie dieses neue komprimierte Laufwerk so gro· wie
+mîglich. (Falls Ihr Laufwerk sehr gro· ist, mÅssen Sie mîglicherweise
+mehrere komprimierte Laufwerke erstellen, um das gesamte Laufwerk zu
+komprimieren.)
+
+7.17 DriveSpace kann ein Laufwerk nicht aktivieren, da dieses Laufwerk 
+     Probleme verursacht.
+-----------------------------------------------------------------
+Wenn beim Starten Ihres Computers die Meldung "DriveSpace konnte Laufwerk X
+nicht laden, da Probleme mit dem Laufwerk festgestellt wurden" (X ist hier-
+bei die Laufwerkbezeichnung) angezeigt wird, kann das Laufwerk aufgrund in-
+terner Organisationsprobleme nicht verwendet werden. DriveSpace speichert
+jedes komprimierte Laufwerk in einer speziellen Datei, die als Kompri-
+mierter-DatentrÑger-Datei (CVF, Compressed Volume File) bezeichnet wird.
+Die CVF ist eine Datei, die auf einem nichtkomprimierten Laufwerk ge-
+speichert wird und bei der folgende Attribute gesetzt sind: Versteckt
+(Hidden, H), System (S) und SchreibgeschÅtzt (Read-only, R).
+
+Um das komprimierte Laufwerk wieder verwenden zu kînnen, mÅssen Sie fÅr
+dessen Komprimierter-DatentrÑger-Datei das Programm ScanDisk ausfÅhren und
+dann Ihr System neu starten. Die Fehlermeldung enthÑlt den Namen der
+Komprimierter-DatentrÑger-Datei, fÅr die Sie ScanDisk ausfÅhren mÅssen
+(z.B. C:\DRVSPACE.000).
+
+So beheben Sie den Fehler auf einem anderen komprimierten Laufwerk als C:
+
+  o  Geben Sie den Befehl SCANDISK mit dem in der DriveSpace-Fehlermeldung
+     genannten Laufwerk ein, beispielsweise SCANDISK D:\DBLSPACE.001. (Kann
+     MS-DOS das Programm SCANDISK nicht finden, gehen Sie entsprechend der
+     nÑchsten Schritte vor.)
+
+So beheben Sie den Fehler fÅr das komprimierte Laufwerk C:, oder wenn 
+MS-DOS das Programm SCANDISK nicht finden kann:
+
+1. Legen Sie die Setup-Diskette 1 in Laufwerk A: (oder B:) ein.
+
+2. Wechseln Sie zu dem Laufwerk, das die Setup-Diskette 1 enthÑlt.
+
+3. Geben Sie den Befehl SCANDISK entsprechend der Angabe in der DriveSpace-
+   Fehlermeldung ein, um ScanDisk zu starten, z.B. SCANDISK C:\DBLSPACE.000.
+   Wenn ScanDisk in Dialogfeldern Fehler anzeigt, wÑhlen Sie die Schalt-
+   flÑche "Korrigieren".
+
+4. Nach Beendigung von ScanDisk entfernen Sie die Diskette, und starten Sie
+   Ihren Computer neu.
+
+7.18 Nach der Installation von DriveSpace kînnen Sie nicht mehr auf Ihre
+     Hardcard zugreifen.
+------------------------------------------------------------------------
+Siehe Abschnitt 4.2, Teil C.
+
+7.19 Sie erhalten eine DoubleGuard-Warnmeldung.
+-----------------------------------------------
+Wenn eine DoubleGuard-Warnmeldung angezeigt wird, hat DoubleGuard fest-
+gestellt, da· eine Anwendung Bereiche des Arbeitsspeichers "beschÑdigt"
+hat, die von DriveSpace verwendet wurden.
+
+Normalerweise "besitzt" jedes Programm einen getrennten Speicherbereich
+und greift nicht auf Speicher zurÅck, der von einem anderen Programm
+bereits verwendet wird. Einige Programme enthalten jedoch Programmier-
+fehler, die bewirken, da· sie versehentlich Speicherbereiche verwenden, die
+fÅr andere Programme reserviert sind. Wenn ein solches Programm seine Daten
+in den fÅr DriveSpace reservierten Speicher schreibt, kînnen dessen Daten
+Åberschrieben werden. Da die von DriveSpace dort gespeicherten Daten
+normalerweise auch von Ihnen momentan verwendete Dateien enthalten, kann
+dies zu Datenverlusten fÅhren.
+
+Wenn die DoubleGuard-SicherheitsÅberprÅfung von DriveSpace feststellt, da·
+ein anderes Programm den Speicherbereich von DriveSpace verletzt hat, fÑhrt
+sie den Computer sofort herunter, um mîgliche Datenverluste zu minimieren.
+(WÑren weitere DatentrÑgeraktivitÑten zugelassen, kînnten Sie einige oder
+sogar alle der auf dem Laufwerk befinlichen Daten verlieren, da die Daten,
+die DriveSpace im Arbeitsspeicher hat, infolge der Speicherverletzung des
+anderen Programms wahrscheinlich ungÅltig sind.)
+
+Wenn Sie eine DoubleGuard-Warnmeldung erhalten, fÅhren Sie folgende
+Schritte durch:
+
+1. Starten Sie Ihren Computer neu, indem Sie Ihren Computer aus- und 
+   wieder einschalten.
+
+2. Geben Sie folgendes an der Eingabeaufforderung ein:
+
+     SCANDISK /ALL
+
+   Daraufhin prÅft ScanDisk alle Laufwerke, um etwaige Fehler festzu-
+   stellen und zu beheben, die von dem Programm verursacht wurden, das den
+   DriveSpace-Speicherbereich verletzt hat.
+
+3. Notieren Sie sich das Programm, das gerade ausgefÅhrt wurde, als die
+   DoubleGuard-Warnmeldung angezeigt wurde. Dieses Programm ist wahr-
+   scheinlich (aber nicht notwendigerweise) das Programm, das die Meldung
+   ausgelîst hat. Wenn Sie weitere DoubleGuard-Warnmeldungen erhalten,
+   notieren Sie sich Ihre zuletzt ausgefÅhrte Vorgehensweise und prÅfen
+   Sie, ob ein bestimmtes Schema erkennbar ist.
+
+7.20 Ein komprimiertes Laufwerk ist momentan zu fragmentiert, um
+     aktiviert werden zu kînnen.
+----------------------------------------------------------------
+Wenn beim Starten Ihres Computers die Meldung "Der komprimierte DatentrÑger
+X ist zu fragmentiert, um geladen werden zu kînnen." (X ist hierbei die 
+Laufwerkbezeichnung) angezeigt wird oder wenn DriveSpace die Meldung 
+"Die Datei X:\DBLSPACE.nnn ist zu fragmentiert, um geladen werden zu kînnen"
+anzeigt, kann DriveSpace das Laufwerk nicht laden, da die Komprimierter-
+DatentrÑger-Datei des Laufwerks in zu vielen Fragmenten auf Ihrer Fest-
+platte gespeichert ist. (DriveSpace speichert jedes komprimierte Laufwerk
+in einer sogenannten Komprimierter-DatentrÑger-Datei (CVF, Compressed
+Volume File)). Die CVF ist eine Datei, die auf einem nichtkomprimierten
+Laufwerk gespeichert wird und bei der folgende Attribute gesetzt sind:
+Versteckt (Hidden, H), System (S) und SchreibgeschÅtzt (Read-only, R).
+
+Um dieses Problem zu beheben, vergrî·ern Sie die Einstellung
+"MaxFileFragments" in Ihrer DBLSPACE.INI-Datei. DoubleSpace zeigt die
+Fehlermeldungen "Zu fragmentiert zum Laden" an, da die Anzahl der CVF-
+Dateifragmente diese Einstellung Åbersteigt. FÅhren Sie die folgenden
+Schritte durch:
+
+1. Wechseln Sie zum Stammverzeichnis Ihres Startlaufwerks. (Falls das
+   Startlaufwerk komprimiert ist, wechseln Sie zu dessen Host-Laufwerk.)
+
+2. Geben Sie folgenden Befehl ein:
+
+     TYPE DRVSPACE.INI
+
+3. Merken Sie sich den aktuellen Wert der Einstellung "MaxFileFragments".
+
+4. Geben Sie mit dem Befehl DRVSPACE /MAXFILEFRAGMENTS einen grî·eren
+   Wert an. Wenn MaxFileFragments beispielsweise den Wert 128 hat, kînnten
+   Sie folgenden Befehl eingeben:
+
+     DRVSPACE /MAXFILEFRAGMENTS=200
+
+5. Starten Sie Ihren Computer neu. DriveSpace sollte jetzt das Laufwerk
+   aktivieren kînnen.
+
+Falls DriveSpace das Laufwerk noch immer nicht aktivieren kann, gehen Sie
+folgenderma·en vor:
+
+1. FÅhren Sie ScanDisk aus, um die ZuverlÑssigkeit Ihrer Festplatte zu
+   ÅberprÅfen. Geben Sie an der Eingabeaufforderung folgenden Befehl ein:
+
+     SCANDISK /ALL /SURFACE
+
+2. Starten Sie Ihren Computer neu. Wenn DriveSpace das Laufwerk immer
+   noch nicht aktivieren kann, fÅhren Sie Schritt 3 aus.
+
+3. Lîschen Sie die Dateiattribute SchreibgeschÅtzt (Read-only, R), System
+   (S) und Versteckt (Hidden, H) der Datei DRVSPACE.<XXX>. Hei·t die Datei
+   beispielsweise H:\DRVSPACE.000, geben Sie an der Eingabeaufforderung
+   folgenden Befehl ein:
+
+     ATTRIB H:\DRVSPACE.000 -R -S -H
+
+4. Geben Sie an der Eingabeaufforderung DEFRAG ein, um den Microsoft
+   Defragmentierer (Defrag) auszufÅhren.
+
+5. Setzen Sie mit dem Befehl ATTRIB die Dateiattribute von DBLSPACE.<XXX>
+   zurÅck. Hei·t die Datei beispielsweise H:\DRVSPACE.000, geben Sie an
+   der Eingabeaufforderung folgenden Befehl ein:
+
+     ATTRIB H:\DRVSPACE.000 +R +S +H
+
+6. Starten Sie Ihren Computer neu. DriveSpace sollte jetzt das kom-
+   primierte Laufwerk aktivieren kînnen.
+
+7.21  Es wird die Meldung "Ihr Computer wird mit einer inkompatiblen
+      DBLSPACE.BIN-Version ausgefÅhrt" angezeigt.
+---------------------------------------------------------------
+Falls Sie die MS-DOS 6.0-Version von DBLSPACE.EXE unter MS-DOS 6.2 auszu-
+fÅhren versuchen, erhalten Sie folgende Meldung:
+
+  Ihr Computer wird mit einer inkompatiblen DBLSPACE.BIN-Version ausgefÅhrt.
+  Die Datei DBLSPACE.BIN mu· im Stammverzeichnis von Laufwerk @ aktualisiert 
+  werden.
+
+Das Programm DBLSPACE.EXE hat festgestellt, da· seine Versionsnummer nicht
+mit der Ihrer zu MS-DOS 6.2 gehîrenden DBLSPACE.BIN-Datei Åbereinstimmt.
+Zur Lîsung dieses Problems benîtigen Sie eine aktualisierte Version der
+Datei DBLSPACE.EXE.
+
+Bei der AusfÅhrung von MS-DOS 6.22 Setup wird auch die Datei DBLSPACE.EXE
+in dem Verzeichnis, das Ihre MS-DOS-Dateien enthÑlt, aktualisiert. Sind
+weitere Kopien von DBLSPACE.EXE an einer anderen Stelle Ihrer Festplatte
+-- beispielsweise im Stammverzeichnis Ihres Host-Laufwerks -- vorhanden,
+aktualisiert Setup diese zusÑtzlichen Kopien nicht. Wenn Sie sie selbst
+aktualisieren mîchten, mÅssen Sie die MS-DOS 6.22-Version von DBLSPACE.EXE
+mit dem Befehl COPY /Y Åber die alten Versionen kopieren. (Die MS-DOS 6.22-
+Version von DBLSPACE.EXE befindet sich in dem Verzeichnis, in dem Ihre 
+MS-DOS-Dateien abgelegt sind.)
+
+7.22  Verwenden des Befehls DRVSPACE nach der Umgehung von DRVSPACE.BIN.
+------------------------------------------------------------------------
+Wenn Sie beim Starten Ihres Computers DRVSPACE.BIN umgehen (indem Sie die 
+Tasten STRG+F5 oder STRG+F8 drÅcken), funktioniert der Befehl DRVSPACE
+eventuell nicht so, wie Sie dies erwarten:
+
+ * Sofern DriveSpace installiert ist, bewirkt die Eingabe des Befehls
+   DRVSPACE, da· das Program DriveSpace gestartet wird. Wenn Sie DRVSPACE
+   eingeben und DRVSPACE.BIN ist nicht geladen, wird stattdessen DriveSpace
+   Setup gestartet. Wenn dies passiert, sollten Sie DriveSpace Setup
+   beenden. 
+
+ * Wenn Sie den Befehl DRVSPACE /MOUNT eingeben, teilt DriveSpace Ihnen
+   mit, da· keine Laufwerkbuchstaben fÅr DriveSpace verfÅgbar sind.
+   (DriveSpace kann ein komprimiertes Laufwerk nur dann aktivieren, wenn
+   DBLSPACE.BIN geladen ist.)
+
+Starten Sie Ihren Computer neu, ohne dabei DRVSPACE.BIN zu umgehen, um 
+DriveSpace oder Ihre komprimierten Laufwerke verwenden zu kînnen.
+
+7.23  Entfernen des Schreibschutzes von einer komprimierten Diskette.
+---------------------------------------------------------------------
+Verwenden Sie eine komprimierte Diskette, die schreibgeschÅtzt ist, und ist
+die Option 'Automatisches Laden' aktiviert, bleibt die Diskette solange
+schreibgeschÅtzt, bis Sie deren Laufwerkbuchstaben annulliert haben -- dies
+gilt selbst dann, wenn Sie die Schreibschutzvorrichtung entfernen. 
+
+FÅhren Sie eines der folgenden Verfahren durch, um den Schreibschutz auf-
+zuheben:
+
+ * Annullieren Sie den Lauwerkbuchstaben der Diskette mit dem Befehl
+   DRVSPACE /UNMOUNT, und versuchen Sie nochmals, die Diskette einzusetzen
+   (dadurch wird ihr automatisch wieder ein Laufwerkbuchstabe zugewiesen,
+   sie wird automatisch wieder aktiviert). Befindet sich die Diskette
+   beispielsweise im Laufwerk B:, mÅ·ten Sie DRVSPACE /UNMOUNT B: eingeben
+   und anschlie·end erneut versuchen, auf die Diskette zuzugreifen. (Der
+   Befehl DRVSPACE /UNMOUNT kann nicht angewandt werden, wenn Windows
+   lÑuft. Verwenden Sie in diesem Fall die folgende Methode.)
+
+ * Legen Sie eine andere Diskette in das Laufwerk ein, und greifen Sie auf
+   diese Diskette zu (beispielsweise mit dem Befehl DIR). Dadurch wird die
+   komprimierte Diskette, die sich zuvor in diesem Laufwerk befand,
+   automatisch annulliert. Legen Sie die komprimierte Diskette wieder in
+   das Laufwerk ein, und versuchen Sie erneut, die Diskette einzusetzen
+   (dadurch wird ihr automatisch wieder ein Laufwerkbuchstabe zugeordnet).
+
+Anmerkung: Wenn Sie DriveSpace einsetzen und eine nicht konvertierte
+           DoubleSpace-Diskette laden, wird diese Diskette mit
+           Schreibschutz aktiviert. Die einzige Mîglichkeit, den
+           Schreibschutz von einer solchen Diskette zu entfernen, besteht
+           darin, sie in das DriveSpace-Format umzuwandeln. Informationen
+           darÅber, wie eine Konvertierung ausgefÅhrt wird, finden Sie im
+           Abschnitt 7.1.
+
+7.24  Automatisches Laden und Norton Disk Cache.
+------------------------------------------------
+Wenn Sie einen Norton Disk Cache verwenden, wie z.B. Norton Cache
+(NCACHE2.EXE) oder Norton Speedrive (SPEEDRV.EXE), sollten Sie dabei
+beachten, da· das Dienstprogramm nach dem DEVICE-Befehl fÅr DRVSPACE.SYS
+geladen wird. Wenn Sie eines dieser Dienstprogramme vor DRVSPACE.SYS laden,
+ist die DriveSpace-Funktion 'Automatisches Laden' nicht verfÅgbar.
+
+7.25  Die Undelete-Dienstprogramme und DriveSpace.
+--------------------------------------------------
+DriveSpace kann Laufwerke weder komprimieren noch dekomprimieren, wÑhrend 
+ein Dienstprogramm fÅr das Undelete-Verfahren ausgefÅhrt wird (beispiels-
+weise das zu Microsoft Undelete gehîrende Delete Sentry oder SmartCan von
+Norton). Um ein Laufwerk komprimieren oder dekomprimieren zu kînnen, mÅssen
+Sie das Undelete-Dienstprogramm vorÅbergehend deaktivieren. Gehen Sie wie
+folgt vor:
+
+1. Eliminieren Sie alle bisher gelîschten Dateien, um Speicherplatz zu ge-
+   winnen. Wenn Sie Microsoft Delete Sentry verwenden, geben Sie folgendes
+   an der Eingabeaufforderung ein:
+
+     UNDELETE /PURGE
+
+   FÅhren Sie diesen Befehl fÅr jedes Laufwerk aus, das Sie komprimieren
+   oder dekomprimieren mîchten. Wenn Sie ein Laufwerk dekomprimieren
+   mîchten, sollten Sie au·erdem gelîschte Dateien von dessen Host-Laufwerk
+   entfernen. Um gelîschte Dateien von einem anderen Laufwerk als dem 
+   aktuellen zu eliminieren, mÅssen Sie hinter dem Befehl UNDELETE /PURGE
+   den Buchstaben des Laufwerks angeben (z.B., UNDELETE /PURGE E:).
+
+   Wenn Sie ein anderes Dienstprogramm fÅr das Undelete-Verfahren verwenden,
+   finden Sie Informationen Åber das Entfernen von gelîschten Dateien
+   in der Dokumentation dieses Dienstprogramms.
+
+2. éndern Sie Ihre AUTOEXEC.BAT-Datei, und deaktivieren Sie den Befehl, der
+   das Undelete-Dienstprogramm startet, mit dem Befehl REM. (Wenn Sie bei-
+   spielsweise Delete Sentry einsetzen, mÅssen Sie den Befehl UNDELETE /S
+   deaktivieren.)
+
+3. Starten Sie Ihren Computer neu.
+
+4. Versuchen Sie erneut, das Laufwerk zu komprimieren bzw. zu dekomprimieren.
+
+5. éndern Sie nach Beendigung des Vorgangs zur Komprimierung oder 
+   Dekomprimierung die AUTOEXEC.BAT-Datei, reaktivieren Sie den Befehl zum 
+   Starten des Dienstprogramms fÅr das Undelete-Verfahren, und starten Sie 
+   Ihren Computer neu.
+
+7.26 Erstellen einer Not-Startdiskette fÅr DriveSpace-Systeme
+-------------------------------------------------------------
+So erstellen Sie eine Not-Startdiskette fÅr ein System, das DriveSpace
+benutzt:
+
+1. Wenn Sie MS-DOS 6.0 aktualisieren, installieren Sie MS-DOS 6.22
+   in dem Verzeichnis, in dem sich die verherige Version von MS-DOS befindet.
+
+2. Um eine Strtdiskette zu erstellen, starten Sie Setup erneut mit dem
+   folgenden Befehl:
+
+      SETUP /F
+
+   Setup installiert MS-DOS 6.22 auf der Diskette. Auf dieser so ent-
+   standenen Startdiskette fehlt DRVSPACE.BIN, da MS-DOS 6.22 DriveSpace
+   nicht einbezieht.
+
+3. Kopieren Sie die Datei DBLSPACE.BIN aus dem Verzeichnis, in dem sich
+   Ihre MS-DOS-Dateien befinden, auf die Diskette. Lautet Ihr MS-DOS-
+   Verzeichnis zum Beispiel C:\DOS und befindet sich die Diskette im
+   Laufwerk A:, mÅ·ten Sie folgendes eingeben:
+
+   COPY C:\DOS\DRVSPACE.BIN A:
+
+Anmerkung: Sie kînnen den Schritt 1 Åberspringen, wenn folgendes zutrifft:
+           Sie haben bisher mit MS-DOS 6.0 gearbeitet und aktualisieren auf
+           MS-DOS 6.22, mÅssen MS-DOS aber auf einer Diskette installieren,
+           ohne MS-DOS 6.22 zunÑchst auf Ihrer Festplatte installiert zu
+           haben. Auf der sich daraus ergebenden Startdiskette wird das zu
+           MS-DOS 6.0 gehîrende DoubleSpace, nicht das DoubleSpace von MS-
+           DOS 6.2 befinden. Wenn Sie Ihren Computer mit einer solchen
+           Startdiskette starten, gibt DoubleSpace eine Meldung aus.
+           DrÅcken Sie einfach die EINGABETASTE, um fortzufahren.
+
+7.27 Wenn ScanDisk eine DoubleSpace-DatentrÑgerdatei weder prÅfen noch
+     reparieren kann.
+----------------------------------------------------------------------
+MS-DOS 6.22 ScanDisk kann DoubleSpace-Laufwerke oder -DatentrÑgerdateien
+nur dann prÅfen, wenn eine der folgenden Bedingungen zutrifft:
+
+ * DoubleSpace ist installiert, und DBLSPACE.BIN ist in den Arbeitsspeicher
+   geladen.
+  
+ * Sowohl die Datei DBLSPACE.BIN als auch die Datei DRVSPACE.MR1 ist ver-
+   fÅgbar -- beide befinden sich im Stammverzeichnis oder in dem Verzeich-
+   nis, das Ihre MS-DOS-Dateien enthÑlt. (Informationen zu der Datei
+   DRVSPACE.MR1 finden Sie im Abschnitt 7.28 der vorliegenden Datei.)
+
+Andernfalls zeigt ScanDisk eine Meldung an, die in etwa wie folgt aussieht:
+
+   ScanDisk kann die DoubleSpace-DatentrÑgerdatei C:\DBLSPACE.001 nicht
+   prÅfen oder korrigiren.
+
+Diese Meldung kann eine der folgenden Ursachen haben:
+
+ *  DoubleSpace ist nicht installiert, und die Dateien DBLSPACE.BIN
+    und/oder DRVSPACE.MR1 sind nicht vorhanden oder befinden sich nicht
+    im selben Verzeichnis. Diese Dateien mÅssen sich beide im Stamm-
+    verzeichnis oder in dem Verzeichnis befinden, das Ihre MS-DOS-Dateien
+    enthÑlt. (Informationen zu der Datei DRVSPACE.MR1 finden Sie im Ab-
+    schnitt 7.28.)
+
+ *  DoubleSpace ist zwar auf Ihrem System installiert, Sie haben Ihren
+    Computer aber von einer Diskette aus gestartet oder beim Startvorgang
+    STRG+F5 bzw. STRG+F8 gedrÅckt. Ist dies der Fall, mÅssen Sie alle
+    Disketten aus den Laufwerken herausnehmen, Ihren Computer neu starten
+    und erneut versuchen, ScanDisk auszufÅhren. 
+
+ *  DoubleSpace gehîrte nicht zu der MS-DOS-Version, mit der Sie vor der
+    Aktualisierung auf MS-DOS 6.22 gearbeitet haben (MS-DOS Version 5 oder
+    frÅher oder MS-DOS 6.21). Gehîrte DoubleSpace nicht zu Ihrer frÅheren
+    Version von MS-DOS, kînnen Sie ScanDisk nicht verwenden, um
+    DoubleSpace-Laufwerke zu prÅfen.
+
+7.28 DoubleSpace und die Datei DRVSPACE.MR1.
+--------------------------------------------
+Zusammen mit der Datei DBLSPACE.BIN versetzt die Datei DRVSPACE.MR1 die
+Programme DriveSpace und ScanDisk in die Lage, mit DoubleSpace-Laufwerken
+und -DatentrÑgerdateien zu arbeiten. Au·erdem versetzen diese Dateien MS
+DOS 6.22 Backup in die Lage, komprimierte Sicherungen zu verarbeiten, die
+in dem Datenkomprimierungsformat von MS-DOS 6.0 gespeichert sind.
+
+Anmerkung: FÅr den Fall, da· Sie die U.S.-Version von MS-DOS 6.22 Upgrade
+           erworben haben, kînnen Sie die DoubleSpace-Konvertierung
+           anfordern, indem Sie den beiliegenden Gutschein (Coupon)
+           einsenden; haben Sie MS-DOS 6.22 Step-Up oder eine
+           internationale Version von MS-DOS 6.22 erworben, umfa·t diese
+           bereits die DoubleSpace-Konvertierung sowie die Datei
+           DRVSPACE.MR1.)
+
+Zusammen mit DBLSPACE.BIN versetzt die Datei DRVSPACE.MR1 das Programm
+DriveSpace in die Lage,
+
+ * nicht konvertierte DoubleSpace-Laufwerke fÅr schreibgeschÅtzten Zugriff
+   zu aktivieren; die auf dem Laufwerk befindlichen Daten sind zwar
+   verfÅgbar, das Laufwerk ist aber schreibgeschÅtzt, so da· Sie keine
+   Mîglichkeit haben, Daten zu dem Laufwerk hinzuzfÅgen oder dort
+   befindliche Daten zu Ñndern;
+
+ * DoubleSpace-Laufwerke in das DriveSpace-Format umzuwandeln; (wenn Sie
+   ein Laufwerk konvertieren mîchten, mÅssen Sie DriveSpace starten und aus
+   dem MenÅ 'Hilfsmittel' den Befehl 'DoubleSpace konvertieren' wÑhlen).
+
+Zusammen mit der Datei DBLSPACE.BIN versetzt die Datei DRVSPACE.MR1 das
+Programm ScanDisk in die Lage, nicht konvertierte DoubleSpace-Laufwerke
+und -DatentrÑgerdateien zu prÅfen und zu reparieren.
+
+Au·erdem versetzen die Dateien DBLSPACE.BIN und DRVSPACE.MR1 MS-DOS 6.22
+Backup in die Lage, Ñltere komprimierte Sicherungen zu lesen. Weitere
+Informationen finden Sie im Abschnitt 5.5 dieser Datei.
+
+7.29 Verwenden nicht konvertierter DoubleSpace-Laufwerke mit DriveSpace
+-----------------------------------------------------------------------
+Wenn Sie ein DoubleSpace-Laufwerk unter den UmstÑnden aktivieren, die im
+Abschnitt 7.28 beschrieben sind, aktiviert DriveSpace das Laufwerk im Modus
+SchreibgeschÅtzt (Read-only). Dies bedeutet, da· Sie weder das Laufwerk
+noch die darauf befindlichen Daten Ñndern kînnen. Wenn Sie ein DoubleSpace
+Laufwerk oder die darauf befindlichen Daten Ñndern mîchten, mÅssen Sie das
+Laufwerk zunÑchst in das DriveSpace-Format umwandeln. WÑhlen Sie dazu aus
+dem MenÅ 'Hilsmittel' den Befehl 'DoubleSpace konvertieren'. (FÅr diesen
+Vorgang mu· die Datei DRVSPACE.MR1 verfÅgbar sein; weitere Informationen
+finden Sie im Abschnitt 7.28.)
+
+7.30 Ein teilweise konvertiertes Laufwerk kann nicht geladen werden
+-------------------------------------------------------------------
+Normalerweise wird ein DoubleSpace-Laufwerk durch die DoubleSpace-
+Konvertierung vollstÑndig in das DriveSpace-Format konvertiert. Wenn
+aber wÑhrend der Konvertierung die Stromzufuhr unterbrochen wird oder
+irgendeine andere Ursache hindert DriveSpace, die Konvertierung
+zu beenden, bleibt das Laufwerk teilweise unkonvertiert.
+
+Um ein teilweise konvertiertes Laufwerk mit DriveSpace zu laden,
+mÅssen Sie zunÑchst das Laufwerk vollstÑndig konvertieren. WÑhlen Sie
+'DoubleSpace konvertieren' aus dem MenÅ 'Hilfsmittel'. Sie benîtigen
+dazu die Datei DRVSPACE.MR1. Siehe auch Abschnitt 7.28. DriveSpace
+wird das Laufwerk dann konvertieren und laden.
+
+Um ein teilweise konvertiertes Laufwerk mit DoubleSpace zu laden,
+mÅssen Sie zunÑchst Ihr System auf DriveSpace umstellen.
+Informationen dazu finden Sie im Abschnitt 7.1. Nach der Umstellung
+wÑhlen Sie Sie den Befehl 'DoubleSpace konvertieren' aus dem MenÅ
+'Hilfsmittel'. Sie benîtigen dazu die Datei DRVSPACE.MR1. Siehe auch
+Abschnitt 7.28. DriveSpace wird das Laufwerk dann konvertieren und laden.

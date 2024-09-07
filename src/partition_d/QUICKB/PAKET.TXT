@@ -1,0 +1,316 @@
+			     Datei "PAKET.TXT"
+            Inhalt der Disketten zu dem MICROSOFT(R) QuickBASIC-Compiler
+		  Version 4.0b fÅr IBM(R) Personal Computer
+                              und Kompatible
+
+		  (C) Copyright Microsoft Corporation, 1987, 1988
+
+DIESE DATEI ENTHéLT EINE KOMPLETTE LISTE ALLER DATEIEN UND VERZEICHNISSE,
+DIE SICH AUF DEN MIT DIESER QUICKBASIC-VERSION GELIEFERTEN VIER ORIGINAL-
+DISKETTEN BEFINDEN.
+
+==< Inhalt von DISKETTE 1: Programmdiskette >================================
+
+  DATEI                 BESCHREIBUNG
+  -----                 -----------------------------------------------------
+  QB.EXE                Die  Microsoft QuickBASIC Programm-Entwicklungs-
+                        umgebung.
+
+  BC.EXE                Der BASIC-Befehlszeilen-Compiler, der von dem Befehl
+                        EXE-Datei erstellen des MenÅs AusfÅhren oder von der
+                        Befehlszeile aus durch den Befehl bc aufgerufen wird.
+
+  PAKET.TXT		Eine Liste aller mit QuickBASIC gelieferten Dateien.
+
+  SETUP.BAT             Der erste Teil des QuickBASIC-Installationsprogrammes
+                        (diese Stapeldatei ruft SETUP1.BAT auf). Starten Sie
+                        diese Stapeldatei, um QuickBASIC auf Ihrer Festplatte
+                        zu installieren.
+
+  SETUP1.BAT            Der zweite Teil des QuickBASIC-Installations-
+                        programmes.
+
+==< Inhalt von DISKETTE 2:  Bibliotheksdiskette >=============================
+
+  DATEI                 BESCHREIBUNG
+  -----                 -----------------------------------------------------
+  BRUN41.EXE		Das QuickBASIC-Laufzeitmodul; erforderlich zum
+			Start ausfÅhrbarer Dateien, die mit BRUN41.LIB
+                        erstellt wurden.
+
+  BRUN41.LIB		Die QuickBASIC-Laufzeitmodul-Bibliothek; wird von
+                        QuickBASIC und DOS zum Anlegen ausfÅhrbarer Dateien
+                        eingesetzt.
+
+  BCOM41.LIB		Die alternative QuickBASIC-Laufzeitmodul-Bibliothek;
+                        wird von QuickBASIC und DOS zum Anlegen ausfÅhrbarer
+                        Dateien eingesetzt (Dateien, die mit dieser Biblio-
+			thek angelegt wurden, kînnen auch ohne BRUN41.EXE
+                        ausgefÅhrt werden).
+
+  BQLB41.LIB		Die Bibliothek mit UnterstÅtzungsroutinen, die bei der
+                        Erstellung von Quick-Bibliotheken verwendet werden.
+
+  QB.LIB                Die selbstÑndige Bibliothek, die UnterstÅtzungs-
+                        routinen fÅr DOS-Systemaufrufe enthÑlt. (Siehe auch
+                        QB.QLB auf Diskette 3)
+
+==< Inhalt von DISKETTE 3: Hilfsprogrammdiskette >===================
+
+  DATEI, VERZEICHNIS    BESCHREIBUNG
+  ------------------    -----------------------------------------------------
+  LIB.EXE               Der Microsoft-Bibliotheksmanager; wird eingesetzt,
+                        um selbstÑndige (.LIB) Bibliotheken anzulegen.
+
+  LINK.EXE              Der Microsoft-Overlay-Linker; wird eingesetzt, um
+                        ausfÅhrbare Dateien und Quick-Bibliotheken anzulegen.
+
+  MOUSE.COM             Der Maustreiber zur Verwendung mit QuickBASIC-
+                        Programmen, die Mausfunktionen aufrufen.
+
+  QBHERC.COM            Treiberdatei zur Verwendung auf Computern, die mit
+                        einer Hercules(R)-Grafikkarte, -Grafikkarte Plus,
+                        Hercules-InColor-Karte oder einer zu diesen Karten
+                        100% kompatiblen Karte ausgerÅstet sind. Diese Datei
+                        ermîglicht es Ihnen, BASIC-Programme zu schreiben,
+                        die fÅr grafische Ausgabe den Bildschirmmodus 3
+                        verwenden. Weitere Informationen finden Sie in der
+                        Datei INFO.TXT.
+
+  FIXSHIFT.COM          Ein Programm, das nach der AusfÅhrung resident ist
+                        und einen Fehler im ROM BIOS einiger Maschinen behebt,
+                        die mit einem zusÑtzlichen Satz an RICHTUNGS- (d.h.
+                        Pfeil-) Tasten neben denjenigen auf dem Zehnerblock
+                        ausgerÅstet sind. Wenn Sie eine solche Tastatur be-
+                        sitzen, finden Sie weitere Informationen in der Datei
+                        INFO.TXT.
+
+  PATCH87.EXE		Ein Programm zur Behebung eines mathematischen
+			Fehlers in MS-DOS 3.20.
+
+  QB.HLP                Eine Datei, die die von QuickBASICs direkter Hilfe
+                        verwendeten Informationen enthÑlt. Diese Datei mu·
+                        sich in dem aktuellen Verzeichnis -- oder in einem
+                        Verzeichnis, das in der Einstellung fÅr Ihre PATH-
+                        Umgebungsvariable aufgefÅhrt ist -- befinden, wenn
+                        Sie Hilfe aus der QuickBASIC-Umgebung heraus erhalten
+                        mîchten.
+
+  QB.QLB                Die Quick-Bibliothek, die UnterstÅtzungsroutinen
+                        fÅr DOS-Systemaufrufe enthÑlt.
+
+  QB.BI                 Eine Include-Datei zur Verwendung mit BASIC-
+                        Programmen, die eine der folgenden Routinen der
+                        Quick-Bibliothek QB.QLB oder der selbstÑndigen
+                        Bibliothek QB.LIB aufrufen: ABSOLUTE, INTERRUPT,
+                        INTERRUPTX, INT86OLD oder INT86XOLD.  Die Datei
+                        QB.BI definiert die Typen der Argumente, die an diese
+                        Routinen Åbergeben werden, und enthÑlt darÅberhinaus
+                        DECLARE-Anweisungen fÅr diese Routinen.
+
+  QB.PIF                Eine Datei, die Informationen enthÑlt, die die
+                        AusfÅhrung von QuickBASIC unter Microsoft Windows
+                        unterstÅtzen.
+
+  ABSOLUTE.ASM          Der Assembler-Quellcode der in QB.QLB und QB.LIB
+                        befindlichen Routine ABSOLUTE. Diese Routine ermîg-
+                        licht es Ihnen, von einem BASIC-Programm aus eine
+                        Prozedur in Maschinensprache aufzurufen. (BASICs
+                        Anweisung CALL sowie die neue Anweisung DECLARE
+                        bieten eine einfachere Mîglichkeit, anderssprachige
+                        Prozeduren aus BASIC heraus aufzurufen.) Diese
+                        Quelldatei wird lediglich fÅr Anschauungszwecke
+                        mitgeliefert und ist nicht erforderlich, um die
+                        Routine ABSOLUTE einzusetzen.
+
+  INTRPT.ASM            Der Assembler-Quellcode der in QB.QLB und QB.LIB
+                        befindlichen Routinen INTERRUPT und INTERRUPTX.
+                        Diese Routinen ermîglichen es Ihnen, DOS-System-
+                        aufrufe aus einem BASIC-Programm heraus durchzu-
+                        fÅhren. Diese Quelldatei wird lediglich fÅr
+                        Anschauungszwecke mitgeliefert und ist nicht erfor-
+                        derlich, um die Routinen INTERRUPT und INTERRUPTX
+                        einzusetzen.
+
+  NOCOM.OBJ             (NO COMmunication). Eine Objektdatei, die mit BASIC-
+                        Programmen gebunden wird, die keine UnterstÅtzung
+                        fÅr DatenÅbertragung benîtigen. Das Binden mit
+                        NOCOM.OBJ reduziert die Grî·e ausfÅhrbarer Dateien,
+                        die keine AktivitÑten zur DatenÅbertragung enthalten.
+                                    
+  NOEM.OBJ              (NO EMulation). Eine Objektdatei, die mit BASIC-
+                        Programmen gebunden wird, die immer auf Maschinen
+                        ausgefÅhrt werden, die mit einem mathematischen
+                        Koprozessor 8087 oder 80287 ausgerÅstet sind. Das
+                        Binden mit NOEM.OBJ schaltet die Software-Emulation der
+                        Funktionen des mathematischen Chips aus und reduziert
+                        die Grî·e der ausfÅhrbaren Datei.
+
+  INFO.TXT              Informationen, die noch nicht zur VerfÅgung standen,
+                        als die QuickBASIC-HandbÅcher gedruckt wurden.
+
+  UPDATE.TXT		énderungen zur vorherigen Ausgabe von QuickBASIC 4.0.
+
+==< Inhalt von DISKETTE 4: Beispielprogramm-Diskette >=====================
+
+  ---------------------------------------------------------------------------
+  Wichtige Hinweise
+  -----------------
+  Die folgenden Disketten enthalten eine Reihe von Demonstrations- und Hilfs-
+  programmen, die in BASIC geschrieben sind. Diese Dateien verfolgen lediglich
+  informierende bzw. unterhaltende Absichten, und Microsoft Åbernimmt keine
+  Garantie, weder ausdrÅcklich noch indirekt, fÅr deren Brauchbarkeit hin-
+  sichtlich bestimmter Aufgaben oder fÅr deren Richtigkeit, Genauigkeit oder
+  ZuverlÑssigkeit. Sie tragen das gesamte, sich aus der Nutzung der Software
+  ergebende Risiko.
+
+  Alle mit der Erweiterung .BAS endenden Programme sind QuickBASIC-Quell-
+  dateien. Programme mit einem Stern (*) neben dem Namen benîtigen fÅr die
+  AusfÅhrung einen Farbgrafik-Adapter.
+  ---------------------------------------------------------------------------
+
+  DEMO1.BAS             Die BASICA-Version des Programmes zur Demonstration
+                        von Musikeffekten, auf das in Kapitel 2 von
+                        "Lernen und Anwenden von Microsoft QuickBASIC" Bezug
+                        genommen wird.
+
+  DEMO2.BAS             Die QuickBASIC-2.0-Version des Programmes zur
+                        Demonstration von Musikeffekten, auf das in Kapitel 2
+                        von "Lernen und Anwenden von Microsoft QuickBASIC" Bezug
+                        genommen wird.
+
+  DEMO3.BAS             Die QuickBASIC-4.0-Version des Programmes zur
+                        Demonstration von Musikeffekten, auf das in Kapitel 2
+                        von "Lernen und Anwenden von Microsoft QuickBASIC" Bezug
+                        genommen wird.
+
+  ENTFZEIL.BAS          Ein Hilfsprogramm, das BASICA-Programme, die im
+                        ASCII-Format gespeichert sind, in QuickBASIC-
+                        Programme umwandelt, indem Zeilennummern, auf die
+                        kein Bezug genommen wird, entfernt werden.
+
+  SORTDEMO.BAS          Ein Programm, das mehrfarbige Balken sowie Musik
+                        dazu einsetzt, die LeistungsfÑhigkeit verschiedener
+                        Sortieralgorithmen zu verdeutlichen.
+
+  TORUS.BAS*            Ein Programm zur Demonstration von Grafik, das eine
+                        mehrfarbige reifenfîrmige Figur auf dem Bildschirm
+                        zeichnet und diese anschlie·end scheinbar rotieren
+                        lÑ·t, indem Farben der Palette ausgewechselt werden.
+
+  \QUELL                Ein Verzeichnis, das sowohl BASIC-Programme enthÑlt,
+                        die in den QuickBASIC-HandbÅchern abgedruckt sind,
+                        als auch weitere Demonstrationsprogramme. Es folgt
+                        der Inhalt dieses Verzeichnisses.
+
+==< Inhalt des Verzeichnisses \QUELL auf DISKETTE 4 >=======================
+
+  BALKEN.BAS*           Ein Programm, das ein Balkendiagramm erzeugt.
+
+  BALLPSET.BAS*         Ein Programm, das einen Ball vom unteren Rand sowie den
+                        Seiten des Bildschirms zurÅckprallen lÑ·t, indem
+                        die Option PSET zusammen mit der Grafikanweisung
+                        PUT verwendet wird.
+
+  BALLXOR.BAS*          Ein Programm, das einen Ball vom unteren Rand sowie den
+                        Seiten des Bildschirms zurÅckprallen lÑ·t, indem
+                        die Option XOR zusammen mit der Grafikanweisung
+                        PUT verwendet wird.
+
+  DATFEHL.BAS           Ein Programm, das eine ASCII-Datei nach einer
+                        Zeichenkette durchsucht. Dieses Programm verfolgt
+                        und reagiert auf hÑufig beim Dateizugriff vorkommende
+                        Benutzerfehler, wie zum Beispiel die Eingabe eines
+                        ungÅltigen Dateinamens oder Nichtverriegelung
+                        eines Laufwerks.
+
+  EDMUST.BAS*           Ein Programm, das es Ihnen ermîglicht, eine Muster-
+                        kachel zur Verwendung in einer PAINT-Anweisung zu
+                        editieren. Mit Musterkacheln kînnen Sie auf dem
+                        Bildschirm jeden geschlossenen Grafikbereich mit
+                        einem Muster fÅllen.
+
+  ENTAB.BAS             Ein Programm, das eine ASCII-Datei komprimiert, indem
+                        es Folgen von Leerzeichen durch Tabulatorzeichen
+                        ersetzt.
+
+  FARBEN.BAS*           Ein Programm, das alle Kombinationen der 16 Hinter-
+                        grund- und 3 Vordergrundfarben (verschieden vom
+                        Hintergrund) der 2 Farbpaletten zeigt, die im Bild-
+                        schirmmodus 1 zur VerfÅgung stehen.
+
+  GLKO.BAS              Ein Programm, das es Ihnen ermîglicht, das von BASIC
+                        zur Speicherung von Zahlen einfacher Genauigkeit
+                        verwendete interne Format zu untersuchen.
+
+  INDEX.BAS             Ein Programm zur Datei-E/A, das einen Index von
+                        Satznummern einer Direktzugriffs-Datendatei bildet
+                        und durchsucht.
+
+  KAL.BAS               Ein Programm, das fÅr jeden Monat eines jeden Jahres
+                        von 1899 bis 2099 einen Kalender druckt.
+
+  KUBUS.BAS*            Ein Programm, das einfache Animation eines WÅrfels
+                        verdeutlicht, indem im Bildschirmmodus 7 mehrere
+                        Bildschirmseiten verwendet werden.
+
+  MANDEL.BAS*           Ein Programm, das ein Fractal (eine farbige Darstel-
+                        lung der Eigenschaften bestimmter reeller Zahlen) auf
+                        dem Bildschirm erzeugt.
+
+  PALETTE.BAS*          Ein Programm, das demonstriert, wie Bewegung vor-
+                        getÑuscht wird, indem die mit den Farbattributen von
+                        1 bis 15 angezeigten Farben gewechselt werden.
+
+  PLOTTER.BAS*          Ein einfaches Programm zum Zeichnen von Geraden-
+                        Abschnitten, das die BASIC-Anweisung DRAW verwendet.
+
+  QBIBDRU.BAS           Ein Programm, das es Ihnen ermîglicht, ein Listing
+                        der GLOBALEN (PUBLIC) Codes und Datensymbole einer
+                        QuickBASIC Quick-Bibliothek zu erhalten.
+
+  SCHECK.BAS            Ein Programm zur Abrechnung eines Scheckheftes,
+                        das eine Liste aller vom Benutzer eingegebenen
+                        Einzahlungen und Entnahmen sortiert und ausdruckt
+                        und anschlie·end die Abschlu·bilanz des Girokontos
+                        ausdruckt.
+
+  SINUS.BAS*            Ein Programm, das die Kurve der Sinusfunktion fÅr
+                        Winkelwerte im Bogenma· von 0 bis PI (3.14159265)
+                        zeichnet.
+
+  SUCHE.BAS             Ein Programm, das jede Diskettendatei nach einem
+                        Muster durchsucht und jede Byteposition der Datei
+                        mitteilt, an der das Muster beginnt.
+
+  TERMINAL.BAS          Ein Programm, das Ihren Computer, wenn dieser mit
+                        einem Modem eingesetzt wird, in ein "dummes" Daten-
+                        sichtgerÑt verwandelt.
+
+  TOKEN.BAS             Ein Programm, das eine eingegebene Zeichenkette in
+                        eine Serie von Grundsymbolen (token; eine Zeichen-
+                        kette, die von Leerzeichen, Tabulatoren oder Satz-
+                        zeichen, wie zum Beispiel Kommata oder Semikolons,
+                        begrenzt ist) zerlegt.
+
+  VERSTECK.BAS          Ein Programm, das es Ihnen ermîglicht, eine Datei
+                        zu verbergen oder anzuzeigen. Damit kontrollieren Sie,
+                        ob die Datei erscheint, wenn Sie den DOS-Befehl DIR
+                        verwenden, um den Inhalt des die Datei enthaltenden
+                        Verzeichnisses aufzulisten.
+
+  WOIST.BAS             Ein Programm, das alle Verzeichnisse einer Diskette
+                        nach dem vom Benutzer eingegebenen Dateinamen durch-
+                        sucht. Wenn WOIST die Datei entdeckt, druckt es den
+                        kompletten Verzeichnispfad der Datei aus.
+
+  WRZV.BAS              Ein Programm, das eine ASCII-Datei îffnet, jede Zeile,
+                        die nur mit einem WagenrÅcklauf oder einem Zeilen-
+                        vorschub endet, um eine Kombination WagenrÅcklauf/           
+                        Zeilenvorschub erweitert und anschlie·end die
+                        geÑnderten Zeilen in eine neue Datei schreibt.
+
+  ZEIINZAL.BAS          Ein Programm, das jede als Zeichenkette eingegebene
+                        Zahl in einen numerischen Wert umwandelt, nachdem
+                        zunÑchst unzulÑssige numerische Zeichen (zum Beispiel
+                        Kommata) aus der Zeichenkette herausgefiltert wurden.

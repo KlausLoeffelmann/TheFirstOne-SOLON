@@ -1,0 +1,346 @@
+INFO2.TXT
+
+ERGéNZENDE INFORMATIONEN ZU MS-DOS 6.22 - ANPASSEN FöR INTERNATIONALE
+VERWENDUNG
+======================================================================
+
+Diese Datei enthÑlt Informationen darÅber, wie MS-DOS 6.22 fÅr eine 
+internationale Verwendung angepa·t werden kann. Diese Informationen, 
+die Sie weder im MICROSOFT MS-DOS BENUTZERHANDBUCH noch in der 
+MS-DOS-Hilfe oder in der Datei INFO.TXT finden, ergÑnzen die 
+Informationen zu den internationalen Tastaturen und ZeichensÑtzen, 
+die im Abschnitt 1 der mit MS-DOS 6.22 gelieferten Datei INFO.TXT 
+stehen.
+
+In dieser Datei werden die folgenden Themen erlÑutert:
+
+  1. ZusÑtzlich unterstÅtzte ZeichensÑtze (Codeseiten) und Tastaturen
+     1.1  Die Datei KEYBRD.SYS
+     1.2  Die Dateien EGA.CPI, EGA2.CPI und AGE3.CPI
+     1.3  Konfigurieren Ihres Computers fÅr Sprachwechsel-Funktionen
+  2. Wechseln zwischen den Modi bei einer Zwei-Modi-Tastatur
+  3. KurzÅbersicht SprachenunterstÅtzung
+
+
+1.  ZusÑtzlich unterstÅtzte ZeichensÑtze (Codeseiten) und Tastaturen
+--------------------------------------------------------------------
+MS-DOS 6.22 umfa·t die Dateien KEYBRD2.SYS, EGA2.CPI und EGA3.CPI. Diese
+Dateien ermîglichen die UnterstÅtzung zusÑtzlicher Tastaturen und
+ZeichensÑtze (Codeseiten). Sie kînnen diese Dateien so einsetzen wie die
+Dateien KEYBOARD.SYS und EGA.CPI. DarÅber hinaus beinhaltet MS-DOS in der
+Datei COUNTRY.SYS neue landesspezifische Einstellungen.
+
+MS-DOS 6.22 beinhaltet in der Datei COUNTRY.SYS neue landesspezifische
+Einstellungen, die auf die neuen Tatstaturen und ZeichensÑtze
+zurÅckgreifen. Weitere Informationen finden Sie in dieser Datei in den
+Tabellen im Abschnitt 1.6.
+
+Eine vollstÑndige Liste der von MS-DOS 6.22 unterstÅtzten LÑnder,
+Tastaturen und ZeichensÑtze finden Sie in dieser Datei im Abschnitt 1.6.
+
+1.1  Die Datei KEYBRD2.SYS
+--------------------------
+Die Datei KEYBRD2.SYS entspricht im wesentlichen der Datei KEYBOARD.SYS.
+Die einzigen Unterschiede sind:
+
+ o  KEYBRD2.SYS enthÑlt UnterstÅtzung fÅr die folgenden Tastaturen,
+    die nicht von KEYBOARD.SYS unterstÅtzt werden:
+
+    Land/Sprache                    Tastaturlayout   Tastatur-ID
+    ------------                    --------------   -----------
+    Kanada (Standard-CAN/CSA-Z-Tastatur)   cf        Siehe unten
+    Brasilien (zweite Standardtastatur)    br        274, 275
+    Bulgarien                              bg        442
+    Griechenland                           gk        319
+    Island                                 is        161
+    Mazedonien und Serbien/Montenegro      yc        118
+    RumÑnien                               ro        333
+    Russisch                               ru        441
+    TÅrkisch                               tk        440, 179
+
+
+ o  Die Datei KEYBRD2.SYS enthÑlt zwar genauso wie KEYBOARD.SYS eine
+    kanadische Tastatur mit dem Tastaturcode 058 und der Kennung cf,
+    aber das Layout dieser beiden Tastaturen ist unterschiedlich. Das
+    Layout der kanadischen Tastatur in KEYBRD2.SYS entspricht der Norm,
+    die die kanadische Regierung in der Spezifikation 243.200-92
+    (CAN/CSA-Z) formuliert hat. Das in KEYBOARD.SYS verwendete
+    Tastaturlayout wird hÑufiger eingesetzt, entspricht aber nicht den
+    Spezifikationen der kanadischen Regierung.
+
+ o  Die Datei KEYBRD2.SYS enthÑlt keine UnterstÅtzung fÅr die folgenden
+    Tastaturen, die von KEYBOARD.SYS unterstÅtzt werden:
+
+       Belgien
+       DÑnisch
+       Franzîsisch
+       Japan
+       Lateinamerika
+       Niederlande
+       Portugiesisch
+       Spanisch
+       Schweiz (Deutsch)
+       Schweiz (Franzîsisch)
+
+ o  KEYBRD2.SYS enthÑlt énderungen an der deutschen Tastatur, die in 
+    KEYBOARD.SYS nicht enthalten sind. Bei der deutschen Tastatur ist das
+    UMSCHALT-Feststellverhalten fÅr die obere Tastenreihe jetzt identisch
+    zu dem der US-Tastatur (das hei·t, der "Modus Schreibmaschine" wurde
+    entfernt).
+
+1.2  Die Dateien EGA.CPI, EGA2.CPI und EGA3.CPI
+-----------------------------------------------
+Die Dateien EGA2.CPI und EGA3.CPI sind, abgesehen davon, da· sie andere
+Codeseiten enthalten, mit der Datei EGA.CPI identisch. 
+
+EGA.CPI enthÑlt die folgenden Codeseiten:
+    
+    437 - Vereinigte Staaten 
+    850 - Mehrsprachig (Latein I)
+    852 - Slawisch/Osteuropa (Latein II)
+    860 - Portugiesisch
+    863 - Frankokanadisch
+    865 - Nordisch
+
+EGA2.CPI enthÑlt die folgenden Codeseiten:
+
+    737 - Griechisch II
+    850 - Mehrsprachig (Latein I)
+    852 - Slawisch/Osteuropa (Latein II)
+    857 - TÅrkisch
+    861 - IslÑndisch
+    869 - Griechisch
+
+EGA3.CPI enthÑlt die folgenden Codeseiten:
+
+    437 - Vereinigte Staaten 
+    850 - Mehrsprachig (Latein I)
+    852 - Slawisch/Osteuropa (Latein II)
+    855 - Kyrillisch I
+    866 - Russisch (Kyrillisch II)
+
+Sie kînnen die Dateien KEYBRD2.SYS, EGA2.CPI und EGA3.CPI so einsetzen
+wie die Dateien KEYBOARD.SYS und EGA.CPI. 
+
+1.3  Konfigurieren Ihres Rechners, damit dieser die Einstellungen einer
+     internationalen Sprache verwendet
+-----------------------------------------------------------------------
+Wenn Sie nicht mit dem Zeichensatz und/oder den landesspezifischen
+Einstellungen arbeiten mîchten, die standardmÑ·ig verwendet werden
+(Vereinigte Staaten), mÅssen Sie die Dateien CONFIG.SYS und AUTOEXEC.BAT
+entsprechend bearbeiten.
+
+Wenn Sie beispielsweise die neuen Einstellungen fÅr Island verwenden
+mîchten, mÅssen Sie die folgenden Schritte ausfÅhren:
+
+1. FÅgen Sie die folgenden Befehle in Ihre CONFIG.SYS-Datei ein:
+
+    REM EINSTELLUNGEN FöR ISLAND
+    COUNTRY=354,861,C:\DOS\COUNTRY.SYS
+    DEVICE=C:\DOS\DISPLAY.SYS CON=(,,2)
+
+2. FÅgen Sie die folgenden Befehle in Ihre AUTOEXEC.BAT-Datei ein:
+
+    REM EINSTELLUNGEN FöR ISLAND
+    MODE CON CP PREPARE=((861 850) c:\DOS\EGA2.CPI
+    MODE CON CP SELECT=861
+    KEYB IS,,C:\DOS\KEYBRD2.SYS
+
+3. Starten Sie Ihren Computer neu.
+
+
+2.  Wechseln zwischen den Modi bei einer Zwei-Modi-Tastatur
+-----------------------------------------------------------
+MS-DOS 6.22 unterstÅtzt Zwei-Modi-Tastaturen fÅr griechische, franko-
+kanadische, bulgarische, serbische/montenegrinische und russische
+Tastaturen. Diese Tastaturen ermîglichen es Ihnen, problemlos zwischen
+zwei verschiedenen Tastaturmodi zu wechseln. Wenn Sie Ihren Rechner
+starten, und es ist eine dieser Tastaturen angemeldet, ist der primÑre
+Modus aktiv. Wenn Sie in den jeweils anderen Modus wechseln mîchten,
+mÅssen Sie die entsprechende Tastenkombination drÅcken (siehe nach-
+stehende Zusammenstellungen).
+
+Die Tastenkombinationen fÅr die griechische Tastatur lauten wie folgt:
+                    
+                      Modus             Tastenkombination      
+                      ----------        ------------------------
+  PrimÑrer Modus      Latein            ALT+LINKE UMSCHALTTASTE
+  SekundÑrer Modus    Griechisch        ALT+RECHTE UMSCHALTTASTE
+                    
+Die Tastenkombinationen fÅr die frankokanadische Tastatur lauten wie
+folgt:
+                      Modus             Tastenkombination      
+                      ----------        -------------------------
+  PrimÑrer Modus      Latein            STRG+RECHTE UMSCHALTTASTE
+  SekundÑrer Modus    Latein II         STRG+LINKE UMSCHALTTASTE
+
+Die Tastenkombinationen fÅr die bulgarische, die russische sowie die
+serbische/montenegrinische Tastatur lauten wie folgt:
+                    
+                      Modus             Tastenkombination      
+                      ----------        ------------------------
+  PrimÑrer Modus      Latein            ALT+LINKE UMSCHALTTASTE
+  SekundÑrer Modus    Kyrillisch        ALT+RECHTE UMSCHALTTASTE
+
+
+
+3. KurzÅbersicht SprachenunterstÅtzung
+--------------------------------------
+In der folgenden Tabelle sind alle LÑnder, die von MS-DOS 6.22 unterstÅtzt
+werden, zusammen mit dem jeweils zugehîrigen Zeichensatz, der zugehîrigen
+.CPI-Datei sowie den entsprechenden Tastaturcodes aufgefÅhrt.
+
+Anmerkung: Wenn Sie die ISO-Schriftarten verwenden mîchten, mÅssen Sie
+           statt der .CPI-Datei, die fÅr das jeweilige Land angegeben
+           ist, die Datei ISO.CPI angeben. Weitere Informationen finden
+           Sie im vorangehenden Abschnitt.
+
+                             UnterstÅtzte
+                      Landes-  Zeichen-             Tastatur-  Tastatur-
+Land                   code     sÑtze     CPI-Datei   Code        ID
+====================  =======  =========  =========  ========  =========
+Albanien                355     852, 850   EGA.CPI    --        ---
+
+SÅdliche Region           
+  (Arabische LÑnder)    785     850, 864*  EGA.CPI    --        ---
+
+Argentinien             054     850, 437   EGA.CPI    la        ---
+
+Australien              061     437, 850   EGA.CPI    us        ---
+
+ôsterreich              043     850, 437   EGA.CPI    gr        Siehe
+                                                                Abschnitt 1.1
+
+Belgien                 032     850, 437   EGA.CPI    be        ---
+
+Bosnien/Herzegowina     387     852, 850   EGA.CPI    yu        234
+
+Brasilien               055     850, 437   EGA.CPI    br        274, 275
+
+Bulgarien               359     855, 850   EGA3.CPI   bg        442
+
+Kanada, Franzîsisch     002     850, 863   EGA.CPI    cf        Siehe
+                                                                1.1
+
+Kanada, Englisch        004     850, 863   EGA.CPI    cf        Siehe
+                                                                1.1
+
+Chile                   056     850, 437   EGA.CPI    la        ---
+
+Kolumbien               057     850, 437   EGA.CPI    la        ---
+
+Kroatien                384     852, 850   EGA.CPI    yu        234
+
+Tschechische Republik   042     852, 850   EGA.CPI    cz        243
+
+DÑnemark                045     850, 865   EGA.CPI    dk        ---
+
+Equador                 593     850, 437   EGA.CPI    la        ---
+
+Finnland                358     850, 437   EGA.CPI    su        ---
+
+Frankreich              033     850, 437   EGA.CPI    fr        120, 189
+
+Deutschland             049     850, 437   EGA.CPI    gr        Siehe
+                                                                Abschnitt 1.1
+
+Griechenland            030     869, 737,  EGA2.CPI   gk        319
+                                850
+
+Hongkong                852     437, **    EGA.CPI    --        ---
+
+Ungarn                  036     852, 850   EGA.CPI    hu        ---
+
+Island                  354     850, 861   EGA2.CPI   is        161
+
+Indien                  091     437, **    EGA.CPI    --        ---
+
+Internationales
+  Englisch              061     437, 850   EGA.CPI    --        ---
+
+Irland                  353     850, 437   EGA.CPI    uk        ---
+
+Israel                  972     850, 862*  EGA.CPI    --        ---
+
+Italien                 039     850, 437   EGA.CPI    it        141, 142
+
+Japan                   081     437, 932*  EGA.CPI    jp        ---
+
+Korea                   082     437, 934*  EGA.CPI    --        ---
+
+Lateinamerika           003     850, 437   EGA.CPI    la        ---
+
+Mazedonien              389     855, 850   EGA3.CPI   yc        118
+
+Malaysia                060     437, **    EGA.CPI    --        ---
+
+Mexiko                  052     850, 437   EGA.CPI    la        ---
+
+Niederlande             031     850, 437   EGA.CPI    nl        ---
+
+Neuseeland              064     437, 850   EGA.CPI    us        ---
+
+Norwegen                047     850, 865   EGA.CPI    no        ---
+
+Volksrepublik China     086     437, 936*  EGA.CPI    --        ---
+
+Polen                   048     852, 850   EGA.CPI    pl        ---
+
+Portugal                351     850, 860   EGA.CPI    po        ---
+
+RumÑnien                040     852, 850   EGA.CPI    ro        333
+
+Ru·land                 007     866, 855,  EGA3.CPI   ru        441
+                                852, 850,
+                                437
+
+Serbien/Montenegro      381     855, 850   EGA3.CPI   yc        118
+
+Singapur                065     437, **    EGA.CPI    --        ---
+
+Slowakei                421     852, 850   EGA.CPI    sl        245
+
+Slowenien               386     852, 850   EGA.CPI    yu        234
+
+SÅdafrika               027     437, 850   EGA.CPI    us        ---
+
+Spanien                 034     850, 437   EGA.CPI    sp        ---
+
+Schweden                046     850, 437   EGA.CPI    sv        ---
+
+Schweiz                 041     850, 437   EGA.CPI    sf (Franzîsisch)
+                                                      sg (Deutsch)
+
+Taiwan                  886     437, 938*  EGA.CPI    --        ---
+
+TÅrkei                  090     857, 850   EGA2.CPI   tr        440, 179
+
+Vereinigtes Kînigreich  044     850, 437   EGA.CPI    uk        166, 168
+
+Vereinigte Staaten      001     437, 850   EGA.CPI    us        ---
+
+Venezuela               058     850, 437   EGA.CPI    la        ---
+
+Jugoslawien             038     852, 850   EGA.CPI    yu        234
+
+Jugoslawien, Kyrillisch 038     855, 850   EGA3.CPI   yc        118
+
+
+ *  Obwohl COUNTRY.SYS die landesspezifischen Einstellungen (Datum,
+    Uhrzeit, WÑhrung usw.) unterstÅtzt, die den Codeseiten 862
+    (HebrÑisch), 864 (Arabisch), 932 (Japanisch), 934 (Koreanisch), 936
+    (VR-Chinesisch) und 938 (Taiwanesisch) zugeordnet sind, stehen diese
+    ZeichensÑtze (Codeseiten) nur bei den entsprechenden speziellen
+    Versionen von MS-DOS (HebrÑisch, Arabisch, Japanisch, Koreanisch,
+    VR-Chinesisch und Taiwanesisch) zur VerfÅgung.
+
+ ** Hongkong, Indien, Malaysia und Singapur wurden zu COUNTRY.SYS hin-
+    zugefÅgt, um Zugriff auf die spezifischen Einstellungen dieser LÑnder
+    zu ermîglichen, wenn Internationales Englisch verwendet wird. Wenn Sie
+    fÅr eines dieser LÑnder mit dessen Hauptsprache arbeiten und die
+    entsprechenden landesspezifischen Einstellungen benîtigen, sollten
+    Sie sich mit der entsprechenden Internationalen Microsoft Nieder-
+    lassung (Microsoft Hong Kong Limited, Microsoft Systems Private
+    Limited (Indien), Microsoft Malaysia Sdn Bhd oder Microsoft Singapore
+    Pte Ltd) in Verbindung setzen.
+

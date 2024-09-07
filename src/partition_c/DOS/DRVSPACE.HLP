@@ -1,0 +1,2374 @@
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@@!45!@
+ Hilfe - Setup
+
+%N komprimiert Ihre Dateien, so daá Sie mehr Platz auf Ihrer Festplatte/Diskette frei haben.
+
+Verwenden von %N Setup
+-------------------------------
+Im Verlauf des %N Setup mssen Sie einige Optionen ausw„hlen. %N zeigt Optionen in einem Feld an. Um die markierte Option auszuw„hlen, drcken Sie lediglich die EINGABETASTE. Um eine andere Option auszuw„hlen, drcken Sie die NACH-OBEN- bzw. NACH-UNTEN-TASTE, um die gewnschte Option zu markieren, und drcken Sie anschlieáend die EINGABETASTE.
+
+Was geschieht in %N Setup?
+-----------------------------------
+Das %N-Installationsprogramm Setup bereitet den Computer fr die Datentr„gerkomprimierung vor, berprft die Zuverl„ssigkeit des Laufwerks und komprimiert dann das Laufwerk Ihrer Wahl.
+
+Nach der Installation ist die %N-Datentr„gerkomprimierung in MS-DOS integriert. Beim Starten von MS-DOS wird neben anderen Betriebssystemkomponenten %S.BIN geladen, der Teil von MS-DOS, der den Zugriff auf komprimierte Laufwerke erm”glicht. MS-DOS l„dt %S.BIN, bevor andere Befehle in Ihrer Datei CONFIG.SYS ausgefhrt werden.
+
+Nach der Installation von %N k”nnen Sie das Programm %N ausfhren, um Ihre komprimierten Laufwerke zu verwalten und zus„tzliche Laufwerke zu komprimieren. Geben Sie dazu an der Eingabeaufforderung %S ein.
+
+Anmerkung: Bei Bedarf k”nnen Sie sp„ter ein mit %N 
+           komprimiertes Laufwerk dekomprimieren und sogar 
+           %N aus dem Speicher entfernen.
+
+Verwandtes Thema
+-------------
+  "Dekomprimieren eines komprimierten Datentr„gers"~HLAA~
+
+@@!46!@
+ Hilfe - W„hlen zwischen Express oder benutzerdefiniertem Setup
+
+Sie k”nnen zwischen Express Setup und benutzerdefiniertem Setup w„hlen.
+
+Wenn Sie Express Setup ausfhren, komprimiert %N die bestehenden Dateien auf Laufwerk C: und legt die Komprimierungseinstellungen fr Sie fest. Dies ist die einfachste Methode zum Komprimieren der Daten auf Ihrer Festplatte.
+
+Wenn Sie das benutzerdefinierte Setup ausfhren, berl„át %N Ihnen die Wahl, welche Laufwerke Sie komprimieren m”chten. Auáerdem k”nnen Sie die Komprimierungseinstellungen selbst festlegen. W„hlen Sie das benutzerdefinierte Setup, wenn Sie die Daten auf einem anderen Laufwerk als C: komprimieren m”chten, oder wenn Sie ein leeres komprimiertes Laufwerk unter Verwendung des freien Speicherplatzes auf einem bestehenden Laufwerk erstellen m”chten.
+
+@@!49!@
+ Hilfe - W„hlen einer Komprimierungsmethode
+
+Zum Erstellen eines komprimierten Laufwerks gibt es zwei M”glichkeiten:
+
+Wenn Sie "Vorhandenes Laufwerk komprimieren" w„hlen, komprimiert %N die bestehenden Dateien auf der Festplatte Ihrer Wahl. Nach Beendigung von %N verfgt das Laufwerk ber mehr freien Speicher. (Das Laufwerk enth„lt die Mehrzahl der Dateien; lediglich Dateien, die nicht komprimiert werden k”nnen, z„hlen nicht dazu. Fr solche Dateien erstellt %N ein neues unkomprimiertes Laufwerk.) Die Option "Vorhandenes Laufwerk komprimieren" ist besonders ntzlich, wenn Ihre Festplatte nahezu voll ist.
+
+Wenn Sie "Neues komprimiertes Laufwerk erstellen" w„hlen, verwendet %N einen Teil des Speichers auf einem Festplattenlaufwerk zum Erstellen eines neuen komprimierten Laufwerks. Dabei entsteht ein neues leeres Laufwerk, das mehr freien Speicherplatz enth„lt, als zum Erstellen des Laufwerks verbraucht wird. Sie k”nnen diese Option zum Beispiel w„hlen, wenn Ihre Festplatte viel freien Speicher aufweist, oder wenn Sie Ihre vorhandenen Dateien nicht komprimieren m”chten.
+
+Anmerkung: Bei Bedarf k”nnen Sie sp„ter ein mit %N 
+           komprimiertes Laufwerk dekomprimieren und sogar 
+           %N aus dem Speicher entfernen. 
+
+Verwandtes Thema
+-------------
+  "Dekomprimieren eines komprimierten Datentr„gers"~HLAA~
+
+@@!59!@
+ Hilfe - %N ist mit dem Komprimieren Ihres Laufwerks fertig.
+
+%N ist mit dem Komprimieren des von Ihnen gew„hlten Laufwerks fertig und zeigt folgende Informationen an:
+
+ * Wieviel freien Speicherplatz das Laufwerk enthielt, bevor es
+   %N komprimierte.
+
+ * Wieviel freien Speicherplatz das Laufwerk jetzt enth„lt.
+
+ * Wie lange %N zum Komprimieren des Laufwerks brauchte.
+
+ * Das Komprimierungsverh„ltnis, das angibt, wie dicht %N die
+   Dateien auf dem Laufwerk komprimieren konnte.
+
+%N zeigt auáerdem den Buchstaben und die Gr”áe des neu erstellten unkomprimierten Laufwerks an. Dieses Laufwerk enth„lt unkomprimierten Speicherplatz fr Dateien, die nicht komprimiert werden drfen. (Das Laufwerk enth„lt auáerdem die "komprimierte Datentr„gerdatei"~HL84~ Ihres neu komprimierten Laufwerks.)
+
+@@!60!@
+ Hilfe - %N ist mit dem Komprimieren Ihres Laufwerks fertig.
+
+%N hat ein neues komprimiertes Laufwerk mit dem freien Speicherplatz 
+auf dem angegebenen Laufwerk erstellt. %N zeigt die folgenden 
+Informationen an:
+
+ * Wieviel Speicherplatz %N auf Ihrem vorhandenen Laufwerk
+   zum Erstellen des neuen komprimierten Laufwerks verwendet hat.
+
+ * Wieviel freien Speicherplatz das neue komprimierte Laufwerk
+   enth„lt.
+
+ * Das Komprimierungsverh„ltnis des neuen Laufwerks.
+
+ * Wie lange %N zum Erstellen des neuen Laufwerks brauchte.
+
+ * Wieviel freier Speicherplatz auf Ihrem vorhandenen Laufwerk
+   verbleibt.
+
+@@!64!@
+ Hilfe - Soll Ihr Computer jetzt neu gestartet werden?
+
+Das Dialogfeld 'Soll Ihr Computer jetzt neu gestartet werden?' erscheint, wenn Sie gerade nderungen im Dialogfeld 'Optionen' vorgenommen haben und %N muá Ihren Computer neu starten, um Ihre nderungen in Effekt treten zu lassen.
+
+Um Ihren Computer jetzt neu zu starten, w„hlen Sie Ja.
+
+Um fortzufahren, ohne den Computer neu zu starten, w„hlen Sie Nein. Sie k”nnen %N weiter verwenden, aber die nderungen, die Sie im Dialogfeld 'Optionen' vorgenommen haben, werden nicht in Effekt treten, bis Sie Ihren Computer neu starten.
+
+
+
+
+
+@@!50!@
+ Hilfe - Ausw„hlen eines zu komprimierenden Laufwerks
+
+Sie haben angegeben, daá Sie ein vorhandenes Laufwerk komprimieren m”chten. Nun mssen Sie angeben, um welches Laufwerk es sich handelt.
+
+%N listet die verfgbaren Laufwerke auf und zeigt an, wie groá jedes davon nach dem Komprimieren sein wird.
+
+W„hlen Sie das gewnschte Laufwerk aus, indem Sie die NACH-OBEN- bzw. NACH-UNTEN-TASTE drcken und danach zum Fortsetzen die EINGABETASTE drcken.
+
+Erscheint das gewnschte Laufwerk nicht in der Liste, berprfen Sie folgendes:
+
+ * Stellen Sie sicher, daá die Diskette formatiert ist.
+
+ * Stellen Sie sicher, daá gengend Speicherplatz auf dem
+   Laufwerk vorhanden ist. Um Ihr Startlaufwerk zu komprimieren,
+   muá mindestens 1,2 MB Speicherplatz zur Verfgung stehen.
+   Andere Laufwerke und Disketten ben”tigen mindestens 0,65 MB
+   freien Speicher. (%N kann 360 KB Disketten nicht
+   komprimieren.)
+
+ * Wenn Sie Disketten oder andere auswechselbare Datentr„ger
+   komprimieren m”chten, stellen Sie sicher, daá der Datentr„ger
+   eingelegt und die Laufwerkverriegelung geschlossen ist.
+
+@@!51!@
+ Hilfe - Ausw„hlen des zu verwendenden vorhandenen Laufwerks
+
+Sie haben angegeben, daá ein neues komprimiertes Laufwerk unter Verwendung von Speicherplatz auf einem vorhandenen Laufwerk erstellt werden soll. Sie mssen nun das Laufwerk angeben, das den zu verwendenden Speicherplatz enth„lt.
+
+%N listet die verfgbaren Laufwerke auf; fr jedes Laufwerk zeigt %N an, wie groá das neue Laufwerk sein wird, wenn Sie den freien Speicherplatz auf diesem vorhandenen Laufwerk verwenden. W„hlen Sie das gewnschte Laufwerk aus, indem Sie die NACH-OBEN- bzw. NACH-UNTEN-TASTE drcken und danach zum Weitermachen die EINGABETASTE drcken.
+
+@@!52!@
+ Hilfe - Festlegen der Komprimierungseinstellungen
+
+Beim Komprimieren des ausgew„hlten Laufwerks erstellt %N auáerdem ein neues unkomprimiertes Laufwerk. Dieses neue Laufwerk enth„lt alle Dateien des ausgew„hlten Laufwerks, die unkomprimiert bleiben mssen (wie zum Beispiel die Windows-Auslagerungsdatei).
+
+Dieser Bildschirm zeigt die Einstellungen, die %N zum Erstellen des neuen unkomprimierten Laufwerks verwendet. Um eine Einstellung zu „ndern, drcken Sie die NACH-OBEN- bzw. NACH-UNTEN-TASTE, bis die betreffende Einstellung markiert ist, und drcken Sie dann die EINGABETASTE, um die Alternativen anzuzeigen. Sie k”nnen folgende Einstellungen „ndern:
+
+Freier Speicher auf neuem unkomprimierten Laufwerk
+   Zeigt, wieviel freien Speicherplatz das neue Laufwerk enthalten
+   wird. Wenn Sie nicht sicher sind, wieviel Platz Sie ben”tigen,
+   verwenden Sie den empfohlenen Wert.
+
+   Wenn das zu komprimierende Laufwerk Ihre permanente Windows-
+   Auslagerungsdatei enth„lt, bercksichtigt dies %N bei der
+   Berechnung des erforderlichen freien Speicherplatzes. %N
+   verschiebt auáerdem die Auslagerungsdatei auf das neue Laufwerk
+   und paát Ihre Windows-Installation entsprechend an. Sie mssen nur
+   dann gengend freien Speicherplatz fr eine permanente Windows-
+   Auslagerungsdatei angeben, wenn noch keine existiert, Sie jedoch eine 
+   erstellen m”chten. (Weitere Informationen ber die permanente Windows-
+   Auslagerungsdatei finden Sie in Ihrer Windows-Dokumentation.)
+
+Laufwerkbuchstabe des neuen unkomprimierten Laufwerks
+   Zeigt den Laufwerkbuchstaben an, den %N dem neuen
+   Laufwerk zuweisen wird. Standardm„áig weist %N den
+   n„chsten unbenutzten Laufwerkbuchstaben zu, doch k”nnen Sie auch
+   einen anderen Buchstaben angeben.
+
+   Standardm„áig verwendet %N den fnften 
+   Laufwerkbuchstaben nach dem zuletzt verwendeten 
+   Buchstaben. Ist beispielsweise E: der zuletzt gebrauchte
+   Laufwerkbuchstabe, ordnet %N dem neuen Laufwerk
+   den Buchstaben J: zu. Nachdem Sie %N installiert
+   haben, ordnet es dem neuen Laufwerk den letzten
+   Laufwerkbuchstaben zu, der %N zur Verfgung steht.
+
+@@!53!@
+ Hilfe - Festlegen der Komprimierungseinstellungen
+
+%N zeigt die Einstellungen an, die zum Erstellen des neuen komprimierten Laufwerks verwendet werden. Um eine Einstellung zu „ndern, drcken Sie die NACH-OBEN- bzw. NACH-UNTEN-TASTE, bis die betreffende Einstellung markiert ist, und drcken Sie dann die EINGABETASTE, um die Alternativen anzuzeigen. Sie k”nnen folgende Einstellungen „ndern:
+
+Freier Speicher auf Laufwerk X:
+   Zeigt an, wieviel freien Speicherplatz das ausgew„hlte Laufwerk
+   nach dem Erstellen des neuen Laufwerks haben wird. Standardm„áig
+   verwendet %N einen Teil des freien Speicherplatzes des
+   ausgew„hlten Laufwerks, nicht jedoch den gesamten freien
+   Speicherplatz, zum Erstellen des neuen Laufwerks. Sie k”nnen
+   veranlassen, daá %N mehr, weniger oder berhaupt keinen
+   Speicherplatz frei l„át.
+
+Komprimierungsverh„ltnis
+   Zeigt das gesch„tzte Komprimierungsverh„ltnis des neuen Laufwerks
+   an. %N verwendet dieses Verh„ltnis, um abzusch„tzen,
+   wieviel Daten Sie auf dem neuen Laufwerk speichern k”nnen. Das
+   Standardverh„ltnis ist 2:1. Sie k”nnen ein anderes Verh„ltnis
+   festlegen, wenn Sie Dateien speichern m”chten, die in einem
+   anderen Verh„ltnis als 2:1 komprimiert werden.
+
+Laufwerkbuchstabe
+   Zeigt den Laufwerkbuchstaben an, den %N dem neuen
+   Laufwerk zuweisen wird. Standardm„áig weist %N den
+   n„chsten unbenutzten Laufwerkbuchstaben zu, doch k”nnen Sie
+   auch einen anderen Buchstaben angeben.
+
+@@!54!@
+ Hilfe - Freier Speicher auf dem neuen unkomprimierten Laufwerk
+
+Beim Komprimieren eines Laufwerks erstellt %N auáerdem ein neues unkomprimiertes Laufwerk zur Aufnahme aller Dateien, die unkomprimiert bleiben mssen.
+
+Auf diesem Bildschirm k”nnen Sie angeben, wieviel freien Speicher das neue unkomprimierte Laufwerk enthalten soll. Je mehr freien Speicher Sie dem neuen unkomprimierten Laufwerk zuordnen, desto weniger freien Speicher weist Ihr komprimiertes Laufwerk auf.
+
+ANMERKUNG: Einige Anwendungen ben”tigen freien unkomprimierten
+           Speicherplatz, um korrekt arbeiten zu k”nnen. Sie 
+           sollten daher dem neuen unkomprimierten Laufwerk 
+           einen gewissen Speicherplatz einr„umen, falls Ihre 
+           Anwendungen diesen ben”tigen.
+
+@@!55!@
+ Hilfe - Festlegen des freien Speicherplatzes auf dem vorhandenen Laufwerk
+
+Wenn %N ein neues komprimiertes Laufwerk erstellt, verwendet das Programm einen Teil oder den gesamten Speicher des vorhandenen Laufwerks.
+
+Auf diesem Bildschirm k”nnen Sie angeben, wieviel Speicher %N auf dem vorhandenen Laufwerk frei lassen soll. Je mehr freien Speicher Sie auf dem vorhandenen Laufwerk frei lassen, desto kleiner wird das neue Laufwerk sein.
+
+ANMERKUNG: Einige Anwendungen ben”tigen freien unkomprimierten
+           Speicherplatz, um korrekt arbeiten zu k”nnen. Sie 
+           sollten daher gengend Speicher fr den Fall 
+           unkomprimiert lassen, daá ihn Ihre Anwendungen 
+           ben”tigen.
+
+@@!56!@
+ Hilfe - Festlegen eines anderen Laufwerkbuchstabens
+
+Beim Komprimieren eines vorhandenen Laufwerks erstellt %N auáerdem ein neues unkomprimiertes Laufwerk zur Aufnahme aller Dateien, die unkomprimiert bleiben mssen. Standardm„áig berspringt %N vier Laufwerkbuchstaben und weist dann dem neuen Laufwerk den n„chsten verfgbaren Laufwerkbuchstaben zu.
+
+Um dem neuen Laufwerk einen anderen Buchstaben zuzuweisen, geben Sie den gewnschten Buchstaben ein, oder drcken Sie die NACH-OBEN- bzw. NACH-UNTEN-TASTE, bis der Buchstabe ausgew„hlt ist. Drcken Sie dann die EINGABETASTE.
+
+@@!57!@
+ Hilfe - Festlegen eines anderen Laufwerkbuchstabens
+
+Standardm„áig weist %N beim Erstellen eines neuen komprimierten Laufwerks ihm den n„chsten verfgbaren Laufwerkbuchstaben zu.
+
+Um dem neuen Laufwerk einen anderen Buchstaben zuzuweisen, geben Sie den gewnschten Buchstaben ein, oder drcken Sie die NACH-OBEN- bzw. NACH-UNTEN-TASTE, bis der Buchstabe ausgew„hlt ist. Drcken Sie dann die EINGABETASTE.
+
+@@!58!@
+ Hilfe - Festlegen eines Komprimierungsverh„ltnisses
+
+Auf diesem Bildschirm k”nnen Sie das gesch„tzte Komprimierungsverh„ltnis eines Laufwerks „ndern. Um ein anderes Verh„ltnis auszuw„hlen, drcken Sie die NACH-OBEN- bzw. NACH-UNTEN-TASTE, bis das gewnschte Verh„ltnis ausgew„hlt ist. Drcken Sie dann die EINGABETASTE.
+
+Das gesch„tzte Komprimierungsverh„ltnis ist eine Zahl, die %N zur Berechnung des freien Speicherplatzes auf einem komprimierten Laufwerk verwendet. Sie k”nnen dieses Verh„ltnis „ndern, falls es von der Komprimierbarkeit der Dateien, die Sie speichern m”chten, stark abweicht.
+
+So k”nnen Sie zum Beispiel ein h”heres Komprimierungsverh„ltnis festlegen, wenn Sie extrem komprimierbare Dateien, wie beispielsweise Bitmap-Dateien, speichern m”chten. Ein niedrigeres Verh„ltnis geben Sie an, wenn Sie Dateien speichern, die kaum noch weiter komprimierbar sind. Dazu z„hlen zum Beispiel bestimmte Programmdateien (.EXE oder .COM).
+
+ANMERKUNG: Das ndern des gesch„tzten Komprimierungsverh„ltnisses
+           eines Laufwerks beeinfluát nicht wie stark die Dateien
+           tats„chlich komprimiert werden. Es beeinfluát nur
+           wie der zur Verfgung stehende Speicher des kompri-
+           mierten Laufwerks gesch„tzt wird.
+
+Wenn ein falsches gesch„tztes Komprimierungsverh„ltnis angegeben ist, meldet %N eventuell unzutreffende Speicherplatzwerte an MS-DOS, so daá beim Speichern von Dateien Probleme auftreten k”nnen. Ist das Verh„ltnis zu hoch, bersch„tzt %N die Gr”áe des freien Speichers; der Befehl DIR meldet dann eventuell mehr Platz, als tats„chlich verfgbar ist. Ist das Verh„ltnis zu niedrig, kann MS-DOS unter Umst„nden eine Datei nicht kopieren, obwohl fr diese Datei gengend Platz frei ist.
+
+@@!47!@
+ Hilfe - Komprimierung best„tigen
+
+%N komprimiert nun das von Ihnen ausgew„hlte Laufwerk.
+
+Um das ausgew„hlte Laufwerk zu komprimieren, drcken Sie 'W'. %N komprimiert nun das Laufwerk. (Wenn Sie %N Setup ausfhren, wird auáerdem Ihr Computer neu gestartet, um %S.BIN zu laden. %S.BIN ist der Teil von MS-DOS, der den Zugriff auf die komprimierten Laufwerke erm”glicht.)
+
+Anmerkung: Bei Bedarf k”nnen Sie sp„ter ein mit %N 
+           komprimiertes Laufwerk dekomprimieren und sogar 
+           %N aus dem Speicher entfernen. 
+
+
+Um zum vorherigen Bildschirm zurckzukehren, drcken Sie die ESC-TASTE. 
+Sie k”nnen dann Ihre Auswahlen berprfen und „ndern.
+Verwandtes Thema
+-------------
+  "Dekomprimieren eines komprimierten Datentr„gers"~HLAA~
+
+
+@@!48!@
+ Hilfe - Komprimierung best„tigen
+
+%N erstellt nun das neue komprimierte Laufwerk unter 
+Verwendung des freien Speicherplatzes auf dem von Ihnen 
+ausgew„hlten Laufwerk.
+
+Um ein neues Laufwerk zu erstellen, drcken Sie die W-TASTE. 
+%N erstellt dann das neue komprimierte Laufwerk. 
+(Wenn Sie das %N-Installationsprogramm Setup ausfhren, 
+wird auáerdem der Computer neu gestartet, um DBLESPACE.BIN zu 
+laden. Es handelt sich um den Teil von MS-DOS, der den Zugriff 
+auf komprimierte Laufwerke erm”glicht.)
+
+Anmerkung: Bei Bedarf k”nnen Sie sp„ter ein mit %N 
+           komprimiertes Laufwerk dekomprimieren und sogar 
+           %N aus dem Speicher entfernen. 
+
+Um zum vorausgehenden Bildschirm zurckzukehren, drcken Sie die ESC-TASTE. Sie k”nnen dann Ihre Auswahlen berprfen und „ndern.
+
+Verwandtes Thema
+-------------
+  "Dekomprimieren eines komprimierten Datentr„gers"~HLAA~
+
+
+
+
+@@!0!HL97!@
+ Hilfe - Hauptbildschirm '%N'
+
+Der Hauptbildschirm von %N listet alle zur Zeit geladenen komprimierten Laufwerke auf. Die Liste enth„lt Festplatten, Disketten und andere auswechselbare Datentr„ger.
+
+Um Informationen ber ein Laufwerk anzuzeigen, drcken Sie die NACH-OBEN- bzw. NACH-UNTEN-TASTE, bis das gewnschte Laufwerk ausgew„hlt ist. Drcken Sie anschlieáend die EINGABETASTE.
+
+Vom Hauptbildschirm von %N aus k”nnen Sie mit komprimierten Laufwerken arbeiten, zus„tzliche Laufwerke komprimieren oder laden sowie neue komprimierte Laufwerke erstellen. Um weitere Informationen ber die Aufgaben zu erhalten, die Sie ber den Hauptbildschirm von %N ausfhren k”nnen, w„hlen Sie eines der folgenden Themen aus:
+
+  "Arbeiten mit komprimierten Laufwerken"~HL76~
+  "Vorhandene Laufwerke komprimieren"~HL80~
+  "Erstellen von komprimierten Laufwerken"~HL83~
+  "Laden von komprimierten Laufwerken"~HL95~
+  "Arbeiten mit Disketten"~HL89~
+  "Dekomprimieren eines komprimierten Datentr„gers"~HLAA~
+  "%N-Begriffe"~HL81~
+
+ANMERKUNG: Sie k”nnen mit komprimierten Laufwerken auch an der
+           MS-DOS-Eingabeaufforderung arbeiten, indem Sie den 
+           Befehl %S verwenden. Um weitere Informationen 
+           zu erhalten, geben Sie an der Eingabeaufforderung 
+           HELP %S ein.
+
+@@!23!@
+ Hilfe - Informationen ber komprimierte Laufwerke
+
+Das Dialogfeld 'Informationen ber komprimierte Laufwerke' enth„lt folgende Informationen ber das ausgew„hlte komprimierte Laufwerk:
+
+ Freier Speicher       Eine Sch„tzung des freien Speichers 
+                       auf dem Laufwerk. Die Gesamtmenge der 
+                       Daten, die Sie darin speichern k”nnen, 
+                       h„ngt davon ab, wie komprimierbar Ihre 
+                       Dateien sind. Um den freien Speicher 
+                       zu sch„tzen, verwendet %N das 
+                       "gesch„tzte Komprimierungsverh„ltnis"~HL87~.
+
+ Verbrauchter Speicher Die Menge der auf dem komprimierten 
+                       Laufwerk gespeicherten Daten.
+
+ Speicher insgesamt    Eine Sch„tzung der Gesamtkapazit„t des 
+                       Laufwerks. Diese Zahl ist die Summe 
+                       aus verbrauchtem und freiem Speicher.
+
+Das Dialogfeld 'Laufwerk Informationen' zeigt auáerdem Informationen ber die "komprimierte Datentr„gerdatei"~HL84~ des komprimierten Laufwerks an.
+
+šber das Dialogfeld 'Informationen ber komprimierte Laufwerke' k”nnen Sie die Gr”áe oder das gesch„tzte Komprimierungsverh„ltnis des komprimierten Laufwerks „ndern. Um die Gr”áe des Laufwerks zu „ndern, w„hlen Sie die Schaltfl„che "Gr”áe". Zum ndern des gesch„tzten Komprimierungsverh„ltnisses w„hlen Sie die Schaltfl„che "Verh„ltnis".
+
+Verwandte Themen
+----------------
+  "ndern der Gr”áe eines Laufwerks"~HL78~
+  "ndern des Komprimierungsverh„ltnisses eines Laufwerks"~HL77~
+  "Gesch„tztes Komprimierungsverh„ltnis"~HL87~
+  "Auflisten der Laufwerke auf Ihrem Computer"~HL93~
+
+@@!hidLIST_DIALOG!@
+ Hilfe - Laufwerkliste
+
+Im Dialogfeld 'Laufwerkliste' listet %N die Laufwerke Ihres Computers auf. Das Programm zeigt Festplatten-, RAM- und Disketten-Laufwerke sowie Laufwerke fr andere auswechselbare Datentr„ger an. (Die Liste enth„lt keine Netzlaufwerke.)
+
+Fr jedes Laufwerk zeigt %N folgende Informationen an:
+
+ * seinen Laufwerkbuchstaben,
+ * Typ des Laufwerks mit Angabe, ob komprimiert oder nicht
+   (%N verwendet den Ausdruck "Laufwerk fr auswechselbare
+   Datentr„ger" sowohl fr Diskettenlaufwerke als auch fr 
+   Laufwerke fr andere auswechselbare Datentr„ger),
+ * seine Gesamtkapazit„t,
+ * die Gr”áe des darauf noch freien Speicherplatzes,
+ * den Namen seiner komprimierten Datentr„gerdatei (CVF), wenn 
+   es sich um ein komprimiertes Laufwerk handelt.
+
+Verwandtes Thema
+----------------
+  "Anzeigen von Informationen ber ein Laufwerk"~HL91~
+
+@@!28!@
+ Hilfe - Gr”áe „ndern
+
+Im Dialogfeld 'Gr”áe „ndern' k”nnen Sie die Gr”áe des ausgew„hlten komprimierten Laufwerks „ndern.
+
+Das Dialogfeld 'Gr”áe „ndern' zeigt Informationen ber das komprimierte Laufwerk und das Host-Laufwerk (das unkomprimierte Laufwerk, das die "komprimierte Datentr„gerdatei"~HL84~ des komprimierten Laufwerks enth„lt) an.
+
+Um die Gr”áe eines komprimierten Laufwerks zu „ndern, geben Sie an, wieviel freien Speicherplatz das unkomprimierte Laufwerk enthalten soll.
+
+Vergr”áern eines komprimierten Laufwerks
+----------------------------------------
+Wenn ein komprimiertes Laufwerk nahezu voll ist, k”nnen Sie es vergr”áern. Dies ist nur m”glich, wenn das Host-Laufwerk gengend freien Speicherplatz enth„lt. Beim Vergr”áern eines komprimierten Laufwerks wird darauf mehr Speicherplatz frei; gleichzeitig nimmt der freie Speicherplatz auf dem Host-Laufwerk ab.
+
+Um das komprimierte Laufwerk zu vergr”áern, geben Sie fr den freien Speicherplatz des unkomprimierten Laufwerks einen kleineren Wert an.
+
+Vergr”áern des freien Speichers auf dem unkomprimierten Laufwerk
+----------------------------------------------------------------
+Wenn Sie auf dem Host-Laufwerk mehr freien Speicher ben”tigen, k”nnen Sie die Gr”áe eines komprimierten Laufwerks verringern. Dies ist nur m”glich, wenn das komprimierte Laufwerk freien Speicher enth„lt.
+
+Um den freien Speicherplatz auf dem unkomprimierten Laufwerk zu vergr”áern, geben Sie fr das unkomprimierte Laufwerk einen gr”áeren Wert fr den freien Speicherplatz an.
+
+ANMERKUNG: Um die Gr”áe eines komprimierten Laufwerks so weit wie 
+           m”glich zu reduzieren, fhren Sie zuerst den MS-DOS-
+           Defragmentierer, DEFRAG.EXE, auf diesem Laufwerk aus.
+
+@@!27!@
+ Hilfe - Komprimierungsverh„ltnis „ndern
+
+Im Dialogfeld 'Komprimierungsverh„ltnis „ndern' k”nnen Sie das "gesch„tzte Komprimierungsverh„ltnis"~HL87~ eines Laufwerks „ndern.
+
+Das gesch„tzte Komprimierungsverh„ltnis ist eine Zahl, die %N zur Berechnung des freien Speichers auf einem komprimierten Laufwerk verwendet. Sie k”nnen dieses Verh„ltnis beispielsweise „ndern, wenn es von der tats„chlichen Komprimierbarkeit der Dateien, die zu speichern sind, stark abweicht.
+
+So k”nnen Sie zum Beispiel ein h”heres Komprimierungsverh„ltnis festlegen, wenn Sie extrem komprimierbare Dateien, wie beispielsweise Bitmap-Dateien, speichern m”chten. Ein niedrigeres Verh„ltnis geben Sie an, wenn Sie Dateien speichern, die kaum noch weiter komprimierbar sind. Dazu z„hlen zum Beispiel bestimmte Programmdateien (.EXE oder .COM).
+
+ANMERKUNG: Das ndern des gesch„tzten Komprimierungsverh„ltnisses
+           eines Laufwerks beeinfluát nicht wie stark die Dateien
+           tats„chlich komprimiert werden. Es beeinfluát nur
+           wie der zur Verfgung stehende Speicher des kompri-
+           mierten Laufwerks gesch„tzt wird.
+
+Wenn ein falsches gesch„tztes Komprimierungsverh„ltnis angegeben ist, meldet %N eventuell unzutreffende Speicherplatzwerte an MS-DOS, so daá beim Speichern von Dateien Fehler auftreten k”nnen. Ist das Verh„ltnis zu hoch, bersch„tzt %N die Gr”áe des freien Speichers; der Befehl DIR meldet dann eventuell mehr Platz, als tats„chlich verfgbar ist. Ist das Verh„ltnis zu niedrig, kann MS-DOS unter Umst„nden eine Datei nicht kopieren, obwohl fr diese Datei gengend Platz frei ist.
+
+ANMERKUNG: Um das tats„chliche Komprimierungsverh„ltnis aller 
+           vorhandenen Dateien herauszufinden, geben Sie an 
+           der Eingabeaufforderung DIR /C ein.
+
+@@!26!@
+ Hilfe - Komprimiertes Laufwerk laden
+
+Im Dialogfeld 'Komprimiertes Laufwerk laden' k”nnen Sie das zu ladende Laufwerk w„hlen.
+
+Ein komprimiertes Laufwerk befindet sich im Stammverzeichnis Ihrer Festplatte/Diskette. Es ist eine versteckte Datei mit einem besonderen Dateinamen, wie beispielsweise %S.001. Diese Datei wird "komprimierte Datentr„gerdatei"~HL84~ (CVF) genannt. Wenn Sie eine CVF laden, verbindet sie %N mit einem Laufwerkbuchstaben, so daá Sie die darin enthaltenen Dateien verwenden k”nnen.
+
+Das Dialogfeld 'Komprimiertes Laufwerk laden' listet alle ungeladenen komprimierten Datentr„gerdateien auf, die es auf Ihrem Computer findet. Um eine davon als komprimiertes Laufwerk zu laden, drcken Sie die NACH-OBEN- bzw. NACH-UNTEN-TASTE, um sie auszuw„hlen. W„hlen Sie danach OK, oder drcken Sie die EINGABETASTE.
+
+Verwandte Themen
+----------------
+  "Entladen eines komprimierten Laufwerks"~HL98~
+  "Arbeiten mit Disketten"~HL89~ 
+
+@@!25!@
+ Hilfe - Entladen best„tigen
+
+Im Dialogfeld 'Entladen best„tigen' k”nnen Sie best„tigen, daá Sie ein komprimiertes Laufwerk entladen m”chten. Um das Entladen des angegebenen Laufwerks zu best„tigen, w„hlen Sie OK.
+
+Nach dem Entladen eines komprimierten Laufwerks stehen die darauf befindlichen Dateien vorbergehend nicht zur Verfgung. Um sie wieder verfgbar zu machen, laden Sie das Laufwerk erneut mit Hilfe des Befehls 'Laden' aus dem Men 'Laufwerk'.
+
+Ein entladenes Laufwerk befindet sich im Stammverzeichnis Ihrer Festplatte/Diskette als "komprimierte Datentr„gerdatei"~HL84~ -- eine versteckte Datei mit einem Dateinamen im Format %S.nnn (zum Beispiel %S.001).
+
+VORSICHT: L”schen Sie die komprimierte Datentr„gerdatei niemals.
+          Andernfalls werden das komprimierte Laufwerk und alle
+          darauf befindlichen Dateien gel”scht.
+
+Verwandtes Thema
+----------------
+  "Laden eines entladenen komprimierten Laufwerks"~HL95~
+
+@@!32!@
+ Hilfe - Komprimiertes Laufwerk formatieren
+
+Im Dialogfeld 'Komprimiertes Laufwerk formatieren' k”nnen Sie veranlassen, daá %N das angegebene Laufwerk formatiert.
+
+VORSICHT: Wenn Sie ein komprimiertes Laufwerk formatieren, werden
+          alle darauf gespeicherten Dateien fr immer gel”scht. Beim
+          Formatieren wird der Inhalt der komprimierten Datentr„ger-
+          datei (CVF) gel”scht; zurck bleibt die leere CVF.
+
+Um das ausgew„hlte Laufwerk zu formatieren, w„hlen Sie OK.
+
+@@!36!@
+ Hilfe - Formatieren best„tigen
+
+Sie haben soeben best„tigt, daá Sie das zur Zeit ausgew„hlte komprimierte Laufwerk formatieren m”chten.
+
+Dies ist Ihre letzte M”glichkeit, den Befehl 'Formatieren' rckg„ngig zu machen. Um das angegebene Laufwerk zu formatieren, w„hlen Sie 'Ja'.
+
+VORSICHT: Wenn Sie ein komprimiertes Laufwerk formatieren, werden
+          alle darauf gespeicherten Dateien fr immer gel”scht. Beim
+          Formatieren wird der Inhalt der komprimierten Datentr„ger-
+          datei (CVF) gel”scht; zurck bleibt die leere CVF.
+
+@@!31!@
+ Hilfe - Komprimiertes Laufwerk l”schen
+
+Im Dialogfeld 'Komprimiertes Laufwerk l”schen' k”nnen Sie veranlassen, daá %N ein komprimiertes Laufwerk samt seiner zugeh”rigen komprimierten Datentr„gerdatei permanent l”scht.
+
+Um das ausgew„hlte Laufwerk zu l”schen, w„hlen Sie OK.
+
+VORSICHT: Wenn Sie ein Laufwerk l”schen, werden auch alle 
+          darauf gespeicherten Dateien gel”scht. Beim L”schen 
+          wird die komprimierte Datentr„gerdatei von Ihrer 
+          Festplatte/Diskette entfernt.
+
+@@!68!@
+ Hilfe - L”schen best„tigen
+
+Sie haben soeben best„tigt, daá Sie das zur Zeit ausgew„hlte komprimierte Laufwerk l”schen m”chten. Dies ist Ihre letzte M”glichkeit, den Befehl 'L”schen' rckg„ngig zu machen. Um das Laufwerk zu l”schen, w„hlen Sie 'Ja'.
+
+VORSICHT: Wenn Sie ein Laufwerk l”schen, werden auch alle 
+          darauf gespeicherten Dateien gel”scht. Beim L”schen 
+          wird die komprimierte Datentr„gerdatei von Ihrer 
+          Festplatte/Diskette entfernt.
+
+@@!63!@
+ Hilfe - Komprimiertes Laufwerk defragmentieren
+
+Im Dialogfeld 'Komprimiertes Laufwerk defragmentieren' k”nnen Sie best„tigen, daá Sie das angegebene Laufwerk defragmentieren m”chten. Um das Laufwerk zu defragmentieren, w„hlen Sie OK.
+
+Beim Defragmentieren eines komprimierten Laufwerks werden alle Daten an den Beginn der komprimierten Datentr„gerdatei und der freie Speicherplatz an das Ende verschoben. Im Gegensatz zum Defragmentieren eines unkomprimierten Laufwerks werden dabei die Dateien auf dem Laufwerk nicht neu organisiert, um sie zusammenh„ngend abzuspeichern. Das Defragmentieren eines komprimierten Laufwerks wirkt sich auf die Lese- und Schreibgeschwindigkeit nicht aus.
+
+Sie sollten ein komprimiertes Laufwerk defragmentieren, bevor Sie seine Gr”áe verringern. In diesem Fall kann es sein, daá sich die Gr”áe des Laufwerks st„rker als sonst verringert.
+
+@@!116!@
+ Hilfe - Die Defragmentierung des komprimierten Laufwerks wurde abgebrochen
+
+Sie haben die ESC-TASTE gedrckt, als ein komprimiertes Laufwerk von 
+%N defragmentiert wurde. 
+
+Wenn Sie die Defragmentierung beenden und zum Hauptbildschirm von %N 
+zurckkehren m”chten, w„hlen Sie "Ja".
+
+Um den Defragmentierungsvorgang fortzusetzen, w„hlen Sie "Nein".
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@@!30!HL79!13!@
+ Hilfe - %N Chkdsk
+
+Zu frheren %N-Versionen geh”rte der Chkdsk-Befehl 
+%S /CHKDSK, mit dem die Fehlerfreiheit des angegebenen 
+komprimierten Laufwerks geprft wurde.
+
+An die Stelle des Befehls CHKDSK tritt bei MS-DOS, Version 6.2, 
+das neue Dienstprogramm ScanDisk mit einem vollst„ndigen 
+Funktionsumfang fr die Analyse und Korrektur von Datentr„gerfehlern.
+Mit dem Programm ScanDisk k”nnen sowohl unkomprimierte Laufwerke als 
+auch mit %N komprimierte Laufwerke geprft und korrigiert 
+werden. ScanDisk erm”glicht auáerdem die Prfung und Korrektur von 
+entladenen mit %Nkomprimierten Datentr„gerdateien.
+
+Um ScanDisk zu starten, beenden Sie %N, und geben Sie an 
+der Eingabeaufforderung SCANDISK ein. 
+
+Um weitere Informationen ber ScanDisk zu erhalten, geben Sie an 
+der Eingabeaufforderung HELP SCANDISK ein.
+
+@@!65!@
+ Hilfe - Optionen
+
+Im Dialogfeld 'Optionen' k”nnen Sie folgende Optionen angeben, um festzulegen, wie %N mit Ihren Laufwerken zusammenarbeitet:
+
+Letztes fr Double-Space reserviertes Laufwerk
+   Um ein komprimiertes Laufwerk zu laden, muá ein Laufwerk-
+   buchstabe verfgbar sein, der %N zugewiesen werden 
+   kann. %N reserviert je nach der Anzahl Ihrer 
+   komprimierten Laufwerke einige Laufwerkbuchstaben.Wenn zum 
+   Komprimieren oder Laden eines Laufwerks keine Laufwerkbuch-
+   staben mehr zur Verfgung stehen, k”nnen Sie diesen Wert 
+   vergr”áern. Jeder Laufwerkbuchstabe belegt ca. 120 Bytes 
+   Speicher. Verringern Sie diesen Wert, um zus„tzlichen 
+   Speicher freizugeben. 
+
+Anzahl auswechselbarer Datentr„ger
+   Im allgemeinen sollten Sie dieses Feld auf die Anzahl der
+   Laufwerke fr auswechselbare Datentr„ger setzen, die Sie 
+   haben. (Diskettenlaufwerke, Bernoulli-Laufwerke und Flash-
+   Speicherkarten geh”ren zu den Laufwerken fr auswechselbare 
+   Datentr„ger.) Sie k”nnen weniger Laufwerke fr auswechselbare 
+   Datentr„ger angeben, als Sie tats„chlich haben, wenn Sie 
+   nicht vorhaben, die Daten in diesen Laufwerken zu 
+   komprimieren, und Speicher sparen m”chten.
+
+Automatisches Laden
+   Wenn dieses Kontrollk„stchen aktiviert ist, l„dt %N 
+   automatisch komprimierte Disketten und andere auswechselbare 
+   Datentr„ger, die komprimiert sind. Sie k”nnen ca. 4 KB 
+   Speicherplatz sparen, wenn Sie dieses Kontrollk„stchen
+   deaktivieren.In diesem Fall mssen Sie auswechselbare
+   Datentr„ger jedoch mit dem Befehl MOUNT selbst laden.
+
+DoubleGuard-Sicherheitsprfung
+   DoubleGuard prft permanent die Fehlerfreiheit des von 
+   %N belegten Speichers. Sollte ein anderes Programm 
+   die von %N gespeicherten Daten „ndern, kann das 
+   Laufwerk besch„digt werden. Um die Besch„digung der Daten 
+   durch andere Programme zu verhindern, leitet DoubleGuard 
+   sofort den Systemabschluá ein, sobald eine unzul„ssige 
+   nderungen des %N-Speichers festgestellt wird.
+
+@@!134!@
+ Hilfe -- Optionen
+
+Im Dialogfeld 'Optionen' k”nnen Sie folgende Optionen angeben, um festzulegen, wie %N mit Ihren Laufwerken zusammenarbeitet:
+
+Letztes fr Double-Space reserviertes Laufwerk
+   Um ein komprimiertes Laufwerk zu laden, muá ein Laufwerk-
+   buchstabe verfgbar sein, der %N zugewiesen werden 
+   kann. %N reserviert je nach der Anzahl Ihrer 
+   komprimierten Laufwerke einige Laufwerkbuchstaben.Wenn zum 
+   Komprimieren oder Laden eines Laufwerks keine Laufwerkbuch-
+   staben mehr zur Verfgung stehen, k”nnen Sie diesen Wert 
+   vergr”áern. Jeder Laufwerkbuchstabe belegt ca. 120 Bytes 
+   Speicher. Verringern Sie diesen Wert, um zus„tzlichen 
+   Speicher freizugeben. 
+
+Anzahl auswechselbarer Datentr„ger
+   Im allgemeinen sollten Sie dieses Feld auf die Anzahl der
+   Laufwerke fr auswechselbare Datentr„ger setzen, die Sie 
+   haben. (Diskettenlaufwerke, Bernoulli-Laufwerke und Flash-
+   Speicherkarten geh”ren zu den Laufwerken fr auswechselbare 
+   Datentr„ger.) Sie k”nnen weniger Laufwerke fr auswechselbare 
+   Datentr„ger angeben, als Sie tats„chlich haben, wenn Sie 
+   nicht vorhaben, die Daten in diesen Laufwerken zu 
+   komprimieren, und Speicher sparen m”chten.
+
+Automatisches Laden
+   Wenn dieses Kontrollk„stchen aktiviert ist, l„dt %N 
+   automatisch komprimierte Disketten und andere auswechselbare 
+   Datentr„ger, die komprimiert sind. Sie k”nnen ca. 4 KB 
+   Speicherplatz sparen, wenn Sie dieses Kontrollk„stchen
+   deaktivieren.In diesem Fall mssen Sie auswechselbare
+   Datentr„ger jedoch mit dem Befehl MOUNT selbst laden.
+
+DoubleGuard-Sicherheitsprfung
+   DoubleGuard prft permanent die Fehlerfreiheit des von 
+   %N belegten Speichers. Sollte ein anderes Programm 
+   die von %N gespeicherten Daten „ndern, kann das 
+   Laufwerk besch„digt werden. Um die Besch„digung der Daten 
+   durch andere Programme zu verhindern, leitet DoubleGuard 
+   sofort den Systemabschluá ein, sobald eine unzul„ssige 
+   nderungen des %N-Speichers festgestellt wird.
+
+DoubleSpace-Laufwerke lesen
+   Wenn diese Option gew„hlt ist, kann DriveSpace DoubleSpace-
+   Laufwerke lesen, ohne daá diese zuvor in das DriveSpace-Format
+   konvertiert werden mssen. Sie sparen etwa 5K Hauptspeicher,
+   wenn diese Option deaktivierrt ist.
+
+@@!33!HL99!@
+ Hilfe - Hilfe verwenden
+
+Verwenden des Hilfe-Fensters
+----------------------------
+Um weitere Hilfe-Informationen einzusehen, haben Sie folgende M”glichkeiten:
+
+    * die NACH-OBEN- bzw. NACH-UNTEN-TASTE,
+    * die RICHTUNGSTASTEN,
+    * die Bildlaufleiste rechts vom Dialogfeld.
+
+Um eine Schaltfl„che im unteren Bereich des Hilfe-Fensters zu w„hlen, drcken Sie die TABULATORTASTE oder die UMSCHALT+TABULATORTASTE, bis die Schaltfl„che ausgew„hlt ist, und drcken Sie anschlieáend die EINGABETASTE. Oder klicken Sie mit der Maus auf die gewnschte Schaltfl„che.
+
+Zum Schlieáen des Hilfe-Fensters drcken Sie die ESC-TASTE, oder w„hlen Sie die Schaltfl„che "Schlieáen".
+
+Anzeigen der Hilfethemen
+------------------------
+Die Hilfe zeigt verwandte Themen in einer anderen Farbe an. Um ein verwandtes Thema anzuzeigen, drcken Sie die TABULATORTASTE, bis das gewnschte Thema ausgew„hlt ist, und drcken Sie dann die EINGABETASTE. Oder klicken Sie mit der Maus auf den Namen des Themas.
+
+Um das vorausgehende Thema auszuw„hlen, drcken Sie die UMSCHALT+TABULATORTASTE.
+
+So erhalten Sie sofort Hilfe
+-----------------------------
+Um sofort Hilfe zu einer Meldung oder zu einem Dialogfeld zu erhalten, drcken Sie die F1-TASTE, oder w„hlen Sie die Schaltfl„che "Hilfe".
+
+Verwenden des Hilfe-Befehls 'Inhalt'
+----------------------------------
+Um eine šbersicht der Hilfe-Themen anzuzeigen, w„hlen Sie aus dem Men 'Hilfe' den Befehl 'Index'.
+
+Um den Hilfeinhalt aus dem Hilfe-Fenster heraus anzuzeigen, drcken Sie die TABULATORTASTE, bis die Schaltfl„che "Inhalt" ausgew„hlt ist, und drcken Sie dann die EINGABETASTE. Oder klicken Sie mit der Maus auf die Schaltfl„che "Inhalt".
+
+@@!29!18!@
+ Hilfe - Info
+
+Das Dialogfeld 'Info' zeigt die aktuelle Versionsnummer von Microsoft %N an. Zum Schlieáen des Dialogfelds 'Info' drcken Sie die ESC-TASTE, oder w„hlen Sie OK.
+
+
+
+
+
+@@!66!@
+ Hilfe - Inkompatible Hardware oder Software
+
+Diese Fehlermeldung zeigt normalerweise an, daá Ihr Computer Platten-Cache-Software ausfhrt, die zu %N m”glicherweise inkompatibel ist. Diese Meldung erscheint auch, wenn Ihr Computer eine HardCard enth„lt, die als Festplatte C: konfiguriert ist. 
+
+Wenn Sie eine inkompatible Platten-Cache-Software ausfhren
+-----------------------------------------------------------
+Wenn Sie w„hrend der Verwendung von inkompatibler Platten-Cache-Software %N ausfhren, k”nnen Sie m”glicherweise einige oder alle Dateien auf Ihrem Computer verlieren. Fhren Sie vor dem Ausfhren von %N das folgende Verfahren aus:
+
+1.      Bearbeiten Sie Ihre CONFIG.SYS- und AUTOEXEC.BAT-
+        Dateien, und l”schen Sie alle Befehle, die die inkompatible
+        Platten-Cache-Software starten. (Microsoft SMARTDrive
+        ist zu %N kompatibel, so daá Sie nicht die Befehle
+        l”schen mssen, die SMARTDrive starten.) Speichern Sie
+        Ihre nderungen auf beiden Dateien.
+
+2.      Starten Sie Ihren Computer, indem Sie die Tastenkombination 
+        STRG+ALT+ENTF drcken.
+
+3.      Starten Sie %N neu.
+
+Weitere Informationen finden Sie in Abschnitt "Fehlerbehebung in %N" der Datei INFO.TXT.
+
+Wenn Sie eine HardCard installiert haben
+----------------------------------------
+Wenn Ihr Computer ein HardCard-Laufwerk enth„lt, das als Festplatte C: konfiguriert ist, kann %N dieses Laufwerk nicht komprimieren; %N kann jedoch Ihre anderen Laufwerke komprimieren, einschlieálich anderer HardCard-Laufwerke. 
+
+
+@@!44!@
+ Hilfe - Neu defragmentieren?
+
+%N kann den aktuellen Vorgang nicht fortsetzen, weil nicht genug zusammenh„ngender Speicherplatz auf dem von Ihnen ausgew„hlten Laufwerk frei ist. %N fhrte den Defragmentierer aus, um mehr zusammenh„ngenden Speicherplatz frei zu bekommen, aber das Programm lief nicht zu Ende oder konnte keinen zus„tzlichen freien Speicherplatz wiederherstellen.
+
+ * W„hlen Sie 'Ja', damit %N den Defragmentierer
+   erneut ausfhrt. Wenn der Defragmentierer versehentlich
+   unterbrochen wurde oder wenn Sie diese Fehlermeldung das
+   erste Mal erhalten haben, sollten Sie m”glicherweise den
+   Defragmentierer erneut ausfhren.
+ * Wenn Sie diese Fehlermeldung schon einmal mit 'Ja'
+   beantwortet haben oder wenn Sie sicher sind, daá der
+   Defragmentierer nicht unterbrochen worden war, w„hlen Sie
+   'Nein'. Beenden Sie dann %N, und fhren Sie ScanDisk
+   fr das Laufwerk aus. Starten Sie nach dem Ausfhren von
+   ScanDisk erneut %N, und versuchen Sie, den Vorgang
+   zu wiederholen (z.B. die Gr”áe des Laufwerks zu „ndern).
+
+
+@@!67!@
+ Hilfe - Mehr Speicher erforderlich
+
+%N muá vor dem Erstellen oder Laden eines komprimierten Laufwerks zus„tzlichen konventionellen Speicher reservieren.Um Ihre Aufgabe auszufhren, fhren Sie die folgenden Schritte aus:
+
+1.      Starten Sie Ihren Computer neu, indem Sie 'Ja' w„hlen.
+2.      Nachdem Ihr Computer gestartet ist, starten Sie %N.
+3.      Fhren Sie den Vorgang erneut aus. (Versuchten Sie
+        beispielsweise, ein neues komprimiertes Laufwerk zu
+        erstellen, als Sie diese Meldung erhielten, wrden
+        Sie jetzt den Befehl 'Neu erstellen' aus dem Men
+        'Komprimieren' w„hlen.
+
+Um mit %N fortzusetzen, w„hlen Sie 'Nein'. Sie werden zum Hauptbildschirm '%N' zurckkehren. Sie werden jedoch Ihre Aufgabe nicht vollenden k”nnen, bis Sie Ihren Computer neu gestartet haben.
+
+Wie %N Speicherplatz fr Laufwerke zuordnet
+----------------------------------------------------
+
+Jedesmal, wenn Sie Ihren Computer starten, ordnet %N einen bestimmten Speicherbereich zum Laden von Laufwerken zu: 96 Bytes Speicherplatz fr jedes komprimierte Laufwerk, das aktuell geladen ist, plus 96 Bytes fr jedes auswechselbare Laufwerk, das im Dialogfeld '%N-Optionen' definiert ist. Wenn Sie zus„tzliche Laufwerke erstellen oder laden, verwendet %N 96 Bytes Speicherplatz fr jedes Laufwerk.
+
+
+@@!43!@
+ Hilfe - Neu starten?
+
+%N nahm einige tempor„re nderungen an Ihrer AUTOEXEC.BAT-Datei vor, um sicherzustellen, daá %N neu starten k”nnte, wenn es w„hrend der Gr”áen„nderung Ihres komprimierten Laufwerks unterbrochen wrde. %N hat Ihre ursprnglichen AUTOEXEC.BAT- und CONFIG.SYS-Dateien wiederhergestellt, muá aber Ihren Computer neu starten, um die Einstellungen wirksam werden zu lassen.
+
+Um Ihren Computer jetzt neu zu starten, w„hlen Sie 'Ja'. Um %N fortzusetzen, w„hlen Sie 'Nein'. Sie werden zum Hauptbildschirm '%N' zurckkehren. Wenn Sie %N beenden, wird Ihr Computer automatisch neu starten.
+
+@@!35!@
+ Hilfe - Wiederholen
+
+In dem ausgew„hlten Laufwerk befindet sich kein Datentr„ger.
+
+Um fortzufahren, legen Sie den Datentr„ger ein, und w„hlen Sie die Schaltfl„che "Wiederholen".
+
+@@!37!@
+ Hilfe - Keine Laufwerkbuchstaben verfgbar
+
+%N kann keine weiteren Laufwerke laden oder komprimieren, da keine Laufwerkbuchstaben mehr verfgbar sind.
+
+Um mehr Laufwerkbuchstaben zur Verwendung durch %N zur Verfgung zu stellen, w„hlen Sie aus dem Men 'Hilfsmittel' den Befehl 'Optionen'. W„hlen Sie dann im Dialogfeld 'Optionen' unter "Letztes fr %N reserviertes Laufwerk" einen h”heren Laufwerkbuchstaben. Jeder Laufwerkbuchstabe belegt 24 KB Speicher; ordnen Sie daher nicht mehr Laufwerkbuchstaben als n”tig zu.
+
+Sie k”nnen die Anzahl der verfgbaren Laufwerkbuchstaben auch erh”hen, indem Sie komprimierte Laufwerke entladen oder Netzlaufwerke abmelden.
+
+@@!38!@
+ Hilfe - Arbeiten mit Ihrem Startlaufwerk
+
+%N l„át das Entladen, L”schen oder Formatieren Ihres Startlaufwerks nicht zu, da andernfalls Ihr Computer nicht mehr korrekt starten wrde.
+
+@@!39!@
+ Hilfe - Auf Ihrem Computer gibt es keine entladenen Laufwerke.
+
+Sie haben festgelegt, daá ein komprimiertes Laufwerk geladen werden soll. Auf Ihrem Computer gibt es jedoch keine entladenen komprimierten Laufwerke, nur entladene, unkomprimierte Laufwerke.
+
+Ein entladenes Laufwerk erscheint auf Ihrem Datentr„ger als versteckte Datei mit einem Dateinamen des Formats %S.nnn (zum Beispiel %S.001). Diese Datei wird "komprimierte Datentr„gerdatei"~HL84~ genannt. Sobald diese Datei geladen ist, steht sie zur Verwendung als komprimiertes Laufwerk zur Verfgung. Alle darin enthaltenen komprimierten Dateien werden verfgbar.
+
+Wenn Sie ein komprimiertes Laufwerk zuvor entladen haben und nun beim erneuten Laden diese Fehlermeldung erhalten, prfen Sie, ob Sie nicht versehentlich die komprimierte Datentr„gerdatei gel”scht haben. (Eine Liste der versteckten Dateien erhalten Sie, indem Sie an der Eingabeaufforderung DIR /AH eingeben.)
+
+Wenn Sie vermuten, daá die komprimierte Datentr„gerdatei gel”scht wurde, versuchen Sie, sie mit dem Befehl UNDELETE wiederherzustellen. Weitere Informationen erhalten Sie, indem Sie an der Eingabeaufforderung HELP UNDELETE eingeben.
+
+@@!71!@
+  Hilfe - Festplattenfehler gefunden
+
+%N hat querverbundene Dateien, verlorene Cluster oder andere Fehler auf dem angegebenen komprimierten Laufwerk aufgefunden.
+
+Um die Fehler zu korrigieren, beenden Sie %N, und fhren Sie das Programm ScanDisk fr das Laufwerk aus. Um weitere Informationen ber ScanDisk zu erhalten, geben Sie an der Eingabeaufforderung HELP SCANDISK ein.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@@!72!@
+ Hilfe - Diskette entfernen
+
+Ihr Startdiskettenlaufwerk enth„lt gegenw„rtig eine Diskette. Wenn der Strom ausf„llt oder wenn Ihr Computer versehentlich gestartet wird, kann %N sich automatisch wieder in Gang bringen, und Ihr Laufwerk weiter komprimieren. Damit %N jedoch ordnungsgem„á fortfahren kann, muá Ihr Computer von der Festplatte aus statt von einer Diskette aus starten. Nehmen Sie die Diskette aus dem Laufwerk, und w„hlen Sie die Schaltfl„che "Wiederholen".
+
+
+
+
+
+
+
+
+
+
+@@!76!@
+ Hilfe - Unzul„ssiger freier Speicherplatz
+
+Der von Ihnen erforderte freie Speicherplatz ist aus einem der folgenden Grnde nicht zul„ssig:
+
+ *  Die von Ihnen eingegebene Zahl ist zu klein oder zu
+    groá. Die Zahl darf nicht kleiner als der minimalste
+    freie Speicherplatzwert fr das unkomprimierte Laufwerk
+    und nicht gr”áer als der maximale freie Speicherplatzwert 
+    des unkomprimierten Laufwerks sein.
+
+ *  Der Wert, den Sie eingegeben haben, enth„lt ungltige
+    Zeichen. Sie mssen eine Zahl eingeben. Fgen Sie kein
+    zus„tzliches Zeichen hinzu, wie Komma oder ein Leerzeichen,
+    um Tausende von einander zu trennen.
+
+@@!115!@
+ Hilfe - Laufwerkgr”áe nicht „nderbar, da zu fragmentiert
+
+Da das Laufwerk zu fragmentiert ist, kann %N die Gr”áe des Laufwerks
+nicht „ndern. W„hlen Sie "Ja", um das Laufwerk jetzt zu defragmentieren. %N startet dann den Microsoft Defragmentierer. Nach dem Defragmentieren k”nnen Sie die Gr”áe des Laufwerks „ndern.
+
+Anmerkung: Wenn sich auf dem Laufwerk kopiergeschtzte Programme 
+           befinden, w„hlen Sie "Nein". Beim Defragmentieren des 
+           Laufwerks kann der Kopierschutz besch„digt werden. 
+           Danach sind solche Programme nicht mehr ausfhrbar.
+
+Sollte dieses Dialogfeld wieder erscheinen, nachdem %N die Ausfhrung von Microsoft Defragmenter beendet hat, bedeutet das, daá Defragmenter das Problem nicht beheben konnte. Beenden Sie %N, und fhren Sie ScanDisk auf diesem Laufwerk aus. Versuchen Sie danach erneut, die Gr”áe des Laufwerks zu „ndern.
+
+@@!77!@
+ Hilfe - Unzul„ssiges Verh„ltnis
+
+Das von Ihnen angeforderte Verh„ltnis ist aus den folgenden Grnden nicht zul„ssig:
+
+ *  Das von Ihnen angegebene Verh„ltnis ist zu klein oder zu
+    groá. Die Zahl muá innerhalb eines Bereichs sein, der im
+    Dialogfeld 'Komprimierungsverh„ltnis „ndern' angezeigt wird.
+
+@@!78!@
+ Hilfe - Dateizugriffsfehler
+
+%N kann nicht fortsetzen, weil es nicht auf die angegebene Datei zugreifen kann, oder sie nicht finden kann.
+
+Wenn %N unf„hig ist, die Datei zu finden, k”nnte das Problem daran liegen, daá die Datei auf einer nicht-standardm„áigen Adresse ist. Wenn Sie wissen, wo sich diese Datei befindet, verwenden Sie den MS-DOS-Befehl COPY, um die Datei von Ihrer aktuellen Adresse auf das Verzeichnis zu kopieren, das Ihre MS-DOS-Dateien enth„lt. Starten Sie dann %N erneut, und versuchen Sie Ihre Aufgabe erneut.
+
+Ursache dafr, daá %N keinen Zugriff auf die gefundene Datei erh„lt, kann ein Datentr„gerfehler sein. Um m”gliche Datentr„gerfehler zu korrigieren, fhren Sie ScanDisk fr das Laufwerk aus, auf dem sich die Datei befindet.
+
+@@!79!@
+ Hilfe - Besch„digtes Laufwerk
+
+Der Computer wurde unerwartet neu gestartet, und %N kann das angegebene Laufwerk nicht erneut laden. M”gliche Ursache hierfr kann ein Datentr„gerfehler sein, durch den die "komprimierte Datentr„gerdatei"~HL84~ des Laufwerks besch„digt wurde.
+
+Um den Fehler zu korrigieren, beenden Sie %N, und fhren Sie dann ScanDisk fr die komprimierte Datentr„gerdatei des angegebenen Laufwerks aus. Zum Korrigieren beispielsweise der komprimierten Datentr„gerdatei C:\%S.001 geben Sie an der Eingabeaufforderung den folgenden Befehl ein:
+
+   SCANDISK C:\%S.001
+
+Die komprimierte Datentr„gerdatei ist eine versteckte Datei. Um sie anzuzeigen, geben Sie im Stammverzeichnis des unkomprimierten (Host-) Laufwerks DIR /A ein.
+
+Starten Sie nach dem Ausfhren von ScanDisk %N, und versuchen Sie, das Laufwerk erneut zu laden.
+
+@@!80!@ 
+ Hilfe - Fehler
+
+%N hat einen Fehler gefunden. Weitere Informationen finden Sie in Abschnitt "%N" der INFO.TXT-Datei.
+
+Die INFO.TXT-Datei befindet sich im Verzeichnis, das Ihre MS-DOS-Dateien enth„lt. (Eine Kopie der INFO.TXT-Datei befindet sich auch auf der Installationsdiskette 1.)
+
+Um die INFO.TXT-Datei zu sehen, verwenden Sie einen Text-Editor wie den MS-DOS-Editor. Sind Ihre MS-DOS-Dateien beispielsweise im Verzeichnis C:\DOS, k”nnen Sie die INFO.TXT-Datei sehen, indem Sie an der Eingabeaufforderung folgendes eingeben:
+
+EDIT C:\DOS\INFO.TXT
+
+@@!81!@
+ Hilfe - Laufwerk ist voll.
+
+%N hat so viele Dateien wie m”glich auf diesem Laufwerk komprimiert. Der Speicherplatz gengte jedoch nicht, um alle Dateien zu komprimieren. Die Dateien, die nicht komprimiert wurden, sind noch auf dem unkomprimierten Laufwerk, das nun einen neuen Laufwerkbuchstaben hat.
+
+Um diese Dateien auf das komprimierte Laufwerk zu verschieben, mssen Sie sie auf ein anderes Laufwerk oder auf eine Diskette verschieben, sie aus dem unkomprimierten Laufwerk l”schen, das komprimierte Laufwerk vergr”áern und dann die Dateien auf das komprimierte Laufwerk kopieren. Weitere Informationen darber, finden Sie in der Datei INFO.TXT.
+
+@@!82!@
+ Hilfe - Startlaufwerk ist voll.
+
+Das %N-Installationsprogramm kann nicht fortsetzen, weil auf Ihrem Startlaufwerk nicht gengend Speicherplatz besteht.
+
+Verwenden Sie den Befehl DEL, um unn”tige Dateien von Ihrem Startlaufwerk zu l”schen, bis genug Platz besteht. Um herauszufinden, wieviel freier Speicherplatz auf dem Laufwerk ist, geben Sie den Befehl DIR ein.
+
+VORSICHT: L”schen Sie eine Datei nicht, wenn Sie sich nicht
+          sicher sind, was Ihre Funktion ist. Eine Liste der
+          Dateien die Sie unbesorgt l”schen k”nnen finden Sie
+          in Kapitel 'Vergr”áern Ihrer Festplattenkapazit„t'
+          Ihres MD-DOS-Benutzerhandbuchs.
+
+@@!83!@
+ Hilfe - Datei kann nicht gefunden werden
+
+%N kann die angegebene Datei nicht finden. 
+
+Um fortzusetzen, beenden Sie %N, und stellen Sie sicher, daá sich die Datei in Ihrem Stammverzeichnis, oder in dem Verzeichnis, das Ihre DOS-Dateien enth„lt, befindet. Starten Sie anschlieáend %N erneut, und fhren Sie die Funktion erneut aus.
+
+
+@@!84!@
+ Hilfe - Dateizugriffsfehler
+
+%N kann die angegebene Datei nicht komprimieren, weil es keinen Zugriff auf sie hat.
+
+Um zu versuchen, die Datei noch einmal zu kopieren und zu komprimieren, w„hlen Sie die Schaltfl„che "Wiederholen".
+
+Um diese Datei zu berspringen und den Komprimierungsvorgang fortzusetzen, w„hlen Sie die Schaltfl„che "šberspringen". Wenn %N mit der Komprimierung Ihrer Datei fertig ist, wird die angegebene Datei auf dem neuen unkomprimierten Laufwerk statt auf dem komprimierten Laufwerk liegen. Um die Datei auf das komprimierte Laufwerk zu verschieben, fhren Sie das Programm ScanDisk fr das unkomprimierte Laufwerk aus, und kopieren Sie dann die Datei mit dem Befehl MOVE oder COPY.
+
+@@!85!@
+ - Hilfe Festplattenfehler
+
+%N kann Ihr Laufwerk nicht komprimieren, weil es auf einen Festplattenfehler gestoáen ist.
+
+Beenden Sie %N, und korrigieren Sie mit dem Programm ScanDisk m”gliche Datentr„gerfehler auf diesem Laufwerk.
+
+@@!86!@
+ Hilfe - Keine komprimierten Laufwerke
+
+%N konnte keine komprimierten Laufwerke finden.
+Um eine Festplatte zu komprimieren:
+
+ * Stellen Sie sicher, daá die Diskette formatiert ist.
+
+ * Auf dem Laufwerk muá gengend Speicherplatz frei sein.
+   Um festzustellen, wieviel freier Speicherplatz zum 
+   Komprimieren des Laufwerks erforderlich ist, beenden 
+   Sie %N, und geben Sie den Befehl 
+   %S /COMPRESS X: ein. Dabei ist X der Buchstabe 
+   des Laufwerks, das komprimiert werden soll. 
+   (360-KB-Disketten k”nnen mit %N nicht komprimiert
+   werden.)
+
+ * Wenn Sie Disketten oder andere auswechselbare Datentr„ger
+   komprimieren m”chten, stellen Sie sicher, daá der Datentr„ger
+   eingelegt und die Laufwerkverriegelung geschlossen ist.
+
+ * Das Laufwerk ist noch nicht komprimiert. (%N 
+   zeigt diese Fehlermeldung an, wenn alle Laufwerke bereits
+   komprimiert sind.)
+
+@@!87!@
+ Hilfe - Kann %S.BIN nicht laden
+
+MS-DOS konnte %S.BIN nicht laden - den Teil von MS-DOS, der Zugriff auf Ihr komprimiertes Laufwerk liefert.
+
+Eine oder beide der %S/.BIN und IO.SYS-Systemdateien sind ungltig. Installieren Sie MS-DOS erneut, und versuchen Sie, %N wieder auszufhren.
+
+@@!88!@
+ Hilfe - %N beenden
+
+Wenn Sie das Installationsprogramm Setup von %N vor seiner Vollendung beenden, werden die Dateien auf Ihrer Festplatte unver„ndert sein.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@@!92!@
+ Hilfe - %N hat einen schwerwiegenden Fehler w„hrend der Komprimierung aufgefunden.
+
+Weitere Informationen finden Sie in Abschnitt "%N" in der Datei INFO.TXT. Diese Datei befindet sich in dem Verzeichnis, das Ihre MS-DOS-Dateien enth„lt. Eine Kopie dieser Datei INFO.TXT befindet sich auch auf der Installationsdiskette 1.
+
+@@!|93!@
+ Hilfe - %N ist auf eine Fehlerbedingung gestoáen.
+
+Weitere Informationen finden Sie in Abschnitt "%N" in der Datei INFO.TXT. Diese Datei befindet sich in dem Verzeichnis, das Ihre MS-DOS-Dateien enth„lt. Eine Kopie dieser Datei INFO.TXT befindet sich auch auf der Installationsdiskette 1.
+
+@@!hidERRORDEFRAG_POPUP!@
+ Hilfe - %N hat einen Fehler bei der Defragmentierung Ihres Laufwerks gefunden.
+
+Weitere Informationen finden Sie in Abschnitt "%N" in der Datei INFO.TXT. Diese Datei befindet sich in dem Verzeichnis, das Ihre MS-DOS-Dateien enth„lt. Eine Kopie dieser Datei INFO.TXT befindet sich auch auf der Installationsdiskette 1.
+
+@@!95!@
+ Hilfe - Kann keine Windows-Dateien aktualisieren
+
+Bei der n„chsten Ausfhrung von Windows mssen Sie die Einstellungen Ihres virtuellen Speichers berichtigen.
+
+Bei der Komprimierung Ihrer Festplatte stellte %N fest, daá sich Ihre Windows Auslagerungsfunktion auf diesem Laufwerk befand. Um richtig funktionieren zu k”nnen, muá sich Ihre Auslagerungsdatei auf einem unkomprimierten Laufwerk befinden. %N verschiebt deshalb Ihre Auslagerungsdatei auf das angegebene unkomprimierte Laufwerk. %N kann jedoch nicht die Windows Konfigurationsdateien „ndern, die die Adresse Ihrer Auslagerungsdatei angeben.
+
+Wenn Sie das n„chste Mal Windows starten, sehen Sie eine Meldung ber Ihre Auslagerungsdatei. Folgen Sie den Anweisungen auf dem Bildschirm.
+
+@@!96!@
+ Hilfe - %N mit anderen Betriebssystemen ausfhren
+
+%N hat Dateien aus einem anderen Betriebssystem auf Ihrer Festplatte gefunden. Bevor Sie %N installieren, stellen Sie sicher, daá das andere Betriebssystem mit %N komprimierte Laufwerke verwenden kann.
+
+@@!118!@
+ Hilfe - Ausfhren von %N mit langen Dateinamen
+
+Bei der Komprimierung eines Laufwerks mit langen Dateinamen durch %N, kann es passieren, daá die Dateinamen besch„digt werden.
+
+Als "langer Dateiname" wird jeder Dateiname bezeichnet, der nicht mit der Standard-MS-DOS-Dateinamenskonvention (8 Zeichen fr den Dateinamen und 3 Zeichen fr die Dateinamenerweiterung) bereinstimmt. Ein langer Dateiname berschreitet diese Eingrenzungen oder enth„lt evtl. Zeichen, die nicht von der Standard-MS-DOS-Dateinamenskonvention untersttzt werden.
+
+Lange Dateinamen werden von %N nicht untersttzt. Sollte %N einen langen Dateinamen w„hrend einer Laufwerkkomprimierung vorfinden, wird dieser abgeschnitten und auf die Standardl„nge verkrzt.
+
+@@!hidRUNDEFRAG_POPUP!@
+
+Wenn Sie %N installieren und das andere Betriebssystem nicht mit %N komprimierte Dateien lesen kann, werden Sie die Dateien auf Ihren komprimierten Laufwerken nicht verwenden k”nnen, wenn Sie das andere Betriebssystem ausfhren.
+
+Wenn Sie Laufwerk C: komprimieren, und das andere Betriebssystem nicht die mit %N komprimierten Laufwerke lesen kann, startet das andere Betriebssystem m”glicherweise nicht ordnungsgem„á.
+
+@@!99!@
+ Hilfe - Sichern Ihrer Dateien
+
+Bevor Sie den Datentr„ger komprimieren, sollten Sie die darauf gespeicherten Dateien sichern. Es empfiehlt sich, immer eine aktuelle Sicherungskopie der Dateien auf dem Laufwerk bereitzuhalten.
+
+Zu MS-DOS 6 geh”ren zwei Sicherungsprogramme: Microsoft Backup fr MS-DOS und Microsoft Backup fr Windows. Welches Programm auf Ihrer Festplatte installiert ist, h„ngt davon ab, welche Auswahl Sie bei der Installation von MS-DOS mit dem Installationsprogramm Setup getroffen haben.
+
+Wenn Microsoft Backup fr MS-DOS installiert ist, geben Sie an der Eingabeaufforderung MSBACKUP ein, um die Dateien zu sichern. 
+
+Wenn Microsoft Backup fr Windows installiert ist, starten Sie Windows, und doppelklicken Sie dann in der Gruppe "Microsoft Hilfsmittel" auf das Backup-Symbol, um die Dateien zu sichern.
+
+Weitere Informationen ber die beiden Backup-Programme finden Sie im MS-DOS 6 Benutzerhandbuch.
+
+@@!112!@
+ Hilfe - Vorsicht
+
+%N fhrt das Programm ScanDisk aus, um das Laufwerk auf Fehler zu prfen. Dieser Schritt ist wichtig, wenn Sie das Laufwerk entscheidend modifizieren (z.B. durch Komprimieren oder Dekomprimieren des Laufwerks). 
+
+Durch das Ausfhren von ScanDisk wird sichergestellt, daá %N nicht auf besch„digte Bereiche des Laufwerks zugreift. Da Sie ScanDisk vor dem Ende der Oberfl„chenanalyse des Laufwerks beendet haben, kann %N nicht feststellen, welche Bereiche des Laufwerks zuverl„ssig sind und welche nicht. 
+
+Wenn Sie nicht sicher sind, ob sich fehlerhafte Bereiche auf dem Laufwerk befinden, w„hlen Sie "Nein". Wenn Sie "Ja" w„hlen und der Datentr„ger doch fehlerhaft ist, greift %N beim Komprimieren oder Dekomprimieren auf unzuverl„ssige Bereiche des Laufwerks zu, wobei Daten verloren gehen k”nnen. 
+
+@@!113!@
+ Hilfe - Fehler
+
+%N fhrt das Programm ScanDisk aus, um das Laufwerk auf Fehler zu prfen. Da Sie ScanDisk vor dem Ende der allgemeinen Prfungen beendet haben, kann %N nicht feststellen, welche Bereiche des Laufwerks zuverl„ssig sind und welche nicht. %N kann den Vorgang daher nicht fortsetzen.
+
+Die Oberfl„chenanalyse, die ScanDisk durchfhrt, dauert viel l„nger als die Prfung anderer Bereiche eines Laufwerks. Zwar sollten Sie sicherheitshalber alle Bereiche des Laufwerks mit ScanDisk prfen, doch k”nnen Sie das Laufwerk auch ohne vorherige Oberfl„chenanalyse komprimieren, wenn Sie es eilig haben. Um die Oberfl„chenanalyse zu umgehen, w„hlen Sie die Schaltfl„che "Beenden", sobald ScanDisk mit der Analyse beginnt. Wenn Double Space das Dialogfeld "Achtung" anzeigt, w„hlen Sie "Ja". Beachten Sie bitte, wenn keine Oberfl„chenanalyse durchgefhrt wird, ist es nicht ausgeschlossen, daá Daten verlorengehen, wenn %N auf einen fehlerhaften Bereich des Laufwerks zugreift.
+
+Anmerkung: Beim Dekomprimieren eines Datentr„gers prft ScanDisk 
+           das komprimierte und das Host-Laufwerk auf Fehler. 
+           Wenn Sie in Eile sind, k”nnen Sie die Oberfl„chen-
+           analyse des Host-Laufwerks bergehen. W„hlen Sie dazu 
+           im Dialogfeld "Oberfl„chenanalyse" die Schaltfl„che
+           "N„chstes LW". 
+
+@@!114!@
+ Hilfe - Fehler
+
+%N kann den Vorgang nicht fortsetzen, da ScanDisk Fehler auf dem Laufwerk gefunden hat.
+
+Vor dem Komprimieren oder Dekomprimieren eines Datentr„gers startet %N das Programm ScanDisk, um die Fehlerfreiheit des Laufwerks zu prfen. Wenn ScanDisk physische Fehler oder besch„digte Daten auf dem Laufwerk findet, kann das Laufwerk aufgrund des drohenden Datenverlustes nicht komprimiert oder dekomprimiert werden.
+
+Um die Fehler zu beheben, beenden Sie %N, und fhren Sie ScanDisk fr das Laufwerk aus.
+
+Vorsicht: Falls ScanDisk physische Fehler gefunden hat, besteht die 
+          Gefahr eines bevorstehenden Laufwerksausfalls. Erstellen Sie 
+          sofort eine Sicherungskopie der Dateien, und lassen Sie das 
+          Laufwerk dann von einem Computer-Fachmann berprfen. 
+          Komprimieren oder dekomprimieren Sie das Laufwerk keinesfalls,
+          bevor es technisch berprft wurde.
+
+
+
+
+
+@@!HL84!@
+ Hilfe - Komprimierte Datentr„gerdatei (CVF)
+
+Ein komprimiertes Laufwerk ist kein echtes Festplatten-/Diskettenlaufwerk, obwohl es den meisten Programmen so vorkommt. Stellvertretend existiert ein komprimiertes Laufwerk auf Ihrem Datentr„ger als verborgene Datei, komprimierte Datentr„gerdatei (CVF) genannt. Eine komprimierte Datentr„gerdatei ist im Stammverzeichnis eines Datentr„gers gespeichert und tr„gt einen Dateinamen im Format %S.nnn. Wenn Sie die Dateien auf einem vorhandenen Laufwerk komprimieren, gibt %N der zugeh”rigen komprimierten Datentr„gerdatei den Namen %S.000. Wenn Sie ein neues komprimiertes Laufwerk erstellen, benennt %N die zugeh”rige CVF mit Hilfe einer Nummer, wie beispielsweise 001 (z.B. %S.001).
+
+Die meisten CVFs k”nnen mehr Daten speichern, als sie Platz belegen. So belegt beispielsweise eine typische CVF 10 MB Speicher auf ihrem Host-Laufwerk, kann jedoch 20 MB komprimierte Daten enthalten. Beim Laden oder Aktivieren einer CVF wird ihr ein Laufwerkbuchstabe zugewiesen, so daá sie als Laufwerk erscheint. Auf den Inhalt der CVF kann nun zugegriffen werden; die darin enthaltenen Dateien erscheinen wie normale Dateien.
+
+Verwandte Themen
+---------------
+  "Laden einer komprimierten Datentr„gerdatei"~HL95~
+
+@@!HL92!@
+ Hilfe - Host-Laufwerk
+
+Ein Host-Laufwerk ist ein unkomprimiertes Laufwerk, das eine oder mehrere komprimierte Datentr„gerdateien enth„lt. Manchmal wird das Host-Laufwerk auch als das "physische Laufwerk" bezeichnet, da es eine echte Festplattenpartition oder eine Diskette ist.
+
+Wenn ein Laufwerk komprimiert ist, wird es fr eine komprimierte Datentr„gerdatei zum Host-Laufwerk (CVF). Die CVF enth„lt die Dateien, die sich auf dem Host-Laufwerk befanden. In der Regel enth„lt das Host-Laufwerk nach der Komprimierung sehr wenig freien Speicher, da die komprimierte Datentr„gerdatei viel Platz belegt. Da sie komprimiert ist, kann eine CVF jedoch mehr Daten speichern, als sie Platz verbraucht. Eine typische CVF belegt beispielsweise 10 MB Speicherplatz auf dem Host-Laufwerk, enth„lt jedoch 20 MB komprimierte Daten.
+
+@@!HL87!@
+ Hilfe - Gesch„tztes Komprimierungsverh„ltnis
+
+Das gesch„tzte Komprimierungsverh„ltnis ist eine Zahl, die %N zur Berechnung des freien Speicherplatzes auf einem komprimierten Laufwerk verwendet.
+
+Auf einem unkomprimierten Laufwerk bedeutet der freie Speicherplatz, wieviel zus„tzliche Daten Sie speichern k”nnen. Auf einem komprimierten Laufwerk h„ngt jedoch die Menge der Daten, die Sie speichern k”nnen, davon ab, wie komprimierbar die Dateien sind. %N sch„tzt den freien Speicherplatz eines Laufwerks unter der Annahme, daá Sie Dateien speichern, die sich auf das gesch„tzte Komprimierungsverh„ltnis komprimieren lassen.
+
+So k”nnen Sie zum Beispiel ein h”heres Komprimierungsverh„ltnis festlegen, wenn Sie extrem komprimierbare Dateien, wie beispielsweise Bitmap-Dateien, speichern m”chten. Ein niedrigeres Verh„ltnis geben Sie an, wenn Sie Dateien speichern, die kaum noch weiter komprimierbar sind. Dazu z„hlen zum Beispiel bestimmte Programmdateien (.EXE oder .COM).
+
+ANMERKUNG: Das ndern des gesch„tzten Komprimierungsverh„ltnisses
+           eines Laufwerks beeinfluát nicht wie stark die Dateien
+           tats„chlich komprimiert werden. Es beeinfluát nur
+           wie der zur Verfgung stehende Speicher des kompri-
+           mierten Laufwerks gesch„tzt wird.
+
+Wenn fr Ihre Dateien ein falsches gesch„tztes Komprimierungsverh„ltnis angegeben ist, meldet %N eventuell unzutreffende Speicherplatzwerte an MS-DOS, so daá beim Speichern von Dateien Fehler auftreten k”nnen. Ist das Verh„ltnis zu hoch, bersch„tzt %N die Gr”áe des freien Speichers; der Befehl DIR meldet dann eventuell mehr Platz, als tats„chlich verfgbar ist. Ist das Verh„ltnis zu niedrig, kann MS-DOS unter Umst„nden eine Datei nicht kopieren, obwohl fr diese Datei gengend Platz frei ist.
+
+ANMERKUNG: Um das tats„chliche Komprimierungsverh„ltnis der 
+           vorhandenen Dateien herauszufinden, geben Sie an 
+           der Eingabeaufforderung DIR /C ein. Weitere 
+           Informationen erhalten Sie, indem Sie an
+           der Eingabeaufforderung HELP DIR eingeben.
+
+Verwandte Themen
+----------------
+  "Komprimierungsverh„ltnis eines Laufwerks „ndern"~HL77~
+
+@@!HL76!@
+ Hilfe - Arbeiten mit vorhandenen komprimierten Laufwerken
+
+Der Hauptbildschirm von %N listet alle zur Zeit geladenen komprimierten Laufwerke auf.
+
+Um mit einem komprimierten Laufwerk zu arbeiten, w„hlen Sie es zun„chst aus der Liste aus, indem Sie mit der Maus darauf klicken oder die NACH-OBEN- bzw. NACH-UNTEN-TASTE drcken, bis das Laufwerk markiert ist. W„hlen Sie dann den auszufhrenden Befehl aus dem Men 'Laufwerk' oder 'Hilfsmittel'.
+
+Wenn mehr Laufwerke vorhanden sind, als in das Fenster passen, k”nnen Sie durch die Liste rollen, indem Sie die Bildlaufleiste rechts von der Liste verwenden oder die NACH-UNTEN-, NACH-OBEN-, BILD-NACH-UNTEN- oder BILD-NACH-OBEN-TASTE drcken.
+
+Folgende T„tigkeiten k”nnen Sie mit dem ausgew„hlten komprimierten Laufwerk ausfhren:
+
+  "Informationen ber ein Laufwerk anzeigen"~HL91~
+  "Gr”áe eines Laufwerks „ndern"~HL78~
+  "Komprimierungsverh„ltnis eines Laufwerks „ndern"~HL77~
+  "Laufwerk entladen"~HL98~
+  "Laufwerk formatieren"~HL90~
+  "Defragmentieren eines Laufwerks"~HL85~
+  "Dekomprimieren eines Datentr„gers"~HLAA~
+
+
+
+
+Auáerdem k”nnen Sie:
+
+
+  "ein entladenes komprimiertes Laufwerk laden"~HL95~
+  "ein vorhandenes Laufwerk komprimieren"~HL80~
+  "ein neues komprimiertes Laufwerk erstellen"~HL83~
+
+
+
+
+@@!HL89!@
+ Hilfe - Verwenden von Disketten
+
+Sie k”nnen %N verwenden, um die Speicherkapazit„t von Disketten und Festplatten zu erh”hen.
+
+Um eine Diskette zu komprimieren, w„hlen Sie aus dem Men 'Komprimieren' den Befehl 'Vorhandenes Laufwerk'.
+
+Im groáen und ganzen behandelt %N komprimierte Disketten wie komprimierte Festplatten. Es gibt jedoch einige wenige Unterschiede:
+
+  * Auf einer Diskette k”nnen Sie kein leeres komprimiertes 
+    Laufwerk erstellen. (D.h., Sie k”nnen mit dem Befehl 
+    "Neues Laufwerk erstellen" keine Diskette komprimieren.)
+
+  * Normalerweise l„dt %N eine komprimierte 
+    Diskette automatisch, sobald Sie darauf zugreifen. 
+    Falls Sie jedoch im Dialogfeld "Optionen" das Kontrollk„stchen 
+    "Automatisches Laden aktivieren" deaktivieren, mssen 
+    Sie komprimierte Disketten selbst laden.
+  
+Verwandte Themen
+----------------
+  "Vorhandenes Laufwerk komprimieren"~HL80~
+  "Laden eines entladenen Laufwerks"~HL95~
+
+@@!HL91!1!@
+ Hilfe - Informationen ber ein Laufwerk anzeigen
+
+Sie k”nnen Informationen ber ein komprimiertes Laufwerk mit Hilfe eines der folgenden Verfahren anzeigen:
+
+ * W„hlen Sie das Laufwerk auf dem Hauptbildschirm von %N,
+   und drcken Sie dann die EINGABETASTE, oder w„hlen Sie aus dem
+   Men 'Laufwerk' den Befehl 'Info'.
+
+ * Doppelklicken Sie im Hauptbildschirm von %N auf das
+   Laufwerk.
+
+ * Geben Sie an der MS-DOS-Eingabeaufforderung den Befehl %S
+   /INFO ein. Weitere Informationen erhalten Sie, indem Sie an der
+   Eingabeaufforderung HELP %S /INFO eingeben.
+
+%N liefert folgende Informationen ber das ausgew„hlte komprimierte Laufwerk:
+
+ * seine Datentr„gerbezeichnung,
+ * Uhrzeit und Datum seiner Erstellung,
+ * seine Gesamtkapazit„t,
+ * die Menge der darauf gespeicherten Daten,
+ * eine Sch„tzung des darauf enthaltenen freien Speicherplatzes,
+ * sein aktuelles Komprimierungsverh„ltnis,
+ * sein "gesch„tztes Komprimierungsverh„ltnis"~HL87~,
+ * der Name seiner "komprimierte Datentr„gerdatei"~HL84~,
+ * die Gr”áe seiner komprimierten Datentr„gerdatei.
+
+@@!HL78!2!@
+ Hilfe - Gr”áe eines Laufwerks „ndern
+
+
+Sie k”nnen die Gr”áe eines komprimierten Laufwerks „ndern.
+
+Wenn ein komprimiertes Laufwerk nahezu voll ist, k”nnen Sie es vergr”áern. Dies ist nur m”glich, wenn das Host-Laufwerk gengend freien Speicherplatz enth„lt. Beim Vergr”áern eines komprimierten Laufwerks wird darauf mehr Speicherplatz frei; gleichzeitig nimmt der freie Speicher auf dem Host-Laufwerk ab.
+
+Wenn Sie auf dem Host-Laufwerk mehr freien Speicher ben”tigen, k”nnen Sie die Gr”áe eines komprimierten Laufwerks verringern. Dies ist nur m”glich, wenn das komprimierte Laufwerk freien Speicher enth„lt.
+
+Um die Gr”áe eines komprimierten Laufwerks zu „ndern, w„hlen Sie es auf dem Hauptbildschirm von %N aus. W„hlen Sie danach aus dem Men 'Laufwerk' den Befehl 'Gr”áe' „ndern.
+
+Sie k”nnen die Gr”áe eines komprimierten Laufwerks auch an der MS-DOS-Eingabeaufforderung mit dem Befehl %S /SIZE „ndern. Um weitere Informationen zu erhalten, geben Sie an der Eingabeaufforderung HELP %S /SIZE ein.
+
+@@!HL77!3!@
+ Hilfe - Das Komprimierungsverh„ltnis eines Laufwerks „ndern
+
+
+Das "gesch„tzte Komprimierungsverh„ltnis"~HL87~ ist eine Zahl, die %N zur Berechnung des freien Speichers auf einem komprimierten Laufwerk verwendet.
+
+Sie k”nnen das gesch„tzte Komprimierungsverh„ltnis eines Laufwerks beispielsweise „ndern, wenn es von der tats„chlichen Komprimierbarkeit der Dateien, die auf diesem Laufwerk zu speichern sind, stark abweicht.
+
+Um das gesch„tzte Komprimierungsverh„ltnis eines Laufwerks zu „ndern, w„hlen Sie das Laufwerk auf dem Hauptbildschirm von %N aus. W„hlen Sie danach aus dem Men 'Laufwerk' den Befehl 'Verh„ltnis „ndern'.
+
+ANMERKUNG: Das ndern des gesch„tzten Komprimierungsverh„ltnisses
+           eines Laufwerks beeinfluát nicht wie stark die Dateien
+           tats„chlich komprimiert werden. Es beeinfluát nur
+           wie der zur Verfgung stehende Speicher des kompri-
+           mierten Laufwerks gesch„tzt wird.
+
+
+Sie k”nnen das gesch„tzte Komprimierungsverh„ltnis eines Laufwerks auch mit Hilfe des Befehls %S /RATIO an der MS-DOS-Eingabeaufforderung „ndern. Weitere Informationen erhalten Sie, indem Sie an der Eingabeaufforderung HELP %S /RATIO eingeben.
+
+@@!HL98!5!@
+ Hilfe - Komprimiertes Laufwerk entladen
+
+Sie k”nnen %N anweisen, ein komprimiertes Laufwerk zu entladen. Nach dem Entladen eines komprimierten Laufwerks stehen die darauf befindlichen Dateien vorbergehend nicht zur Verfgung. Um sie wieder verfgbar zu machen, laden Sie das Laufwerk erneut mit Hilfe des Befehls 'Laden' aus dem Men 'Laufwerk'.
+
+Ein entladenes Laufwerk befindet sich im Stammverzeichnis Ihrer Festplatte als "komprimierte Datentr„gerdatei"~HL84~ - eine versteckte Datei mit einem Dateinamen im Format %S.nnn (zum Beispiel %S.001).
+
+Um ein komprimiertes Laufwerk zu entladen, w„hlen Sie es auf dem Hauptbildschirm von %N aus. W„hlen Sie danach aus dem Men 'Laufwerk' den Befehl 'Entladen'.
+
+Sie k”nnen ein Laufwerk auch mit Hilfe des Befehls %S /UNMOUNT an der MS-DOS-Eingabeaufforderung „ndern. Weitere Informationen erhalten Sie, indem Sie an der Eingabeaufforderung HELP %S /UNMOUNT eingeben.
+
+Anmerkung: %N l„dt eine komprimierte Diskette 
+           automatisch, sobald Sie darauf zugreifen, auch wenn 
+           Sie sie zuvor entladen haben. Wenn Sie im Dialogfeld 
+           "Optionen" jedoch das Kontrollk„stchen "Automatisches
+           Laden aktiveren" deaktivieren, mssen Sie komprimierte 
+           Disketten selbst laden.
+
+Verwandtes Thema
+-------------- --
+  "ein entladenes komprimiertes Laufwerk laden"~HL95~
+
+@@!HL90!6!@
+ Hilfe - Komprimiertes Laufwerk formatieren
+
+
+Sie k”nnen %N anweisen, ein komprimiertes Laufwerk zu formatieren. Dies kann sinnvoll sein, wenn Sie bereits alle Dateien auf diesem Laufwerk gesichert haben und es nun v”llig leeren m”chten.
+
+VORSICHT: Wenn Sie ein komprimiertes Laufwerk formatieren, werden
+          alle darauf gespeicherten Dateien fr immer gel”scht. 
+          Beim Formatieren wird der Inhalt der komprimierten Daten-
+          tr„gerdatei (CVF) gel”scht; zurck bleibt die leere CVF.
+
+Um ein komprimiertes Laufwerk zu formatieren, w„hlen Sie es auf dem Hauptbildschirm von %N aus. W„hlen Sie danach aus dem Men 'Laufwerk' den Befehl 'Formatieren'.
+
+Sie k”nnen ein Laufwerk auch mit Hilfe des Befehls %S /FORMAT an der MS-DOS-Eingabeaufforderung formatieren. Weitere Informationen erhalten Sie, indem Sie an der Eingabeaufforderung HELP %S /FORMAT eingeben.
+
+@@!HL86!7!@
+ Hilfe - Komprimiertes Laufwerk l”schen
+
+
+Sie k”nnen %N anweisen, ein komprimiertes Laufwerk samt seiner zugeh”rigen komprimierten Datentr„gerdatei zu l”schen. Dies kann sinnvoll sein, wenn Sie bereits alle Dateien auf diesem Laufwerk gesichert haben, und den von der komprimierten Datentr„gerdatei auf dem Host-Laufwerk belegten Platz anderweitig ben”tigen.
+
+VORSICHT: Wenn Sie ein Laufwerk l”schen, werden auch alle 
+          darauf gespeicherten Dateien gel”scht. Beim L”schen 
+          wird die komprimierte Datentr„gerdatei von Ihrer 
+          Festplatte/Diskette entfernt.
+
+Um ein komprimiertes Laufwerk zu l”schen, w„hlen Sie es auf dem Hauptbildschirm von %N aus. W„hlen Sie danach aus dem Men 'Laufwerk' den Befehl 'L”schen'.
+
+Sie k”nnen ein Laufwerk auch mit Hilfe des Befehls %S /DELETE an der MS-DOS-Eingabeaufforderung l”schen. Weitere Informationen erhalten Sie, indem Sie an der Eingabeaufforderung HELP %S /DELETE eingeben.
+
+@@!HL88!8!@
+ Hilfe - %N beenden
+
+Um %N zu beenden, w„hlen Sie aus dem Men 'Laufwerk' den Befehl 'Beenden'.
+
+ANMERKUNG: Wenn Sie komprimierte Disketten oder auswechselbare
+           Laufwerke geladen haben, werden sie geladen bleiben,
+           bis Sie sie entladen oder Ihren Computer neu starten.
+
+@@!HL85!11!@
+ Hilfe - Komprimiertes Laufwerk defragmentieren
+
+Sie k”nnen %N anweisen, ein komprimiertes Laufwerk zu defragmentieren. Beim Defragmentieren eines komprimierten Laufwerks werden alle Daten an den Beginn der komprimierten Datentr„gerdatei, der freie Speicherplatz an das Ende verschoben. Im Gegensatz zum Defragmentieren eines unkomprimierten Laufwerks werden dabei die Dateien auf dem Laufwerk nicht neu organisiert, um sie zusammenh„ngend abzuspeichern. Das Defragmentieren eines komprimierten Laufwerks wirkt sich auf die Lese- und Schreibgeschwindigkeit nicht aus.
+
+Sie sollten ein komprimiertes Laufwerk defragmentieren, bevor Sie seine Gr”áe verringern. In diesem Fall kann es sein, daá sich die Gr”áe des Laufwerks st„rker als sonst verringert.
+
+Um ein komprimiertes Laufwerk zu defragmentieren, w„hlen Sie es auf dem Hauptbildschirm von %N aus. W„hlen Sie danach aus dem Men 'Laufwerk' den Befehl 'Defragmentieren'.
+
+Sie k”nnen ein Laufwerk auch mit Hilfe des Befehls %S /DEFRAG an der MS-DOS-Eingabeaufforderung defragmentieren. Weitere Informationen erhalten Sie, indem Sie an der Eingabeaufforderung HELP %S /DEFRAG eingeben.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@@!HL93!@
+ Hilfe - Laufwerke Ihres Computers auflisten
+
+%N kann eine Liste der Laufwerke Ihres Computers anzeigen. Dazu mssen Sie %N beenden und an der Eingabeaufforderung den Befehl %S /LIST eingeben.
+
+%N listet Festplatten-, RAM- und Diskettenlaufwerke sowie Laufwerke fr andere auswechselbare Datentr„ger auf. (Die Liste enth„lt keine Netzlaufwerke.) Fr jedes Laufwerk zeigt %N folgende Informationen an:
+
+ * seinen Laufwerkbuchstaben,
+ * Typ des Laufwerks mit Angabe, ob komprimiert oder nicht
+   (%N verwendet den Ausdruck "Laufwerk fr auswechselbare
+   Datentr„ger" sowohl fr Diskettenlaufwerke als auch fr 
+   Laufwerke fr andere auswechselbare Datentr„ger),
+ * seine Gesamtkapazit„t,
+ * die Gr”áe des freien Speicherplatzes,
+ * den Namen seiner komprimierte Datentr„gerdatei (CVF), wenn es 
+   sich um ein komprimiertes Laufwerk handelt.
+
+Weitere Informationen ber den Befehl %S /LIST erhalten Sie, indem Sie an der Eingabeaufforderung HELP %S /LIST eingeben.
+
+@@!HL95!4!@
+ Hilfe - Komprimiertes Laufwerk laden
+
+Ein komprimiertes Laufwerk ist bis zum Laden in Wirklichkeit lediglich eine komprimierte Datentr„gerdatei. Beim Laden einer komprimierten Datentr„gerdatei wird eine Verbindung zwischen ihr und dem Laufwerkbuchstaben hergestellt, so daá Sie diese CVF wie ein Laufwerk verwenden k”nnen.
+
+%N l„dt beim Starten des Computers automatisch die komprimierten Festplattenlaufwerke. Komprimierte Disketten und andere auswechselbare Datentr„ger, die komprimiert sind, werden geladen, sobald Sie darauf zugreifen. (Wenn Sie im Dialogfeld "Optionen" das Kontrollk„stchen "Automatisches Laden aktivieren" deaktivieren, l„dt %N auswechselbare Datentr„ger nicht automatisch.)
+
+Um eine komprimierte Datentr„gerdatei zu laden, w„hlen Sie aus dem Men 'Laufwerk' den Befehl 'Laden'. W„hlen Sie anschlieáend die komprimierte Datentr„gerdatei aus der von %N angezeigten Liste.
+
+Sie k”nnen eine komprimierte Datentr„gerdatei auch mit Hilfe des Befehls %S /MOUNT an der MS-DOS-Eingabeaufforderung laden. Weitere Informationen erhalten Sie, indem Sie an der Eingabeaufforderung HELP %S /MOUNT eingeben.
+
+Verwandte Themen
+----------------
+  "Komprimiertes Laufwerk entladen"~HL98~
+  "Arbeiten mit Disketten"~HL89~
+
+@@!HL80!9!@
+ Hilfe - Vorhandene Laufwerke komprimieren
+
+
+Wenn Sie ein vorhandenes Laufwerk komprimieren, komprimieren Sie alle darauf befindlichen Dateien. Nach abgeschlossener Komprimierung enth„lt Ihr Originallaufwerk komprimierte Dateien und zus„tzlichen freien Speicherplatz. Sie verfgen auáerdem ber ein neues unkomprimiertes Laufwerk, das alle nicht komprimierbaren Dateien des soeben komprimierten Laufwerks enth„lt.
+
+Um ein vorhandenes Laufwerk zu komprimieren, w„hlen Sie aus dem Men 'Komprimieren' den Befehl 'Vorhandenes Laufwerk'.
+
+Sie k”nnen ein vorhandenes Laufwerk auch mit Hilfe des Befehls %S /COMPRESS an der MS-DOS-Eingabeaufforderung komprimieren. Weitere Informationen erhalten Sie, indem Sie an der Eingabeaufforderung HELP %S /COMPRESS eingeben.
+
+Verwandte Themen
+----------------
+  "Komprimierte Laufwerke erstellen"~HL83~
+  "Arbeiten mit Disketten"~HL89~
+
+@@!HL83!10!@
+ Hilfe - Erstellen eines neuen komprimierten Laufwerks
+
+Sie k”nnen ein neues komprimiertes Laufwerk mit freien Speicherplatz auf einem vorhandenen, unkomprimierten Laufwerk erstellen. Nach dem Komprimieren verfgen Sie ber ein neues komprimiertes Laufwerk, auf dem mehr Speicherplatz verfgbar ist, als es auf dem vorhandenen Laufwerk belegt hat.
+
+Um ein neues komprimiertes Laufwerk zu erstellen, w„hlen Sie aus dem Men "Komprimierung" den Befehl "Neues Laufwerk erstellen".
+
+Zum Erstellen eines neuen komprimierten Laufwerks k”nnen Sie an der MS-DOS-Eingabeaufforderung auch den Befehl %S /CREATE eingeben. Um weitere Informationen zu erhalten, geben Sie an der Eingabeaufforderung HELP %S /CREATE ein.
+
+Verwandtes Thema
+-------------
+  "Komprimieren eines vorhandenen Laufwerks"~HL80~
+
+@@!HLAA!100!@
+ HILFE - Dekomprimieren eines komprimierten Datentr„gers
+
+Sie k”nnen ein mit %N komprimierte Datentr„ger dekomprimieren, wenn auf dem Datentr„ger gengend Speicherplatz fr die dekomprimierten Dateien zur Verfgung steht.
+
+Beim Dekomprimieren eines komprimierten Datentr„gers h„ngt das Ergebnis davon ab, wie das Laufwerk erstellt wurde:
+
+  * Wenn zur Erstellung des komprimierten Datentr„gers ein 
+    vorhandenes Laufwerk komprimiert wurde, wird der 
+    Laufwerkbuchstabe nach dem Dekomprimieren beibehalten.
+
+  * Wenn der komprimierte Datentr„ger mit freiem Speicherplatz
+    eines anderen Laufwerks (Host-Laufwerk) erstellt wurde, 
+    verschiebt %N alle Dateien des komprimierten 
+    Datentr„gers auf das Host-Laufwerk und entfernt anschlieáend 
+    das komprimierte Laufwerk. 
+
+Zum Dekomprimieren eines komprimierten Datentr„gers w„hlen Sie das komprimierte Laufwerk im Hauptbildschirm von %N aus, und w„hlen Sie dann aus dem Men "Hilfsmittel" den Befehl "Dekomprimieren".
+
+Zum Dekomprimieren eines komprimierten Datentr„gers k”nnen Sie auch an der MS-DOS-Eingabeaufforderung den Befehl %S /UNCOMPRESS eingeben. Um weitere Informationen zu erhalten, geben Sie an der Eingabeaufforderung HELP %S /UNCOMPRESS ein.
+
+Anmerkung: Beim Dekomprimieren des letzten komprimierten Laufwerks 
+           entfernt %N nach dem Dekomprimierungsvorgang 
+           den %N-Treiber aus dem Speicher. Dadurch wird 
+           %N deinstalliert. Wenn Sie danach mit 
+           %N arbeiten m”chten, mssen Sie erst wieder 
+           das %N-Installationsprogramm Setup ausfhren.
+
+Verwandtes Thema
+-------------
+  "Arbeiten mit komprimierten Laufwerken"~HL76~
+
+@@!110!@
+ Hilfe - Dekomprimierung best„tigen
+
+%N wurde angewiesen, das angegebene komprimierte Laufwerk zu dekomprimieren. 
+
+Um das Laufwerk zu dekomprimieren, w„hlen Sie "Ja". %N verschiebt dann die Dateien vom komprimierten Laufwerk auf das angegebene unkomprimierte Laufwerk. Beim Dekomprimieren des letzten komprimierten Laufwerks, das geladen ist, bietet %N an, %S.BIN aus dem Speicher zu entfernen. (%S.BIN ist der Teil von MS-DOS, der den Zugriff auf komprimierte Laufwerke erm”glicht.)
+
+Wenn Sie dieses Laufwerk nicht dekomprimieren m”chten, w„hlen Sie "Nein".
+
+@@!111!@
+ Hilfe - %N konnte ein Laufwerk nicht dekomprimieren
+
+Zum Dekomprimieren des angegebenen Laufwerks stand nicht gengend Speicherplatz zur Verfgung. Um ein Laufwerk zu dekomprimieren, muá entweder auf dem komprimierten oder auf dem unkomprimierten Laufwerk (auf welches die dekomprimierten Dateien verschoben werden) gengend freier Speicherplatz verfgbar sein.
+
+Um das Laufwerk zu dekomprimieren, beenden Sie %N, und schaffen Sie freien Speicherplatz, indem Sie Dateien entweder von einem oder von beiden Laufwerken l”schen oder verschieben. Starten Sie %N danach erneut, und versuchen Sie noch einmal, das Laufwerk zu dekomprimieren. 
+
+@@!117!@
+ Hilfe - Fehler: Doppelter Dateiname
+
+%N kann das angegebene Laufwerk nicht dekomprimieren. Sie mssen zuerst die Dateien, die in der Datei %S.LOG aufgelistet werden, verschieben oder umbenennen. Das komprimierte sowie auch das nichtkomprimierte (Host-) Laufwerk enthalten eine Kopie dieser Dateien. Wenn %N fortsetzen und das Laufwerk dekomprimieren wrde, wrde die Kopie dieser Dateien auf dem komprimierten Laufwerk die Kopien auf dem Host-Laufwerk ersetzen. 
+
+So dekomprimieren Sie dieses Laufwerk:
+
+1. Beenden Sie %N.
+
+2. Zeigen Sie den Inhalt der Datei %S.LOG an.
+   Die Datei listet die betroffenen Dateien auf. Wenn z. B.
+   in der Datei %S.LOG der Dateiname REPORT.DOC
+   aufgelistet wird, bedeutet das, daá es zwei Dateien mit
+   diesem Namen gibt.Eine Datei REPORT.DOC befindet sich im
+   Stammverzeichnis hres komprimierten Laufwerks, und die
+   andere befindet sich im Stammverzeichnis Ihres
+   nichtkomprimierten (Host-) Laufwerks.
+
+3. Verschieben Sie eine Kopie fr jede Datei, oder benennen Sie
+   sie um. Wenn beispielsweise die betroffene Datei den Namen
+   REPORT.DOC tr„gt, k”nnen Sie das Problem beheben, indem Sie
+   folgenden Befehl eingeben:
+
+   REN REPORT.DOC REPORT2.DOC
+
+4. Versuchen Sie nun erneut, das Laufwerk zu dekomprimieren.
+
+@@!119!@
+ Hilfe - %N jetzt deinstallieren?
+
+%N hat das letzte geladene komprimierte Laufwerk auf Ihrem System dekomprimiert. 
+Dies bedeutet generell, daá Sie %N weiterhin nicht mehr brauchen, um auf komprimierte Laufwerke zuzugreifen. 
+
+W„hlen Sie Ja,    wenn Sie genau wissen, daá Sie %N
+             weiterhin nicht mehr brauchen, um auf zus„tzliche
+             komprimierte Laufwerke zuzugreifen. Das W„hlen 
+             von "Ja" verusacht, daá %N deinstalliert 
+             wird, indem es aus dem Speicher entfernt wird. 
+             Dadurch kann bis zu 43 KB Speicherplatz frei-
+             gegeben werden.
+
+W„hlen Sie Nein,   wenn %N im Speicher bleiben soll,
+             um so weiteren Zugriff auf komprimierte Disketten 
+             oder andere ungeladene komprimierte Laufwerke zu 
+             gew„hrleisten. Das W„hlen von "Nein" verursacht, 
+             daá %N weiterhin installiert bleibt. 
+             (Ihre Festplatte bleibt solange dekomprimiert, 
+             bis Sie den Komprimierungsprozeá wieder neu 
+             einleiten.)
+
+Was passiert, wenn Sie %N deinstallieren, aber 
+%N zu einem sp„teren Zeitpunkt wieder verwenden 
+m”chten?
+-------------------------------------------------------
+Wenn Sie nach der Deinstallation von %N feststellen, 
+daá Sie %N zum weiteren Zugriff auf komprimierte 
+Disketten oder andere ungeladene komprimierte Laufwerke 
+verwenden m”chten, k”nnen Sie %N neu installieren, 
+ohne die Dateien auf Ihrer Festplatte zu komprimieren. Fhren 
+Sie das %N-Setup-Programm aus, indem Sie %S 
+eingeben. W„hlen Sie dann das benutzerdefinierte Setup, und 
+erstellen Sie ein neues komprimiertes Laufwerk auf freiem 
+Speicherplatz. Danach sollten Sie Ihre anderen komprimierten 
+Laufwerke laden und verwenden k”nnen.
+
+Kann %N auch zu einem sp„teren Zeitpunkt deinstalliert werden? 
+-------------------------------------------------------------
+%N kann auch manuell deinstalliert werden, wenn Sie die Deinstallation jetzt nicht vornehmen m”chten. Geben Sie zur manuellen Deinstallation folgendes an der Eingabeaufforderung ein, und starten Sie Ihren Computer danach erneut:
+
+   DELTREE C:\%S.BIN
+
+Vorsicht: Dieser Befehl sollte nur dann verwendet werden,
+          wenn Sie sichergestellt haben, daá keine geladenen 
+          komprimierten Laufwerke vorhanden sind.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@@!128!@
+ Hilfe -- DoubleSpace-Laufwerke in das DriveSpace-Format konvertieren
+
+Um alle Ihre DoubleSpace-Laufwerke in das DriveSpace-Format zu konvertieren,
+drcken Sie die EINGABETASTE. %N konvertiert dann ale Ihre geladenen
+DoubleSpace-Laufwerke.
+
+Zum Beenden ohne Laufwerke zu konvertieren drcken Sie F3.
+
+Hinweis: Vor der Konvertierung sollten Sie eine Sicherheitskopie all
+Ihrer Dateien anfertigen.
+
+Wenn Sie auáerdem DoubleSpace-Disketten oder nicht geladene DoubleSpace-Datentr„gerdateien haben, k”nnen Sie sie sp„ter konvertieren, indem Sie DriveSpace starten und dann Konvertieren aus dem Men Hilfsmittel w„hlen.
+
+@@!129!@
+ Hilfe -- DriveSpace Konvertierung - Best„tigung
+
+%N wird alle geladenen DoubleSpace-Laufwerke in das DriveSpace-Format konvertieren.
+
+Um Ihre Laufwerke zu konvertieren, drcken Sie F.
+
+Wenn Sie sie nicht konvertieren wollen, drcken Sie F3 zum Beenden.
+
+@@!130!@
+ Hilfe -- Datentr„gerdatei kann nicht geladen werden
+
+Die angegebene komprimierte Datentr„gerdatei kann nicht geladen werden, weil sie durch eine neuere Version dieses Programms erstellt wurde.
+
+Um diese komprimierte Datentr„gerdatei zu laden, benutzen Sie die korrekte Version von %N.
+
+@@!132!@
+ Hilfe -- Konvertierung Beenden
+
+Die angegebene komprimierte Datentr„gerdatei wurde teilweise in das DriveSpace-Format konvertiert.
+
+W„hlen Sie Ja, um vollst„ndig zu konvertieren.
+
+W„hlen Sie Nein, um die Datentr„gerdatei teilweise konvertiert zu belassen. (M”glicherweise l„át sie sich nicht laden, solange sie nicht vollst„ndig konvertiert ist.)
+
+@@!131!@
+ Hilfe -- Datentr„gerdatei kann nicht geladen werden.
+
+Die angegebene Datentr„gerdatei wurde teilweise konvertiert und kann deshalb nicht geladen werden.
+
+Um diese Datentr„gerdatei zu laden, mssen Sie sie zun„chst in das
+DriveSpace-Format konvertieren. W„hlen Sie Konvertieren aus dem Men Hilfsmittel.
+
+@@!133!@
+ Hilfe -- Datentr„gerdatei muá konvertiert werden
+
+Um diese Datentr„gerdatei zu laden, muá sie zun„chst in das DriveSpace-Format konvertiert werden.
+
+W„hlen Sie Ja, um die Datentr„gerdatei zu konvertieren.
+
+W„hlen Sie Nein, um die Datentr„gerdatei unkonvertiert zu belassen.
+Sie werden Sie nicht ladne k”nnen.
+
+@@!151!@
+ Hilfe -- Fehler
+
+Die angegebene Datentr„gerdatei ist im DriveSpace-Format, das mit DoubleSpace nicht kompatibel ist.
+Um diese komprimierte Datentr„gerdatei zu laden, mssen Sie Ihr System auf DriveSpace umstellen.
+
+Um Ihr System und alle geladenen komprimierten Laufwerke nach DriveSpace zu konvertieren, w„hlen Sie 'J'.
+
+Um weiterhin DoubleSpace zu benutzen, w„hlen Sie 'N'. Sie k”nnen dann diese Datentr„gerdatei nicht laden.
+
+@@!135!@
+ Hilfe -- DoubleSpace konvertieren
+
+Im Dialogfeld 'DoubleSpace konvertieren' w„hlen Sie die DoubleSpace-Datentr„gerdatei, die Sie in das DriveSpace-Format konvertiern m”chten. %N zeigt eine Liste der DoubleSpace-Datentr„gerdateien auf Ihrem Computer.
+
+Um eine DoubleSpace-Datentr„gerdatei zu konvertieren, drcken Sie die NACH-OBEN- oder NACH-UNTEN-TASTE bis die gewnschte Datei markiert ist. Drcken Sie dann die EINGABETASTE oder w„hlen Sie OK.
+
+%N konvertiert die DoubleSpace-Datentr„gerdatei in eine DriveSpace-Datentr„gerdatei, und l„dt sie dann als komprimiertes DriveSpace-Laufwerk.
+
+Hinweis: Haben Sie einmal eine DoubleSpace-Datentr„gerdatei in das DriveSpace-Format konvertiert, k”nnen Sie dies nicht mehr rckg„ngig machen.
+      
+@@!136!@
+ Hilfe -- Warnung
+
+%N verwendet SCANDISK, um Ihr Laufwerk auf Fehler zu prfen. Dieser wichtige Schritt sollte immer ausgefhrt werden, wenn sich der Inhalt eines Laufwerks signifikant „ndert, zum Beispiel durch Kompression des Laufwerks.
+
+ScanDisk stellt sicher, daá %N keine fehlerhaften Sektoren Ihres Laufwerks zur Datenspeicherung verwendet. Weil Sie Scandisk beendeten, bevor es eine Oberfl„chenanalyse durchfhren konnte, hat %N keine M”glichkeit, die fehlerhaften und die unbesch„digten Sektoren Ihres Laufwerks festzustellen.
+
+W„hlen Sie 'Nein', wenn Sie sich nicht sicher sind, ob Ihr Laufwerk fehlerhafte Bereiche hat. W„hlen Sie 'Ja' nur, wenn Sie sicher sind, daá Ihr Laufwerk fehlerfrei ist.
+
+Warnung: Wenn Sie 'Ja' w„hlen und Ihr Laufwerk enth„lt fehlerhafte
+          Bereiche, k”nnen Sie Daten verlieren, wenn %N versucht, 
+          einen dieser fehlerhaften Bereiche w„hrend der Konversion
+          zu benutzen.
+         
+
+@@!138!@
+ Hilfe -- Fehler
+
+%N kann nicht fortgesetzt werden, weil ScanDisk Probleme mit Ihrem Laufwerk festgestellt hat.
+
+Bevor %N ein DoubleSpace-Laufwerk konvertiert, fhrt es ScanDisk aus, um festzustellen, ob das Laufwerk zuverl„ssig arbeitet. Wenn ScanDisk physische Fehler oder zerst”rte Daten findet, wird DriveSpace das Laufwerk nicht konvertieren, weil die Konvertierung sonst zu Datenverlust fhren k”nnte.
+
+Um die Probleme zu beheben, beenden Sie %N und fhren Sie ScanDisk auf dem Laufwerk aus.
+
+Warning: Wenn ScanDisk physische Fehler findet, k”nnte es sein, daá
+         das Laufwerk seine Funktion ganz aufgibt. Sichern Sie sofort
+         alle Ihre Dateien und ziehen Sie einen Service-Techniker
+         zu Rate. Konvertieren Sie bis dahin keine DoubleSpace-
+         Laufwerke.
+
+@@!139!@
+ Hilfe -- Fehler
+
+%N kann keine DoubleSpace-Laufwerke in das DriveSpace-Format konvertieren, weil MS-DOS nicht DRVSPACE.BIN und DBLSPACE.BIN zusammen laden konnte.
+
+Um DoubleSpace-Laufwerke in das DriveSpace-Format zu konvertieren, beide Dateien - DBLSPACE.BIN und DRVSPACE.BIN - mssen geladen sein. Stellen Sie sicher, daá folgende Dateien sich in dem Verzeichnis befinden, das Ihre MS-DOS-Dateien enth„lt.
+
+     DRVSPACE.BIN
+     DBLSPACE.BIN
+     DRVSPACE.MR1
+
+Falls diese Dateien sich in Ihrem MS-DOS Verzichnis befinden, k”nnte der Fehler darin liegen, daá nicht gengend konventioneller Speicher zur Verfgung steht, oder sie eine ungltige Version von IO.SYS verwenden.
+
+@@!140!@
+ Hilfe -- Fehler
+
+Ihr Computer enth„lt keine geladenen DoubleSpace-Laufwerke, die konvertiert werden k”nnten.
+
+@@!141!@
+ Hilfe -- Konvertierung beendet
+
+%N hat die Konvertierung Ihrer DoubleSpace-Laufwerke in das DriveSpace-Format beendet. Wenn Sie Ihren Computer neu starten, werden Sie DriveSpace anstelle von DoubleSpace benutzen.
+
+Falls n”tig, k”nnen Sie weiterhin unkonvertierte DoubleSpace-Laufwerke schreibgeschtzt laden. Dafr starten Sie DRVSPACE, w„hlen Sie 'Optionen' aus dem Men 'Hilfsmittel', und aktivieren Sie die Option 'DoubleSpace-Laufwerke lesen'. Diese Option verbraucht 5K Speicher zus„tzlich. DriveSpace kann DoubleSpace-Disketten nicht automatisch laden. Um eine DoubleSpace-Diskette zu laden, w„hlen Sie 'Laden' aus dem Men 'Laufwerk'.
+
+Hinweis: Die Option 'DoubleSpace-Laufwerke lesen' erlaubt lediglich, nicht konvertierte DoubleSpace-Laufwerke zu laden und zu lesen. Um auf eine DoubleSpace-Diskette zu schreiben, muá sie zun„chst in das DriveSpace-Format konvertiert werden. 
+
+@@!143!@
+ Hilfe -- Konvertierung abgebrochen
+
+%N konnte die Konvertierung eines komprimierten Laufwerks in das DriveSpace-Format nicht zuende fhren.
+
+Um die Konvertierung zu beenden, fhren Sie zun„chst ScanDisk auf diesem Laufwerk aus, um Laufwerksfehler zu beheben. Wenn ScanDisk beendet ist, versuchen Sie, das Laufwerk erneut zu konvertieren indem Sie DriveSpace starten und dann 'DopubleSpace konvertieren' aus dem Men 'Hilfsmittel' w„hlen.
+
+@@!142!@
+ Hilfe -- Fehler
+
+%N kann Bereiche eines Laufwerks, die noch nicht konvertiert wurden, nicht lesen oder schreiben. Dieser Bereich wurde noch nicht konvertiert.
+
+Um erneut zu versuchen, diesen Bereich zu konvertieren, w„hlen Sie 'Wiederholen'.
+
+Um diesen Bereich des Laufwerks zu berspringen und die Konvertierung fortzusetzen, w„hlen Sie 'Weiter'.
+
+Um die Konvertierung dieses Laufwerks abzubrechen und mit dem n„chsten Laufwerk fortzufahren, w„hlen Sie 'N„chstes Laufwerk'.
+
+Vorschlag: W„hlen Sie 'N„chstes Laufwerk', um Ihre anderen Laufwerke zu konvertieren und versuchen Sie dann, mit ScanDisk das Problem auf diesem Laufwerk zu beheben. Wenn das Problem behoben ist, versuchen Sie die Konvertierung erneut, indem Sie 'DoubleSpace konvertieren' aus dem Men 'Hilfsmittel' w„hlen.
+
+@@!HLAB!101!@
+ Hilfe -- DoubleSpace-Laufwerke in das DriveSpace-Format konvertieren
+
+DoubleSpace und DriveSpace sind einander „hnlich, aber sie speichern komprimierte Daten in unterschiedlichem Format. Sie k”nnen Ihre DoubleSpace-Laufwerke in das DriveSpace-Format konvertieren, indem Sie den Befehl 'DoubleSpace konvertieren' aus dem Men 'Hilfsmittel' w„hlen.
+
+Wenn Sie den Befehl 'DoubleSpace konvertieren' zum ersten Mal benutzen, konvertiert %N alle Ihre geladenen DoubleSpace-Laufwerke in das DriveSpace-Format und stellt Ihr System um von DoubleSpace auf DriveSpace.
+
+Wenn das System umgestellt ist, k”nnen Sie mit dem Befehl 'DoubleSpace konvertieren' alle brigen, noch nicht konvertierten DoubleSpace-Laufwerke oder Disketten konvertieren.
+
+Hinweis: Wenn Sie DriveSpace ausfhren, k”nnen Sie weiterhin unkonvertierte DoubleSpace-Disketten schreibgeschtzt laden. Um auf eine solche Diskette zu schreiben, muá sie jedoch in das DriveSpace-Format konvertiert werden. DriveSpace l„dt DoubleSpace-Disketten nicht automatisch; w„hlen Sie 'Laden' aus dem Men Laufwerk.
+
+@@!144!@
+ Hilfe -- Fehler
+
+DriveSpace konnte eine der zum Lesen von DoubleSpace-Laufwerken notwendigen Dateien nicht lesen.
+
+Um DoubleSpace-Laufwerke zu lesen, mssen sich folgende Dateien in dem Verzeichnis befinden, das Ihre MS-DOS-Dateien enth„lt.
+
+     DRVSPACE.BIN
+     DRVSPACE.MR1
+
+@@!145!@
+ Hilfe -- Fehler
+
+DriveSpace konnte diese Datentr„gerdatei nicht laden, weil sie mit DoubleSpace erstellt wurde.
+
+DriveSpace und DoubleSpace benutzen ein unterschiedliches Format zum Speichern komprimierter Daten. Um diese Datentr„gerdatei zu laden, mssen Sie sie zun„chst in das DriveSpace-Format konvertieren.
+W„hlen Sie dazu den Befehl 'DoubleSpace konvertieren' aus dem Men 'Hilfsmittel'. Wenn die Datentr„gerdatei in das DriveSpace-Format konvertiert ist, k”nnen Sie sie laden und benutzen wie jedes andere DriveSpace-Laufwerk.
+
+Wenn Sie diese Datentr„gerdatei nicht konvertieren wollen, k”nnen Sie sie dennoch schreibgeschtzt laden. Das bedeutet, dass sie die Dateien, die sie enth„lt, lesen aber nicht „ndern k”nnen.
+
+Hinweis: Um eine DoubleSpace-Datentr„gerdatei zu laden, ohne sie zu konvertieren, muá die Option 'DoubleSpace-Laufwerke lesen' aktiviert sein. Sie k”nnen diese Option im Dialogfeld 'Optionen' aus dem Men 'Hilfsmittel' aktivieren. Diese Option ben”tigt 5K zus„tzlichen Hauptspeicher.
+
+@@!146!@
+ Hilfe -- Fehler
+
+DoubleSpace konnte diese Datentr„gerdatei nicht laden, weil sie mit DriveSpace erstellt wurde.
+
+DriveSpace und DoubleSpace verwenden ein unterschiedliches Format zum Speichern komprimierter Daten.
+
+@@!147!@
+ Hilfe -- DriveSpace
+
+Auf Ihrem Computer wird noch DoubleSpace ausgefhrt. Um mit Ihren komprimierten Laufwerken zu arbeiten starten Sie DBLSPACE.
+
+Informationen darber, wie Sie Ihren Computer aud DriveSpace umstellen, finden Sie in der Datei INFO.TXT, die sich in dem Verzeichnis befindet, das Ihre MS-DOS-Dateien enth„lt.
+
+@@!148!@
+ Hilfe -- Kann nicht konvertieren
+
+%N konvertiert DoubleSpace-Laufwerke in das DriveSpace-Format, indem es die mit DoubleSpace komprimierten Daten list und dann diese Daten mit der DriveSpace-Kompression speichert.
+
+Die F„higkeit, komprimiert DoubleSpace-Daten zu lesen, ist ein- und ausschaltbar, weil diese F„higkeit etwa 14K Speicher ben”tigt. Gegenw„rtig ist diese Option abgeschaltet.
+
+Um sie zu aktivieren, w„hlen Sie den Befehl 'Optionen' aus dem Men 'Hilfsmittel' und aktivieren Sie 'DoubleSpace-Laufwerke lesen'.
+
+@@!149!@
+ Hilfe -- Fehler
+
+%N kann das gew„hlte Laufwerk nicht formatieren, weil es ein DoubleSpace-Laufwerk ist.
+
+Hinweis: Der einfachste Weg, alle Daten von diesem Laufwerk zu l”schen, ist der Befehl 'L”schen' aus dem Men 'Laufwerke'. Damit wird sowohl das Laufwerk als auch die Daten, die es enth„lt, gel”scht.
+
+@@!150!@
+ Hilfe -- Fehler
+
+DriveSpace kann das angegebene Laufwerk nicht laden, weil es ein DoubleSpace-Laufwerk ist. Weitere Informationen finden Sie in der Datei INFO.TXT.
+
+@@!137!@
+ Hilfe -- Warnung
+
+%N fhrt das Programm ScanDisk aus, um Ihr Laufwerk auf Fehler zu prfen. Weil Sie ScanDisk angehalten haben, bevor es die grunds„tzliche Prfung beenden konnte, hat %N keine M”glichkeit, die fehlerhaften von den fehlerfreien Bereichen des Laufwerks zu unterscheiden.
+Deshalb kann %N nicht fortgesetzt werden.
+
+ScanDisk ben”tigt eine weitaus l„ngere Zeit, um die Oberfl„che des Laufwerks zu analysieren, als fr andere Laufwerkstests. Obwohl es viel sicherer ist, ScanDisk alle Aspekte des Laufwerks zu analysieren, k”nnen Sie, wenn Sie in Eile sind, Ihre Laufwerke konvertieren, ohne die Oberfl„chenanalyse durchzufhren.
+Um die Oberfl„chenanalyse zu bergehen, warten Sie bis ScanDisk die Oberfl„chenanalyse beginnt und dann w„hlen Sie die Schaltfl„che 'N„chstes Laufwerk' oder die Schaltfl„che 'Beenden', wenn es keine Schaltfl„che 'N„chstes Laufwerk' gibt. Wenn %N das Dialogfeld 'Warnung' anzeigt, w„hlen Sie 'Ja'.
+
+Warnung: Wenn Sie die Oberfl„chenanalyse bergehen, versucht %N m”glicherweise, einen unzuverl„ssigen Bereich des Laufwerks zu benutzen. Dies kann zu Datenverlust fhren.
+
+@@!152!@
+ Hilfe -- DriveSpace
+
+Sie haben DBLSPACE eingegeben, um DoubleSpace auf Ihrem System zu installieren.
+
+Frhere Versionen von MS-DOS enthielten die Festplattenkompressionssoftware DoubleSpace. MS-DOS 6.22 enth„lt die Kompressionssoftware DriveSpace, welche vergleichbare Funktionen hat wie DoubleSpace, aber ein anderes Format zum Speichern komprimierter Daten verwendet.
+
+Obwohl Sie DoubleSpace mit MS-DOS 6.22 verwenden k”nnen, ist DriveSpace die empfohlene Kompressionsmethode.
+
+Um die Installation von DoubleSpace fortzusetzen, w„hlen SIe 'Ja'. Wenn die Installation beendet ist, geben Sie HELP DBLSPACE an der Eingabeaufforderung ein, um weitere Informationen zu erhalten, wie DoubleSpace mit MS-DOS 6.22 benutzt wird.
+
+Um stattdessen DriveSpace zu installieren, w„hlen Sie 'Nein' und geben Sie dann DRVSPACE an der Eingabeaufforderung ein.
+
+@@!HL96!15!@
+ Hilfe - Optionen
+
+Sie k”nnen Optionen einstellen, die bestimmen, wie %N Speicherplatz fr das Laden zus„tzlicher Laufwerke reserviert. 
+
+Letztes fr %N reserviertes Laufwerk:
+   %N reserviert einige Laufwerkbuchstaben,
+   basierend auf die Zahl der komprimierten Laufwerke, die
+   Sie haben. Wenn Sie nicht genug Laufwerkbuchstaben brig
+   haben, w„hrend Sie ein Laufwerk komprimieren oder laden,
+   vergr”áern Sie diese Zahl. Jeder Laufwerkbuchstabe
+   verwendet 96 Bytes Speicher. Um Speicherplatz zu sparen,
+   verkleinern Sie diese Zahl.
+
+Anzahl auswechselbarer Datentr„ger: 
+   Im allgemeinen sollten Sie dieses Feld auf die Zahl der
+   auswechselbaren Laufwerke setzen, die Sie haben.
+   (Disketten, Bernoulli-Laufwerke und Flash-Speicherkarten
+   sind alle auswechselbare Laufwerke.) Sie wollen m”glicherweise
+   weniger auswechselbare Laufwerke angeben, als Sie wirklich
+   haben, wenn Sie nicht vor haben, die Daten auf diesen
+   Laufwerken zu komprimieren und Sie Speicher sparen m”chten.
+
+@@!HL72!@
+ Hilfe - šberblick ber %N
+
+%N ist ein Datentr„gerkomprimierungsprogramm. Datentr„gerkomprimierung erm”glicht es, mehr Daten auf einem Datentr„ger zu speichern, als Sie es normalerweise k”nnten. Sie k”nnen normalerweise zweimal so viele Daten auf einem komprimierten Datentr„ger als auf einem nicht komprimierten Datentr„ger speichern. 
+
+Um %N auf Ihrem Computer einzurichten, wurde an der Eingabeaufforderung %S eingegeben. Das %N-Installationsprogramm Setup konfiguriert MS-DOS, um Zugriff auf komprimierte Laufwerke zu gew„hren und komprimiert dann das angegebene Festplattenlaufwerk.
+
+Nachdem nun Ihr Computer ein oder mehrere Laufwerke enth„lt, k”nnen Sie dieses Programm - das %N-Verwaltungsprogramm - verwenden, um Ihre vorhandenen komprimierten Laufwerke zu verwalten oder neue komprimierte Laufwerke zu erstellen.
+
+Sie k”nnen auch komprimierte Laufwerke verwalten oder erstellen, indem Sie an der MS-DOS-Eingabeaufforderung %N-Befehle eingeben. Weitere Informationen erhalten Sie, indem Sie an der Eingabeaufforderung HELP %S eingeben.
+
+Verwandte Themen
+----------------
+  "%N-Hilfe verwenden"~HL99~
+  "%N-Men verwenden"~HL73~
+  "Hauptbildschirm verwenden"~HL97~
+  "%N mit Disketten verwenden"~HL89~
+  "%N-Begriffe verstehen"~HL81~
+
+@@!HL74!@
+ Hilfe - %S.INI-Datei verwenden
+
+Die Datei %S.INI ist eine Textdatei mit den Dateiattributen "Schreibgeschtzt" und "Versteckt". %N speichert diese Datei im Stammverzeichnis des Startlaufwerks. In der Datei %S.INI werden Variablen definiert, auf die %N beim Starten des Computers zugreift. 
+
+Sie sollten diese Variablen jedoch nur dann „ndern, wenn Sie deren Funktion und damit die m”glichen Konsequenzen der nderungen genau kennen. Andernfalls kann unter Umst„nden der Computer nicht mehr gestartet werden, oder es k”nnen Daten verlorengehen.
+
+Um die Datei %S.INI zu „ndern, geben Sie an der Eingabeaufforderung den Befehl %S mit der gewnschten Option ein. (Um weitere Informationen zu erhalten, geben Sie an der Eingabeaufforderung HELP %S.INI ein). Erstellen Sie vor dem ndern der Datei %S.INI eine Sicherungskopie dieser Datei.
+
+@@!HL75!@
+ Hilfe - %N und Speicher verstehen
+
+%S.BIN bietet Zugriff auf komprimierte Laufwerke
+-------------------------------------------------------
+
+Beim Starten des Computers l„dt MS-DOS die Datei %S.BIN in den Speicher. %S.BIN ist der Teil von MS-DOS, der den Zugriff auf komprimierte Laufwerke erm”glicht. Diese Datei belegt ca. 
+50 KB Speicher. %S.BIN sowie andere Betriebssystemfunktionen werden vor dem Ausfhren der Befehle der Dateien CONFIG.SYS und AUTOEXEC.BAT geladen. 
+
+%S.SYS Bestimmt die Speicheradresse von %S.BIN
+----------------------------------------------------------
+
+Zuerst wird %S.BIN in den oberen Bereich des konventionellen Speichers geladen. Standardm„áig wird MS-DOS %S.BIN nach dem Ausfhren der Befehle der Datei CONFIG.SYS dann in den unteren Bereich des konventionellen Speichers verlagert.
+
+Mit dem Ger„tetreiber %S.SYS k”nnen Sie %S.BIN in einen bestimmten Speicherbereich verschieben. (Der Ger„tetreiber %S.SYS erm”glicht den Zugriff auf komprimierte Laufwerke nicht. Er bestimmt lediglich, in welchen Speicherbereich %S.BIN letztendlich untergebracht wird.)
+
+In zwei F„llen empfiehlt es sich, %S.BIN mit Hilfe von %S.SYS aus dem oberen Bereich des konventionellen Speichers zu verschieben: 
+
+* Um Konflikte mit Programmen zu vermeiden, die den Zugriff auf 
+  den oberen Teil des konventionellen Speichers erfordern.
+  Einige Programme, die aus der Datei CONFIG.SYS gestartet werden,
+  erfordern den Zugriff auf den konventionellen Speicher und 
+  arbeiten nicht ordnungsgem„á, wenn sich %S.BIN dort 
+  befindet. Um m”gliche Konflikte mit diesen Programmen zu 
+  vermeiden, fgt das %N-Installationsprogramm Setup der 
+  Datei CONFIG.SYS automatisch einen Befehl fr %S.SYS hinzu.
+
+* So geben Sie konventionellen Speicher frei: Wenn Sie mit einem 
+  entsprechend konfigurierten Computer mit Erweiterungsspeicher 
+  arbeiten, kann %S.SYS %S.BIN zum Teil in den hohen 
+  Speicherbereich (HMA) und zum Teil in den oberen Speicherbereich
+  laden.
+
+Um Informationen ber %S.SYS und %S.BIN zu erhalten, geben Sie HELP %S.SYS an der MS-DOS-Eingabeaufforderung ein.
+
+Reduzieren des Speicherbedarfs bei der Arbeit mit %N
+-------------------------------------------------------------
+Um Speicherplatz zu sparen, k”nnen Sie die folgenden Einstellungen „ndern:
+
+  * Wenn Sie nicht alle Wechsellaufwerke 
+    komprimieren, k”nnen Sie den Speicherbedarf 
+    reduzieren, indem Sie im Dialogfeld "Optionen" die Anzahl 
+    der Laufwerke fr auswechselbare Datentr„ger reduzieren. 
+    (W„hlen Sie aus dem Men "Hilfsmittel" den Befehl 
+    "Optionen"). %N reserviert pro Laufwerk fr 
+    auswechselbare Datentr„ger 96 Bytes Speicher.
+
+  * Wenn Sie nie mit komprimierten Disketten oder anderen
+    auswechselbaren Datentr„gern arbeiten, die komprimiert 
+    sind, k”nnen Sie ca. 4 KB Speicher freigeben, wenn Sie
+    verhindern, daá %N auswechselbare Datentr„ger
+    automatisch l„dt. W„hlen Sie dazu aus dem Men 
+    "Hilfsmittel" den Befehl "Optionen", und deaktivieren Sie
+    im gleichnamigen Dialogfeld das Kontrollk„stchen 
+    "Automatisches Laden aktivieren".
+
+* -------------------------------------------------------------------
+6. Menu-selected or menu-alted topic
+   Pressing F1 on most menu items displays help on that item.
+---------------------------------------------------------------------*/
+@@!HL73!19!20!21!16!17!22!@
+ Hilfe - %N-Mens verwenden
+
+%N listet Befehle in Mens auf, die sich im oberen Teil des %N-Hauptbildschirms befinden.
+
+So w„hlen Sie einen Menbefehl mit Hilfe der Tastatur aus:
+
+1. Zeigen Sie das gewnschte Men an, indem Sie die ALT-TASTE und 
+   den hervorgehobenen Buchstaben des Mennamens drcken.
+2. Drcken Sie die NACH-OBEN- bzw. NACH-UNTEN-TASTE, bis der
+   gewnschte Befehl markiert ist.
+3. Drcken Sie die EINGABETASTE, um den markierten Befehl
+   auszuw„hlen.
+
+So w„hlen Sie einen Menbefehl mit Hilfe der Maus aus:
+
+1. Klicken Sie auf den Namen des Mens, das den gewnschten Befehl
+   enth„lt.
+2. Klicken Sie auf den Namen des Befehls.
+
+Weitere Informationen ber %N-Menbefehle erhalten Sie, indem Sie eines der folgenden Themen ausw„hlen:
+
+  Men Laufwerk
+    "Befehl Info"~HL91~
+    "Befehl Gr”áe „ndern"~HL78~
+    "Befehl Verh„ltnis „ndern"~HL77~
+    "Befehl Laden"~HL95~
+    "Befehl Entladen"~HL98~
+    "Befehl Formatieren"~HL90~
+    "Befehl L”schen"~HL86~
+    "Befehl Beenden"~HL88~
+
+  Men Komprimieren
+    "Befehl Vorhandenes Laufwerk"~HL80~
+    "Befehl Neues Laufwerk erstellen"~HL83~
+
+  Men Hilfsmittel
+    "Befehl Defragmentieren"~HL85~
+    "Befehl Dekomprimieren"~HLAA~
+    "Befehl Chkdsk"~HL79~
+    "Befehl DoubleSpace konvertieren"~HLAB~
+    "Befehl Optionen"~HL96~
+
+Im Men "Hilfe" stehen die Befehle "Inhalt" und "Index" zur Auswahl, die die Bildschirme "Hilfe Inhalt" und "Hilfe Index" anzeigen. Das Men enth„lt auáerdem den Befehl "Info", der die Versionsnummer von %N anzeigt. Um weitere Informationen ber die Arbeit mit der Hilfe zu erhalten, w„hlen Sie die Schaltfl„che "Hilfe" unten auf dem Bildschirm.
+
+
+
+
+@@!HL81!@
+ Hilfe - %N-Konzepte und -Begriffe
+
+Mehr ber die %N-Konzepte und -Begriffe erfahren Sie, indem Sie eines der folgenden Themen ausw„hlen:
+
+  "Komprimierte Datentr„gerdatei (CVF)"~HL84~
+  "Gesch„tztes Komprimierungsverh„ltnis"~HL87~
+  "Host-Laufwerk"~HL92~
+  "Arbeiten mit komprimierten Datentr„gern"~HL76~
+  "Arbeiten mit Disketten"~HL89~
+
+@@!IDX!@
+ Hilfe - Inhalt
+
+Um ein Hilfe-Thema anzuzeigen, doppelklicken Sie auf den Themennamen, oder w„hlen Sie den Themennamen aus, und drcken Sie dann die EINGABETASTE. Weitere Informationen ber die Hilfe von %N erhalten Sie wenn Sie die F1-TASTE drcken.
+
+Verwendung des %N-Programms
+------------------------------------
+"šberblick ber %N"~HL72~
+"Arbeiten mit den %N-Mens"~HL73~
+"Arbeiten mit dem Hauptbildschirm von %N"~HL97~
+"Arbeiten mit der Hilfe von %N"~HL99~
+
+Arbeiten mit komprimierten Datentr„gern
+---------------------------------------
+"ndern des Komprimierungsverh„ltnis eines Laufwerks"~HL77~
+"ndern der Gr”áe eines Laufwerks"~HL78~
+"Erstellen eines neuen komprimierten Datentr„gers"~HL83~
+"Defragmentieren eines komprimierten Datentr„gers"~HL85~
+"L”schen eines komprimierten Datentr„gers"~HL86~
+"Anzeigen von Informationen ber komprimierte Datentr„ger"~HL91~
+"Formatieren von komprimierten Datentr„gern"~HL90~
+"Auflisten aller Laufwerke Ihres Computers"~HL93~
+"Laden eines komprimierten Datentr„gers"~HL95~
+"Entladen eines komprimierten Datentr„gers"~HL98~
+"Dekomprimieren eines komprimierten Datentr„gers"~HLAA~
+"Arbeiten mit komprimierten Datentr„gern"~HL76~
+   
+Hinzufgen von komprimierten Datentr„gern
+-----------------------------------------
+"Komprimieren von bereits bestehenden Datentr„gern"~HL80~
+"Erstellen eines neuen komprimierten Datentr„gers"~HL83~
+"Komprimieren einer Diskette"~HL89~
+
+
+
+
+Weitere Themen
+--------------
+"%N-Konzepte und -Begriffe"~HL81~
+"Arbeiten mit der Datei %S.INI"~HL74~
+"Verwenden von %N mit Disketten"~HL89~
+"ndern der Optionen von %N"~HL96~
+"Verstehen %N und Speicher"~HL75~
+
+Weitere Informationen ber %N finden Sie im Kapitel 'Vergr”áern Ihrer Festplattenkapazit„t' im MS-DOS-Benutzerhandbuch oder im Abschnitt %N der Datei INFO.TXT.
+
+@@!hlNOTYET!@
+ Noch nicht geschrieben
+
+Dieses Thema ist noch nicht geschrieben.
+
+@@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

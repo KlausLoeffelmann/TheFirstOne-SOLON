@@ -1,0 +1,56 @@
+[MemmakerData]
+State=     DONE 22073
+AvailConvMemoryBefore=588112
+AvailUpperMemoryBefore=0
+UsedUpperMemoryBefore=0
+WindowsUpperMemoryBefore=0
+EMSUpperMemoryBefore=0
+AltSysFiles=False
+WindowsXlat=False
+CustomMode=False
+AutoexecBatCheckSum=24350 
+ConfigSysCheckSum=27063 
+SystemIniCheckSum=0     
+WindowsLocation=
+
+[SizeData]
+
+Command=C:\DOS\SETVER.EXE
+Line=9
+FinalSize=528
+MaxSize=12240
+FinalUpperSizes=0
+MaxUpperSizes=0
+ProgramType=DEVICE
+
+Command=C:\VMADD\CDROM.SYS /D:IDECD001 /L:E
+Line=15
+FinalSize=4272
+MaxSize=4736
+FinalUpperSizes=0
+MaxUpperSizes=0
+ProgramType=DEVICE
+
+Command=c:\DOS\MSCDEX.EXE /D:IDECD001 /L:E /M:8
+Line=9
+FinalSize=32096
+MaxSize=32096
+FinalUpperSizes=0
+MaxUpperSizes=0
+ProgramType=PROGRAM
+
+Command=c:\vmadd\mouse.com
+Line=11
+FinalSize=8880
+MaxSize=9696
+FinalUpperSizes=0
+MaxUpperSizes=0
+ProgramType=PROGRAM
+
+Command=c:\keyb gr
+Line=12
+FinalSize=0
+MaxSize=57904
+FinalUpperSizes=0
+MaxUpperSizes=0
+ProgramType=BATCH

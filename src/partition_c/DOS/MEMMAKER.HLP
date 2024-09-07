@@ -1,0 +1,523 @@
+MemMaker-Hilfedatei
+%%
+1,0:1
+2,0:2
+3,0:3
+4,0:4
+5,0:5
+6,0:6
+7,0:7
+8,0:8
+9,0:9
+10,0:10
+11,0:11
+12,0:12
+13,0:13
+16,0:16
+17,0:17
+18,0:18
+19,0:19
+20,0:20
+21,0:21
+22,0:22
+23,0:23
+24,0:24
+25,0:25
+26,0:26
+27,0:27
+28,0:28
+29,0:29
+30,0:30
+31,0:31
+32,0:32
+33,0:33
+34,0:34
+35,0:35
+36,0:36
+37,0:37
+38,0:38
+39,0:39
+40,0:40
+41,0:41
+42,0:42
+43,0:43
+44,0:44
+45,0:45
+46,0:46
+47,0:47
+%%
+
+.1
+Hilfe -- MemMaker kann auf diesem Computer nicht ausgefhrt werden 
+
+MemMaker kann auf Ihrem Computer nicht ausgefhrt werden,
+da Ihr System nicht die folgenden minimalen Hardware- und
+Softwareanforderungen erfllt:
+
+  * MS-DOS 6,
+  * Prozessor vom Typ 80386 oder h”her,
+  * mindestens 384 KB Erweiterungsspeicher (XMS).
+
+.2
+Hilfe -- MemMaker wurde bereits ausgefhrt 
+
+MemMaker wurde bereits ausgefhrt, beendete jedoch die
+Speicheroptimierung Ihres Systems nicht.
+
+Um MemMaker erneut auszufhren, w„hlen Sie "Neu beginnen".
+Um MemMakers letzte nderungen rckg„ngig zu machen, w„hlen
+Sie "nderungen rckg„ngig".
+
+Folgende Ursachen sind u.a. m”glich, wenn MemMaker abbricht:
+
+  * Nachdem MemMaker Ihren Computer neu gestartet hat, haben Sie
+    ein Menprogramm oder eine andere Anwendung, die von Ihrer
+    Datei AUTOEXEC.BAT gestartet wird, nicht beendet. Wenn der
+    letzte Befehl in Ihrer Datei AUTOEXEC.BAT ein Menprogramm oder
+    eine Anwendung startet, mssen Sie dieses Programm oder diese
+    Anwendung sofort wieder beenden, damit MemMaker weitermachen
+    kann.
+
+  * Ihr Computer wurde wegen eines Spannungsausfalls oder eines anderen
+    Ereignisses (nicht jedoch wegen Systemproblemen) unfreiwillig neu
+    gestartet.
+  
+  * Sie haben w„hrend des Neustartens von MS-DOS die F5-TASTE  gedrckt.
+    Dadurch bergeht MS-DOS Ihre CONFIG.SYS- und AUTOEXEC.BAT-
+    Dateien.
+
+  * Ihr System wurde angehalten, bevor die Optimierung abgeschlossen
+    war, und Sie muáten Ihren Computer neu starten. Wenn MemMaker
+    nicht bis zu Ende ausgefhrt wurde, weil es Probleme bei der 
+    Optimierung gab, w„hlen Sie "nderungen rckg„ngig".
+
+.5
+Hilfe -- Willkommen in MemMaker 
+
+Unten am Bildschirm zeigt MemMaker die Tasten an, die Sie          
+drcken k”nnen.                                                   
+
+ EINGABETASTE Best„tigt die aktuelle(n) Option(en) und setzt     
+              MemMaker fort.
+ LEERTASTE    ndert die markierte Option.
+ F1           Zeigt Hilfe zum aktuellen Bildschirm an.
+ F3           Beendet MemMaker.
+ ESC          Kehrt zum vorausgehenden Bildschirm zurck.
+
+Wenn eine Taste fr den aktuellen Bildschirm ohne Funktion ist,
+fhrt MemMaker diese Taste nicht auf.
+
+.7
+Hilfe -- MemMaker und der Speichermanager QEMM 
+
+MemMaker hat auf Ihrem Computer den Speichermanager QEMM gefunden.
+MemMaker ben”tigt den MS-DOS-Speichermanager EMM386, der nicht
+zusammen mit QEMM ausgefhrt werden kann.
+
+Obwohl QEMM und EMM386 im wesentlichen dieselbe Funktion
+erfllen, hat jedes Programm seine eigene Befehlssyntax.
+Um Ihre Speicherkonfiguration zu optimieren, „ndert MemMaker
+einige Befehle in Ihren CONFIG.SYS- und AUTOEXEC.BAT-Dateien ab.
+Die so entstehenden Befehle arbeiten nur mit EMM386, nicht
+jedoch mit QEMM.
+
+Wenn Sie fortsetzen, installiert MemMaker automatisch EMM386
+und entfernt aus Ihren CONFIG.SYS- und AUTOEXEC.BAT-Dateien
+alle QEMM-Befehle. (MemMaker l”scht jedoch keine QEMM-Dateien
+von Ihrer Festplatte.)
+
+.8
+Hilfe -- MemMaker und der Speichermanager 386MAX 
+
+MemMaker hat auf Ihrem Computer den Speichermanager 386MAX
+gefunden. MemMaker ben”tigt den MS-DOS-Speichermanager EMM386,
+der nicht zusammen mit 386MAX ausgefhrt werden kann.
+
+Obwohl 386MAX und EMM386 im wesentlichen dieselbe Funktion
+erfllen, hat jedes Programm seine eigene Befehlssyntax.
+Um Ihre Speicherkonfiguration zu optimieren, „ndert MemMaker
+einige Befehle in Ihren CONFIG.SYS- und AUTOEXEC.BAT-Dateien
+ab. Die so entstehenden Befehle arbeiten nur mit EMM386,
+nicht jedoch mit 386MAX.
+
+Wenn Sie fortsetzen, installiert MemMaker automatisch EMM386
+und entfernt aus Ihren CONFIG.SYS- und AUTOEXEC.BAT-Dateien
+alle 386MAX-Befehle. (MemMaker l”scht jedoch keine 386MAX-Dateien  
+von Ihrer Festplatte.)
+
+.9
+Hilfe -- MemMaker und der Speichermanager NETROOM 
+
+MemMaker hat auf Ihrem Computer den Speichermanager NETROOM
+gefunden. MemMaker ben”tigt den MS-DOS-Speichermanager EMM386,
+der nicht zusammen mit NETROOM ausgefhrt werden kann.
+
+Obwohl NETROOM und EMM386 im wesentlichen dieselbe Funktion
+erfllen, hat jedes Programm seine eigene Befehlssyntax. Um
+Ihre Speicherkonfiguration zu optimieren, „ndert MemMaker
+einige Befehle in Ihren CONFIG.SYS- und AUTOEXEC.BAT-Dateien
+ab. Die so entstehenden Befehle arbeiten nur mit EMM386,
+nicht jedoch mit NETROOM.
+
+Wenn Sie fortsetzen, installiert MemMaker automatisch EMM386
+und entfernt aus Ihren CONFIG.SYS- und AUTOEXEC.BAT-Dateien
+alle NETROOM-Befehle. (MemMaker l”scht jedoch keine NETROOM-
+Dateien von Ihrer Festplatte.)
+        
+.10
+Hilfe -- MemMaker und andere Speichermanager 
+
+MemMaker ben”tigt den MS-DOS-Speichermanager EMM386. Auf
+Ihrem Computer ist jedoch ein anderer Speichermanager
+installiert, der nicht zusammen mit EMM386 ausgefhrt
+werden kann.
+
+Um Ihre Speicherkonfiguration zu optimieren, „ndert
+MemMaker einige Befehle in Ihren CONFIG.SYS- und
+AUTOEXEC.BAT-Dateien ab. Die so entstehenden Befehle
+funktionieren nur mit EMM386.
+
+Um MemMaker auszufhren, mssen Sie zuerst Ihre
+CONFIG.SYS- und AUTOEXEC.BAT-Dateien bearbeiten und
+alle Befehle entfernen, die Speichermanager anderer
+Hersteller starten.
+
+.11
+Hilfe -- Express- oder benutzerdefinierter Modus 
+
+Sie k”nnen MemMaker im Express- oder im benutzerdefinierten
+Modus ausfhren.
+
+Im Expressmodus optimiert MemMaker den Speicher Ihres
+Systems automatisch.
+
+Im benutzerdefinierten Modus erm”glicht Ihnen MemMaker die
+Steuerung der nderungen, die es vornimmt. In einigen F„llen 
+k”nnen Sie mehr konventionellen Speicher freimachen, indem Sie 
+den benutzerdefinierten Modus verwenden und einige Einstellungen   
+„ndern.
+
+So k”nnen Sie den benutzerdefinierten Modus verwenden, wenn
+
+  * Sie die von MemMaker vorgenommenen nderungen besser steuern
+    m”chten.
+  * Ihr Computer einen EGA- oder VGA-Bildschirm besitzt.
+  * Sie unter Windows auf MS-DOS basierende Anwendungen ausfhren.
+  * Sie bestimmte Ger„tetreiber oder Programme von der Optimierung
+    ausnehmen m”chten.
+  * Sie m”chten, daá MemMaker den hohen Speicher vollst„ndig 
+    durchsucht.
+
+
+.19
+Hilfe -- MemMaker beenden 
+
+Sie m”chten MemMaker beenden.
+
+  * Um MemMaker zu beenden und Ihre ursprnglichen CONFIG.SYS- und
+    AUTOEXEC.BAT-Dateien wiederherzustellen, w„hlen Sie "Beenden,
+    nderungen rckg„ngig".
+
+  * Um MemMaker zu beenden und die nderungen an Ihren Startdateien
+    beizubehalten, w„hlen Sie "Beenden, nderungen beibehalten".
+    (Sie k”nnen die nderungen sp„ter rckg„ngig machen, indem Sie
+    an der Eingabeaufforderung MEMMAKER /UNDO eingeben.)
+
+  * Um MemMaker fortzusetzen, w„hlen Sie "Fortsetzen".
+
+.23
+Hilfe -- Geben Sie an, ob Ihr System korrekt arbeitet 
+
+Einige oder alle Ger„tetreiber und speicherresidente Programme
+laufen nun im hohen Speicher statt im konventionellen Speicher
+ab. Die meisten Programme, jedoch nicht alle, k”nnen problemlos
+im hohen Speicher arbeiten.
+
+Wenn Sie beim Starten Ihres Systems Fehlermeldungen erhielten,
+antworten Sie mit "Nein". MemMaker entfernt dann die vorgenommenen
+nderungen. Weitere Informationen finden Sie in Abschnitt
+"Fehlerbehebung w„hrend des Ausfhrens von MemMaker" des Kapitels
+"Optimieren Ihres Speichers" im MS-DOS-6-Benutzerhandbuch.
+
+Wenn Ihr System korrekt zu arbeiten scheint, antworten Sie
+mit "Ja". (Falls sp„ter Probleme auftauchen, k”nnen Sie die
+nderungen rckg„ngig machen, indem Sie an der Eingabeaufforderung
+MEMMAKER /UNDO eingeben.)
+
+.24
+Hilfe -- Beenden oder nderungen rckg„ngig machen 
+
+Sie haben angegeben, daá Ihr System nicht korrekt zu arbeiten
+scheint. Sie k”nnen entweder die nderungen rckg„ngig machen,
+die MemMaker an Ihren Systemdateien vorgenommen hat, oder
+MemMaker beenden, ohne die nderungen rckg„ngig zu machen.
+
+Um Ihr System intensiver zu testen, k”nnen Sie MemMaker beenden,
+ohne die nderungen rckg„ngig zu machen. Wenn Sie beispielsweise
+vermuten, daá Ihr Maustreiber nicht korrekt arbeitet, k”nnen Sie
+ein Programm ausfhren, das die Maus verwendet.
+
+Falls sp„ter Probleme auftauchen, k”nnen Sie die nderungen
+rckg„ngig machen, indem Sie an der Eingabeaufforderung
+MEMMAKER /UNDO eingeben.)
+
+.26
+Hilfe -- ndern Ihrer Datei SYSTEM.INI 
+
+Damit Windows korrekt im erweiterten 386-Modus ablaufen kann,
+mssen an Ihrer Windows-Datei SYSTEM.INI einige nderungen
+vorgenommen werden.
+
+Um MemMaker die erforderlichen nderungen an Ihrer Datei
+SYSTEM.INI vornehmen zu lassen, antworten Sie mit "Ja". MemMaker
+speichert Ihre aktuelle Datei SYSTEM.INI unter SYSTEM.UMB.
+
+Falls Sie MemMaker Ihre Datei SYSTEM.INI nicht „ndern lassen wollen,
+antworten Sie mit "Nein". (Um Windows im erweiterten
+386-Modus auszufhren, mssen Sie die nderungen
+selbst vornehmen.)
+
+.29
+Hilfe -- Weitere Optionen 
+
+In dem Bildschirm 'Weitere Optionen' k”nnen Sie einige
+der von MemMaker benutzten Einstellungen „ndern. Um eine
+Option zu „ndern, verwenden Sie die NACH-OBEN- bzw.
+NACH-UNTEN-TASTE, um die Antwort "Ja" oder "Nein" fr diese
+Option zu markieren. Drcken Sie dann die LEERTASTE,
+um die Antwort zu „ndern. Die folgende Liste beschreibt
+kurz jede Option.
+
+Angeben der in der Optimierung bercksichtigten Treiber/TSR?       
+------------------------------------------------------------
+Standardm„áig bezieht MemMaker alle Ger„tetreiber und
+speicherresidenten Programme (auch TSRs genannt) in den
+Optimierungsvorgang ein. In einigen F„llen verursacht
+ein Programm beim Ablauf von MemMaker Probleme. Sie
+k”nnen Probleme mit einem bestimmten Programm vermeiden,
+indem Sie es vom Optimierungsvorgang ausschlieáen.
+
+Antworten Sie mit
+Ja    wenn Ihr Computer nicht korrekt startete, als MemMaker den
+      Speicherbedarf eines bestimmten Programms ermittelte. 
+      Nachdem Sie die zus„tzlichen Optionen ausgew„hlt haben, 
+      bittet MemMaker um Best„tigung jedes Programms in Ihren 
+      CONFIG.SYS- und AUTOEXEC.BAT-Dateien.
+
+Nein  wenn beim Ablauf von MemMaker keine Systemprobleme 
+      aufgetreten sind.
+
+Um MemMaker anzuweisen, ein bestimmtes Programm niemals in
+die Optimierung einzubeziehen, k”nnen Sie dieses Programm
+in Ihre Datei MEMMAKER.INF aufnehmen. Weitere Informationen
+finden Sie im Kommentar der Datei MEMMAKER.INF, die sich im
+MS-DOS Verzeichnis befindet.
+
+Hohen Speicher verst„rkt durchsuchen?
+-------------------------------------
+Standardm„áig weist MemMaker EMM386 an, nach freien
+hohen Speicherbl”cken (UMBs) an den Adressen F000 bis F7FF
+des hohen Speichers zu suchen. 
+
+Antworten Sie mit
+Ja    wenn beim Ablauf von MemMaker keine Systemprobleme auf-
+      getreten sind. Dadurch kann mehr hoher Speicher zum Aus-
+      fhren von Programmen frei werden. Wenn Sie mit Ja 
+      antworten, wird MemMaker EMM386 anweisen im hohen Adress-
+      bereich F000 bis F7FF nach UMBs zu suchen. Bei einigen 
+      Computern k”nnen UMBs in diesem Adressbereich zu Problemen 
+      fhren. 
+
+Nein  wenn Ihr Computer bei Verwendung von MemMaker nicht
+      korrekt startete. Wenn Sie mit "Nein" antworten, weist
+      MemMaker EMM386 an, UMBs an den Adressen C600 bis EFFF
+      des hohen Speichers zu suchen.
+
+Optimierung des hohen Speicherbereichs fr Windows?
+---------------------------------------------------
+Standardm„áig optimiert MemMaker Ihr System so, daá fr
+MS-DOS-Programme m”glichst viel konventioneller Speicher 
+zur Verfgung steht, wenn Windows nicht ausgefhrt wird. 
+Wenn Sie auf MS-DOS basierende Anwendungen unter Windows 
+ausfhren, sollten Sie Ihr System so optimieren, daá fr
+diese Anwendugen so viel konventionellen Speicher wie m”glich 
+zur Verfgung steht. Dabei kann es allerdings vorkommen, daá 
+weniger konventioneller Speicher zur Verfgung steht, wenn 
+Windows nicht ausgefhrt wird.
+
+Antworten Sie mit
+Ja    wenn Sie unter Windows auf MS-DOS basierende Anwendungen 
+      ausfhren.
+
+Nein  wenn Sie Windows nicht ausfhren oder unter Windows nur
+      Windows-Programme ausfhren. Dadurch steht mehr konven-
+      tioneller Speicher zur Verfgung, wenn Windows nicht 
+      abl„uft.
+
+Verwendung des Monochrombereichs (B000-BFFF) fr Anwendungen?
+-------------------------------------------------------------
+Standardm„áig werden 32 KB des hohen Speichers (Adressen B000
+bis BFFF) zur Verwendung mit einem Monochrom-Bildschirmadapter
+reserviert. Dieser hohe Speicherbereich wird auf den meisten
+Computern mit EGA- oder VGA-Bildschirm nicht verwendet.
+
+Antworten Sie mit
+Ja    wenn Sie einen EGA- oder VGA-Bildschirm (nicht jedoch 
+      SuperVGA) verwenden und Ihr Bildschirmadapter Speicher 
+      in diesem Bereich nicht verwendet. MemMaker kann dann 
+      diesen Bereich des hohen Speichers zum Ausfhren von 
+      Ger„tetreibern oder speicherresidenten Programmen 
+      verwenden.
+
+Nein  wenn Sie einen Monochrom- oder (hochaufl”senden) SuperVGA-
+      Bildschirm benutzen.
+
+Vorhandene EMM386-Speicheraus- und -einschlsse verwenden?
+----------------------------------------------------------
+Standardm„áig beh„lt MemMaker alle Speicherausschluá- und
+-einschluáoptionen, die in der EMM386-Befehlszeile stehen,
+bei. Sie k”nnen jedoch in einigen F„llen mehr Speicher
+freimachen, indem Sie MemMaker bestimmen lassen, welche
+Speicheradressen gegebenenfalls aus- oder eingeschlossen werden.
+
+Antworten Sie mit
+Nein  damit MemMaker die Optionen I= und X= aus der EMM386-
+      Befehlszeile entfernt. MemMaker fgt neue
+      Optionen hinzu, wenn n”tig. Dies kann zu einer leistungs-
+      f„higeren Speicherkonfiguration fhren.
+
+Ja    um Ihre aktuellen EMM386-Optionen beizubehalten. Wenn Sie 
+      diese Frage vorher mit "Nein" beantwortet haben und Ihr 
+      Computer nicht richtig startet, k”nnen Sie es nun mit "Ja" 
+      versuchen.
+
+Verlegung des erweiterten BIOS-Datenbereich in hohen Speicher?
+--------------------------------------------------------------
+Der erweiterte BIOS-Datenbereich (Extended BIOS Data Area, EBDA)
+befindet sich normalerweise im konventionellen Speicher.
+Standardm„áig verschiebt MemMaker den EBDA in den hohen
+Speicher, wodurch Anwendungen ein weiteres Kilobyte
+konventioneller Speicher zur Verfgung steht.
+
+Antworten Sie mit
+Nein  wenn Sie MemMaker bereits ausgefhrt haben und Systemprobleme
+      auftraten, die eventuell vom Verschieben des EBDA stammen.
+
+Ja    wenn beim Ablauf von MemMaker keine Systemprobleme auf-
+      getreten sind. Dadurch wird mehr konventioneller Speicher    
+      fr Ihre Anwendungen frei.
+
+.37
+Hilfe -- MemMaker-nderungen rckg„ngig machen 
+
+Wenn Sie an der Eingabeaufforderung MEMMAKER /UNDO eingeben,
+weisen Sie MemMaker an, die an Ihren CONFIG.SYS- und
+AUTOEXEC.BAT-Dateien sowie, falls notwendig, an Ihrer
+Windows-Datei SYSTEM.INI vorgenommenen nderungen
+rckg„ngig zu machen.
+
+MemMaker stellt Ihre Systemdateien wieder her, indem sie
+durch die vorher gemachten Sicherungskopien ersetzt werden.
+
+Um Ihre Originaldateien wiederherzustellen, drcken Sie die
+LEERTASTE, bis die Option "Wiederherstellen" erscheint.
+Drcken Sie anschlieáend die EINGABETASTE.
+
+Um MemMaker zu beenden, ohne Ihre Originaldateien
+wiederherzustellen, drcken Sie die LEERTASTE, bis
+die Option "Beenden" erscheint. Drcken Sie
+anschlieáend die EINGABETASTE.
+
+
+Hilfe -- Treiber/Programm in Optimierung einbeziehen 
+
+Auf dem Bildschirm 'Weitere Optionen' haben Sie angegeben,
+daá Sie bestimmen m”chten, welche Treiber und speicherresidente
+Programme (TSR) in den Optimierungsvorgang einzubeziehen sind.
+
+MemMaker zeigt alle CONFIG.SYS- oder AUTOEXEC.BAT-Befehle an,
+die einen Ger„tetreiber oder ein Programm starten.
+
+ * Um den Treiber oder das Programm in den Optimierungsvorgang
+   einzubeziehen, antworten Sie mit "Ja".
+ 
+ * Um den Treiber oder das Programm vom Optimierungsvorgang
+   auszuschlieáen, antworten Sie mit "Nein".
+   
+Drcken Sie die LEERTASTE, um Ihre Antwort von "Ja" in "Nein"
+oder umgekehrt zu „ndern. Drcken Sie die EINGABETASTE, um
+die markierte Antwort zu bernehmen und fortzusetzen.
+
+.44
+Hilfe -- MemMaker hat auf Ihrem Computer Windows gefunden 
+
+Wenn Sie Microsoft Windows, Version 3.0, verwenden, muá MemMaker
+Ihre Datei SYSTEM.INI bearbeiten. Wenn Sie Microsoft Windows,
+Version 3.1, verwenden, muá MemMaker die Einstellungen in Ihrer
+Datei SYSTEM.INI prfen; nderungen erfolgen jedoch nicht.
+
+MemMaker durchsucht Ihre Festplatte nach Windows und zeigt
+die Position der ersten Windows-Kopie an, die es findet.
+Enth„lt das angegebene Verzeichnis die gerade benutzte
+Windows-Kopie, drcken Sie die EINGABETASTE, um fortzusetzen.
+
+Wenn Sie eine Kopie von Windows in einem anderen Verzeichnis
+verwenden, geben Sie den vollen Verzeichnispfad ein. Wenn
+sich beispielsweise Ihre aktuelle Windows-Kopie auf Laufwerk D:
+im Verzeichnis \WIN befindet, geben Sie ein:
+  
+  D:\WIN
+
+.46
+Hilfe -- Programme, die Expansionsspeicher erfordern
+
+Auf diesem Bildschirm fragt MemMaker Sie, ob Sie Programme 
+verwenden, die Expansionsspeicher erfordern.
+
+Falls Sie Programme verwenden, die Expansionsspeicher erfordern, 
+antworten Sie mit "Ja".
+Die Antwort mit "Ja" macht Expansionsspeicher verfgbar, gibt aber 
+nicht besonders viel konventionellen Speicher frei. Wenn Sie mit 
+"Ja" antworten, legt MemMaker 64 KB hohen Speicherbereich zur 
+Verwendung als EMS-Seitenrahmen beiseite. (Ein EMS-Seitenrahmen ist 
+erforderlich, um Expansionsspeicher zu verwenden.)
+
+Wenn keines Ihrer Programme Expansionsspeicher erfordert, antworten 
+Sie mit "Nein". Die Antwort mit "Nein" gibt mehr konventionellen 
+Speicher frei, da MemMaker keinen hohen Speicherbereich fr einen 
+EMS-Seitenrahmen beiseite legt. Wenn Sie mit "Nein" antworten, wird 
+Expansionsspeicher nicht verfgbar, selbst wenn Ihr Computer eine 
+Expansionsspeicherkarte enth„lt.
+
+Wenn Sie nicht sicher sind, ob Ihre Programme Expansionsspeicher 
+erfordern, antworten Sie "Nein", um soviel Speicherplatz wie 
+m”glich freizumachen. Wenn MemMaker sein Verfahren vollendet hat, 
+versuchen Sie alle die Programme auszufhren, die m”glicherweise 
+Expansionsspeicher ben”tigen. Wenn ein Programm eine Meldung 
+anzeigt, daá der Expansionsspeicher oder der EMS-Seitenrahmen 
+nicht verfgbar ist, fhren Sie MemMaker erneut aus, und 
+beantworten Sie diese Frage mit "Ja".
+
+.47
+Hilfe -- Ihre Konfiguration ist bereits optimiert
+
+MemMaker konnte keinen weiteren Speicherplatz zur Verfgung stellen, 
+weil Ihre Speicherkonfiguration bereits optimiert ist. Sie k”nnen
+entweder zu der vorherigen Konfiguartion zurckkehren oder die neue
+beibehalten. (Die neue Konfiguration k”nnte vielleicht weniger 
+Speicherplatz haben als die vorherige Konfiguration.)
+
+Um Ihre vorherige Konfiguaration wiederherzustellen, drcken Sie die
+EINGABETASTE.
+
+Um diese Konfiguration beizubehalten, drcken Sie die F3-TASTE. Sie 
+sollten diese Konfiguration beibehalten, wenn Sie einen anderen 
+Speichermanager verwendet haben, und jetzt EMM386 verwenden m”chten. 
+
+Wenn Sie sich nicht sicher sind, drcken Sie die F3-TASTE, um die 
+Konfiguration beizubehalten. Falls Sie sich sp„ter entscheiden die 
+vorherige Version wiederherzustellen, geben Sie folgendes an der 
+Eingabeauffoderung ein:  MEMMAKER /UNDO 
+
+.End
+

@@ -1,0 +1,216 @@
+
+OS2.TXT
+
+Informationen ber das Update auf MS-DOS 6
+==========================================
+
+Wenn auf Ihrer Festplatte OS/2 installiert ist und das MS-DOS-6-Benutzer-
+handbuch auf die Datei OS2.TXT verweist, fhren Sie eines der folgenden 
+Verfahren aus. Das fr Sie zutreffende Verfahren h„ngt von der Konfiguration 
+Ihres Computers ab.
+
+Weder OS/2 Dual Boot noch OS/2 Boot Manager vorhanden
+-----------------------------------------------------
+Wenn Sie OS/2 von Ihrem Computer entfernen und die Daten vorher auf Ihrer 
+Festplatte sichern m”chten, fhren Sie folgende Schritte aus:
+
+So entfernen Sie OS/2 und sichern die Daten auf Ihrer Festplatte
+
+1. Starten Sie Ihren Computer mit Hilfe von OS/2 neu.
+
+2. Sichern Sie die Datendateien, die Sie aufbewahren m”chten, mit Hilfe 
+   des Befehls COPY auf Disketten.
+
+   VORSICHT: Entfernen Sie keine OS/2-Systemdateien von Ihrer Festplatte.
+
+3. Legen Sie die Setup-Diskette 1 erneut in Laufwerk A: (dem 
+   Startlaufwerk) ein.
+
+4. Starten Sie Ihren Computer neu, indem Sie die Tastenkombination
+   STRG+ALT+ENTF drcken.
+
+5. Wenn Setup meldet, daá eine Nicht-MS-DOS-Partition oder Nicht-
+   MS-DOS-Dateien vorhanden sind, haben Sie die M”glichkeit, die Partition 
+   oder die Dateien zu entfernen.
+
+6. Nachdem Sie MS-DOS vollst„ndig eingerichtet haben, kopieren Sie die in 
+   Schritt 2 gesicherten Datendateien von den Disketten wieder auf Ihre 
+   Festplatte zurck.
+
+OS/2 Dual Boot mit DOS oder OS/2 Boot Manager mit DOS vorhanden
+---------------------------------------------------------------
+
+Wenn Setup OS/2 auffindet, wird zeigt die Meldung "Nicht-MS-DOS-Partition 
+gefunden" oder "OS/2-Dateien gefunden" angezeigt. Wenn Setup den Bildschirm 
+"Nicht-MS-DOS-Partition gefunden" anzeigt, fhren Sie das Verfahren 1 aus. 
+Wenn Setup den Bildschirm "OS/2-Dateien gefunden" anzeigt, fhren Sie das 
+Verfahren 2 aus.
+
+Verfahren 1: So entfernen Sie OS/2 und sichern die Daten auf Ihrer Festplatte
+
+1. Wenn Setup den Bildschirm "Nicht-MS-DOS-Partition gefunden" anzeigt, 
+   w„hlen Sie die Option "Setup fortsetzen" aus.
+
+2. Nachdem Sie MS-DOS 6 eingerichtet haben, berprfen Sie, ob Sie auf Ihre 
+   Festplatte zugreifen k”nnen.
+
+3. Sichern Sie die Datendateien, die Sie aufbewahren m”chten, auf Disketten 
+   oder einem Netzlaufwerk.
+
+4. Lesen Sie in Kapitel "Diagnose und L”sen von Problemen" unter "Verwenden 
+   von Fdisk zur Konfiguration Ihrer Festplatte" die folgenden Abschnitte 
+   durch. Fhren Sie alle Verfahren aus, die darin beschrieben sind:
+
+   o "Erstellen einer Startdiskette"
+
+   o "Verwenden von Fdisk"
+
+   o "L”schen von Nicht-MS-DOS-Partitionen"
+
+   o "L”schen logischer Laufwerke"
+
+   o "L”schen einer erweiterten MS-DOS-Partition"
+
+   o "Erstellen einer prim„ren MS-DOS-Partition"
+
+   o "Formatieren Ihrer Festplatte"
+
+5. Starten Sie Setup erneut. Legen Sie dazu die Setup-Diskette 1 in Laufwerk 
+   A: oder B: ein, und geben Sie folgendes an der Eingabeaufforderung ein:
+
+   A:SETUP
+
+   oder
+
+   B:SETUP
+
+6. Nach dem Konfigurieren Ihrer Festplatte kopieren Sie die in Schritt 3 
+   gesicherten Datendateien wieder darhin zurck.
+
+Verfahren 2: So entfernen Sie OS/2 und sichern die Daten auf Ihrer Festplatte
+
+ANMERKUNG: Wenn Sie eine andere OS/2-Version als 2.0 verwenden, weichen die 
+Namen der OS/2-Dateien und -Verzeichnisse auf Ihrer Festplatte eventuell 
+von den in diesem Verfahren genannten ab.
+
+VORSICHT: Entfernen Sie keine MS-DOS-Programmdateien von Ihrer Festplatte.
+    
+1.  Sichern Sie die Datendateien, die Sie aufbewahren m”chten, auf Disketten 
+    oder einem Netzlaufwerk.
+
+2.  Wenn Ihre Setup-Disketten mit Laufwerk A: kompatibel sind, legen Sie die 
+    Setup-Diskette 1 in Laufwerk A: ein, und starten Sie Ihren Computer neu, 
+    indem Sie die Tastenkombination STRG+ALT+ENTF drcken. Wenn Setup den 
+    ersten Bildschirm anzeigt, drcken Sie zweimal die F3-TASTE, um Setup 
+    zu beenden.
+
+    Wenn Ihre Setup-Disketten mit Laufwerk A: nicht kompatibel sind, legen 
+    Sie die Setup-Diskette 1 in Laufwerk B: ein, und geben Sie folgendes 
+    an der Eingabeaufforderung ein:
+   
+    B:SETUP /F
+
+    Wenn Sie dazu aufgefordert werden, w„hlen Sie die Option, MS-DOS auf der 
+    Diskette in Laufwerk A: zu installieren. Nachdem Setup abgeschlossen ist, 
+    starten Sie Ihren Computer neu, indem Sie die Startdiskette in Laufwerk 
+    A: einlegen und die Tastenkombination STRG+ALT+ENTF drcken.
+ 
+3.  Machen Sie Laufwerk C: zum aktuellen Laufwerk, indem Sie an der
+    Eingabeaufforderung eingeben:
+
+    C:
+
+4.  Machen Sie nun nacheinander jedes der OS/2-Verzeichnisse und
+    -Unterverzeichnisse mit Hilfe des Befehls CD zum aktuellen
+    Unter-/Verzeichnis, und l”schen Sie mit Hilfe des Befehls DEL
+    alle darin befindlichen Dateien. Um beispielsweise das
+    Unterverzeichnis SYSTEM im Verzeichnis OS2 zum aktuellen
+    Verzeichnis zu machen und alle darin befindlichen Dateien zu
+    l”schen, geben Sie an der Eingabeaufforderung folgendes ein:
+   
+    CD \OS2\SYSTEM
+    DEL *.*
+
+5.  Nachdem Sie alle Dateien in diesen Unterverzeichnissen gel”scht haben, 
+    l”schen Sie die Unterverzeichnisse mit Hilfe des Befehls RD. Um 
+    beispielsweise das Unterverzeichnis SYSTEM im Verzeichnis OS2 zu 
+    l”schen, geben Sie folgendes ein:
+
+    RD C:\OS2\SYSTEM
+
+6.  Nachdem Sie alle Unterverzeichnisse in den Verzeichnissen OS2, PSFONTS, 
+    SPOOL, NOWHERE und OS!2_2.0_D gel”scht haben, l”schen Sie alle Dateien 
+    in diesen Verzeichnissen mit Hilfe des Befehls DEL.
+
+7.  L”schen Sie die Verzeichnisse OS2, PSFONTS, SPOOL, NOWHERE und
+    OS!2_2.0_D mit Hilfe des Befehls RD.
+
+8.  Verschieben Sie alle OS/2-Dateien mit Ausnahme der unten
+    genannten, die sich in Ihrem Stammverzeichnis befinden, auf
+    einen anderen Datentr„ger oder in ein anderes Verzeichnis:
+
+    EA DATA.SF
+    OS2lDR.MSG
+    OS2lDR
+    OS2KRNl
+    OS2BOOT
+    WP DATA. SF
+
+9.  Sie kehren zum Stammverzeichnis zurck, wenn Sie an der 
+    Eingabeaufforderung folgendes eingeben: 
+   
+    CD\ 
+   
+10. Sie mssen nun die Attribute der fnf in Schritt 8 aufge-
+    listeten Dateien „ndern. Geben Sie dazu an der Eingabe-
+    aufforderung folgendes ein:
+
+    A:\ATTRIB -H -S -R C:\E*.*
+    A:\ATTRIB -H -S -R C:\O*.*
+    A:\ATTRIB -H -S -R C:\W*.*
+
+11. Um die Dateien, deren Attribute Sie ge„ndert haben, zu l”schen, geben 
+    Sie an der Eingabeaufforderung folgendes ein:
+
+    DEL E*.*
+    DEL O*.*
+    DEL W*.*
+
+12. Speichern Sie die in Schritt 8 verschobenen Dateien wieder in das 
+    Stammverzeichnis zurck.
+
+13. Entfernen Sie alle Disketten aus den Laufwerken, und starten Sie Ihren 
+    Computer neu, indem Sie die Tastenkombination STRG+ALT+ENTF drcken.
+
+14. Legen Sie die Setup-Diskette 1 in Laufwerk A: oder Laufwerk B: ein.
+
+15. Fhren Sie Setup erneut aus, indem Sie an der Eingabeaufforderung 
+    folgendes eingeben:
+
+    A:SETUP
+
+    oder
+
+    B:SETUP
+
+OS/2 Boot Manager ohne DOS vorhanden
+------------------------------------
+
+So entfernen Sie OS/2 und sichern die Daten auf Ihrer Festplatte
+
+1. Sichern Sie die Datendateien, die Sie aufbewahren m”chten, mit Hilfe 
+   des Befehls COPY auf Disketten oder auf einem Netzlaufwerk.
+   
+2. Legen Sie erneut die Setup-Diskette 1 in Laufwerk A: (dem
+   Startlaufwerk) ein.
+
+3. Starten Sie Ihren Computer neu, indem Sie die Tastenkombination
+   STRG+ALT+ENTF drcken.
+
+4. Wenn Setup meldet, daá OS/2- oder Nicht-MS-DOS-Dateien vorhanden sind, 
+   haben Sie die M”glichkeit, OS/2 oder die Dateien zu entfernen.
+
+5. Nachdem Sie MS-DOS vollst„ndig eingerichtet haben, kopieren Sie die in 
+   Schritt 2 auf Disketten gesicherten Datendateien wieder auf Ihre 
+   Festplatte zurck.
+

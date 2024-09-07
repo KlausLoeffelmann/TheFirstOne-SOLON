@@ -1,0 +1,12 @@
+Installation T-Online 5.0 (Installer-Version 5.01.0006), 6.10.2004, 20:38:55 Uhr
+Installationsmodus: Erstinstallation
+Setuptyp: Automatisch
+Zielverzeichnis: C:\Programme\T-Online\T-Online_Software_5
+T-Online Software ausgewählt.
+T-Online eMail ausgewählt.
+T-Online Banking ausgewählt.
+MS Internet Explorer 6.0 ausgewählt.
+T-Online Browser ausgewählt
+T-Online Messenger ausgewählt
+T-Online 5.0 Installation beendet.
+Einstellungssassistent wurde gestartet.

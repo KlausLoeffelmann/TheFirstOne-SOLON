@@ -1,0 +1,13 @@
+@ECHO OFF
+PROMPT $p$g
+PATH C:\DOS
+SET TEMP=C:\DOS
+@REM **********************************************
+@REM ****  DOS Virtual Machine Additions      *****
+@REM **********************************************
+SET DOSVMADD13=INSTALLED
+rem c:\vmadd\fshare.exe
+c:\DOS\MSCDEX.EXE /D:IDECD001 /L:E /M:8
+rem c:\vmadd\idle.com
+c:\vmadd\mouse.com
+c:\keyb gr

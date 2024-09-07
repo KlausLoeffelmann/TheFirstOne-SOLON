@@ -1,0 +1,308 @@
+               (C) Copyright Microsoft Corporation, 1987, 1988
+               Microsoft (R) QuickC (TM) Compiler, Version 1.0
+                                   QLIB.TXT
+
+
+Dieses Dokument beschreibt das neue QLIB-Hilfsprogramm, das aus vorhandenen
+C-Quelldateien und Objektdateien oder Standard-Bibliotheksroutinen Quick-
+Bibliotheken aufbaut. Die von diesem Hilfsprogramm gebotene Methode zur
+Bildung von Quick-Bibliotheken ist einfacher als die Methoden, die in den
+Abschnitten 10.1.1 und 10.1.3 des Programmiererhandbuchs fÅr den Microsoft
+QuickC-Compiler beschrieben werden.
+
+QLIB-Installation
+-----------------
+Die zum Ablauf von QLIB erforderlichen Dateien befinden sich auf Diskette 3
+des Paketes. Wenn QLIB von jedem beliebigen Verzeichnis aus ausgefÅhrt
+werden soll, installieren Sie die QLIB-Dateien folgenderma·en:
+
+     1. Die Dateien QLIB.EXE und QLIB.INI in ein oder mehrere beliebige in
+        der PATH-Umgebungsvariablen angegebene Verzeichnisse, kopieren.
+
+     2. Die Datei QUICKLIB.OBJ in das in der LIB-Umgebungsvariablen angegebene
+        Verzeichnis kopieren.
+
+Aufbau von Quick-Bibliotheken aus vorhandenen Dateien
+-----------------------------------------------------
+Um eine Quick-Bibliothek aufzubauen, die vorhandene C-Quelldateien oder
+Objektdateien enthÑlt, brauchen die entsprechenden Dateien nur einfach in der
+QLIB-Befehlszeile angegeben zu werden. Es ist zu beachten, da· Objektdateien
+mit dem Medium-Speichermodell kompiliert worden sein mÅssen (entweder in der
+QuickC-Umgebung erzeugt oder mit der /AM-Option in der QCL-Befehlszeile kompi-
+liert).
+
+     Beispiel:
+
+     QLIB HELPER1.C HELPER2.OBJ
+
+     Das Beispiel kompiliert die Datei HELPER1.C und linkt sie, falls
+     keine Fehler auftreten, mit der Datei HELPER2.OBJ und erzeugt damit eine
+     Quick-Bibliothek namens HELPER1.QLB.
+
+In die QLIB-Befehlszeile kînnen auch Jokerzeichen eingegeben werden.
+
+     Beispiel:
+
+     QLIB *.C
+
+     Das Beispiel kompiliert und linkt sÑmtliche C-Quelldateien im aktuellen
+     Verzeichnis um eine Quick-Bibliothek zu erzeugen.
+
+Suche nach Standard-Bibliotheksroutinen: Die /S-Option
+------------------------------------------------------
+QLIB kann jede Textdatei, einschlie·lich einer C-Quelldatei, nach den Namen
+von Standard-Bibliotheksroutinen durchsuchen und mit diesen Funktionen eine
+Quick-Bibliothek aufbauen. Dazu brauchen in die QLIB-Befehlszeile einfach nur
+die Option /S und danach die zu durchsuchenden Dateien eingegeben zu werden.
+QLIB sucht alle Funktionsnamen, die nicht in C-Kommentarblîcken enthalten
+sind, und stellt sie in einer Quick-Bibliothek zusammen. WÑhrend QLIB jede
+Datei durchsucht, listet das Programm auf dem Standard-AusgabegerÑt all die-
+jenigen Routinen auf, die in der Kernbibliothek nicht enthalten sind.
+
+     Beispiel:
+
+     QLIB /S MOD1.C MOD2.C MOD3.C
+
+     Bei der Eingabe obiger Befehlszeile durchsucht QLIB die C-Quelldateien
+     MOD1.C, MOD2.C und MOD3.C nach Standard-Bibliotheksfunktionen und legt
+     eine Quick-Bibliothek namens MOD1.QLB an, die diese Funktionen enthÑlt.
+
+QLIB kann auch andere Dateien als C-Quelldateien durchsuchen und Funktions-
+namen selbst dann finden, wenn die Namen selbst nicht als Funktionsaufruf
+erscheinen.
+
+     Beispiel:
+
+     Angenommen, Sie haben eine Datei namens ADDBIBL.TXT mit dem Inhalt
+
+          asin(); cabs [_dos_write] _arc()  /* ceil(); floor(); */
+
+     und Sie geben folgende Befehlszeile ein:
+
+          QLIB /S ADDBIBL.TXT
+
+     QLIB baut daraufhin eine Quick-Bibliothek mit den Funktionen "asin",
+     "cabs", "_dos_write" und "_arc" auf. Die Funktionen "ceil()" und "floor()"
+     werden nicht aufgenommen, da sie sich in einem Kommentarblock befinden.
+
+Es ist mîglich, Quick-Bibliotheken aufzubauen, die sowohl benutzereigene
+Module als auch Standard-Bibliotheksroutinen enthalten, und zwar Åber die
+gleiche QLIB-Befehlszeile.
+
+     Beispiel:
+
+     QLIB HELPER1.C MOD?.OBJ HELPER2.C /S *.C
+
+     Die obige Befehlszeile weist QLIB an, HELPER1.C und HELPER2.C zu
+     kompilieren und die sich ergebenden Objektdateien, die von MOD?.OBJ
+     angegebenen Objektdateien und alle in C-Quelldateien des aktuellen
+     Verzeichnisses gefundenen Standard-Bibliotheksroutinen miteinander zu
+     kombinieren. Die so aufgebaute Quick-Bibliothek erhÑlt den Namen
+     HELPER1.QLB.
+
+Umbenennung der Quick-Bibliothek: Die /N-Option
+-------------------------------------------------
+Normalerweise erhÑlt die mit Hilfe von QLIB aufgebaute Quick-Bibliothek den
+gleichen Grundnamen wie die erste Datei in der Befehlszeile, dem dann die
+Erweiterung .QLB angehÑngt wird. Zur Umbenennung der Quick-Bibliothek wird die
+Option /N in die Befehlszeile eingegeben, gefolgt vom neuen Dateinamen. Soll
+die Standarderweiterung .QLB beibehalten werden, wird einfach nur der neue
+Grundname nach der Option /N eingegeben.
+
+     Beispiel:
+
+     QLIB /N MODULE MOD1.OBJ MOD2.OBJ MOD3.OBJ
+
+     Die obige Befehlszeile vereinigt die gegebenen Objektdateien in
+     einer Quick-Bibliothek mit Namen MODULE.QLB.
+
+Benutzung weiterer Bibliotheken: Die /L-Option
+----------------------------------------------
+Wenn QLIB den Namen einer Standard-Bibliotheksfunktion in einer Datei findet,
+ÅbertrÑgt das Programm diese Funktion aus der C-Standardbibliothek MLIBCE.LIB
+in die Quick-Bibliothek. Um Funktionen aus anderen Bibliotheken als MLIBCE.LIB
+zu Åbertragen, geben Sie die /L-Option, gefolgt von dem oder den weiteren
+Bibliotheksnamen, in die Befehlszeile ein.
+
+     Beispiel:
+
+     QLIB ZEICHNEN.C /L GRAPHICS.LIB MEINEBIB.LIB
+
+     Das Beispiel kompiliert ZEICHNEN.C und plaziert die resultierende
+     Objektdatei mitsamt allen von ZEICHNEN.C in den Bibliotheken
+     GRAPHICS.LIB und MYMATH.LIB benîtigten Routinen in eine Quick-
+     Bibliothek mit Namen ZEICHNEN.QLB.
+
+Ausschalten der SpeichermodellprÅfung: Die /O-Option
+----------------------------------------------------
+Normalerweise kann QLIB keine Quick-Bibliothek aufbauen, wenn irgendeine fÅr
+die Quick-Bibliothek verwendete Objektdatei keine Datei des Medium-Modells
+ist. In einigen FÑllen (z.B. bei Objektdateien, die mit Hilfe des Microsoft
+Makro Assemblers (MASM) erzeugt wurden), kann QLIB nicht feststellen, ob eine
+Objektdatei mit dem Medium-Modell angelegt wurde oder nicht.
+
+Wenn Objektdateien ohne Speichermodell-Information in eine Quick-Bibliothek
+aufgenommen werden sollen oder wenn feststeht, da· sÑmtliche aufzunehmenden
+Objektdateien mit dem Medium-Modell kompiliert wurden, geben Sie die Option /O
+in die QLIB-Befehlszeile an. Die Option beschleunigt darÅberhinaus auch den
+Aufbauproze· von Bibliotheken. Wenn allerdings diese Option angegeben und
+dann nicht mit dem Medium-Modell erstellte Objektdateien in die Quick-Biblio-
+thek aufgenommen werden, sind die Ergebnisse unvorhersehbar.
+
+     Beispiel:
+
+     QLIB /O /N TOTAL.QLB *.OBJ
+
+     Das Beispiel verbindet alle Objektdateien im aktuellen Verzeichnis in
+     einer Quick-Bibliothek namens TOTAL.QLB. QLIB prÅft das Speichermodell
+     keiner der Objektdateien.
+
+Identifikation von Standard-Bibliotheksfunktionen: Die Datei QLIB.INI
+---------------------------------------------------------------------
+Wenn QLIB in einer Datei einen Funktionsnamen findet, prÅft das Programm die
+Datei QLIB.INI, um zu bestimmen, ob es sich bei der Funktion um eine Standard-
+Bibliotheksfunktion handelt oder nicht. Die QLIB.INI-Datei enthÑlt eine
+Auflistung sÑmtlicher Standard-Bibliotheksfunktionen sowie die Namen der
+Bibliotheken, die diese Funktionen enthalten.
+
+Die im Paket inbegriffene Datei QLIB.INI enthÑlt nur Hinweise zur C-Standard-
+bibliothek, zu den standardmÑ·igen mathematischen C-Funktionen und den QuickC-
+Graphikfunktionen. Es ist mîglich, QLIB.INI Namen von Routinen oder Biblio-
+theken hinzuzufÅgen und QLIB.INI damit anweisen, diese Routinen oder Biblio-
+theken als "Standard" zu betrachten. Auch kînnen Namen von Routinen (z.B.
+Routinen der Kernbibliothek) oder Bibliotheken aus der Datei QLIB.INI gestri-
+chen werden, um die Anzahl von Routinen, die QLIB zu einer Quick-Bibliothek
+zusammenfa·t, zu verringern.
+
+Um QLIB.INI eine neue Bibliothek hinzuzufÅgen, geben Sie das Dollarzeichen
+($), dann den Bibliotheksnamen und die Namen aller Funktionen in der Biblio-
+thek ein. Die Funktionsnamen kînnen durch jedes Zeichen, das nicht Bestandteil
+eines C-Bezeichners ist (normalerweise ein Leer- oder Tabulatorschritt), von-
+einander getrennt werden. QLIB ist in der Lage, bis zu 700 Funktionen in
+QLIB.INI zu erkennen. Das Programm kann bis zu 20 Bibliotheken innerhalb der
+Befehlszeile und in der Datei QLIB.INI erkennen.
+
+     Beispiel:
+
+     $MEINEBIB.lib
+     quadratisch     kubisch     biquadratisch
+
+     Wird das obige Beispiel QLIB.INI hinzugefÅgt, erkennt QLIB die Funk-
+     tionen quadratisch, kubisch und biquadratisch. Findet QLIB diese Namen
+     in irgendeiner der durchsuchten Dateien, entnimmt das Programm diese
+     Dateien der Bibliothek MEINEBIB.LIB und reiht sie in die Quick-Bibliothek
+     ein, die es aufbaut.
+
+QLIB-Grenzen
+------------
+Das QLIB-Programm hat folgende Grenzen:
+
+o QLIB startet LINK, um die Quick-Bibliothek zu erzeugen. Da dies zusÑtzlichen
+  Speicherplatz erfordert, kann es u.U. passieren, da· es dem Linker zur Er-
+  zeugung der Quick-Bibliothek an Speicher mangelt. Normalerweise dÅrfte das
+  jedoch kein Problem sein, da der Linker seine temporÑren Datein bei unzu-
+  reichendem Speicherplatz auf Platte schreibt.
+
+o Bei AusfÅhrung von QLIB kann eventuell der Linker-Fehler L1049, "Zu viele
+  Segmente", auftreten. QLIB begrenzt die Anzahl von Segmenten einer Quick-
+  Bibliothek auf maximal das Zehnfache der Anzahl von Modulen oder auf 3072
+  Segmente, wobei jeweils die kleinere Anzahl gilt. Bei Auftreten dieses
+  Fehlers erzeugen Sie die Quick-Bibliothek mit dem LINK-Hilfsprogramm (siehe
+  Abschnitt 10.1.1) und geben unter Zuhilfenahme der /SE-Linkeroption einen
+  grî·eren Wert an.
+
+o QLIB erweitert keine Makros und durchsucht keine Include-Dateien. Wenn ein
+  Modul also Code einer Include-Datei enthÑlt, nimmt QLIB diesen Code nicht
+  in die Quick-Bibliothek auf. Eine weitere Folge ist die, da· QLIB Code, der
+  durch "#if"-Anweisungen "entfernt" wurde, einfÅgt. Wenn in diesem Code ein
+  offener Kommentar vorkommt, kann QLIB u.U. unvorhersehbare Ergebnisse er-
+  zeugen.
+
+o QLIB ÅberprÅft alle Zeichenketten, bei denen es sich um gÅltige Funktions-
+  namen handeln kînnte. Das bedeutet, da· QLIB eventuell auch unnîtige Funk-
+  tionen in die Quick-Bibliothek aufnimmt. EnthÑlt ein Programm z.B. die
+  Anweisung "#include <stat.h>", Åbernimmt QLIB die Funktion "stat" in die
+  Quick-Bibliothek, selbst wenn "stat" im Programm niemals aufgerufen wird.
+
+QLIB-Fehlermeldungen
+--------------------
+1 : Aufbaudatei kann nicht geîffnet werden
+QLIB war nicht in der Lage, die Standard-Aufbaudatei QLIBBLD.OBJ zu îffnen.
+öberprÅfen Sie, ob QLIBBLD.OBJ eine Nur-Lesen-Datei oder ob die Diskette/
+Festplatte voll ist.
+
+2 : QLIB.INI kann nicht geîffnet werden
+QLIB.INI wurde im aktuellen Verzeichnis oder Pfad nicht gefunden.
+
+3 : Nicht genÅgend Speicherplatz zur Verarbeitung der Datei
+QLIB fand nicht genug Speicherplatz vor, um eine Datei wie QLIB.INI einlesen
+zu kînnen. Zur Lîsung dieses Problems kann versucht werden, speicherresidente
+Programme zu entfernen oder Funktionen aus QLIB.INI zu entfernen.
+
+4 : Probleme beim Lesen aus Initialisierungsdatei
+QLIB konnte die Datei QLIB.INI zwar finden, aber nicht lesen.
+
+5 : QLIB.INI enthÑlt zu viele SchlÅsselwîrter
+In QLIB.INI sind zu viele Funktionsnamen aufgefÅhrt. Einige der Funktions-
+namen sollten entfernt werden, indem sie in Kommentare aufgenommen werden.
+
+6 : QLIB.INI enthÑlt zu viele Bibliotheken
+In QLIB.INI und in der QLIB-Befehlszeile erscheinen mehr als 20
+Bibliotheksnamen.
+
+7 : Nicht beendeter Kommentar in Datei
+In QLIB.INI oder in einer durchsuchten Datei fand sich ein nicht beendeter
+Kommentar. QLIB ignoriert Text in C-Kommentaren, kann jedoch andere
+Preprozessor-Anweisungen nicht erkennen. QLIB hat vor allem dann Schwierig-
+keiten, wenn Codeteile mit nicht beendeten Kommentaren von "#if"-Anweisungen
+entfernt werden, sowie dann, wenn das Kommentarsymbol neu definiert wurde.
+
+8 : Probleme beim ôffnen der zu durchsuchenden Datei
+QLIB konnte eine Datei, die im Rahmen der /S-Option angegeben wurde, im
+aktuellen oder dem angegebenen Verzeichnis nicht finden.
+
+9 : Probleme beim Lesen der zu durchsuchenden Datei
+QLIB konnte eine im Rahmen der /S-Option angegebene Datei zwar finden, aber
+nicht lesen.
+
+10 : Die Objektdatei wurde nicht mit Medium-Modell kompiliert
+Eine in der Befehlszeile angegebene Datei wurde nicht mit dem Medium-
+Speichermodell kompiliert. Mîgliche GrÅnde:
+
+     o Beim Kompilieren wurden das standardmÑ·ige QCL-Speichermodell (Small)
+       oder ein anderes Speichermodell als das Medium-Modell verwendet.
+
+     o Die Objektdatei wurde mit MASM oder einem Microsoft-fremden Compiler
+       angelegt.
+
+     o Die Objektdatei besa· ein unzulÑssiges Format.
+
+Eine Angabe der Quelldatei in der QLIB-Befehlszeile kann das Problem evtl.
+lîsen. Um den Aufbau der Bibliothek durch QLIB trotzdem zu erzwingen, ver-
+wenden Sie die /O-Option.
+
+11 : QUICKLIB.OBJ kann nicht gefunden werden
+Die Datei QUICKLIB.OBJ befand sich weder im aktuellen noch in dem Verzeichnis,
+das durch die LIB-Umgebungsvariable bestimmt wurde.
+
+12 : Problem beim Kompilieren der Quelldatei
+Die Kompilierphase der Quelldatei war erfolglos, weil die Quelldatei Fehler
+aufwies oder weil der verfÅgbare Speicherplatz zum Kompilieren nicht aus-
+reichte. Versuchen Sie in dem Fall, mit dem QCL-Befehl und der /c-Option zu
+kompilieren und QLIB dann mit der resultierenden Objektdatei auszufÅhren, um
+die Quick-Bibliothek anzulegen.
+
+13 : Linkphase mi·lungen
+Der Linker konnte die Quick-Bibliothek nicht erstellen. Verwiesene und nicht
+gefundene Funktionen und fehlende Bibliotheken sind die hÑufigsten GrÅnde fÅr
+Fehler beim Linken.
+
+14 : Link-Befehlsdatei "QLIBBLD.LNK" kann nicht geîffnet werden
+QLIB hat versucht, die Datei QLIBBLD.LNK anzulegen, konnte die Datei jedoch
+nicht îffnen. Der Fehler entsteht, wenn die Datei QLIBBLD.LNK eine Nur-Lesen-
+Datei oder wenn die Diskette/Festplatte voll ist.
+
+15 : Probleme beim Schreiben in Link-Befehlsdatei "QLIBBLD.LNK"
+QLIB hat die Befehlsdatei zwar geîffnet, konnte jedoch nichts in sie
+hineinschreiben. Der Fehler tritt bei voller Diskette/Festplatte auf.
+

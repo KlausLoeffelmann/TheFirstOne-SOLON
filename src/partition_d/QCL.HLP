@@ -1,0 +1,56 @@
+QUICK C COMPILER OPTIONEN
+-SPEICHERMODELL-
+/AS Small-Modell (Standard)
+/AC Compact-Modell
+/AM Medium-Modell
+/AL Large-Modell
+-OPTIMIERUNG-
+/O Optimierung aktivieren (wie /Ot)
+/Od Optimierung au·er Kraft setzen
+/Ol Schleifenoptimierungen aktivieren
+/Ox Optimierung aktivieren (wie /Otl)
+/Ot Optimierung aktivieren
+-CODEERZEUGUNG-
+/G0 8086 Befehle (Standard)
+/G2  286 Befehle
+/Gc Pascal-artige Funktionsaufrufe
+/Gs keine StapelprÅfung
+/Gt[Zahl] Grî·e der Datenschwelle
+-AUSGABEDATEIEN-
+/Fb[ausfÅhrbare Datei gebunden]
+/Fe<ausfÅhrbare Datei>
+/Fm[Map-Datei]
+/Fo<Objektdatei>
+-PREPROZESSOR-
+/C Kommentare erhalten
+/D<Name>[=Text] Makrodefinition
+/E Preprozessor-Ausgabe nach stdout
+/EP gleich wie /E, jedoch ohne #line
+/I<Name> #include-Pfad hinzufÅgen
+/P Preprozessor-Ausgabe in Datei
+/U<Name> vordefiniertes Makro entfernen
+/u alle vordef. Makros entfernen
+/X "Standardstellen" ignorieren
+-SPRACHE-
+/Za Erweiterungen au·er Kraft setzen
+/Zd Zeilennummer-Information
+/Ze Erweiterungen aktivieren (Standard)
+/Zi symbolische Debug-Information
+/Zl Standard-Bibliotheksinfo entfernen
+/Zp Strukturen packen
+/Zq Debug-Interrupts aktivieren
+/Zr ZeigerprÅfung aktivieren
+/Zs nur SyntaxprÅfung
+-GLEITKOMMA-
+/FPi Emulator-Code erzeugen (Standard)
+/FPi87 8087-Code erzeugen
+-VERSCHIEDENES-
+/c nur kompilieren, nicht linken
+/W<Zahl> Warnstufe
+-LINKEN-
+/F<Hex_Zahl> Stapelgrî·e (Hex. Bytes)
+/Lc zu ausfÅhrbarer DOS-Datei linken
+/Lr zu ausfÅhrbarer DOS-Datei linken
+/Lp zu ausfÅhrbarer OS/2-Datei linken
+/link [Link_Optionen_und_Bibliotheken]
+

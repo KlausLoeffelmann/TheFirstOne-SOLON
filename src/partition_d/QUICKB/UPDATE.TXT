@@ -1,0 +1,427 @@
+				  UPDATE.TXT
+                                       
+         Freigabe-Hinweise fÅr Microsoft(R) QuickBASIC Version 4.00b
+                  fÅr IBM(R) Personalcomputer und Kompatible
+
+               (C) Copyright Microsoft Corporation, 1987, 1988
+
+  Diese Datei besteht aus drei Teilen.  Teil 1 beschreibt neue Eigen-schaften,
+die nach der Herausgabe von Microsoft(R) QuickBASIC 4.0 hinzugefÅgt worden
+sind.  Teil 2 enthÑlt eine AufzÑhlung der énderungen, die in der Software
+gemacht wurden.  Teil 3 enthÑlt eine Beschreibung zur Installation eines
+Patches fÅr MS-DOS(R) 3.20 fÅr Systeme, die bestimmte Anforderungen erfÅllen.
+
+===< Part 1: Neue Eigenschaften >===
+
+---< Erweiterte Fehlerverfolgung >---
+
+  Microsoft QuickBASIC Version 4.00b hat eine wichtige, neue Fehlerverfolgung
+in mehrmoduligen Programmen.  Weitere Informationen finden Sie in Kapitel 6 in
+"Programmieren in BASIC":
+  
+AusgewÑhlte Themen zur Diskussion von Fehlerverfolgung und Ereignisverfolgung.
+
+  In frÅheren Versionen von QuickBASIC verursachte ein Fehler in einem Modul,
+das keine Fehlerroutine hatte, die sofortige Beendigung des Programms, sogar
+wenn in einem anderen Modul eine Fehlerroutine vorhanden war.  QuickBASIC
+4.00b sucht jetzt zuerst nach einer aktiven Fehlerroutine in dem Modul, in dem
+der Fehler aufgetreten ist und dann in dem Modul, das dieses Modul verursacht
+hat und so weiter.  QuickBASIC folgt der Kette der Prozedur-Aufrufe solange
+bis es eine aktive Fehlerroutine gefunden hat oder auf das Hauptmodul stî·t.
+Sollte QuickBASIC auf diese Weise keine Fehlerroutine finden, wird das
+Programm abgebrochen und eine Fehlermeldung erscheint.
+
+  Beachten Sie jedoch, da· QuickBASIC bei Fehlern, die in der Ereignis-
+behandlungsroutine auftreten nur in dem Modul, das das Ereignis hervorgerufen
+hat, nach einer Fehlerroutine sucht.
+
+  Diese Eigenschaft beeinflu·t das Verhalten der RESUME Anweisung.  In
+frÅheren Versionen von QuickBASIC veranla·te RESUME das Programm die Aus-
+fÅhrung bei der "Aktuellen Anweisung" wieder aufzunehmen, das hei·t, bei der
+Anweisung, die den Fehler verursacht hat.  In mehrmoduligen Programmen von
+QuickBASIC 4.00b ist die "Aktuellen Anweisung" jedoch die zuletzt ausgefÅhrte
+Anweisung in dem Modul, das die aktive Fehlerroutine enthÑlt.
+
+  Die neue Fehlerverfolgungseigenschaft hat eine Ñhnliche Auswirkung auf die
+ERL Funktion.  In QuickBASIC 4.00b ist die Programmzeile, die die ERL Funktion
+als Ursache des Fehlers identifiziert, die Zeile, die die zuletzt ausgefÅhrte
+Anweisung enthÑlt in dem Modul, in dem sich die aktive Fehlerroutine befindet.
+
+---< Neuer Bildschrimmodus >---
+
+  Der neue Bildschirmmodus, Modus 4, wird von den folgenden Computern
+unterstÅtzt:
+
+   Olivetti(R) Personal Computer, Modelle M24, M28, M240, M280, M380
+   AT&T(R) 6300 Personal Computer Serien
+
+  Modus 4 ist ein 640x400 Graphikmodus, der Ihnen bis zu 16 verschiedene
+Farben (0-15) als Vordergrundfarbe zur Auswahl stellt.  Benutzen Sie die
+SCREEN Anweisung zur Auswahl des Modus und die COLOR Anweisung zur Auswahl der
+Vordergrundfarbe.  Das unten aufgefÅhrte Beispiel zeigt Ihnen, wie Sie den
+Modus mit einem blauen Vordergrund bestimmen.
+
+   SCREEN 4
+   COLOR 1
+
+   Weitere Informationen Åber diese Anweisungen finden Sie im Handbuch "BASIC
+Befehlsverzeichnis".
+
+---< Neue Anweisung: ON UEVENT >---
+
+Aktion:
+   Definiert eine Ereignisverfolgung fÅr ein vom Benutzer definiertes Ereignis
+
+Syntax:
+   ON UEVENT GOSUB {<Zeilennummer>|<Zeilenmarke>}
+
+Anmerkung:
+   <Zeilennummer> oder <Zeilenmarke> spezifiziert in diesem Syntax die
+   Zeilennummer oder Zeilenmarke der ersten Zeile der Unterroutine zur
+   Ereignisverfolgung.
+
+Wenn ein vom Benutzer definiertes Ereignis eintritt, erlaubt die ON UEVENT
+Anweisung Ihrem Programm sich nach der Unterroutine zur Ereignis-verfolgung zu
+verzweigen.  ON UEVENT unterscheidet sich von anderen Anweisungen zur
+Ereignisverfolgung dadurch, da· es Ihrem Programm und nicht einem externen
+Agenten erlaubt das Ereignis, da· Sie abfangen wollen, hervorzurufen.
+
+  Nehmen Sie zum Beispiel an, da· Ihr System einen Daten-Treiber enthÑlt, der
+eine Unterbrechung hervorruft, wenn Daten ankommen.  Ihre Anwendung ist zum
+grî·ten Teil in QuickBASIC geschrieben worden.  Das Hauptmodul enthÑlt eine
+Unterroutine zur Ereignisverfolgung, die auf vom Benutzer definierte
+Ereignisse reagiert (in diesem Fall die Ankunft von Daten aus dem Treiber).
+Die folgenden drei Assember-Prozeduren sind auch im Programm eingebunden:
+
+   1. Eine Interruptbehandlungsroutine, die auf einen Interrupt vom Treiber
+      reagiert.
+   
+   2. Eine Routine, die die Interruptbehandlungsroutine in eine Kette von
+      Interrupten installiert.
+   
+   3. Eine Routine, die die Interruptbehandlungsroutine aus der Kette der
+      Interrupte lîscht.
+
+  Wenn Sie das Programm starten ruft es die Assembler-Routine auf, die die
+Interruptbehandlungsroutine installiert.  Danach fÅhrt das Programm eine ON
+UEVENT Anweisung durch, um die QuickBASIC Unterroutine, die bei Eintreten
+eines vom Benutzer definierten Ereignisses ausgefÅhrt wird, zu identifizieren.
+Der letzte Schritt im Setup einer vom Benutzer definierten Ereignisverfolgung
+ist die AusfÅhrung der UEVENT Anweisung.  Nachdem alle diese Schritte
+durchgefÅhrt worden sind, begibt sich das Programm in die Hauptschleife.
+
+  Bei Datenankunft generiert der Treiber einen Interrupt.  Die Interrupt-
+behandlungsroutine der Assembler-Routine ruft nun die SetUEvent Routine auf.
+
+  SetUEvent ist eine BASIC Laufzeit-Bibliotheks-Routine, die ein vom Benutzer
+definiertes Ereignis in BASIC hervorruft.  Diese Sonderroutine kann von jeder
+Microsoft Sprache aus aufgerufen werden.  Referenzen zu SetUEvent werden
+aufgelîst, wenn Sie Ihr Programm mit der Laufzeit-Bibliothek binden.
+
+  Die vom Benutzer definierten Ereignisse veranlassen das Programm zu den
+QuickBASIC Routinen, die von der vorherigen ON UEVENT Anweisung identifiziert
+worden sind, zu verzweigen.  An diesem Punkt fÅhrt die Unterroutine zur
+Ereignisverfolgung jeden gewÅnschten Proze· durch.
+
+  Das Programm ruft kurz vor Beendigung die Assember-Routine auf,die die
+Interruptbehandlungsroutine aus der Kette der Interrupts lîscht.
+
+---< Neue Anweisung: UEVENT ON, OFF, STOP >---
+
+Aktion:
+
+    Aktivieren, Deaktivieren oder Unterbrechen von Ereignisverfolgung fÅr vo
+   Benutzer definierte Ereignisse
+
+Syntax:
+   UEVENT ON
+   UEVENT OFF
+   UEVENT STOP
+
+Anmerkungen:
+   Die Auswirkung der UEVENT Anweisung lÑuft parallel zu anderen Ereignis-
+   verfolgungsanweisungen ab.  UEVENT schaltet beispielsweise eine vom
+   Benutzer definierte Ereignisverfolgung ein, die zuvor mit einer ON UEVENT
+   GOSUB Anweisung erstellt wurde.
+
+---< Neue Anweisung: SLEEP >---
+
+Aktion:
+   Unterbricht die AusfÅhrung des BASIC Programmes
+
+Syntax:
+   SLEEP <Sekunden>
+
+Anmerkung:
+   In diesem Syntax bestimmt der wahlfreie Parameter <Sekunden>, wie vielen
+   Sekunden das Programm unterbrochen werden soll.
+
+  SLEEP unterbricht das QuickBASIC Programm solange bis eines der folgenden
+Ereignisse eintritt:
+
+   1. Die in der SLEEP Anweisung festgelegte Zeit ist abgelaufen.
+   
+   2. Eine Taste ist gedrÅckt worden.
+   
+   3. Ein aktiviertes QuickBASIC Ereignis ist eingetreten.
+
+  QuickBASIC Ereignisse sind Ereignisse, die Sie mit einer ON <Ereignis>
+Anweisung, wie beispielweise ON COM oder ON KEY, abfangen kînnen.  Beachten
+Sie, da· ein QuickBASIC Ereignis nicht die von SLEEP hervorgerufene Unter-
+brechung aufhebt, es sei denn, da· die Ereignisverfolgung aktiv war als das
+Ereignis eintrat.  Das hei·t, die Ereignisverfolgung mu· mit der ON <Ereignis>
+Anweisung erstellt und mit einer <Ereignis> On Anweisung aktiviert worden sein
+und darf nicht mit <Ereignis> OFF oder <Ereignis> STOP deaktiviert worden
+sein.  Beachten Sie auch, da· SLEEP nur auf aktuelle TastenanschlÑge, die nach
+AusfÅhrung der SLEEP Anweisung erfolgen, reagiert.  SLEEP ignoriert Zeichen
+die vor AusfÅhrung der SLEEP Anweisung im Tastaturpuffer gespeichert worden
+sind.
+  
+  Wenn Sie SLEEP mit einer Zeit gleich Null oder ohne Zeitangabe ausfÅhren,
+wird das Programm fÅr eine unbestimmte Zeit unterbrochen.  In diesem Fall kann
+nur ein Tastenanschlag oder ein QuickBASIC Ereignis die Unterbrechung
+aufheben.
+
+Beispiel:
+   Die AusfÅhrung des folgenden Programmes ist fÅr zwanzig Sekungen
+   unterbrochen worden.  Das Programm in diesem Beispiel hat keine ON EVENT
+   Anweisung und nur das DrÅcken einer Taste kann die Programmabbrechung vor
+   Ablauf der zwanzig Sekunden aufheben.
+
+   PRINT "Taking a twenty-second timeout..."
+   SLEEP 20
+   PRINT "Play ball!"
+
+===< Teil 2: énderungen in der Software >===
+
+Es folgt eine Liste der énderungen oder Berichtigungen in der Software:
+
+   Die Run-Time Bibliotheksdateien sind aktualisiert worden.  Alle Hinweise i
+Handbuch, die sich auf BRUN40.EXE, BCOM40.LIB, BRUN40.LIB, und BQLB40.LIB
+beziehen, sollten sich nun auf BRUN41.EXE, BCOM41.LIB, BRUN41.LIB, und
+BQLB41.LIB beziehen.
+
+  Wenn Sie von Version 4.0 aus umstellen, mÅssen Sie alle ausfÅhrbaren Dateien
+und Bibliotheksdateien neu installieren; die neuen Laufzeit-Bibliotheksdateien
+funktionieren nicht mit der vorherigen Version und umgekehrt.  Lîschen Sie
+jedoch nicht die BRUN40.EXE, ansonsten kînnen vorherig kompilierte Programme
+nicht angewandt werden, es sei denn sie werden mit Version 4.00b neu
+kompiliert.  Die Verkettung mit einem grî·eren Programm innerhalb der
+QuickBASIC Umgebung arbeitet korrekt, sogar wenn der Speicherraum knapp ist.
+
+In COMMON-Anweisungen benutzte Zeichenketten ungerader fester LÑnge erzeuigen
+keine "Zeichenkettenbereich beschÑdigt" Fehlermeldung.
+
+SADD(Funktion$) kann innerhalb der Funktion benutzt werden.
+
+Der Interpreter erlaubt den Gebrauch von Zeichenketten fester LÑnge mit der
+LINE INPUT Anweisung.
+
+Variablen mit Punkten kînnen in der SELECT CASE Anwendung benutzt werden.
+
+Die Graphikpalette wird bei énderung der aktiven Seiten nicht rÅckgesetzt.
+
+Erweiterte ASCII Zeichen kînnen jetzt auch in Dateinamen verwendet werden.
+
+Die Argumente in der CIRCLE Anweisung fÅr das Starten und Beenden von Winkel-
+plots erfolgt in der gleichen Weise wie in vorhergehenden Versionen von
+QuickBASIC.
+
+Das standardmÑ·ige SeitenverhÑltnis fÅr einige Graphikmodi ist berichtigt
+worden.
+
+Das QLBDUMP Programm arbeitet korrekt mit Dateien jeglicher Grî·e.
+
+Sie kînnen die gleiche Taste mehrfach innerhalb von QuickBASIC benutzen.
+
+Der Offset der Rahmen-Variablen in INTRPT.ASM ist nun korrekt (-1Eh anstatt
+-0Eh).
+
+Der DOS Bildschirm wird nach Benutzung der Anweisung PALETTE korrekt
+rÅckgesetzt.
+
+FOR/NEXT-Schleifen erniedrigen den Schleifen-ZÑhler korrekt mit Langen
+Ganzzahlen.
+
+Fehler, die nach einer ON ERROR GOTO 0 Anweisung erfolgen fÅhren nun zu einem
+erwarteten Laufzeitfehler.
+
+Die Fehlermeldung "Zeichenkettenbereich beschÑdigt" erscheint nicht mehr bei
+Anwendung einer Quickbibliothek, die eine COMMON Anweisung erhÑlt, wenn das
+Hauptprogramm keine COMMON Anweisung benutzt.
+
+Die PLAY Anweisung kann Zeichenfolgen, die mehr als 256 Zeichen enthalten,
+korrekt handhaben.
+
+Laufzeitprogrammverkettung in DOS 2.1.
+
+Die BLOAD und BSAVE Anweisungen fÅhren nicht mehr zur Fehleranzeige 67 in DOS
+2.1.
+
+AusfÅhrbare Programme kînnen innerhalb der QuickBASIC Umgebung mit DOS 2.1
+erstellt werden.
+
+QuickBASIC arbeitet mit der PC Maus des Mouse Systems.
+
+Graphikprogramme arbeiten auf AT&T PC 6300 mit aktuellen ROM Chips.
+
+Die /MBF Option ist abgearbeitet, wenn Sie ausfÅhrbare Dateien in QuickBASIC
+erstellen.
+
+Felder undefinierter LÑnge kînnen innerhalb der Umgebung kompiliert werden.
+
+Die Fehlermeldung "GerÑt nicht verfÅgbar" erscheint nicht mehr, wenn Sie den
+COM-Port und Make EXE Datei oder DOS Shell Befehle in QuickBASIC benutzen.
+
+Die COM UnterstÅtzung ist auf verschiedenartige Weise verbessert worden.  Bei
+Gebrauch der OPEN COM Anweisung bleibt die DTR Zeile aktiv, wÑhrend die RTS
+Zeile kurz vor ihrer Aktivierung rÅckgesetzt wird.  Sowohl die RTS als auch
+die DTR Zeile wird rÅckgesetzt sobald die COM Datei geschlossen wird, oder
+wenn ein Fehler oder STRG-UNTBR das Verlassen der OPEN COM Anweisung
+verursacht.  Bei SHELL oder CHAIN Operationen bleibt DTR aktiv und RTS wird
+wÑhrend der Operation rÅckgesetzt.  RTS erhÑlt seinen Originalstatus zurÅck,
+nachdem die SHELL oder CHAIN Operation abgeschlossen ist.  Das DrÅcken von
+STRG-UNTBR wÑhrend der AusfÅhrung der OPEN COM Anweisung fÅhrt nun zu einer
+korrekten RÅcksetzung der COM Port Hardware.
+
+Die RUN Anweisung kreiert einen Zeilenvorschub in kompilierten Programmen.
+
+Schwierigkeiten bezÅglich der Bildschirmwechsel im Hercules Graphikmodus
+(Bildschirm 3), die auf einigen Maschinen auftraten, sind behoben worden.
+
+Der Hercules(R) Treiber, QBHERC.COM, hat jetzt eine \H (HALF) Option, die
+benutzt werden sollte, falls Sie sowohl eine Farbvideokarte als auch eine
+Hercules Monochromkarte haben.  Die /H Option veranla·t den Treiber nur eine
+Graphikseite anstatt zwei zu benutzen.  Dies verhindert, da· die beiden
+Videokarten versuchen die gleiche Speicheradresse zu benutzten.
+
+MOUSE.COM, LINK.EXE, und LIB.EXE sind aktualisiert worden.
+
+ASCII Auflistungen der BC.EXE enthalten erweiterte ASCII ZeichensÑtze.
+
+Die Ereignisverfolgung arbeitet korrekt in Quick-Bibliothek-Routinen, die vom
+Hauptmodul aufgerufen wurden und keine Ereignisse enthalten.
+
+Die CLEAR Anweisung beeinflu·t nicht mehr die Werte der Funktionstasten in
+ausfÅhrbaren Dateien.
+
+Prozeduraufrufe kînnen kompilieren, vorausgesetzt die Aufrufe enthalten
+Scalar-Variablen mit Punkten und Records.
+
+Der Gebrauch der CONST Anweisung mit Zeichenketten-AusdrÅcken ergibt die
+korrrekte LÑnge beim Kompilieren.
+
+Scalare in COMMON Anweisungen kînnen Punkte enthalten.
+
+AusfÅhrbare Dateien kînnen innerhalb von QuickBASIC mit DPATH (eine
+freizugÑngliche Software) erstellt werden.
+
+Der Einsatz von Unterbrechungspunkten in der CASE oder CASE ELSE Anweisung
+kann zu unvorhersehbaren Ergebnissen fÅhren.
+
+Hinweis: Die fÅr Datei-E/A benutzten GET und PUT Anweisungen arbeiten anders
+als in vorherigen Versionen, wenn die beiden folgenden Bedingungen zutreffen:
+
+   1) Eine Disketten-Datei oder ein COM-GerÑt wurde fÅr den wahlfreien Zugriff
+      (Random Access) geîffnet.
+   
+   2) Der wahlfreie dritte Parameter (Variable) fÅr die GET und PUT Anweisung
+      ist eine Zeichenfolge mit variabler LÑnge.
+
+Die PUT Anweisung kodiert die LÑnge der Zeichenfolge und speichert sie als di
+ersten beiden Bytes der Zeichenfolge.  Die GET Anweisung benutzt den kodierten
+Wert zur Bestimmung der Anzahl der zu lesenden Zeichen.
+
+===< Part 3: MS-DOS(R) 3.20 Patch >===
+
+Die folgenden Informationen sind nur dann fÅr Sie relevant, wenn Ihr System
+ALLE der folgenden Kennzeichen aufweist:
+
+   1. Sie verwenden MS-DOS Version 3.20.
+   
+   2. Sie booten von einer Festplatte.
+   
+   3. Ihr System besitzt einen mathematischen Koprozessor (z.B. einen 8087).
+   
+   4. Sie fÅhren Programme aus, die Gleitkommaarithmetik verwenden.
+
+In Systemen, die alle der oben genannten Bedingungen aufweisen, kînnen
+arithmetische Gleitkommaprobleme eventuell durch Installation eines kleineren
+Patches in DOS beseitigt werden.  Sind Sie sich nicht sicher, ob Sie den Patch
+benîtigen, fÅhren Sie die folgenden Schritte aus:
+
+   1. Kopieren Sie das Programm PATCH87.EXE (in dieser Ausgabe enthalten) in
+      das Stammverzeichnis Ihrer Festplatte.
+   
+   2. Booten Sie Ihr System erneut von der Festplatte und fÅhren Sie hiernach
+      KEINE Diskettenoperationen mehr durch.  Es ist sehr wichtig, da·
+      Disketten-E/A nach dem erneuten Booten vermieden wird, da dies die
+      ZuverlÑssigkeit des Diagnosetests, den Sie anschlie·end ausfÅhren,
+      beeinflu·t.
+   
+   3. Falls notwendig, verwenden Sie den CD-Befehl, um ins Stammverzeichnis
+      Ihrer Festplatte zu wechseln.
+   
+   4. FÅhren Sie das PATCH87.EXE-Programm aus, indem Sie den folgenden Befehl
+      beim DOS-Prompt eingeben:
+   
+      PATCH87
+      
+      Das Programm fÅhrt einen Diagnosetest auf Ihrem System durch, um fest-
+      zustellen, ob der DOS-Patch notwendig ist und ob er erfolgreich durch-
+      gefÅhrt werden kann, falls er notwendig ist.  Teilt Ihnen das Programm
+      mit, da· es notwendig ist den DOS-Patch zu installieren und dies mîglich
+      ist, befolgen Sie die Prozedur, die im nÑchsten Abschnitt beschrieben
+      ist.
+
+  HINWEIS: Das Gleitkommaproblem wurde in MS-DOS Versionen hîher als 3.20
+beseitigt.  Dies schlie·t die MS-DOS Versionen 3.21 und 3.30 ein.
+
+  Haben Sie den vorangegangenen Test durchgefÅhrt und wurde festgestellt, da·
+Sie den DOS-Patch auf Ihrem System installieren sollten, fÅhren Sie die fol-
+genden Schritte durch:
+
+   1. Formatieren Sie eine leere Diskette.  (Verwenden Sie hierbei NICHT die
+      Formatierungsoption /s, um Systemdateien auf die Diskette zu
+      Åbertragen.)
+   
+   2. Verwenden Sie den SYS-Befehl, um IO.SYS und MSDOS.SYS vom Stammver-
+      zeichnis Ihrer Festplatte auf die neue Diskette zu kopieren.  Booten Sie
+      beispielsweise von Laufwerk C:, dann wÅrden Sie die folgenden Befehle
+      eingeben:
+   
+      C:
+      SYS A:
+   
+   3. Verwenden Sie den COPY-Befehl, um COMMAND.COM und SYS.COM auf di
+      gleiche Diskette zu kopieren.
+   
+   4. Verwenden Sie den COPY-Befehl, um das Programm PATCH87.EXE (in dieser
+      Ausgabe enthalten) auf die gleiche Diskette zu kopieren.
+   
+   5. Machen Sie das Diskettenlaufwerk zum aktuellen Laufwerk und Verzeichnis,
+      indem Sie den folgenden Befehl eingeben:
+   
+      A:
+   
+   6. Installieren Sie den DOS-Patch, indem Sie den folgenden Befehl eingeben:
+   
+      PATCH87 /F
+      
+      WARNUNG: Fahren Sie NICHT mit Schritt 7 fort, wenn wÑhrend der Schritte
+      2 bis 6 irgendwelche Fehler der Diskette oder Festplatte auftreten.  In
+      diesem Fall booten Sie erneut von Ihrer Festplatte und wiederholen Sie
+      den gesamten Proze·.
+   
+   7. Traten keine Fehler auf, verwenden Sie den SYS-Befehl, um die Dateien
+      IO.SYS und MSDOS.SYS von Ihrer Diskette zurÅck auf Ihre Festplatte zu
+      Åbertragen.  Ist beispielsweise das Boot-Verzeichnis Ihres Systems das
+      Stammverzeichnis von Laufwerk C:, dann wÅrden Sie den folgenden Befehl
+      beim DOS-Prompt eingeben:
+   
+      A:
+      SYS C:
+   
+      Hierdurch wird der DOS-Patch installiert.
+   
+   8. Booten Sie das System erneut.

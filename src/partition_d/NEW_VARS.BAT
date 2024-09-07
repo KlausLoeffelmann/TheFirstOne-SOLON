@@ -1,0 +1,4 @@
+PATH=D:;%PATH%
+set LIB=D:\LIB;%LIB%
+set INCLUDE=D:\INCLUDE;%INCLUDE%
+set TMP=%TMP%
