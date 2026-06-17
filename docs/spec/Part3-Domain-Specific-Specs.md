@@ -602,16 +602,16 @@ END;
 
 ```
 ╔═══════════════════════════════════════════════════════════════╗
-║ SOLON - Massenermittlung                                  [_][□][X]
+║ SOLON - Massenermittlung                            [_][□][X] ║
 ╠═══════════════════════════════════════════════════════════════╣
-║ [File] [Edit] [Project] [Position] [Invoice] [Tools] [Help]  ║
+║ [File] [Edit] [Project] [Position] [Invoice] [Tools] [Help]   ║
 ╠═══════════════════════════════════════════════════════════════╣
-║ [New] [Open] [Save] | [Cut] [Copy] [Paste] | [Print] [PDF]   ║
+║ [New] [Open] [Save] | [Cut] [Copy] [Paste] | [Print] [PDF]    ║
 ╠════════════════════╦══════════════════════════════════════════╣
 ║ Project Explorer   ║                                          ║
-║ ┬ 10 - Sample Proj ║   [Position Editor / Invoice View]      ║
+║ ┬ 10 - Sample Proj ║   [Position Editor / Invoice View]       ║
 ║ ├─┬ 4SSYSTEM       ║                                          ║
-║ │ └─┬ LOSSYSTM     ║      (MDI Child Window Area)            ║
+║ │ └─┬ LOSSYSTM     ║      (MDI Child Window Area)             ║
 ║ │   └─┬ 0010 Titel ║                                          ║
 ║ │     ├─ Pos 00010#║                                          ║
 ║ │     └─ Pos 00020#║                                          ║
@@ -620,7 +620,7 @@ END;
 ║                    ║                                          ║
 ║ [+] [-] [Edit]     ║                                          ║
 ╠════════════════════╩══════════════════════════════════════════╣
-║ Ready | Project: 10 | Positions: 234 | Total: 123.456,78 EUR ║
+║ Ready | Project: 10 | Positions: 234 | Total: 123.456,78 EUR  ║
 ╚═══════════════════════════════════════════════════════════════╝
 ```
 
@@ -749,36 +749,36 @@ END;
 ╔═══════════════════════════════════════════════════════════════╗
 ║ Position Editor - Title 0010                          [_][□][X]
 ╠═══════════════════════════════════════════════════════════════╣
-║ Position Number: [00010#    ]  Match Code: [BETP25   ]       ║
-║                                                                ║
-║ Short Description:                                             ║
+║ Position Number: [00010#    ]  Match Code: [BETP25   ]        ║
+║                                                               ║
+║ Short Description:                                            ║
 ║ ┌────────────────────────────────────────────────────────────┐║
 ║ │ Beton C25/30, Fundament                                    │║
 ║ └────────────────────────────────────────────────────────────┘║
-║                                                                ║
-║ Long Description:                                              ║
+║                                                               ║
+║ Long Description:                                             ║
 ║ ┌────────────────────────────────────────────────────────────┐║
 ║ │ Fundamentbeton C25/30 gemäß DIN 1045                       │║
-║ │ einschließlich Schalung, Bewehrung und Verdichtung        │║
+║ │ einschließlich Schalung, Bewehrung und Verdichtung         │║
 ║ │                                                            │║
 ║ └────────────────────────────────────────────────────────────┘║
-║                                                                ║
-║ ┌─ Dimensions ─────────────────────────────────────────────┐ ║
-║ │ Dim 1: [  12.50] × Dim 2: [   8.00] × Dim 3: [  0.40]   │ ║
-║ │                                                           │ ║
-║ │ Calculated Quantity: [  40.00]  Unit: [m³ ▼]            │ ║
+║                                                               ║
+║ ┌─ Dimensions ─────────────────────────────────────────────┐  ║
+║ │ Dim 1: [  12.50] × Dim 2: [   8.00] × Dim 3: [  0.40]    │  ║ 
+║ │                                                          │  ║
+║ │ Calculated Quantity: [  40.00]  Unit: [m³ ▼]             │  ║
 ║ └───────────────────────────────────────────────────────────┘ ║
-║                                                                ║
-║ ┌─ Pricing ────────────────────────────────────────────────┐ ║
-║ │ Unit Price:      [    125.50] EUR/m³                     │ ║
-║ │ Total Price:     [  5,020.00] EUR                        │ ║
+║                                                               ║
+║ ┌─ Pricing ─────────────────────────────────────────────────┐ ║
+║ │ Unit Price:      [    125.50] EUR/m³                      │ ║
+║ │ Total Price:     [  5,020.00] EUR                         │ ║
 ║ └───────────────────────────────────────────────────────────┘ ║
-║                                                                ║
-║ Notes:                                                         ║
+║                                                               ║
+║ Notes:                                                        ║
 ║ ┌────────────────────────────────────────────────────────────┐║
 ║ │                                                            │║
 ║ └────────────────────────────────────────────────────────────┘║
-║                                                                ║
+║                                                               ║
 ║                           [OK]  [Cancel]  [Apply]             ║
 ╚═══════════════════════════════════════════════════════════════╝
 ```
